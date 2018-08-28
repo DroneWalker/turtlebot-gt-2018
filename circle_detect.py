@@ -1,8 +1,8 @@
 # Circle Detection Test by Caleb Harris
 
 # removing a path folder which messes with opencv import
-import sys
-sys.path.remove('/opt/ros/kinetic/lib/python2.7/dist-packages')
+#import sys
+#sys.path.remove('/opt/ros/kinetic/lib/python2.7/dist-packages')
 
 # importing packages
 import cv2
