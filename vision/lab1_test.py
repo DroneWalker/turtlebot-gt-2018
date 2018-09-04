@@ -6,6 +6,7 @@
 # removing a path folder which messes with opencv import
 import sys
 sys.path.remove('/opt/ros/kinetic/lib/python2.7/dist-packages')
+#sys.path.append('~/introrobotics/turtlebot-gt-2018/vision')
 
 # importing packages
 from imutils.video import VideoStream, FPS
@@ -13,6 +14,7 @@ import cv2
 import numpy as np
 import argparse
 import time
+from vision.tracker.centroidtracker import CentroidTracker
 
 (major_ver, minor_ver, subminor_ver) = (cv2.__version__).split('.')
 
@@ -70,6 +72,9 @@ def detect_circles(image, mask):
     circles = cv2.HoughCircles(img, cv2.HOUGH_GRADIENT, 1, 200, param1=30, param2=45, minRadius=0,
                                maxRadius=0)
 
+    # initialize
+    circle_detections = []
+
     if (circles is not None):
         # for i in circles[0, :]:
         #     # draw the outer circle
@@ -79,6 +84,7 @@ def detect_circles(image, mask):
 
         # convert the (x, y) coordinates and radius of the circles to integers
         circles = np.round(circles[0, :]).astype("int")
+
 
         # loop over the (x, y) coordinates and radius of the circles
         for (x, y, r) in circles:
@@ -100,7 +106,10 @@ def detect_circles(image, mask):
             print
             r
 
-    return output
+            # Define bounding box (startX, startY, endX, endY)
+            circle_detections.append(np.array([x-r, y-r, x+r, y+r]))
+
+    return output, circle_detections
 
 
 ## Main Function
@@ -143,6 +152,11 @@ if __name__ == '__main__':
     # initialize the bounding box coordinates of the object we are going
     # to track
     initBB = None
+    # if no tracker supplied, use detect_circles
+    if not args.get("tracker", False):
+        print("No tracker supplied, using built in circle detection!")
+        ct = CentroidTracker()
+        (H,W) = (None, None)
 
     # if a video path was not supplied, grab the reference to the web cam
     if not args.get("video", False):
@@ -197,7 +211,7 @@ if __name__ == '__main__':
         # Do detection and masking and stuff
         # detect_circles(color)
         red_mask = detect_red(color)
-        circles_image = detect_circles(color, 0)  # Set mask = 0 if none used
+        circles_image, circles = detect_circles(color, 0)  # Set mask = 0 if none used
 
         # check to see if we are currently tracking an object
         if initBB is not None:
@@ -227,6 +241,9 @@ if __name__ == '__main__':
                 text = "{}: {}".format(k, v)
                 cv2.putText(frame, text, (10, H - ((i * 20) + 20)),
                             cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 0, 255), 2)
+
+
+
 
         # Display the resulting frame
         cv2.imshow("Tracking", frame)
