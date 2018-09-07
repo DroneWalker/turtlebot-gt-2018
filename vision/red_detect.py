@@ -22,11 +22,16 @@ img = cv2.cvtColor(image, cv2.COLOR_BGR2HSV)
 
 # Use picture in gimp to find BGR values, then use converter.py to change to HSV
 # This is for red
-red_lower_range = np.array([169, 100, 100], dtype = np.uint8)
-red_upper_range = np.array([189, 255, 255], dtype = np.uint8)
+#red_lower_range = np.array([169, 100, 100], dtype = np.uint8)
+red_lower_range = np.array([0, 40, 40], dtype=np.uint8)
+red_upper_range = np.array([15, 220, 220], dtype=np.uint8)
+mag_lower_range = np.array([165, 80, 80], dtype=np.uint8)
+mag_upper_range = np.array([180, 220, 220], dtype=np.uint8)
 
 
-mask = cv2.inRange(img, red_lower_range, red_upper_range)
+# mask1 = cv2.inRange(img, red_lower_range, red_upper_range)
+mask = cv2.inRange(img, mag_lower_range, mag_upper_range)
+# mask = mask1 + mask2
 
 cv2.imshow('mask', mask)
 cv2.imshow('image', image)

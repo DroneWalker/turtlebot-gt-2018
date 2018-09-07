@@ -4,7 +4,7 @@ $ ssh burger@<IP or Hostname>
 Start ros
 $ roscore
 
-Bringup turtlebot
+Bringup turtlebot (on Turtlebot Terminal)
 $ roslaunch turtlebot3_bringup turtlebot3_robot.launch
 
 Load bot into Rviz

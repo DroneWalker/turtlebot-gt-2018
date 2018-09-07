@@ -6,15 +6,15 @@
 # removing a path folder which messes with opencv import
 import sys
 sys.path.remove('/opt/ros/kinetic/lib/python2.7/dist-packages')
-#sys.path.append('~/introrobotics/turtlebot-gt-2018/vision')
 
 # importing packages
 from imutils.video import VideoStream, FPS
 import cv2
+#import
 import numpy as np
 import argparse
 import time
-from vision.tracker.centroidtracker import CentroidTracker
+from tracker.centroidtracker import CentroidTracker
 
 (major_ver, minor_ver, subminor_ver) = (cv2.__version__).split('.')
 
@@ -25,20 +25,26 @@ def detect_red(image):
 
     # Use picture in gimp to find BGR values, then use converter.py to change to HSV
     # This is for red
-    red_lower_range = np.array([169, 100, 100], dtype=np.uint8)
-    red_upper_range = np.array([189, 255, 255], dtype=np.uint8)
+    # red_lower_range = np.array([169, 100, 100], dtype=np.uint8)
+    # red_upper_range = np.array([189, 255, 255], dtype=np.uint8)
+    # red_lower_range = np.array([0, 40, 40], dtype=np.uint8)
+    # red_upper_range = np.array([15, 220, 220], dtype=np.uint8)
+    mag_lower_range = np.array([165, 80, 80], dtype=np.uint8)
+    mag_upper_range = np.array([180, 220, 220], dtype=np.uint8)
 
-    mask = cv2.inRange(img, red_lower_range, red_upper_range)
+    # mask1 = cv2.inRange(img, red_lower_range, red_upper_range)
+    mask = cv2.inRange(img, mag_lower_range, mag_upper_range)
+    # mask = mask1+mask2
 
     imgout = mask
 
-    clean = False
+    clean = True
 
     if (clean == True):
-        kernel = np.ones((5, 5), np.uint8)
+        kernel = np.ones((7, 7), np.uint8)
         opening = cv2.morphologyEx(mask, cv2.MORPH_OPEN, kernel)
         closing = cv2.morphologyEx(mask, cv2.MORPH_CLOSE, kernel)
-        openandclose = cv2.morphologyEx(opening, cv2.MORPH_CLOSE, kernel)
+        # openandclose = cv2.morphologyEx(opening, cv2.MORPH_CLOSE, kernel)
         closeandopen = cv2.morphologyEx(closing, cv2.MORPH_OPEN, kernel)
         imgout = closeandopen
 
@@ -49,9 +55,7 @@ def detect_circles(image, mask):
     # Step 1:  Import the image and copy
     output = image.copy()
     # Step 2:  Grayscale and Blur the image with a kernal size of 5
-    if (mask == 0):
-        img = cv2.cvtColor(image, cv2.COLOR_RGB2GRAY)
-    elif (mask is None):
+    if (mask is None):
         img = cv2.cvtColor(image, cv2.COLOR_RGB2GRAY)
         print("A valid option value was not used!  Use either 'raw' or 'mask'.  Default 'raw' used. \n")
     else:
@@ -69,11 +73,8 @@ def detect_circles(image, mask):
     # Step 3: Find circles
     # circles = cv2.HoughCircles(img2, cv2.HOUGH_GRADIENT, 1, 20, param1=50,
     #                            param2=30, minRadius=0, maxRadius=0)
-    circles = cv2.HoughCircles(img, cv2.HOUGH_GRADIENT, 1, 200, param1=30, param2=45, minRadius=0,
+    circles = cv2.HoughCircles(img, cv2.HOUGH_GRADIENT, 1, minDist=100, param1=30, param2=30, minRadius=30,
                                maxRadius=0)
-
-    # initialize
-    circle_detections = []
 
     if (circles is not None):
         # for i in circles[0, :]:
@@ -106,10 +107,7 @@ def detect_circles(image, mask):
             print
             r
 
-            # Define bounding box (startX, startY, endX, endY)
-            circle_detections.append(np.array([x-r, y-r, x+r, y+r]))
-
-    return output, circle_detections
+    return output, circles
 
 
 ## Main Function
@@ -133,7 +131,6 @@ if __name__ == '__main__':
     # otherwise, for OpenCV 3.3 OR NEWER, we need to explicity call the
     # approrpiate object tracker constructor:
     else:
-        # initialize a dictionary that maps strings to their corresponding
         # OpenCV object tracker implementations
         OPENCV_OBJECT_TRACKERS = {
             #"csrt": cv2.TrackerCSRT_create,
@@ -147,16 +144,23 @@ if __name__ == '__main__':
 
         # grab the appropriate object tracker using our dictionary of
         # OpenCV object tracker objects
-        tracker = OPENCV_OBJECT_TRACKERS[args["tracker"]]()
+        # tracker = OPENCV_OBJECT_TRACKERS[args["tracker"]]()
+        tracker = cv2.TrackerKCF_create()
+
 
     # initialize the bounding box coordinates of the object we are going
     # to track
+    circles = None
     initBB = None
     # if no tracker supplied, use detect_circles
-    if not args.get("tracker", False):
-        print("No tracker supplied, using built in circle detection!")
-        ct = CentroidTracker()
-        (H,W) = (None, None)
+    # if not args.get("tracker", False):
+    #     print("No tracker supplied, using built in circle detection!")
+    #     ct = CentroidTracker()
+    #     (H,W) = (None, None)
+
+    ct = CentroidTracker()
+    (H,W) = (None, None)
+
 
     # if a video path was not supplied, grab the reference to the web cam
     if not args.get("video", False):
@@ -166,7 +170,8 @@ if __name__ == '__main__':
 
     # otherwise, grab a reference to the video file
     else:
-        cap = cv2.VideoCapture(args["video"])
+        #cap = cv2.VideoCapture(args["video"])
+        cap = cv2.VideoCapture('~/introrobotics/turtlebot-gt-2018/vision/videos/red_ball3.mp4')
 
     # initialize the FPS throughput estimator
     fps = None
@@ -211,9 +216,12 @@ if __name__ == '__main__':
         # Do detection and masking and stuff
         # detect_circles(color)
         red_mask = detect_red(color)
-        circles_image, circles = detect_circles(color, 0)  # Set mask = 0 if none used
 
-        # check to see if we are currently tracking an object
+        status = "Waiting"
+        rects = []
+
+        circles_image, circles = detect_circles(color, red_mask)  # Set mask = 0 if none used
+
         if initBB is not None:
             # grab the new bounding box coordinates of the object
             (success, box) = tracker.update(frame)
@@ -243,13 +251,37 @@ if __name__ == '__main__':
                             cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 0, 255), 2)
 
 
+        # check to see if we are currently tracking an object
+        if circles is not None:
+            # grab the new bounding box coordinates of the object
+            for (x,y,r) in circles:
+                box = np.array([x-r, y-r, x+r, y+r])
+                rects.append(box.astype("int"))
+                # draw bounding box
+                (startX, startY, endX, endY) = box.astype("int")
+                cv2.rectangle(frame, (startX, startY), (endX, endY),(0,255,0),2)
 
+            # update our centroid tracker using the computed set of bounding
+            objects = ct.update(rects)
+
+            # loop over the tracked objects
+            for (objectID, centroid) in objects.items():
+                # draw both the ID of the object and the centroid of the
+                # object on the output frame
+                text = "ID {}".format(objectID)
+                xt = str(centroid[0])
+                yt = str(centroid[1])
+                cv2.putText(frame, text, (centroid[0] - 10, centroid[1] - 10),
+                            cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
+                cv2.putText(frame, "Centroid: x = " + xt + ", y = " + yt, (20, 20),
+                            cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
+                cv2.circle(frame, (centroid[0], centroid[1]), 4, (0, 255, 0), -1)
 
         # Display the resulting frame
         cv2.imshow("Tracking", frame)
         cv2.imshow('Masking Red', red_mask)
         cv2.imshow('Circle Detection', circles_image)
-        cv2.imshow('Original', color)
+        # cv2.imshow('Original', color)
         key = cv2.waitKey(1) & 0xFF
 
         # if the 's' key is selected, we are going to "select" a bounding
