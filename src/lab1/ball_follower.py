@@ -22,13 +22,21 @@ from tracker.centroidtracker import CentroidTracker
 ## Function 1: Define color detection function
 def detect_red(image):
     img = cv2.cvtColor(image, cv2.COLOR_BGR2HSV)
+    img = cv2.GaussianBlur(img, (7, 7), 0)
 
     # Use picture in gimp to find BGR values, then use converter.py to change to HSV
     # This is for pink ball
-    mag_lower_range = np.array([165, 80, 80], dtype=np.uint8)
+    mag_lower_range = np.array([165, 60, 60], dtype=np.uint8)
     mag_upper_range = np.array([180, 220, 220], dtype=np.uint8)
 
-    mask = cv2.inRange(img, mag_lower_range, mag_upper_range)
+    #org_lower_range = np.array([0, 120, 80], dtype=np.uint8)
+    #org_upper_range = np.array([20, 220, 220], dtype=np.uint8) # At Lab
+
+    org_lower_range = np.array([0, 220, 120], dtype=np.uint8)
+    org_upper_range = np.array([20, 255, 255], dtype=np.uint8)  # At Home
+
+    mask = cv2.inRange(img, org_lower_range, org_upper_range)
+    #mask = cv2.inRange(img, mag_lower_range, mag_upper_range)
 
     imgout = mask
 
@@ -37,6 +45,7 @@ def detect_red(image):
     if (clean == True):
         kernel = np.ones((7, 7), np.uint8)
         # openandclose = cv2.morphologyEx(opening, cv2.MORPH_CLOSE, kernel)
+        closing = cv2.morphologyEx(mask, cv2.MORPH_CLOSE, kernel)
         closeandopen = cv2.morphologyEx(closing, cv2.MORPH_OPEN, kernel)
         imgout = closeandopen
 
@@ -53,7 +62,8 @@ def detect_circles(image, mask):
     else:
         img = mask
 
-    img = cv2.GaussianBlur(img, (5,5), 0)
+
+    img = cv2.GaussianBlur(img, (7,7), 0)
     img = cv2.medianBlur(img, 5)
 
     img = cv2.adaptiveThreshold(img, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY, 11, 3.5)
@@ -61,8 +71,11 @@ def detect_circles(image, mask):
 
 
     # Step 3: Find circles
-    circles = cv2.HoughCircles(img, cv2.HOUGH_GRADIENT, 1, minDist=100, param1=30, param2=30, minRadius=30,
-                               maxRadius=0)
+    #circles = cv2.HoughCircles(img, cv2.HOUGH_GRADIENT, 1, minDist=80, param1=20, param2=30, minRadius=50,
+                               #maxRadius=0)
+    circles = cv2.HoughCircles(img, cv2.HOUGH_GRADIENT, 1, minDist=100, param1=20, param2=30, minRadius=10,maxRadius=0)
+    # Hough circles:  minDist (min dist between detected circles), param1 (edge detection param)
+        # param2 (smaller - more circles),
 
     if (circles is not None):
         # convert the (x, y) coordinates and radius of the circles to integers
@@ -76,19 +89,7 @@ def detect_circles(image, mask):
             cv2.circle(output, (x, y), r, (0, 255, 0), 4)
             cv2.rectangle(output, (x - 5, y - 5), (x + 5, y + 5), (0, 128, 255), -1)
             # time.sleep(0.5)
-            print
-            "Column Number: "
-            print
-            x
-            print
-            "Row Number: "
-            print
-            y
-            print
-            "Radius is: "
-            print
-            r
-
+            print("Column Number: %f, Row Number: %f, Radius is %f \n" % (x,y,r))
     return output, circles
 
 
@@ -105,35 +106,15 @@ if __name__ == '__main__':
     # extract the OpenCV version info
     (major, minor) = cv2.__version__.split(".")[:2]
 
-    # if we are using OpenCV 3.2 OR BEFORE, we can use a special factory
-    # function to create our object tracker
-    if int(major) == 3 and int(minor) < 3:
-        tracker = cv2.Tracker_create(args["tracker"].upper())
-
-    # otherwise, for OpenCV 3.3 OR NEWER, we need to explicity call the
-    # approrpiate object tracker constructor:
-    else:
-        # OpenCV object tracker implementations
-        OPENCV_OBJECT_TRACKERS = {
-            #"csrt": cv2.TrackerCSRT_create,
-            "kcf": cv2.TrackerKCF_create,
-            "boosting": cv2.TrackerBoosting_create,
-            "mil": cv2.TrackerMIL_create,
-            "tld": cv2.TrackerTLD_create,
-            "medianflow": cv2.TrackerMedianFlow_create,
-            #"mosse": cv2.TrackerMOSSE_create
-        }
-
-        # grab the appropriate object tracker using our dictionary of
-        # OpenCV object tracker objects
-        # tracker = OPENCV_OBJECT_TRACKERS[args["tracker"]]()
-        tracker = cv2.TrackerKCF_create()
+    # intitate tracker
+    tracker = cv2.TrackerKCF_create()
 
 
     # initialize the bounding box coordinates of the object we are going
     # to track
     circles = None
     initBB = None
+    objects = None
     # if no tracker supplied, use detect_circles
     # if not args.get("tracker", False):
     #     print("No tracker supplied, using built in circle detection!")
@@ -142,6 +123,7 @@ if __name__ == '__main__':
 
     ct = CentroidTracker()
     (H,W) = (None, None)
+    framecounter = 0
 
 
     # if a video path was not supplied, grab the reference to the web cam
@@ -192,6 +174,7 @@ if __name__ == '__main__':
         # Our operations on the frame come here
         gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
         color = frame
+        kcf = frame
 
         #print('Width = ', cap.get(3),' Height = ', cap.get(4),' fps = ', cap.get(5))
 
@@ -204,14 +187,17 @@ if __name__ == '__main__':
 
         circles_image, circles = detect_circles(color, red_mask)  # Set mask = 0 if none used
 
-        if initBB is not None:
+        # For showing off KCF tracker
+        if circles is not None:
+            tracker.init(kcf, circles[0])
+            fps = FPS().start()
             # grab the new bounding box coordinates of the object
-            (success, box) = tracker.update(frame)
+            (success, box) = tracker.update(kcf)
 
             # check to see if the tracking was a success
             if success:
                 (x, y, w, h) = [int(v) for v in box]
-                cv2.rectangle(frame, (x, y), (x + w, y + h),
+                cv2.rectangle(kcf, (x, y), (x + w, y + h),
                               (0, 255, 0), 2)
 
             # update the FPS counter
@@ -229,23 +215,28 @@ if __name__ == '__main__':
             # loop over the info tuples and draw them on our frame
             for (i, (k, v)) in enumerate(info):
                 text = "{}: {}".format(k, v)
-                cv2.putText(frame, text, (10, H - ((i * 20) + 20)),
+                cv2.putText(kcf, text, (10, H - ((i * 20) + 20)),
                             cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 0, 255), 2)
 
 
-        # check to see if we are currently tracking an object
+        if (framecounter % 2 == 0):
+            skip = True
+        else:
+            skip = False
+
         if circles is not None:
             # grab the new bounding box coordinates of the object
-            for (x,y,r) in circles:
-                box = np.array([x-r, y-r, x+r, y+r])
+            for (x, y, r) in circles:
+                box = np.array([x - r, y - r, x + r, y + r])
                 rects.append(box.astype("int"))
                 # draw bounding box
                 (startX, startY, endX, endY) = box.astype("int")
-                cv2.rectangle(frame, (startX, startY), (endX, endY),(0,255,0),2)
-
-            # update our centroid tracker using the computed set of bounding
-            objects = ct.update(rects)
-
+                #cv2.rectangle(frame, (startX, startY), (endX, endY), (0, 255, 0), 2)
+                #cv2.circle(frame, (x, y), r, (0, 255, 0), 2)
+               # update our centroid tracker using the computed set of bounding
+                if skip == False:
+                    objects = ct.update(rects)
+        if objects is not None:
             # loop over the tracked objects
             for (objectID, centroid) in objects.items():
                 # draw both the ID of the object and the centroid of the
@@ -253,16 +244,19 @@ if __name__ == '__main__':
                 text = "ID {}".format(objectID)
                 xt = str(centroid[0])
                 yt = str(centroid[1])
+                r = str(centroid[2])
                 cv2.putText(frame, text, (centroid[0] - 10, centroid[1] - 10),
                             cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
                 cv2.putText(frame, "Centroid: x = " + xt + ", y = " + yt, (20, 20),
                             cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
-                cv2.circle(frame, (centroid[0], centroid[1]), 4, (0, 255, 0), -1)
+                cv2.circle(frame, (centroid[0], centroid[1]), centroid[2], (0, 255, 0), 2)
 
+        framecounter = framecounter + 1
         # Display the resulting frame
         cv2.imshow("Tracking", frame)
         cv2.imshow('Masking Red', red_mask)
         cv2.imshow('Circle Detection', circles_image)
+        cv2.imshow('KCF', kcf)
         # cv2.imshow('Original', color)
         key = cv2.waitKey(1) & 0xFF
 

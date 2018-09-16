@@ -1,0 +1,2 @@
+harris_ball_follower
+-DCATKIN_DEVEL_PREFIX=/home/charris/introrobotics/turtlebot-gt-2018/devel -DCMAKE_INSTALL_PREFIX=/home/charris/introrobotics/turtlebot-gt-2018/install -G Unix Makefiles

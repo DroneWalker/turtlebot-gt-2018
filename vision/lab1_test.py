@@ -32,8 +32,11 @@ def detect_red(image):
     mag_lower_range = np.array([165, 80, 80], dtype=np.uint8)
     mag_upper_range = np.array([180, 220, 220], dtype=np.uint8)
 
+    org_lower_range = np.array([0,80,80], dtype=np.uint8)
+    org_upper_range = np.array([20, 220, 220], dtype=np.uint8)
+
     # mask1 = cv2.inRange(img, red_lower_range, red_upper_range)
-    mask = cv2.inRange(img, mag_lower_range, mag_upper_range)
+    mask = cv2.inRange(img, org_lower_range, org_upper_range)
     # mask = mask1+mask2
 
     imgout = mask
@@ -208,6 +211,7 @@ if __name__ == '__main__':
         (H, W) = frame.shape[:2]
 
         # Our operations on the frame come here
+        blurred = cv2.GaussianBlur(frame, (11,11), 0)
         gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
         color = frame
 

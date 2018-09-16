@@ -1,0 +1,9 @@
+Using Clion and Cmake for C++ stuff (opencv and ros)
+
+Open a command line
+
+Run catkin_make on your package.
+
+source your catkin_workspace/devel/setup.bash file e.g. source ~/my_dev_folder/catkin_ws/devel/setup.bash
+
+Start CLion from [CLion install dir]/bin/clion.sh e.g. cd ~/Downloads/clion-1.2.4/bin && ./clion.sh
