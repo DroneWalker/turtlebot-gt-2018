@@ -1,7 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
-    <generated />
+    <generated>
+      <config projectName="harris_ball_follower" targetName="sensor_msgs_generate_messages_py" />
+      <config projectName="harris_ball_follower" targetName="tests" />
+      <config projectName="harris_ball_follower" targetName="ball_follower" />
+      <config projectName="harris_ball_follower" targetName="geometry_msgs_generate_messages_lisp" />
+      <config projectName="harris_ball_follower" targetName="rosgraph_msgs_generate_messages_py" />
+      <config projectName="harris_ball_follower" targetName="std_msgs_generate_messages_py" />
+      <config projectName="harris_ball_follower" targetName="clean_test_results" />
+      <config projectName="harris_ball_follower" targetName="geometry_msgs_generate_messages_cpp" />
+      <config projectName="harris_ball_follower" targetName="roscpp_generate_messages_nodejs" />
+      <config projectName="harris_ball_follower" targetName="rosgraph_msgs_generate_messages_eus" />
+      <config projectName="harris_ball_follower" targetName="roscpp_generate_messages_lisp" />
+      <config projectName="harris_ball_follower" targetName="roscpp_generate_messages_cpp" />
+      <config projectName="harris_ball_follower" targetName="sensor_msgs_generate_messages_nodejs" />
+      <config projectName="harris_ball_follower" targetName="sensor_msgs_generate_messages_cpp" />
+      <config projectName="harris_ball_follower" targetName="std_msgs_generate_messages_eus" />
+      <config projectName="harris_ball_follower" targetName="rosgraph_msgs_generate_messages_lisp" />
+      <config projectName="harris_ball_follower" targetName="download_extra_data" />
+      <config projectName="harris_ball_follower" targetName="run_tests" />
+      <config projectName="harris_ball_follower" targetName="roscpp_generate_messages_py" />
+      <config projectName="harris_ball_follower" targetName="geometry_msgs_generate_messages_eus" />
+      <config projectName="harris_ball_follower" targetName="rosgraph_msgs_generate_messages_nodejs" />
+      <config projectName="harris_ball_follower" targetName="sensor_msgs_generate_messages_lisp" />
+      <config projectName="harris_ball_follower" targetName="std_msgs_generate_messages_nodejs" />
+      <config projectName="harris_ball_follower" targetName="rosgraph_msgs_generate_messages_cpp" />
+      <config projectName="harris_ball_follower" targetName="roscpp_generate_messages_eus" />
+      <config projectName="harris_ball_follower" targetName="std_msgs_generate_messages_lisp" />
+      <config projectName="harris_ball_follower" targetName="doxygen" />
+      <config projectName="harris_ball_follower" targetName="geometry_msgs_generate_messages_py" />
+      <config projectName="harris_ball_follower" targetName="geometry_msgs_generate_messages_nodejs" />
+      <config projectName="harris_ball_follower" targetName="sensor_msgs_generate_messages_eus" />
+      <config projectName="harris_ball_follower" targetName="std_msgs_generate_messages_cpp" />
+    </generated>
   </component>
   <component name="CMakeSettings">
     <configurations>
@@ -11,15 +43,10 @@
   <component name="ChangeListManager">
     <list default="true" id="1c7b909d-811d-4332-b951-a4244ffb43ac" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Harris_Caleb.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Harris_Caleb/ball_follower.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Harris_Caleb/converter.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Harris_Caleb/lab1.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Harris_Caleb/lab1_steps.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Harris_Caleb/tracker/centroidtracker.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab1/ball_follower.py" beforeDir="false" afterPath="$PROJECT_DIR$/../lab1/ball_follower.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab1/tracker/centroidtracker.py" beforeDir="false" afterPath="$PROJECT_DIR$/../lab1/tracker/centroidtracker.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../vision/lab1_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../vision/lab1_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-default/CMakeFiles/ball_follower.dir/src/ball_follower.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-default/ball_follower" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-default/ball_follower" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ball_follower.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/ball_follower.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/cmake-build-default/" />
@@ -29,6 +56,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Default" />
   <component name="FUSProjectUsageTrigger">
     <session id="-1357942152">
       <usages-collector id="statistics.lifecycle.project">
@@ -37,7 +65,8 @@
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.12" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -56,7 +85,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cpp" value="491" />
+          <entry key="cpp" value="3080" />
           <entry key="txt" value="596" />
           <entry key="xml" value="25" />
         </counts>
@@ -64,7 +93,8 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CMakeLists.txt" value="596" />
-          <entry key="ObjectiveC" value="491" />
+          <entry key="Doxygen file" value="1" />
+          <entry key="ObjectiveC" value="3079" />
           <entry key="XML" value="25" />
         </counts>
       </usages-collector>
@@ -75,17 +105,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/find_ball.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+            <state relative-caret-position="165">
+              <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ball_follower.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="240">
+              <caret line="18" column="25" lean-forward="true" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -99,11 +129,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="55" selection-start-line="17" selection-start-column="55" selection-end-line="17" selection-end-column="55" />
+            <state relative-caret-position="135">
+              <caret line="9" column="21" lean-forward="true" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -128,8 +158,8 @@
         <option value="$PROJECT_DIR$/package.xml" />
         <option value="$PROJECT_DIR$/src/find_ball.cpp" />
         <option value="$PROJECT_DIR$/src/image_publisher.cpp" />
-        <option value="$PROJECT_DIR$/src/ball_follower.cpp" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/src/ball_follower.cpp" />
       </list>
     </option>
   </component>
@@ -140,9 +170,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="840" />
-    <option name="y" value="71" />
-    <option name="width" value="934" />
+    <option name="x" value="900" />
+    <option name="y" value="30" />
+    <option name="width" value="1009" />
     <option name="height" value="1000" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -151,7 +181,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -173,6 +202,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -396,22 +426,24 @@
       <workItem from="1536873194907" duration="2121000" />
       <workItem from="1536959632395" duration="3308000" />
       <workItem from="1537133516393" duration="1929000" />
+      <workItem from="1537135566799" duration="7335000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7358000" />
+    <option name="totallyTimeSpent" value="14693000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="840" y="71" width="934" height="1000" extended-state="0" />
+    <frame x="900" y="30" width="1009" height="1000" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23198198" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21910696" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32912844" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32912844" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39908257" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -420,7 +452,7 @@
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="CMake" order="12" visible="true" weight="0.32912844" />
+      <window_info anchor="bottom" id="CMake" order="12" weight="0.32837528" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -437,27 +469,6 @@
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="48" selection-start-line="48" selection-end-line="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ball_follower.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/find_ball.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/image_publisher.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -465,10 +476,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/package.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="55" selection-start-line="17" selection-start-column="55" selection-end-line="17" selection-end-column="55" />
+        <state relative-caret-position="135">
+          <caret line="9" column="21" lean-forward="true" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/find_ball.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ball_follower.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="18" column="25" lean-forward="true" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
         </state>
       </provider>
     </entry>

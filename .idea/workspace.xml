@@ -3,15 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="51903067-ad9c-4867-9d12-64be44e85ed9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Harris_Caleb.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Harris_Caleb/ball_follower.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Harris_Caleb/converter.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Harris_Caleb/lab1.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Harris_Caleb/lab1_steps.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Harris_Caleb/tracker/centroidtracker.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab1/ball_follower.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab1/ball_follower.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab1/tracker/centroidtracker.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab1/tracker/centroidtracker.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vision/lab1_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/vision/lab1_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/harris_ball_follower/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/harris_ball_follower/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/harris_ball_follower/cmake-build-default/CMakeFiles/ball_follower.dir/src/ball_follower.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/harris_ball_follower/cmake-build-default/CMakeFiles/ball_follower.dir/src/ball_follower.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/harris_ball_follower/cmake-build-default/ball_follower" beforeDir="false" afterPath="$PROJECT_DIR$/src/harris_ball_follower/cmake-build-default/ball_follower" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/harris_ball_follower/src/ball_follower.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/harris_ball_follower/src/ball_follower.cpp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,7 +18,7 @@
     <session id="450632384">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="10" />
+          <entry key="project.closed" value="11" />
           <entry key="project.open.time.10" value="4" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.18" value="1" />
@@ -66,8 +61,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/lab1/ball_follower.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="191" column="40" selection-start-line="191" selection-start-column="40" selection-end-line="191" selection-end-column="40" />
+            <state relative-caret-position="-30">
+              <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
             </state>
           </provider>
         </entry>
@@ -85,7 +80,7 @@
         <entry file="file://$PROJECT_DIR$/src/lab1/converter.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="225">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
         </entry>
@@ -136,8 +131,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="789" />
-    <option name="y" value="30" />
+    <option name="x" value="98" />
+    <option name="y" value="44" />
     <option name="width" value="1087" />
     <option name="height" value="1000" />
   </component>
@@ -233,8 +228,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="789" y="30" width="1087" height="1000" extended-state="0" />
-    <editor active="true" />
+    <frame x="98" y="44" width="1087" height="1000" extended-state="0" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20864661" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -368,7 +362,7 @@
     <entry file="file://$PROJECT_DIR$/src/lab1/converter.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
@@ -384,8 +378,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lab1/ball_follower.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="191" column="40" selection-start-line="191" selection-start-column="40" selection-end-line="191" selection-end-column="40" />
+        <state relative-caret-position="-30">
+          <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
         </state>
       </provider>
     </entry>
