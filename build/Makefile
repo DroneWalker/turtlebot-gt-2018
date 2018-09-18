@@ -387,6 +387,19 @@ std_msgs_generate_messages_cpp/fast:
 .PHONY : std_msgs_generate_messages_cpp/fast
 
 #=============================================================================
+# Target rules for targets named pid_turtlebot
+
+# Build rule for target.
+pid_turtlebot: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pid_turtlebot
+.PHONY : pid_turtlebot
+
+# fast build rule for target.
+pid_turtlebot/fast:
+	$(MAKE) -f harris_ball_follower/CMakeFiles/pid_turtlebot.dir/build.make harris_ball_follower/CMakeFiles/pid_turtlebot.dir/build
+.PHONY : pid_turtlebot/fast
+
+#=============================================================================
 # Target rules for targets named sensor_msgs_generate_messages_nodejs
 
 # Build rule for target.
@@ -806,6 +819,7 @@ help:
 	@echo "... roscpp_generate_messages_cpp"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
 	@echo "... std_msgs_generate_messages_cpp"
+	@echo "... pid_turtlebot"
 	@echo "... sensor_msgs_generate_messages_nodejs"
 	@echo "... geometry_msgs_generate_messages_cpp"
 	@echo "... roscpp_generate_messages_eus"

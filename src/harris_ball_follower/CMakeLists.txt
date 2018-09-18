@@ -16,6 +16,10 @@ find_package(catkin REQUIRED COMPONENTS
 ## Declare catkin package
 catkin_package()
 
+## Header files to include
+add_library(pid_turtlebot STATIC src/pid_turtlebot.cpp)
+install(FILES src/pid_turtlebot.h DESTINATION include)
+
 ## Build nodes
 include_directories(include)
 include_directories(include ${catkin_INCLUDE_DIRS})
@@ -24,7 +28,9 @@ add_executable(ball_follower src/ball_follower.cpp)
 target_link_libraries(ball_follower ${OpenCV_LIBS} ${catkin_LIBRARIES})
 
 add_executable(drive_wheels src/drive_wheels.cpp)
-target_link_libraries(drive_wheels ${catkin_LIBRARIES})
+target_link_libraries(drive_wheels ${catkin_LIBRARIES} pid_turtlebot)
+
+
 
 
 

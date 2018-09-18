@@ -2,22 +2,30 @@
 // Created by charris on 9/18/18.
 //
 
-#include "pid_plotting.h"
 
 #ifndef HARRIS_BALL_FOLLOWER_PID_TURTLEBOT_H
 #define HARRIS_BALL_FOLLOWER_PID_TURTLEBOT_H
 
-double u;
-double kp = 1.0;
 
-double pid(double error)
+
+class PIDImpl;
+class PID
 {
-    // Proportional controller
-    u = kp * error;
-    std::cout << "inside pid controller" << std::endl;
-    return u;
-}
+public:
+    // Kp -  proportional gain
+    // Ki -  Integral gain
+    // Kd -  derivative gain
+    // dt -  loop interval time
+    // max - maximum value of manipulated variable
+    // min - minimum value of manipulated variable
+    PID( double dt, double max, double min, double Kp, double Kd, double Ki );
 
-// What we return -> angular velocity
+    // Returns the manipulated variable given a setpoint and current process value
+    double calculate( double setpoint);
+    ~PID();
+
+private:
+    PIDImpl *pimpl;
+};
 
 #endif //HARRIS_BALL_FOLLOWER_PID_TURTLEBOT_H

@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/src/pid_turtlebot.cpp
+iostream
+-
+cmath
+-
+pid_turtlebot.h
+/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/src/pid_turtlebot.h
+
+/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/src/pid_turtlebot.h
+

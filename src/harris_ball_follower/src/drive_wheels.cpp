@@ -58,10 +58,13 @@ int main(int argc, char **argv)
     twist_vel.angular.x = 0;
     twist_vel.angular.y = 0;
 
+    PID pid = PID(0.1, 1.5, -1.5, 1.0, 0.1,0);
+
+
     while(ros::ok()) {
         // Calculate pixel error
         error = radian_error(x_pixel);
-        twist_vel.angular.z = pid(error);
+        twist_vel.angular.z = pid.calculate(error);
 
         twist_pub.publish(twist_vel);
         ROS_INFO("Publishing cmd_vel");

@@ -346,6 +346,21 @@ std_msgs_generate_messages_cpp/fast:
 .PHONY : std_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
+harris_ball_follower/CMakeFiles/pid_turtlebot.dir/rule:
+	cd /home/charris/introrobotics/turtlebot-gt-2018/build && $(MAKE) -f CMakeFiles/Makefile2 harris_ball_follower/CMakeFiles/pid_turtlebot.dir/rule
+.PHONY : harris_ball_follower/CMakeFiles/pid_turtlebot.dir/rule
+
+# Convenience name for target.
+pid_turtlebot: harris_ball_follower/CMakeFiles/pid_turtlebot.dir/rule
+
+.PHONY : pid_turtlebot
+
+# fast build rule for target.
+pid_turtlebot/fast:
+	cd /home/charris/introrobotics/turtlebot-gt-2018/build && $(MAKE) -f harris_ball_follower/CMakeFiles/pid_turtlebot.dir/build.make harris_ball_follower/CMakeFiles/pid_turtlebot.dir/build
+.PHONY : pid_turtlebot/fast
+
+# Convenience name for target.
 harris_ball_follower/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule:
 	cd /home/charris/introrobotics/turtlebot-gt-2018/build && $(MAKE) -f CMakeFiles/Makefile2 harris_ball_follower/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
 .PHONY : harris_ball_follower/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
@@ -624,6 +639,33 @@ src/drive_wheels.cpp.s:
 	cd /home/charris/introrobotics/turtlebot-gt-2018/build && $(MAKE) -f harris_ball_follower/CMakeFiles/drive_wheels.dir/build.make harris_ball_follower/CMakeFiles/drive_wheels.dir/src/drive_wheels.cpp.s
 .PHONY : src/drive_wheels.cpp.s
 
+src/pid_turtlebot.o: src/pid_turtlebot.cpp.o
+
+.PHONY : src/pid_turtlebot.o
+
+# target to build an object file
+src/pid_turtlebot.cpp.o:
+	cd /home/charris/introrobotics/turtlebot-gt-2018/build && $(MAKE) -f harris_ball_follower/CMakeFiles/pid_turtlebot.dir/build.make harris_ball_follower/CMakeFiles/pid_turtlebot.dir/src/pid_turtlebot.cpp.o
+.PHONY : src/pid_turtlebot.cpp.o
+
+src/pid_turtlebot.i: src/pid_turtlebot.cpp.i
+
+.PHONY : src/pid_turtlebot.i
+
+# target to preprocess a source file
+src/pid_turtlebot.cpp.i:
+	cd /home/charris/introrobotics/turtlebot-gt-2018/build && $(MAKE) -f harris_ball_follower/CMakeFiles/pid_turtlebot.dir/build.make harris_ball_follower/CMakeFiles/pid_turtlebot.dir/src/pid_turtlebot.cpp.i
+.PHONY : src/pid_turtlebot.cpp.i
+
+src/pid_turtlebot.s: src/pid_turtlebot.cpp.s
+
+.PHONY : src/pid_turtlebot.s
+
+# target to generate assembly for a file
+src/pid_turtlebot.cpp.s:
+	cd /home/charris/introrobotics/turtlebot-gt-2018/build && $(MAKE) -f harris_ball_follower/CMakeFiles/pid_turtlebot.dir/build.make harris_ball_follower/CMakeFiles/pid_turtlebot.dir/src/pid_turtlebot.cpp.s
+.PHONY : src/pid_turtlebot.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -648,6 +690,7 @@ help:
 	@echo "... roscpp_generate_messages_cpp"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
 	@echo "... std_msgs_generate_messages_cpp"
+	@echo "... pid_turtlebot"
 	@echo "... sensor_msgs_generate_messages_nodejs"
 	@echo "... geometry_msgs_generate_messages_cpp"
 	@echo "... roscpp_generate_messages_eus"
@@ -670,6 +713,9 @@ help:
 	@echo "... src/drive_wheels.o"
 	@echo "... src/drive_wheels.i"
 	@echo "... src/drive_wheels.s"
+	@echo "... src/pid_turtlebot.o"
+	@echo "... src/pid_turtlebot.i"
+	@echo "... src/pid_turtlebot.s"
 .PHONY : help
 
 

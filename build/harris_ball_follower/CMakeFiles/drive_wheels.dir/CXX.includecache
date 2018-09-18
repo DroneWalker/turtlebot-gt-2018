@@ -18,11 +18,7 @@ math.h
 pid_turtlebot.h
 /home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/src/pid_turtlebot.h
 
-/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/src/pid_plotting.h
-
 /home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/src/pid_turtlebot.h
-pid_plotting.h
-/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/src/pid_plotting.h
 
 /opt/ros/kinetic/include/geometry_msgs/Point.h
 string

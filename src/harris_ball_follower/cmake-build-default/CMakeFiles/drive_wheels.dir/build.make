@@ -113,6 +113,7 @@ devel/lib/harris_ball_follower/drive_wheels: /usr/lib/x86_64-linux-gnu/libboost_
 devel/lib/harris_ball_follower/drive_wheels: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
 devel/lib/harris_ball_follower/drive_wheels: /usr/lib/x86_64-linux-gnu/libpthread.so
 devel/lib/harris_ball_follower/drive_wheels: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so
+devel/lib/harris_ball_follower/drive_wheels: devel/lib/libpid_turtlebot.a
 devel/lib/harris_ball_follower/drive_wheels: CMakeFiles/drive_wheels.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable devel/lib/harris_ball_follower/drive_wheels"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/drive_wheels.dir/link.txt --verbose=$(VERBOSE)
