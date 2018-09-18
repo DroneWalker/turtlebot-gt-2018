@@ -117,6 +117,7 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/charris/introrobotics/turtlebot-gt-2018/build/harris_ball_follower/cmake_install.cmake")
+  include("/home/charris/introrobotics/turtlebot-gt-2018/build/image_transport_tutorial/cmake_install.cmake")
 
 endif()
 

@@ -8,19 +8,23 @@ find_package(catkin REQUIRED COMPONENTS
         sensor_msgs
         std_msgs
         geometry_msgs
-
+        cv_bridge
         )
 
-#add_executable(find_ball src/find_ball.cpp src/ball_follower.cpp)
-#target_link_libraries(find_ball ${catkin_LIBRARIES})
+## declare and generate any messages or services
 
-#add_executable(image_publisher src/image_publisher.cpp)
-#target_link_libraries(image_publisher ${catkin_LIBRARIES})
+## Declare catkin package
+catkin_package()
 
-add_executable(ball_follower src/ball_follower.cpp)
+## Build nodes
+include_directories(include)
+include_directories(include ${catkin_INCLUDE_DIRS})
+
+add_executable(ball_follower src/ball_follower.cpp src/ball_follower_debug.cpp)
 target_link_libraries(ball_follower ${OpenCV_LIBS})
 
-include_directories(include ${catkin_INCLUDE_DIRS})
+add_executable(compress_test src/compress_test.cpp)
+target_link_libraries(compress_test ${OpenCV_LIBS} ${catkin_LIBRARIES})
 
 
 

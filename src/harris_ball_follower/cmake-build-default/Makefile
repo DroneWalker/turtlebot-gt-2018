@@ -387,6 +387,19 @@ std_msgs_generate_messages_lisp/fast:
 .PHONY : std_msgs_generate_messages_lisp/fast
 
 #=============================================================================
+# Target rules for targets named compress_test
+
+# Build rule for target.
+compress_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 compress_test
+.PHONY : compress_test
+
+# fast build rule for target.
+compress_test/fast:
+	$(MAKE) -f CMakeFiles/compress_test.dir/build.make CMakeFiles/compress_test.dir/build
+.PHONY : compress_test/fast
+
+#=============================================================================
 # Target rules for targets named doxygen
 
 # Build rule for target.
@@ -595,6 +608,60 @@ src/ball_follower.cpp.s:
 	$(MAKE) -f CMakeFiles/ball_follower.dir/build.make CMakeFiles/ball_follower.dir/src/ball_follower.cpp.s
 .PHONY : src/ball_follower.cpp.s
 
+src/ball_follower_debug.o: src/ball_follower_debug.cpp.o
+
+.PHONY : src/ball_follower_debug.o
+
+# target to build an object file
+src/ball_follower_debug.cpp.o:
+	$(MAKE) -f CMakeFiles/ball_follower.dir/build.make CMakeFiles/ball_follower.dir/src/ball_follower_debug.cpp.o
+.PHONY : src/ball_follower_debug.cpp.o
+
+src/ball_follower_debug.i: src/ball_follower_debug.cpp.i
+
+.PHONY : src/ball_follower_debug.i
+
+# target to preprocess a source file
+src/ball_follower_debug.cpp.i:
+	$(MAKE) -f CMakeFiles/ball_follower.dir/build.make CMakeFiles/ball_follower.dir/src/ball_follower_debug.cpp.i
+.PHONY : src/ball_follower_debug.cpp.i
+
+src/ball_follower_debug.s: src/ball_follower_debug.cpp.s
+
+.PHONY : src/ball_follower_debug.s
+
+# target to generate assembly for a file
+src/ball_follower_debug.cpp.s:
+	$(MAKE) -f CMakeFiles/ball_follower.dir/build.make CMakeFiles/ball_follower.dir/src/ball_follower_debug.cpp.s
+.PHONY : src/ball_follower_debug.cpp.s
+
+src/compress_test.o: src/compress_test.cpp.o
+
+.PHONY : src/compress_test.o
+
+# target to build an object file
+src/compress_test.cpp.o:
+	$(MAKE) -f CMakeFiles/compress_test.dir/build.make CMakeFiles/compress_test.dir/src/compress_test.cpp.o
+.PHONY : src/compress_test.cpp.o
+
+src/compress_test.i: src/compress_test.cpp.i
+
+.PHONY : src/compress_test.i
+
+# target to preprocess a source file
+src/compress_test.cpp.i:
+	$(MAKE) -f CMakeFiles/compress_test.dir/build.make CMakeFiles/compress_test.dir/src/compress_test.cpp.i
+.PHONY : src/compress_test.cpp.i
+
+src/compress_test.s: src/compress_test.cpp.s
+
+.PHONY : src/compress_test.s
+
+# target to generate assembly for a file
+src/compress_test.cpp.s:
+	$(MAKE) -f CMakeFiles/compress_test.dir/build.make CMakeFiles/compress_test.dir/src/compress_test.cpp.s
+.PHONY : src/compress_test.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -624,6 +691,7 @@ help:
 	@echo "... download_extra_data"
 	@echo "... geometry_msgs_generate_messages_lisp"
 	@echo "... std_msgs_generate_messages_lisp"
+	@echo "... compress_test"
 	@echo "... doxygen"
 	@echo "... run_tests"
 	@echo "... std_msgs_generate_messages_cpp"
@@ -642,6 +710,12 @@ help:
 	@echo "... src/ball_follower.o"
 	@echo "... src/ball_follower.i"
 	@echo "... src/ball_follower.s"
+	@echo "... src/ball_follower_debug.o"
+	@echo "... src/ball_follower_debug.i"
+	@echo "... src/ball_follower_debug.s"
+	@echo "... src/compress_test.o"
+	@echo "... src/compress_test.i"
+	@echo "... src/compress_test.s"
 .PHONY : help
 
 

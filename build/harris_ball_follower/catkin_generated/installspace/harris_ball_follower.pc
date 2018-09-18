@@ -3,6 +3,6 @@ prefix=/home/charris/introrobotics/turtlebot-gt-2018/install
 Name: harris_ball_follower
 Description: Description of harris_ball_follower
 Version: 0.1.0
-Cflags: -I/home/charris/introrobotics/turtlebot-gt-2018/install/include
-Libs: -L/home/charris/introrobotics/turtlebot-gt-2018/install/lib -lharris_ball_follower
-Requires: roscpp rospy std_msgs message_runtime
+Cflags: 
+Libs: -L/home/charris/introrobotics/turtlebot-gt-2018/install/lib 
+Requires: 

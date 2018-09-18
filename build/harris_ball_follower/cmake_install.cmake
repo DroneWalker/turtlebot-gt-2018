@@ -32,3 +32,18 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
   set(CMAKE_INSTALL_SO_NO_EXE "1")
 endif()
 
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/charris/introrobotics/turtlebot-gt-2018/build/harris_ball_follower/catkin_generated/installspace/harris_ball_follower.pc")
+endif()
+
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/harris_ball_follower/cmake" TYPE FILE FILES
+    "/home/charris/introrobotics/turtlebot-gt-2018/build/harris_ball_follower/catkin_generated/installspace/harris_ball_followerConfig.cmake"
+    "/home/charris/introrobotics/turtlebot-gt-2018/build/harris_ball_follower/catkin_generated/installspace/harris_ball_followerConfig-version.cmake"
+    )
+endif()
+
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/harris_ball_follower" TYPE FILE FILES "/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/package.xml")
+endif()
+

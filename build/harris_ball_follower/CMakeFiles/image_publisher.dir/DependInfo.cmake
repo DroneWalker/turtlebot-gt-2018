@@ -18,6 +18,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/include"
+  "/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/../image_transport_tutorial"
   "/opt/ros/kinetic/include"
   "/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
   )

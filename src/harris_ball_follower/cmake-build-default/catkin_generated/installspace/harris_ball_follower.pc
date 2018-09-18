@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: harris_ball_follower
+Description: Description of harris_ball_follower
+Version: 0.1.0
+Cflags: 
+Libs: -L/usr/local/lib 
+Requires: 

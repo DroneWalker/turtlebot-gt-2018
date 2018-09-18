@@ -65,6 +65,7 @@ int main(int argc, char **argv)
     namedWindow("Tracking", CV_WINDOW_AUTOSIZE);
     Mat track;
     Mat detect;
+    Point circle_cp = Point(0,0);
 
     // List of tracker types in OpenCV 3.4.1
     string trackerTypes[8] = {"BOOSTING", "MIL", "KCF", "TLD","MEDIANFLOW", "GOTURN", "MOSSE", "CSRT"};
@@ -147,6 +148,7 @@ int main(int argc, char **argv)
                     int yp = circles[i][1];
                     Point center(cvRound(xp), cvRound(yp));
                     detect = frame;
+                    circle_cp = Point(cvRound(xp), cvRound(yp));
                     circle(detect, center, 3, Scalar(0, 255, 0), -1, 8, 0);// circle center
                     circle(detect, center, radius, Scalar(0, 0, 255), 3, 8, 0);// circle outline
                     bbox = Rect2d(xp-radius, yp-radius, radius*2, radius*2);
@@ -172,6 +174,10 @@ int main(int argc, char **argv)
         if (ok) {
             // Tracking success : Draw the tracked object
             cv::rectangle(frame, bbox, Scalar(255, 0, 0), 2, 1);
+            Point center = Point(bbox.x, bbox.y);
+            cv::circle(frame, center, 3, Scalar(0, 255, 0), -1, 8, 0);// circle center
+            circle_cp.x = bbox.x;
+            circle_cp.y = bbox.y;
         } else {
             // Tracking failure detected.
             putText(frame, "Tracking failure detected", Point(100, 80), FONT_HERSHEY_SIMPLEX, 0.75,
@@ -185,6 +191,11 @@ int main(int argc, char **argv)
         // Display FPS on frame
         putText(frame, "FPS : " + SSTR(int(fps)), Point(100, 50), FONT_HERSHEY_SIMPLEX, 0.75, Scalar(50, 170, 50),
                 2);
+
+        // Display center pixel point on frame
+        putText(frame, "Pixel Coordinates:  x = " + SSTR(int(circle_cp.x)) + " y = " + SSTR(int(circle_cp.y)),
+                Point(20, 100), FONT_HERSHEY_SIMPLEX, 0.50, Scalar(50, 170, 50), 2);
+
 
         // Display frame.
         imshow("Tracking", frame);

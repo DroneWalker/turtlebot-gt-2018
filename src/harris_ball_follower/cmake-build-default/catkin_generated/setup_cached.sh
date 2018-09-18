@@ -8,5 +8,7 @@
 
 # modified environment variables
 export CMAKE_PREFIX_PATH="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default/devel:$CMAKE_PREFIX_PATH"
+export LD_LIBRARY_PATH="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default/devel/lib:$LD_LIBRARY_PATH"
+export PKG_CONFIG_PATH="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
 export ROSLISP_PACKAGE_DIRECTORIES="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default/devel/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
 export ROS_PACKAGE_PATH="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower:$ROS_PACKAGE_PATH"

@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/ball_follower.dir/src/ball_follower.cpp.o"
-  "ball_follower.pdb"
-  "ball_follower"
+  "/home/charris/introrobotics/turtlebot-gt-2018/devel/lib/harris_ball_follower/ball_follower.pdb"
+  "/home/charris/introrobotics/turtlebot-gt-2018/devel/lib/harris_ball_follower/ball_follower"
 )
 
 # Per-language clean rules from dependency scanning.

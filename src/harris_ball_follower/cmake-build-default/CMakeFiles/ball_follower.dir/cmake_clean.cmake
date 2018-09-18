@@ -1,7 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/ball_follower.dir/src/ball_follower.cpp.o"
-  "ball_follower.pdb"
-  "ball_follower"
+  "CMakeFiles/ball_follower.dir/src/ball_follower_debug.cpp.o"
+  "devel/lib/harris_ball_follower/ball_follower.pdb"
+  "devel/lib/harris_ball_follower/ball_follower"
 )
 
 # Per-language clean rules from dependency scanning.

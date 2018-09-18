@@ -1,0 +1,8 @@
+prefix=/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default/devel
+
+Name: harris_ball_follower
+Description: Description of harris_ball_follower
+Version: 0.1.0
+Cflags: 
+Libs: -L/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default/devel/lib 
+Requires: 
