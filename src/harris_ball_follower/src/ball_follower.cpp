@@ -2,70 +2,35 @@
 // Created by charris on 9/16/18.
 //
 
+#include "ros/ros.h"
+#include "geometry_msgs/Point.h"
+
 #include <opencv2/opencv.hpp>
 #include <opencv2/tracking.hpp>
 #include <opencv2/core/ocl.hpp>
 
+#include <sstream>
+
+#include "ball_follower.h"
+
 using namespace cv;
 using namespace std;
-
-/// Global Variables
-const int KERNEL_LENGTH = 7;
-// HSV Ranges
-const int low_H = 0, low_S = 220, low_V = 120;
-const int high_H = 20, high_S = 255, high_V = 255;
-const int morph_operator = 2;
-const int morph_elem = 0;
-const int morph_size = 1;
-
-
-
-// Convert to string
-#define SSTR( x ) static_cast< std::ostringstream & >( \
-( std::ostringstream() << std::dec << x ) ).str()
-
-Mat orangeMask(Mat frame)
-{
-    Mat mask;
-    cv::cvtColor(frame, mask, COLOR_BGR2HSV);
-
-    cv::GaussianBlur(mask, mask, Size(KERNEL_LENGTH, KERNEL_LENGTH), 0, 0);
-    inRange(mask, Scalar(low_H, low_S, low_V), Scalar(high_H, high_S, high_V), mask);
-
-
-    Mat element = cv::getStructuringElement( morph_elem, Size( 7, 7 ), Point( morph_size, morph_size ) );
-
-    cv::morphologyEx(mask, mask, 2, element);
-    cv::morphologyEx(mask, mask, 1, element);
-
-
-    return mask;
-
-}
-
-vector<Vec3f> detect_circles(Mat frame)
-{
-    cv::GaussianBlur(frame, frame, Size(7,7), 2, 2);
-
-    vector<Vec3f> circles;
-    cv::HoughCircles(frame, circles, CV_HOUGH_GRADIENT,1, 100, 20, 30, 10, 0);
-
-    return circles;
-}
-
-
- vector<Vec3f> detectBall(Mat frame)
-{
-    Mat circle_image;
-}
+using namespace ros;
 
 
 int main(int argc, char **argv)
 {
+    // ROS Setup
+    init(argc, argv, "find_ball");
+    NodeHandle n;
+    Publisher trackpoint_pub = n.advertise<geometry_msgs::Point>("trackpoint",1000);
+    Rate loop_rate(10);
+
+    // open CV
     namedWindow("Tracking", CV_WINDOW_AUTOSIZE);
     Mat track;
     Mat detect;
-    Point circle_cp = Point(0,0);
+    geometry_msgs::Point circle_cp;
 
     // List of tracker types in OpenCV 3.4.1
     string trackerTypes[8] = {"BOOSTING", "MIL", "KCF", "TLD","MEDIANFLOW", "GOTURN", "MOSSE", "CSRT"};
@@ -102,6 +67,8 @@ int main(int argc, char **argv)
 #endif
     // Read video
     VideoCapture video(0);
+    video.set(CV_CAP_PROP_FRAME_WIDTH, 640);
+    video.set(CV_CAP_PROP_FRAME_HEIGHT, 480);
 
 
 
@@ -129,7 +96,7 @@ int main(int argc, char **argv)
     //imshow("Tracking", frame);
     //tracker->init(frame, bbox);
 
-    while(video.read(frame)) {
+    while(video.read(frame) && ros::ok()) {
         // Mask
         Mat mask = orangeMask(frame);
         vector<Vec3f> circles = detect_circles(mask);
@@ -146,12 +113,14 @@ int main(int argc, char **argv)
                     largest_circle_index = i;
                     int xp = circles[i][0];
                     int yp = circles[i][1];
-                    Point center(cvRound(xp), cvRound(yp));
+                    cv::Point center(cvRound(xp), cvRound(yp));
                     detect = frame;
-                    circle_cp = Point(cvRound(xp), cvRound(yp));
+                    circle_cp.x = xp;
+                    circle_cp.y = yp;
+                    circle_cp.z = 0;
                     circle(detect, center, 3, Scalar(0, 255, 0), -1, 8, 0);// circle center
                     circle(detect, center, radius, Scalar(0, 0, 255), 3, 8, 0);// circle outline
-                    bbox = Rect2d(xp-radius, yp-radius, radius*2, radius*2);
+                    bbox = Rect2d(xp - radius, yp - radius, radius * 2, radius * 2);
                     if (init == false) {
                         tracker->init(frame, bbox);
                         init == true;
@@ -174,10 +143,11 @@ int main(int argc, char **argv)
         if (ok) {
             // Tracking success : Draw the tracked object
             cv::rectangle(frame, bbox, Scalar(255, 0, 0), 2, 1);
-            Point center = Point(bbox.x, bbox.y);
+            Point center = Point(bbox.x+bbox.height/2, bbox.y+bbox.width/2);
             cv::circle(frame, center, 3, Scalar(0, 255, 0), -1, 8, 0);// circle center
             circle_cp.x = bbox.x;
             circle_cp.y = bbox.y;
+            circle_cp.z = 0;
         } else {
             // Tracking failure detected.
             putText(frame, "Tracking failure detected", Point(100, 80), FONT_HERSHEY_SIMPLEX, 0.75,
@@ -202,14 +172,17 @@ int main(int argc, char **argv)
         //imshow("Detecting", detect);
         imshow("Masking", mask);
 
+        // Ros publisher output
+        trackpoint_pub.publish(circle_cp);
+        ros::spinOnce();
+        loop_rate.sleep();
 
 
         // Exit if ESC pressed.
         int k = waitKey(1);
-        if(k == 27)
-        {
+        if (k == 27) {
             break;
         }
-
     }
+    return 0;
 }

@@ -20,12 +20,13 @@ catkin_package()
 include_directories(include)
 include_directories(include ${catkin_INCLUDE_DIRS})
 
-add_executable(ball_follower src/ball_follower.cpp src/ball_follower_debug.cpp)
-target_link_libraries(ball_follower ${OpenCV_LIBS})
+add_executable(ball_follower src/ball_follower.cpp)
+target_link_libraries(ball_follower ${OpenCV_LIBS} ${catkin_LIBRARIES})
 
-add_executable(compress_test src/compress_test.cpp)
-target_link_libraries(compress_test ${OpenCV_LIBS} ${catkin_LIBRARIES})
-
-
+add_executable(drive_wheels src/drive_wheels.cpp)
+target_link_libraries(drive_wheels ${catkin_LIBRARIES})
 
 
+
+##add_executable(compress_test src/compress_test.cpp)
+##target_link_libraries(compress_test ${OpenCV_LIBS} ${catkin_LIBRARIES})

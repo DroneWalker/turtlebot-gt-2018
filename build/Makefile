@@ -231,19 +231,6 @@ doxygen/fast:
 .PHONY : doxygen/fast
 
 #=============================================================================
-# Target rules for targets named compress_test
-
-# Build rule for target.
-compress_test: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 compress_test
-.PHONY : compress_test
-
-# fast build rule for target.
-compress_test/fast:
-	$(MAKE) -f harris_ball_follower/CMakeFiles/compress_test.dir/build.make harris_ball_follower/CMakeFiles/compress_test.dir/build
-.PHONY : compress_test/fast
-
-#=============================================================================
 # Target rules for targets named ball_follower
 
 # Build rule for target.
@@ -489,6 +476,19 @@ std_msgs_generate_messages_nodejs: cmake_check_build_system
 std_msgs_generate_messages_nodejs/fast:
 	$(MAKE) -f harris_ball_follower/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make harris_ball_follower/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
 .PHONY : std_msgs_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named drive_wheels
+
+# Build rule for target.
+drive_wheels: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 drive_wheels
+.PHONY : drive_wheels
+
+# fast build rule for target.
+drive_wheels/fast:
+	$(MAKE) -f harris_ball_follower/CMakeFiles/drive_wheels.dir/build.make harris_ball_follower/CMakeFiles/drive_wheels.dir/build
+.PHONY : drive_wheels/fast
 
 #=============================================================================
 # Target rules for targets named roscpp_generate_messages_lisp
@@ -794,7 +794,6 @@ help:
 	@echo "... install/strip"
 	@echo "... install/local"
 	@echo "... test"
-	@echo "... compress_test"
 	@echo "... ball_follower"
 	@echo "... geometry_msgs_generate_messages_py"
 	@echo "... geometry_msgs_generate_messages_nodejs"
@@ -814,6 +813,7 @@ help:
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... roscpp_generate_messages_nodejs"
 	@echo "... std_msgs_generate_messages_nodejs"
+	@echo "... drive_wheels"
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... std_msgs_generate_messages_eus"
 	@echo "... geometry_msgs_generate_messages_lisp"

@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/src/ball_follower.cpp" "/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default/CMakeFiles/ball_follower.dir/src/ball_follower.cpp.o"
+  "/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/src/drive_wheels.cpp" "/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default/CMakeFiles/drive_wheels.dir/src/drive_wheels.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -21,8 +21,6 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
   "/opt/ros/kinetic/include/opencv-3.3.1-dev"
   "/opt/ros/kinetic/include/opencv-3.3.1-dev/opencv"
-  "/usr/local/include"
-  "/usr/local/include/opencv"
   )
 
 # Targets to which this target links.
