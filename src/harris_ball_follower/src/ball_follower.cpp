@@ -145,8 +145,8 @@ int main(int argc, char **argv)
             cv::rectangle(frame, bbox, Scalar(255, 0, 0), 2, 1);
             Point center = Point(bbox.x+bbox.height/2, bbox.y+bbox.width/2);
             cv::circle(frame, center, 3, Scalar(0, 255, 0), -1, 8, 0);// circle center
-            circle_cp.x = bbox.x;
-            circle_cp.y = bbox.y;
+            circle_cp.x = bbox.x+bbox.height/2;
+            circle_cp.y = bbox.y+bbox.width/2;
             circle_cp.z = 0;
         } else {
             // Tracking failure detected.
@@ -176,6 +176,7 @@ int main(int argc, char **argv)
         trackpoint_pub.publish(circle_cp);
         ros::spinOnce();
         loop_rate.sleep();
+
 
 
         // Exit if ESC pressed.

@@ -3,37 +3,37 @@
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
     <generated>
       <config projectName="harris_ball_follower" targetName="sensor_msgs_generate_messages_py" />
-      <config projectName="harris_ball_follower" targetName="sensor_msgs_generate_messages_nodejs" />
-      <config projectName="harris_ball_follower" targetName="geometry_msgs_generate_messages_lisp" />
-      <config projectName="harris_ball_follower" targetName="roscpp_generate_messages_py" />
-      <config projectName="harris_ball_follower" targetName="doxygen" />
-      <config projectName="harris_ball_follower" targetName="std_msgs_generate_messages_eus" />
-      <config projectName="harris_ball_follower" targetName="roscpp_generate_messages_cpp" />
-      <config projectName="harris_ball_follower" targetName="drive_wheels" />
-      <config projectName="harris_ball_follower" targetName="std_msgs_generate_messages_lisp" />
-      <config projectName="harris_ball_follower" targetName="std_msgs_generate_messages_py" />
-      <config projectName="harris_ball_follower" targetName="run_tests" />
-      <config projectName="harris_ball_follower" targetName="std_msgs_generate_messages_nodejs" />
-      <config projectName="harris_ball_follower" targetName="clean_test_results" />
-      <config projectName="harris_ball_follower" targetName="rosgraph_msgs_generate_messages_eus" />
-      <config projectName="harris_ball_follower" targetName="rosgraph_msgs_generate_messages_py" />
-      <config projectName="harris_ball_follower" targetName="geometry_msgs_generate_messages_nodejs" />
-      <config projectName="harris_ball_follower" targetName="geometry_msgs_generate_messages_py" />
-      <config projectName="harris_ball_follower" targetName="geometry_msgs_generate_messages_eus" />
       <config projectName="harris_ball_follower" targetName="tests" />
-      <config projectName="harris_ball_follower" targetName="roscpp_generate_messages_nodejs" />
-      <config projectName="harris_ball_follower" targetName="rosgraph_msgs_generate_messages_lisp" />
-      <config projectName="harris_ball_follower" targetName="rosgraph_msgs_generate_messages_nodejs" />
-      <config projectName="harris_ball_follower" targetName="rosgraph_msgs_generate_messages_cpp" />
-      <config projectName="harris_ball_follower" targetName="sensor_msgs_generate_messages_lisp" />
-      <config projectName="harris_ball_follower" targetName="download_extra_data" />
-      <config projectName="harris_ball_follower" targetName="sensor_msgs_generate_messages_eus" />
-      <config projectName="harris_ball_follower" targetName="roscpp_generate_messages_lisp" />
+      <config projectName="harris_ball_follower" targetName="geometry_msgs_generate_messages_lisp" />
+      <config projectName="harris_ball_follower" targetName="rosgraph_msgs_generate_messages_py" />
       <config projectName="harris_ball_follower" targetName="ball_follower" />
-      <config projectName="harris_ball_follower" targetName="std_msgs_generate_messages_cpp" />
-      <config projectName="harris_ball_follower" targetName="roscpp_generate_messages_eus" />
+      <config projectName="harris_ball_follower" targetName="std_msgs_generate_messages_py" />
+      <config projectName="harris_ball_follower" targetName="clean_test_results" />
       <config projectName="harris_ball_follower" targetName="geometry_msgs_generate_messages_cpp" />
+      <config projectName="harris_ball_follower" targetName="roscpp_generate_messages_nodejs" />
+      <config projectName="harris_ball_follower" targetName="rosgraph_msgs_generate_messages_eus" />
+      <config projectName="harris_ball_follower" targetName="roscpp_generate_messages_lisp" />
+      <config projectName="harris_ball_follower" targetName="roscpp_generate_messages_cpp" />
+      <config projectName="harris_ball_follower" targetName="sensor_msgs_generate_messages_nodejs" />
+      <config projectName="harris_ball_follower" targetName="std_msgs_generate_messages_eus" />
       <config projectName="harris_ball_follower" targetName="sensor_msgs_generate_messages_cpp" />
+      <config projectName="harris_ball_follower" targetName="rosgraph_msgs_generate_messages_lisp" />
+      <config projectName="harris_ball_follower" targetName="download_extra_data" />
+      <config projectName="harris_ball_follower" targetName="run_tests" />
+      <config projectName="harris_ball_follower" targetName="roscpp_generate_messages_py" />
+      <config projectName="harris_ball_follower" targetName="geometry_msgs_generate_messages_eus" />
+      <config projectName="harris_ball_follower" targetName="rosgraph_msgs_generate_messages_nodejs" />
+      <config projectName="harris_ball_follower" targetName="sensor_msgs_generate_messages_lisp" />
+      <config projectName="harris_ball_follower" targetName="std_msgs_generate_messages_nodejs" />
+      <config projectName="harris_ball_follower" targetName="rosgraph_msgs_generate_messages_cpp" />
+      <config projectName="harris_ball_follower" targetName="roscpp_generate_messages_eus" />
+      <config projectName="harris_ball_follower" targetName="std_msgs_generate_messages_lisp" />
+      <config projectName="harris_ball_follower" targetName="doxygen" />
+      <config projectName="harris_ball_follower" targetName="geometry_msgs_generate_messages_py" />
+      <config projectName="harris_ball_follower" targetName="geometry_msgs_generate_messages_nodejs" />
+      <config projectName="harris_ball_follower" targetName="drive_wheels" />
+      <config projectName="harris_ball_follower" targetName="sensor_msgs_generate_messages_eus" />
+      <config projectName="harris_ball_follower" targetName="std_msgs_generate_messages_cpp" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -43,38 +43,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1c7b909d-811d-4332-b951-a4244ffb43ac" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../build/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../build/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../build/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/../../build/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../build/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../build/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../build/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../../build/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../build/harris_ball_follower/CMakeFiles/ball_follower.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/../../build/harris_ball_follower/CMakeFiles/ball_follower.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../build/harris_ball_follower/CMakeFiles/ball_follower.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../build/harris_ball_follower/CMakeFiles/ball_follower.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../build/harris_ball_follower/CMakeFiles/ball_follower.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/../../build/harris_ball_follower/CMakeFiles/ball_follower.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../build/harris_ball_follower/CMakeFiles/ball_follower.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../build/harris_ball_follower/CMakeFiles/ball_follower.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../build/harris_ball_follower/CMakeFiles/ball_follower.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../build/harris_ball_follower/CMakeFiles/ball_follower.dir/link.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../build/harris_ball_follower/CMakeFiles/ball_follower.dir/src/ball_follower.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../../build/harris_ball_follower/CMakeFiles/ball_follower.dir/src/ball_follower.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../build/harris_ball_follower/CMakeFiles/compress_test.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../build/harris_ball_follower/CMakeFiles/compress_test.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../build/harris_ball_follower/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../../build/harris_ball_follower/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../build/harris_ball_follower/CMakeFiles/drive_wheels.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/../../build/harris_ball_follower/CMakeFiles/drive_wheels.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../build/harris_ball_follower/CMakeFiles/drive_wheels.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/../../build/harris_ball_follower/CMakeFiles/drive_wheels.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../build/harris_ball_follower/CMakeFiles/drive_wheels.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../build/harris_ball_follower/CMakeFiles/drive_wheels.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../build/harris_ball_follower/CMakeFiles/drive_wheels.dir/src/drive_wheels.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../../build/harris_ball_follower/CMakeFiles/drive_wheels.dir/src/drive_wheels.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../devel/lib/harris_ball_follower/ball_follower" beforeDir="false" afterPath="$PROJECT_DIR$/../../devel/lib/harris_ball_follower/ball_follower" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../devel/lib/harris_ball_follower/drive_wheels" beforeDir="false" afterPath="$PROJECT_DIR$/../../devel/lib/harris_ball_follower/drive_wheels" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-default/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-default/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-default/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-default/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-default/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-default/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-default/CMakeFiles/ball_follower.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-default/CMakeFiles/ball_follower.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-default/CMakeFiles/ball_follower.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-default/CMakeFiles/ball_follower.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-default/CMakeFiles/ball_follower.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-default/CMakeFiles/ball_follower.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-default/CMakeFiles/ball_follower.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-default/CMakeFiles/ball_follower.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-default/CMakeFiles/ball_follower.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-default/CMakeFiles/ball_follower.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-default/CMakeFiles/ball_follower.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-default/CMakeFiles/ball_follower.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-default/CMakeFiles/ball_follower.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-default/CMakeFiles/ball_follower.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-default/CMakeFiles/ball_follower.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-default/CMakeFiles/ball_follower.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-default/CMakeFiles/ball_follower.dir/src/ball_follower.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-default/CMakeFiles/compress_test.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-default/CMakeFiles/compress_test.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-default/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-default/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-default/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-default/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-default/harris_ball_follower.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-default/harris_ball_follower.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ball_follower.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/ball_follower.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/drive_wheels.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/drive_wheels.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/cmake-build-default/" />
@@ -103,7 +81,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="cpp" value="11" />
-          <entry key="h" value="1" />
+          <entry key="h" value="3" />
           <entry key="txt" value="1" />
           <entry key="xml" value="1" />
         </counts>
@@ -111,14 +89,14 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CMakeLists.txt" value="1" />
-          <entry key="ObjectiveC" value="12" />
+          <entry key="ObjectiveC" value="14" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cpp" value="4997" />
-          <entry key="h" value="113" />
+          <entry key="cpp" value="6754" />
+          <entry key="h" value="632" />
           <entry key="txt" value="1084" />
           <entry key="xml" value="25" />
         </counts>
@@ -127,7 +105,7 @@
         <counts>
           <entry key="CMakeLists.txt" value="1084" />
           <entry key="Doxygen file" value="1" />
-          <entry key="ObjectiveC" value="5109" />
+          <entry key="ObjectiveC" value="7385" />
           <entry key="XML" value="25" />
         </counts>
       </usages-collector>
@@ -147,11 +125,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/drive_wheels.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+            <state relative-caret-position="180">
+              <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
               <folding>
                 <element signature="e#41#61#0" expanded="true" />
               </folding>
@@ -159,11 +137,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pid_turtlebot.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pid_plotting.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ball_follower.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="70" column="45" selection-start-line="70" selection-start-column="45" selection-end-line="70" selection-end-column="45" />
+            <state relative-caret-position="1311">
+              <caret line="168" lean-forward="true" selection-start-line="168" selection-end-line="168" />
               <folding>
                 <element signature="e#41#61#0" expanded="true" />
               </folding>
@@ -175,7 +171,7 @@
         <entry file="file://$PROJECT_DIR$/src/ball_follower.h">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="216">
-              <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
+              <caret line="60" selection-start-line="60" selection-end-line="60" />
               <folding>
                 <element signature="e#134#154#0" expanded="true" />
               </folding>
@@ -186,8 +182,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="405">
+              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
             </state>
           </provider>
         </entry>
@@ -206,6 +202,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>cout</find>
+      <find>loop_rate</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -218,10 +215,12 @@
         <option value="$PROJECT_DIR$/src/image_publisher.cpp" />
         <option value="$PROJECT_DIR$/src/find_ball.cpp" />
         <option value="$PROJECT_DIR$/src/compress_test.cpp" />
-        <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/src/ball_follower.h" />
-        <option value="$PROJECT_DIR$/src/drive_wheels.cpp" />
+        <option value="$PROJECT_DIR$/src/pid_plotting.h" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/src/ball_follower.cpp" />
+        <option value="$PROJECT_DIR$/src/pid_turtlebot.h" />
+        <option value="$PROJECT_DIR$/src/drive_wheels.cpp" />
       </list>
     </option>
   </component>
@@ -232,8 +231,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="885" />
-    <option name="y" value="28" />
+    <option name="x" value="829" />
+    <option name="y" value="83" />
     <option name="width" value="1009" />
     <option name="height" value="1000" />
   </component>
@@ -501,15 +500,15 @@
       <workItem from="1537220752930" duration="113000" />
       <workItem from="1537221107180" duration="1886000" />
       <workItem from="1537294312776" duration="3684000" />
-      <workItem from="1537299433730" duration="3053000" />
+      <workItem from="1537299433730" duration="8378000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27439000" />
+    <option name="totallyTimeSpent" value="32764000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="885" y="28" width="1009" height="1000" extended-state="0" />
+    <frame x="829" y="83" width="1009" height="1000" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2502596" />
@@ -517,7 +516,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32912844" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32912844" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39908257" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -568,13 +567,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -592,30 +584,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/drive_wheels.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
-          <folding>
-            <element signature="e#41#61#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ball_follower.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
-          <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
+          <caret line="60" selection-start-line="60" selection-end-line="60" />
           <folding>
             <element signature="e#134#154#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pid_plotting.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ball_follower.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="70" column="45" selection-start-line="70" selection-start-column="45" selection-end-line="70" selection-end-column="45" />
+        <state relative-caret-position="1311">
+          <caret line="168" lean-forward="true" selection-start-line="168" selection-end-line="168" />
+          <folding>
+            <element signature="e#41#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pid_turtlebot.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/drive_wheels.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
           <folding>
             <element signature="e#41#61#0" expanded="true" />
           </folding>

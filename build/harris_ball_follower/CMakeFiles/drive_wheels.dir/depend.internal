@@ -3,7 +3,11 @@
 
 harris_ball_follower/CMakeFiles/drive_wheels.dir/src/drive_wheels.cpp.o
  /home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/src/drive_wheels.cpp
+ /home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/src/pid_plotting.h
+ /home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/src/pid_turtlebot.h
  /opt/ros/kinetic/include/geometry_msgs/Point.h
+ /opt/ros/kinetic/include/geometry_msgs/Twist.h
+ /opt/ros/kinetic/include/geometry_msgs/Vector3.h
  /opt/ros/kinetic/include/ros/advertise_options.h
  /opt/ros/kinetic/include/ros/advertise_service_options.h
  /opt/ros/kinetic/include/ros/assert.h
