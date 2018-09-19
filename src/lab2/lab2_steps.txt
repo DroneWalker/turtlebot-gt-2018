@@ -29,7 +29,9 @@ $ rosrun rviz rviz -d `rospack find turtlebot3_description`/rviz/model.rviz
 $ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 
 ## Convert image from compressed to image
-$ rosrun image_transport republish compressed in:=/raspicam_node/image/compressed rawout:=/raspicam_node/image/raw
+$ rosparam set /find_ball/image_transport compressed
+$ rosrun harris_ball_follower ball_follower __image_transport:=compressed
+
 
 ## Run ball_follower node
 $ rosrun harris_ball_follower ball_follower

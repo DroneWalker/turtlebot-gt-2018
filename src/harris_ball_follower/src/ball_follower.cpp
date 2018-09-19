@@ -20,21 +20,26 @@ using namespace cv;
 using namespace std;
 using namespace ros;
 
-Mat frame;
+cv_bridge::CvImagePtr img;
+cv::Mat frame;
 
 
-cv::Mat imageCallback(const sensor_msgs::ImageConstPtr& msg)
+void imageCallback(const sensor_msgs::ImageConstPtr& msg)
 {
+   // img = cv_bridge::toCvCopy(msg);
+    //cv::Mat mat_received = img->image;
+    //mat_received.convertTo(frame, 5);
+    //cv::imshow("subscribed to image", frame);
     try {
-        frame = cv_bridge::toCvShare(msg, "bgr8")->image;
-        //cv::imshow("find_ball_debugger", cv_bridge::toCvShare(msg, "bgr8")->image);
+        //img = cv_bridge::toCvShare(msg, "bgr8")->image)
+        cv::imshow("view", cv_bridge::toCvShare(msg, "bgr8")->image);
         cv::waitKey(10);
     }
     catch (cv_bridge::Exception& e)
     {
         ROS_ERROR("Could not convert from '%s' to 'bgr8'.", msg->encoding.c_str());
     }
-    return frame;
+   // cv::imshow("subscribing", img->image);
 }
 
 
@@ -44,14 +49,16 @@ int main(int argc, char **argv)
     init(argc, argv, "find_ball");
     NodeHandle n;
     image_transport::ImageTransport it(n);
-    image_transport::Subscriber image_sub = it.subscribe("/raspicam_node/image/raw",
-            1,imageCallback);
+    namedWindow("Tracking", CV_WINDOW_AUTOSIZE);
+    namedWindow("subscribing", CV_WINDOW_AUTOSIZE);
+    startWindowThread();
+    image_transport::Subscriber image_sub = it.subscribe("/raspicam_node/image",
+            5,imageCallback);
     Publisher trackpoint_pub = n.advertise<geometry_msgs::Point>("trackpoint",1000);
-    image_transport::Publisher img_debug = it.advertise("camera/image",1);
     Rate loop_rate(10);
 
     // open CV
-    namedWindow("Tracking", CV_WINDOW_AUTOSIZE);
+
     Mat track;
     Mat detect;
     geometry_msgs::Point circle_cp;
