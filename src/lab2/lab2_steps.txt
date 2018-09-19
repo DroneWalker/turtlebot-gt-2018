@@ -31,5 +31,19 @@ $ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 ## Convert image from compressed to image
 $ rosrun image_transport republish compressed in:=/raspicam_node/image/compressed rawout:=/raspicam_node/image/raw
 
+## Run ball_follower node
+$ rosrun harris_ball_follower ball_follower
+
+## Run drive wheels
+$ rosrun harris_ball_follower drive_wheels
+
+## Check rqtgraph
+$ rosrun rqt_graph rqt_graph
+
+## Check topics
+$ rostopic list
+
+
+
 
 
