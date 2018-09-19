@@ -9,6 +9,9 @@
 #include <opencv2/tracking.hpp>
 #include <opencv2/core/ocl.hpp>
 
+#include <image_transport/image_transport.h>
+#include <cv_bridge/cv_bridge.h>
+
 #include <sstream>
 
 #include "ball_follower.h"
@@ -17,13 +20,34 @@ using namespace cv;
 using namespace std;
 using namespace ros;
 
+Mat frame;
+
+
+cv::Mat imageCallback(const sensor_msgs::ImageConstPtr& msg)
+{
+    try {
+        frame = cv_bridge::toCvShare(msg, "bgr8")->image;
+        //cv::imshow("find_ball_debugger", cv_bridge::toCvShare(msg, "bgr8")->image);
+        cv::waitKey(10);
+    }
+    catch (cv_bridge::Exception& e)
+    {
+        ROS_ERROR("Could not convert from '%s' to 'bgr8'.", msg->encoding.c_str());
+    }
+    return frame;
+}
+
 
 int main(int argc, char **argv)
 {
     // ROS Setup
     init(argc, argv, "find_ball");
     NodeHandle n;
+    image_transport::ImageTransport it(n);
+    image_transport::Subscriber image_sub = it.subscribe("/raspicam_node/image/raw",
+            1,imageCallback);
     Publisher trackpoint_pub = n.advertise<geometry_msgs::Point>("trackpoint",1000);
+    image_transport::Publisher img_debug = it.advertise("camera/image",1);
     Rate loop_rate(10);
 
     // open CV
@@ -185,5 +209,6 @@ int main(int argc, char **argv)
             break;
         }
     }
+    ros::spin();
     return 0;
 }

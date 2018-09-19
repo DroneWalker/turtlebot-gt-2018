@@ -247,6 +247,9 @@ UBUNTU_XENIAL:BOOL=TRUE
 //The directory containing a CMake configuration file for catkin.
 catkin_DIR:PATH=/opt/ros/kinetic/share/catkin/cmake
 
+//The directory containing a CMake configuration file for class_loader.
+class_loader_DIR:PATH=/opt/ros/kinetic/share/class_loader/cmake
+
 //The directory containing a CMake configuration file for cpp_common.
 cpp_common_DIR:PATH=/opt/ros/kinetic/share/cpp_common/cmake
 
@@ -262,14 +265,26 @@ harris_ball_follower_BINARY_DIR:STATIC=/home/charris/introrobotics/turtlebot-gt-
 //Value Computed by CMake
 harris_ball_follower_SOURCE_DIR:STATIC=/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower
 
+//The directory containing a CMake configuration file for image_transport.
+image_transport_DIR:PATH=/opt/ros/kinetic/share/image_transport/cmake
+
+//Dependencies for target
+image_transport_LIB_DEPENDS:STATIC=
+
 //Path to a library.
-lib:FILEPATH=/opt/ros/kinetic/lib/libcv_bridge.so
+lib:FILEPATH=/opt/ros/kinetic/lib/librospack.so
+
+//The directory containing a CMake configuration file for message_filters.
+message_filters_DIR:PATH=/opt/ros/kinetic/share/message_filters/cmake
 
 //The directory containing a CMake configuration file for message_runtime.
 message_runtime_DIR:PATH=/opt/ros/kinetic/share/message_runtime/cmake
 
 //Dependencies for target
 pid_turtlebot_LIB_DEPENDS:STATIC=
+
+//The directory containing a CMake configuration file for pluginlib.
+pluginlib_DIR:PATH=/opt/ros/kinetic/share/pluginlib/cmake
 
 //The directory containing a CMake configuration file for rosconsole.
 rosconsole_DIR:PATH=/opt/ros/kinetic/share/rosconsole/cmake
@@ -285,6 +300,12 @@ roscpp_traits_DIR:PATH=/opt/ros/kinetic/share/roscpp_traits/cmake
 
 //The directory containing a CMake configuration file for rosgraph_msgs.
 rosgraph_msgs_DIR:PATH=/opt/ros/kinetic/share/rosgraph_msgs/cmake
+
+//The directory containing a CMake configuration file for roslib.
+roslib_DIR:PATH=/opt/ros/kinetic/share/roslib/cmake
+
+//The directory containing a CMake configuration file for rospack.
+rospack_DIR:PATH=/opt/ros/kinetic/share/rospack/cmake
 
 //The directory containing a CMake configuration file for rospy.
 rospy_DIR:PATH=/opt/ros/kinetic/share/rospy/cmake

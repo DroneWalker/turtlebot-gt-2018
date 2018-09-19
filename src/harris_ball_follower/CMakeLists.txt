@@ -9,6 +9,7 @@ find_package(catkin REQUIRED COMPONENTS
         std_msgs
         geometry_msgs
         cv_bridge
+        image_transport
         )
 
 ## declare and generate any messages or services
@@ -29,6 +30,9 @@ target_link_libraries(ball_follower ${OpenCV_LIBS} ${catkin_LIBRARIES})
 
 add_executable(drive_wheels src/drive_wheels.cpp)
 target_link_libraries(drive_wheels ${catkin_LIBRARIES} pid_turtlebot)
+
+add_executable(ball_follower_debug src/ball_follower_debug.cpp)
+target_link_libraries(ball_follower_debug ${OpenCV_LIBS} ${catkin_LIBRARIES})
 
 
 

@@ -24,7 +24,7 @@ const int KERNEL_LENGTH = 7;
 // HSV Ranges
 //const int low_H = 0, low_S = 220, low_V = 120;
 //const int high_H = 20, high_S = 255, high_V = 255;
-const int low_H = 0, low_S = 100, low_V = 80;
+const int low_H = 0, low_S = 140, low_V = 100;
 const int high_H = 20, high_S = 255, high_V = 255;
 const int morph_operator = 2;
 const int morph_elem = 0;

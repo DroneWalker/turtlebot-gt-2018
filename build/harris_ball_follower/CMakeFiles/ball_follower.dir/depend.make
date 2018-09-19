@@ -3,7 +3,17 @@
 
 harris_ball_follower/CMakeFiles/ball_follower.dir/src/ball_follower.cpp.o: /home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/src/ball_follower.cpp
 harris_ball_follower/CMakeFiles/ball_follower.dir/src/ball_follower.cpp.o: /home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/src/ball_follower.h
+harris_ball_follower/CMakeFiles/ball_follower.dir/src/ball_follower.cpp.o: /opt/ros/kinetic/include/cv_bridge/cv_bridge.h
 harris_ball_follower/CMakeFiles/ball_follower.dir/src/ball_follower.cpp.o: /opt/ros/kinetic/include/geometry_msgs/Point.h
+harris_ball_follower/CMakeFiles/ball_follower.dir/src/ball_follower.cpp.o: /opt/ros/kinetic/include/image_transport/camera_publisher.h
+harris_ball_follower/CMakeFiles/ball_follower.dir/src/ball_follower.cpp.o: /opt/ros/kinetic/include/image_transport/camera_subscriber.h
+harris_ball_follower/CMakeFiles/ball_follower.dir/src/ball_follower.cpp.o: /opt/ros/kinetic/include/image_transport/exception.h
+harris_ball_follower/CMakeFiles/ball_follower.dir/src/ball_follower.cpp.o: /opt/ros/kinetic/include/image_transport/image_transport.h
+harris_ball_follower/CMakeFiles/ball_follower.dir/src/ball_follower.cpp.o: /opt/ros/kinetic/include/image_transport/loader_fwds.h
+harris_ball_follower/CMakeFiles/ball_follower.dir/src/ball_follower.cpp.o: /opt/ros/kinetic/include/image_transport/publisher.h
+harris_ball_follower/CMakeFiles/ball_follower.dir/src/ball_follower.cpp.o: /opt/ros/kinetic/include/image_transport/single_subscriber_publisher.h
+harris_ball_follower/CMakeFiles/ball_follower.dir/src/ball_follower.cpp.o: /opt/ros/kinetic/include/image_transport/subscriber.h
+harris_ball_follower/CMakeFiles/ball_follower.dir/src/ball_follower.cpp.o: /opt/ros/kinetic/include/image_transport/transport_hints.h
 harris_ball_follower/CMakeFiles/ball_follower.dir/src/ball_follower.cpp.o: /opt/ros/kinetic/include/opencv-3.3.1-dev/opencv/cxcore.h
 harris_ball_follower/CMakeFiles/ball_follower.dir/src/ball_follower.cpp.o: /opt/ros/kinetic/include/opencv-3.3.1-dev/opencv2/calib3d.hpp
 harris_ball_follower/CMakeFiles/ball_follower.dir/src/ball_follower.cpp.o: /opt/ros/kinetic/include/opencv-3.3.1-dev/opencv2/calib3d/calib3d_c.h
@@ -11,6 +21,7 @@ harris_ball_follower/CMakeFiles/ball_follower.dir/src/ball_follower.cpp.o: /opt/
 harris_ball_follower/CMakeFiles/ball_follower.dir/src/ball_follower.cpp.o: /opt/ros/kinetic/include/opencv-3.3.1-dev/opencv2/core/affine.hpp
 harris_ball_follower/CMakeFiles/ball_follower.dir/src/ball_follower.cpp.o: /opt/ros/kinetic/include/opencv-3.3.1-dev/opencv2/core/base.hpp
 harris_ball_follower/CMakeFiles/ball_follower.dir/src/ball_follower.cpp.o: /opt/ros/kinetic/include/opencv-3.3.1-dev/opencv2/core/bufferpool.hpp
+harris_ball_follower/CMakeFiles/ball_follower.dir/src/ball_follower.cpp.o: /opt/ros/kinetic/include/opencv-3.3.1-dev/opencv2/core/core.hpp
 harris_ball_follower/CMakeFiles/ball_follower.dir/src/ball_follower.cpp.o: /opt/ros/kinetic/include/opencv-3.3.1-dev/opencv2/core/core_c.h
 harris_ball_follower/CMakeFiles/ball_follower.dir/src/ball_follower.cpp.o: /opt/ros/kinetic/include/opencv-3.3.1-dev/opencv2/core/cuda.hpp
 harris_ball_follower/CMakeFiles/ball_follower.dir/src/ball_follower.cpp.o: /opt/ros/kinetic/include/opencv-3.3.1-dev/opencv2/core/cuda.inl.hpp
@@ -77,6 +88,7 @@ harris_ball_follower/CMakeFiles/ball_follower.dir/src/ball_follower.cpp.o: /opt/
 harris_ball_follower/CMakeFiles/ball_follower.dir/src/ball_follower.cpp.o: /opt/ros/kinetic/include/opencv-3.3.1-dev/opencv2/imgcodecs.hpp
 harris_ball_follower/CMakeFiles/ball_follower.dir/src/ball_follower.cpp.o: /opt/ros/kinetic/include/opencv-3.3.1-dev/opencv2/imgcodecs/imgcodecs_c.h
 harris_ball_follower/CMakeFiles/ball_follower.dir/src/ball_follower.cpp.o: /opt/ros/kinetic/include/opencv-3.3.1-dev/opencv2/imgproc.hpp
+harris_ball_follower/CMakeFiles/ball_follower.dir/src/ball_follower.cpp.o: /opt/ros/kinetic/include/opencv-3.3.1-dev/opencv2/imgproc/imgproc.hpp
 harris_ball_follower/CMakeFiles/ball_follower.dir/src/ball_follower.cpp.o: /opt/ros/kinetic/include/opencv-3.3.1-dev/opencv2/imgproc/imgproc_c.h
 harris_ball_follower/CMakeFiles/ball_follower.dir/src/ball_follower.cpp.o: /opt/ros/kinetic/include/opencv-3.3.1-dev/opencv2/imgproc/types_c.h
 harris_ball_follower/CMakeFiles/ball_follower.dir/src/ball_follower.cpp.o: /opt/ros/kinetic/include/opencv-3.3.1-dev/opencv2/ml.hpp
@@ -197,6 +209,12 @@ harris_ball_follower/CMakeFiles/ball_follower.dir/src/ball_follower.cpp.o: /opt/
 harris_ball_follower/CMakeFiles/ball_follower.dir/src/ball_follower.cpp.o: /opt/ros/kinetic/include/ros/wall_timer.h
 harris_ball_follower/CMakeFiles/ball_follower.dir/src/ball_follower.cpp.o: /opt/ros/kinetic/include/ros/wall_timer_options.h
 harris_ball_follower/CMakeFiles/ball_follower.dir/src/ball_follower.cpp.o: /opt/ros/kinetic/include/rosconsole/macros_generated.h
+harris_ball_follower/CMakeFiles/ball_follower.dir/src/ball_follower.cpp.o: /opt/ros/kinetic/include/sensor_msgs/CameraInfo.h
+harris_ball_follower/CMakeFiles/ball_follower.dir/src/ball_follower.cpp.o: /opt/ros/kinetic/include/sensor_msgs/CompressedImage.h
+harris_ball_follower/CMakeFiles/ball_follower.dir/src/ball_follower.cpp.o: /opt/ros/kinetic/include/sensor_msgs/Image.h
+harris_ball_follower/CMakeFiles/ball_follower.dir/src/ball_follower.cpp.o: /opt/ros/kinetic/include/sensor_msgs/RegionOfInterest.h
+harris_ball_follower/CMakeFiles/ball_follower.dir/src/ball_follower.cpp.o: /opt/ros/kinetic/include/sensor_msgs/image_encodings.h
+harris_ball_follower/CMakeFiles/ball_follower.dir/src/ball_follower.cpp.o: /opt/ros/kinetic/include/std_msgs/Header.h
 harris_ball_follower/CMakeFiles/ball_follower.dir/src/ball_follower.cpp.o: /opt/ros/kinetic/include/xmlrpcpp/XmlRpcDecl.h
 harris_ball_follower/CMakeFiles/ball_follower.dir/src/ball_follower.cpp.o: /opt/ros/kinetic/include/xmlrpcpp/XmlRpcValue.h
 

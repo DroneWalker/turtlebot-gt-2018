@@ -166,6 +166,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named ball_follower_debug
+
+# Build rule for target.
+ball_follower_debug: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ball_follower_debug
+.PHONY : ball_follower_debug
+
+# fast build rule for target.
+ball_follower_debug/fast:
+	$(MAKE) -f CMakeFiles/ball_follower_debug.dir/build.make CMakeFiles/ball_follower_debug.dir/build
+.PHONY : ball_follower_debug/fast
+
+#=============================================================================
 # Target rules for targets named ball_follower
 
 # Build rule for target.
@@ -621,6 +634,33 @@ src/ball_follower.cpp.s:
 	$(MAKE) -f CMakeFiles/ball_follower.dir/build.make CMakeFiles/ball_follower.dir/src/ball_follower.cpp.s
 .PHONY : src/ball_follower.cpp.s
 
+src/ball_follower_debug.o: src/ball_follower_debug.cpp.o
+
+.PHONY : src/ball_follower_debug.o
+
+# target to build an object file
+src/ball_follower_debug.cpp.o:
+	$(MAKE) -f CMakeFiles/ball_follower_debug.dir/build.make CMakeFiles/ball_follower_debug.dir/src/ball_follower_debug.cpp.o
+.PHONY : src/ball_follower_debug.cpp.o
+
+src/ball_follower_debug.i: src/ball_follower_debug.cpp.i
+
+.PHONY : src/ball_follower_debug.i
+
+# target to preprocess a source file
+src/ball_follower_debug.cpp.i:
+	$(MAKE) -f CMakeFiles/ball_follower_debug.dir/build.make CMakeFiles/ball_follower_debug.dir/src/ball_follower_debug.cpp.i
+.PHONY : src/ball_follower_debug.cpp.i
+
+src/ball_follower_debug.s: src/ball_follower_debug.cpp.s
+
+.PHONY : src/ball_follower_debug.s
+
+# target to generate assembly for a file
+src/ball_follower_debug.cpp.s:
+	$(MAKE) -f CMakeFiles/ball_follower_debug.dir/build.make CMakeFiles/ball_follower_debug.dir/src/ball_follower_debug.cpp.s
+.PHONY : src/ball_follower_debug.cpp.s
+
 src/drive_wheels.o: src/drive_wheels.cpp.o
 
 .PHONY : src/drive_wheels.o
@@ -687,6 +727,7 @@ help:
 	@echo "... test"
 	@echo "... install/local"
 	@echo "... install/strip"
+	@echo "... ball_follower_debug"
 	@echo "... ball_follower"
 	@echo "... geometry_msgs_generate_messages_py"
 	@echo "... sensor_msgs_generate_messages_py"
@@ -724,6 +765,9 @@ help:
 	@echo "... src/ball_follower.o"
 	@echo "... src/ball_follower.i"
 	@echo "... src/ball_follower.s"
+	@echo "... src/ball_follower_debug.o"
+	@echo "... src/ball_follower_debug.i"
+	@echo "... src/ball_follower_debug.s"
 	@echo "... src/drive_wheels.o"
 	@echo "... src/drive_wheels.i"
 	@echo "... src/drive_wheels.s"

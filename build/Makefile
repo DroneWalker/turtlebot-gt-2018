@@ -231,6 +231,19 @@ doxygen/fast:
 .PHONY : doxygen/fast
 
 #=============================================================================
+# Target rules for targets named ball_follower_debug
+
+# Build rule for target.
+ball_follower_debug: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ball_follower_debug
+.PHONY : ball_follower_debug
+
+# fast build rule for target.
+ball_follower_debug/fast:
+	$(MAKE) -f harris_ball_follower/CMakeFiles/ball_follower_debug.dir/build.make harris_ball_follower/CMakeFiles/ball_follower_debug.dir/build
+.PHONY : ball_follower_debug/fast
+
+#=============================================================================
 # Target rules for targets named ball_follower
 
 # Build rule for target.
@@ -807,6 +820,7 @@ help:
 	@echo "... install/strip"
 	@echo "... install/local"
 	@echo "... test"
+	@echo "... ball_follower_debug"
 	@echo "... ball_follower"
 	@echo "... geometry_msgs_generate_messages_py"
 	@echo "... geometry_msgs_generate_messages_nodejs"

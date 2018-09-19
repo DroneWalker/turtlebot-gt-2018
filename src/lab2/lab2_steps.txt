@@ -1,0 +1,35 @@
+Lab #2 Steps
+=============
+
+## Get turtlebot IP address
+
+## Port into robot
+$ ssh burger@<IP or Hostname>
+
+## Transfer files
+scp -r <Directory on your cpu to copy> burger@<ip-of-burger>:<Directory to copy to on robot>
+
+## Change ROS_HOSTNAME and IP (in .bashrc) on both home PC and Raspberry Pi
+#export ROS_MASTER_URI=http://143.215.48.175:11311 (PC for both)
+#export ROS_HOSTNAME=143.215.48.175 (pc for pc, rpi for rpi)
+
+## Starting up ROS
+$ roscore
+
+
+## Start Turtlebot nodes
+If testing: $ roslaunch turtlebot3_fake turtlebot3_fake.launch
+If onboard:  $ roslaunch turtlebot3_bringup turtlebot3_robot.launch
+
+## Load bot into Rviz
+$ roslaunch turtlebot3_bringup turtlebot3_remote.launch
+$ rosrun rviz rviz -d `rospack find turtlebot3_description`/rviz/model.rviz 
+
+## Teleoperation for safety?
+$ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
+
+## Convert image from compressed to image
+$ rosrun image_transport republish compressed in:=/raspicam_node/image/compressed rawout:=/raspicam_node/image/raw
+
+
+
