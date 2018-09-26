@@ -12,6 +12,9 @@
 #include <cv_bridge/cv_bridge.h>
 
 
+
+// ** Make into another class of findBall but returns a ros topic of image and stuff
+
 void imageCallback(const sensor_msgs::ImageConstPtr& msg)
 {
     try {

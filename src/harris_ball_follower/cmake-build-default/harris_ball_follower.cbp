@@ -17,16 +17,6 @@
             <DistClean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default/Makefile&quot;  VERBOSE=1 clean" />
          </MakeCommands>
       </Target>
-      <Target title="install">
-         <Option working_dir="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default" />
-         <Option type="4" />
-         <MakeCommands>
-            <Build command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default/Makefile&quot;  VERBOSE=1 install" />
-            <CompileFile command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
-            <Clean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default/Makefile&quot;  VERBOSE=1 clean" />
-            <DistClean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default/Makefile&quot;  VERBOSE=1 clean" />
-         </MakeCommands>
-      </Target>
       <Target title="rebuild_cache">
          <Option working_dir="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default" />
          <Option type="4" />
@@ -134,6 +124,78 @@
          </Compiler>
          <MakeCommands>
             <Build command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default/Makefile&quot;  VERBOSE=1 ball_follower_debug/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="install">
+         <Option working_dir="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default/Makefile&quot;  VERBOSE=1 install" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="find_ball">
+         <Option output="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default/devel/lib/harris_ball_follower/find_ball" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default/devel/lib/harris_ball_follower" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DROS_PACKAGE_NAME=&quot;harris_ball_follower&quot;" />
+            <Add option="-DROSCONSOLE_BACKEND_LOG4CXX" />
+            <Add directory="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/include" />
+            <Add directory="/opt/ros/kinetic/include" />
+            <Add directory="/opt/ros/kinetic/include/opencv-3.3.1-dev" />
+            <Add directory="/opt/ros/kinetic/include/opencv-3.3.1-dev/opencv" />
+            <Add directory="/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/5" />
+            <Add directory="/usr/include/c++/5/backward" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/5" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
+            <Add directory="/usr/local/include" />
+            <Add directory="/usr/local/include/opencv" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default/Makefile&quot;  VERBOSE=1 find_ball" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="find_ball/fast">
+         <Option output="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default/devel/lib/harris_ball_follower/find_ball" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default/devel/lib/harris_ball_follower" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DROS_PACKAGE_NAME=&quot;harris_ball_follower&quot;" />
+            <Add option="-DROSCONSOLE_BACKEND_LOG4CXX" />
+            <Add directory="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/include" />
+            <Add directory="/opt/ros/kinetic/include" />
+            <Add directory="/opt/ros/kinetic/include/opencv-3.3.1-dev" />
+            <Add directory="/opt/ros/kinetic/include/opencv-3.3.1-dev/opencv" />
+            <Add directory="/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/5" />
+            <Add directory="/usr/include/c++/5/backward" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/5" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
+            <Add directory="/usr/local/include" />
+            <Add directory="/usr/local/include/opencv" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default/Makefile&quot;  VERBOSE=1 find_ball/fast" />
             <CompileFile command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
             <Clean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default/Makefile&quot;  VERBOSE=1 clean" />
             <DistClean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default/Makefile&quot;  VERBOSE=1 clean" />
@@ -346,6 +408,66 @@
          <Option type="4" />
          <MakeCommands>
             <Build command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default/Makefile&quot;  VERBOSE=1 clean_test_results" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="find_ball_lib">
+         <Option output="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default/devel/lib/libfind_ball_lib.a" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default" />
+         <Option object_output="./" />
+         <Option type="2" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DROS_PACKAGE_NAME=&quot;harris_ball_follower&quot;" />
+            <Add option="-DROSCONSOLE_BACKEND_LOG4CXX" />
+            <Add directory="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/include" />
+            <Add directory="/opt/ros/kinetic/include" />
+            <Add directory="/opt/ros/kinetic/include/opencv-3.3.1-dev" />
+            <Add directory="/opt/ros/kinetic/include/opencv-3.3.1-dev/opencv" />
+            <Add directory="/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/5" />
+            <Add directory="/usr/include/c++/5/backward" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/5" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default/Makefile&quot;  VERBOSE=1 find_ball_lib" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="find_ball_lib/fast">
+         <Option output="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default/devel/lib/libfind_ball_lib.a" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default" />
+         <Option object_output="./" />
+         <Option type="2" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DROS_PACKAGE_NAME=&quot;harris_ball_follower&quot;" />
+            <Add option="-DROSCONSOLE_BACKEND_LOG4CXX" />
+            <Add directory="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/include" />
+            <Add directory="/opt/ros/kinetic/include" />
+            <Add directory="/opt/ros/kinetic/include/opencv-3.3.1-dev" />
+            <Add directory="/opt/ros/kinetic/include/opencv-3.3.1-dev/opencv" />
+            <Add directory="/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/5" />
+            <Add directory="/usr/include/c++/5/backward" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/5" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default/Makefile&quot;  VERBOSE=1 find_ball_lib/fast" />
             <CompileFile command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
             <Clean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default/Makefile&quot;  VERBOSE=1 clean" />
             <DistClean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default/Makefile&quot;  VERBOSE=1 clean" />
@@ -643,6 +765,15 @@
       </Unit>
       <Unit filename="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/src/drive_wheels.cpp">
          <Option target="drive_wheels"/>
+      </Unit>
+      <Unit filename="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/src/find_ball.cpp">
+         <Option target="find_ball_lib"/>
+      </Unit>
+      <Unit filename="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/src/find_ball.h">
+         <Option target="find_ball_lib"/>
+      </Unit>
+      <Unit filename="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/src/find_orange_ball.cpp">
+         <Option target="find_ball"/>
       </Unit>
       <Unit filename="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/src/pid_turtlebot.cpp">
          <Option target="pid_turtlebot"/>

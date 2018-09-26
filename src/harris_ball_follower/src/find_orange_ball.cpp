@@ -1,6 +1,7 @@
 //
-// Created by charris on 9/16/18.
+// Created by charris on 9/26/18.
 //
+
 
 #include "ros/ros.h"
 #include "geometry_msgs/Point.h"
@@ -11,7 +12,7 @@
 #include <cv_bridge/cv_bridge.h>
 #include <sstream>
 
-#include "ball_follower.h"
+#include "find_ball.cpp"
 
 using namespace cv;
 using namespace std;
@@ -23,7 +24,7 @@ cv::Mat frame;
 
 void imageCallback(const sensor_msgs::ImageConstPtr& msg)
 {
-   // img = cv_bridge::toCvCopy(msg);
+    // img = cv_bridge::toCvCopy(msg);
     //cv::Mat mat_received = img->image;
     //mat_received.convertTo(frame, 5);
     //cv::imshow("subscribed to image", frame);
@@ -48,12 +49,11 @@ int main(int argc, char **argv)
     namedWindow("subscribing", CV_WINDOW_AUTOSIZE);
     startWindowThread();
     image_transport::Subscriber image_sub = it.subscribe("/raspicam_node/image",
-            5,imageCallback);
+                                                         5,imageCallback);
     Publisher trackpoint_pub = n.advertise<geometry_msgs::Point>("trackpoint",1000);
     Rate loop_rate(10);
 
     // open CV
-
     Mat track;
     Mat detect;
     geometry_msgs::Point circle_cp;
@@ -86,76 +86,48 @@ int main(int argc, char **argv)
         if (trackerType == "GOTURN")
             tracker = TrackerGOTURN::create();
         //if (trackerType == "MOSSE")
-            //tracker = TrackerMOSSE::create();
+        //tracker = TrackerMOSSE::create();
         //if (trackerType == "CSRT")
-            //tracker = TrackerCSRT::create();
+        //tracker = TrackerCSRT::create();
     }
 #endif
-    // Read video
-    VideoCapture video(0);
-    video.set(CV_CAP_PROP_FRAME_WIDTH, 640);
-    video.set(CV_CAP_PROP_FRAME_HEIGHT, 480);
 
-
-
-    // Exit if video is not opened
-    if(!video.isOpened())
+    // Get frame from subscription
+    if (!img == NULL)
     {
-        cout << "Video open error!" << endl;
-        return 1;
+        frame = img->image;
+    }
+    else
+    {
+        cout << "Image pointer is currently NULL!" << endl;
+
     }
 
-    // Read first frame
-    Mat frame;
-    bool ok = video.read(frame);
+    Rect2d bbox;
     bool init = false;
 
-    Rect2d bbox;
 
-    // Uncomment the line below to select a different bounding box
-    // bbox = selectROI(frame, false);
-    // Display bounding box.
-    //cv::rectangle(frame, bbox, Scalar( 255, 0, 0 ), 2, 1 );
+    // SEPARATE ROS OK AND IMG NULL???
+    while(!img == NULL && ros::ok()) {
+        // Get Image (Check if it is new???)
+        frame = img->image;
+        // FindBall Object
+        FindBall ballTrack = FindBall(frame);
 
+        // Mask, detect, centerpoint
+        Mat mask = ballTrack.orangeMask(frame);
+        vector<Vec3f> circles = ballTrack.detectCircles(mask);
+        geometry_msgs::Point centerpoint = ballTrack.getCenterPoint(circles);
 
-
-    //imshow("Tracking", frame);
-    //tracker->init(frame, bbox);
-
-    while(video.read(frame) && ros::ok()) {
-        // Mask
-        Mat mask = orangeMask(frame);
-        vector<Vec3f> circles = detect_circles(mask);
-
-        int largest_radius = 0;
-        int largest_circle_index = 0;
-
-        if (!circles.empty()) {
-            // Draw the circles detected
-            for (size_t i = 0; i < circles.size(); i++) {
-                int radius = cvRound(circles[i][2]);
-                if (radius > largest_radius) {
-                    largest_radius = radius;
-                    largest_circle_index = i;
-                    int xp = circles[i][0];
-                    int yp = circles[i][1];
-                    cv::Point center(cvRound(xp), cvRound(yp));
-                    detect = frame;
-                    circle_cp.x = xp;
-                    circle_cp.y = yp;
-                    circle_cp.z = 0;
-                    circle(detect, center, 3, Scalar(0, 255, 0), -1, 8, 0);// circle center
-                    circle(detect, center, radius, Scalar(0, 0, 255), 3, 8, 0);// circle outline
-                    bbox = Rect2d(xp - radius, yp - radius, radius * 2, radius * 2);
-                    if (init == false) {
-                        tracker->init(frame, bbox);
-                        init == true;
-                    }
-                    cout << "center : " << center << "\nradius : " << radius << endl;
-                    cout << "bounding box :" << bbox << endl;
-                }
-            }
-        }
+        //cv::Point center(cvRound(xp), cvRound(yp));
+        //circle(frame, center, 3, Scalar(0, 255, 0), -1, 8, 0);// circle center
+        //circle(detect, center, radius, Scalar(0, 0, 255), 3, 8, 0);// circle outline
+        //bbox = Rect2d(xp - radius, yp - radius, radius * 2, radius * 2);
+        //if (init == false) {
+        //    tracker->init(frame, bbox);
+        //    init == true;
+        //cout << "center : " << center << "\nradius : " << radius << endl;
+        //cout << "bounding box :" << bbox << endl;
 
         // Start timer
         double timer = (double) getTickCount();

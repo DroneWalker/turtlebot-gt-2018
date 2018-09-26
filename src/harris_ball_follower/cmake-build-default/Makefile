@@ -56,18 +56,6 @@ CMAKE_BINARY_DIR = /home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -123,6 +111,18 @@ install/strip/fast: install/strip
 
 .PHONY : install/strip/fast
 
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
 # Special rule for the target list_install_components
 list_install_components:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
@@ -177,6 +177,19 @@ ball_follower_debug: cmake_check_build_system
 ball_follower_debug/fast:
 	$(MAKE) -f CMakeFiles/ball_follower_debug.dir/build.make CMakeFiles/ball_follower_debug.dir/build
 .PHONY : ball_follower_debug/fast
+
+#=============================================================================
+# Target rules for targets named find_ball
+
+# Build rule for target.
+find_ball: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 find_ball
+.PHONY : find_ball
+
+# fast build rule for target.
+find_ball/fast:
+	$(MAKE) -f CMakeFiles/find_ball.dir/build.make CMakeFiles/find_ball.dir/build
+.PHONY : find_ball/fast
 
 #=============================================================================
 # Target rules for targets named ball_follower
@@ -320,6 +333,19 @@ clean_test_results: cmake_check_build_system
 clean_test_results/fast:
 	$(MAKE) -f CMakeFiles/clean_test_results.dir/build.make CMakeFiles/clean_test_results.dir/build
 .PHONY : clean_test_results/fast
+
+#=============================================================================
+# Target rules for targets named find_ball_lib
+
+# Build rule for target.
+find_ball_lib: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 find_ball_lib
+.PHONY : find_ball_lib
+
+# fast build rule for target.
+find_ball_lib/fast:
+	$(MAKE) -f CMakeFiles/find_ball_lib.dir/build.make CMakeFiles/find_ball_lib.dir/build
+.PHONY : find_ball_lib/fast
 
 #=============================================================================
 # Target rules for targets named std_msgs_generate_messages_nodejs
@@ -688,6 +714,60 @@ src/drive_wheels.cpp.s:
 	$(MAKE) -f CMakeFiles/drive_wheels.dir/build.make CMakeFiles/drive_wheels.dir/src/drive_wheels.cpp.s
 .PHONY : src/drive_wheels.cpp.s
 
+src/find_ball.o: src/find_ball.cpp.o
+
+.PHONY : src/find_ball.o
+
+# target to build an object file
+src/find_ball.cpp.o:
+	$(MAKE) -f CMakeFiles/find_ball_lib.dir/build.make CMakeFiles/find_ball_lib.dir/src/find_ball.cpp.o
+.PHONY : src/find_ball.cpp.o
+
+src/find_ball.i: src/find_ball.cpp.i
+
+.PHONY : src/find_ball.i
+
+# target to preprocess a source file
+src/find_ball.cpp.i:
+	$(MAKE) -f CMakeFiles/find_ball_lib.dir/build.make CMakeFiles/find_ball_lib.dir/src/find_ball.cpp.i
+.PHONY : src/find_ball.cpp.i
+
+src/find_ball.s: src/find_ball.cpp.s
+
+.PHONY : src/find_ball.s
+
+# target to generate assembly for a file
+src/find_ball.cpp.s:
+	$(MAKE) -f CMakeFiles/find_ball_lib.dir/build.make CMakeFiles/find_ball_lib.dir/src/find_ball.cpp.s
+.PHONY : src/find_ball.cpp.s
+
+src/find_orange_ball.o: src/find_orange_ball.cpp.o
+
+.PHONY : src/find_orange_ball.o
+
+# target to build an object file
+src/find_orange_ball.cpp.o:
+	$(MAKE) -f CMakeFiles/find_ball.dir/build.make CMakeFiles/find_ball.dir/src/find_orange_ball.cpp.o
+.PHONY : src/find_orange_ball.cpp.o
+
+src/find_orange_ball.i: src/find_orange_ball.cpp.i
+
+.PHONY : src/find_orange_ball.i
+
+# target to preprocess a source file
+src/find_orange_ball.cpp.i:
+	$(MAKE) -f CMakeFiles/find_ball.dir/build.make CMakeFiles/find_ball.dir/src/find_orange_ball.cpp.i
+.PHONY : src/find_orange_ball.cpp.i
+
+src/find_orange_ball.s: src/find_orange_ball.cpp.s
+
+.PHONY : src/find_orange_ball.s
+
+# target to generate assembly for a file
+src/find_orange_ball.cpp.s:
+	$(MAKE) -f CMakeFiles/find_ball.dir/build.make CMakeFiles/find_ball.dir/src/find_orange_ball.cpp.s
+.PHONY : src/find_orange_ball.cpp.s
+
 src/pid_turtlebot.o: src/pid_turtlebot.cpp.o
 
 .PHONY : src/pid_turtlebot.o
@@ -721,13 +801,14 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... install"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... test"
 	@echo "... install/local"
 	@echo "... install/strip"
 	@echo "... ball_follower_debug"
+	@echo "... install"
+	@echo "... find_ball"
 	@echo "... ball_follower"
 	@echo "... geometry_msgs_generate_messages_py"
 	@echo "... sensor_msgs_generate_messages_py"
@@ -739,6 +820,7 @@ help:
 	@echo "... rosgraph_msgs_generate_messages_eus"
 	@echo "... geometry_msgs_generate_messages_nodejs"
 	@echo "... clean_test_results"
+	@echo "... find_ball_lib"
 	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... geometry_msgs_generate_messages_eus"
 	@echo "... roscpp_generate_messages_cpp"
@@ -771,6 +853,12 @@ help:
 	@echo "... src/drive_wheels.o"
 	@echo "... src/drive_wheels.i"
 	@echo "... src/drive_wheels.s"
+	@echo "... src/find_ball.o"
+	@echo "... src/find_ball.i"
+	@echo "... src/find_ball.s"
+	@echo "... src/find_orange_ball.o"
+	@echo "... src/find_orange_ball.i"
+	@echo "... src/find_orange_ball.s"
 	@echo "... src/pid_turtlebot.o"
 	@echo "... src/pid_turtlebot.i"
 	@echo "... src/pid_turtlebot.s"
