@@ -28,8 +28,8 @@ install(TARGETS pid_turtlebot DESTINATION include)
 include_directories(include)
 include_directories(include ${catkin_INCLUDE_DIRS})
 
-add_executable(ball_follower src/ball_follower.cpp)
-target_link_libraries(ball_follower ${OpenCV_LIBS} ${catkin_LIBRARIES})
+#add_executable(ball_follower src/ball_follower.cpp)
+#target_link_libraries(ball_follower ${OpenCV_LIBS} ${catkin_LIBRARIES})
 
 add_executable(find_ball src/find_orange_ball.cpp)
 target_link_libraries(find_ball ${OpenCV_LIBS} ${catkin_LIBRARIES} find_ball_lib)

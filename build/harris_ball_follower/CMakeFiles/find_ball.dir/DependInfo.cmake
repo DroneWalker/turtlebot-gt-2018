@@ -4,8 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/src/ball_follower.cpp" "/home/charris/introrobotics/turtlebot-gt-2018/build/harris_ball_follower/CMakeFiles/find_ball.dir/src/ball_follower.cpp.o"
-  "/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/src/find_ball.cpp" "/home/charris/introrobotics/turtlebot-gt-2018/build/harris_ball_follower/CMakeFiles/find_ball.dir/src/find_ball.cpp.o"
+  "/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/src/find_orange_ball.cpp" "/home/charris/introrobotics/turtlebot-gt-2018/build/harris_ball_follower/CMakeFiles/find_ball.dir/src/find_orange_ball.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -21,10 +20,13 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/include"
   "/opt/ros/kinetic/include"
   "/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
+  "/opt/ros/kinetic/include/opencv-3.3.1-dev"
+  "/opt/ros/kinetic/include/opencv-3.3.1-dev/opencv"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
+  "/home/charris/introrobotics/turtlebot-gt-2018/build/harris_ball_follower/CMakeFiles/find_ball_lib.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

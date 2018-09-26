@@ -15,3 +15,5 @@
 
 # Ignore any build folder
 build/
+cmake-build-debub/
+cmake-build-default/

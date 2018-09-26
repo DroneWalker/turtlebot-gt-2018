@@ -10,14 +10,14 @@
 /home/charris/introrobotics/turtlebot-gt-2018/build/CMakeFiles/install/strip.dir
 /home/charris/introrobotics/turtlebot-gt-2018/build/CMakeFiles/install/local.dir
 /home/charris/introrobotics/turtlebot-gt-2018/build/CMakeFiles/test.dir
-/home/charris/introrobotics/turtlebot-gt-2018/build/harris_ball_follower/CMakeFiles/install.dir
 /home/charris/introrobotics/turtlebot-gt-2018/build/harris_ball_follower/CMakeFiles/rebuild_cache.dir
 /home/charris/introrobotics/turtlebot-gt-2018/build/harris_ball_follower/CMakeFiles/edit_cache.dir
 /home/charris/introrobotics/turtlebot-gt-2018/build/harris_ball_follower/CMakeFiles/test.dir
 /home/charris/introrobotics/turtlebot-gt-2018/build/harris_ball_follower/CMakeFiles/install/local.dir
 /home/charris/introrobotics/turtlebot-gt-2018/build/harris_ball_follower/CMakeFiles/install/strip.dir
 /home/charris/introrobotics/turtlebot-gt-2018/build/harris_ball_follower/CMakeFiles/ball_follower_debug.dir
-/home/charris/introrobotics/turtlebot-gt-2018/build/harris_ball_follower/CMakeFiles/ball_follower.dir
+/home/charris/introrobotics/turtlebot-gt-2018/build/harris_ball_follower/CMakeFiles/install.dir
+/home/charris/introrobotics/turtlebot-gt-2018/build/harris_ball_follower/CMakeFiles/find_ball.dir
 /home/charris/introrobotics/turtlebot-gt-2018/build/harris_ball_follower/CMakeFiles/geometry_msgs_generate_messages_py.dir
 /home/charris/introrobotics/turtlebot-gt-2018/build/harris_ball_follower/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir
 /home/charris/introrobotics/turtlebot-gt-2018/build/harris_ball_follower/CMakeFiles/std_msgs_generate_messages_py.dir
@@ -36,6 +36,7 @@
 /home/charris/introrobotics/turtlebot-gt-2018/build/harris_ball_follower/CMakeFiles/rosgraph_msgs_generate_messages_py.dir
 /home/charris/introrobotics/turtlebot-gt-2018/build/harris_ball_follower/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir
 /home/charris/introrobotics/turtlebot-gt-2018/build/harris_ball_follower/CMakeFiles/roscpp_generate_messages_nodejs.dir
+/home/charris/introrobotics/turtlebot-gt-2018/build/harris_ball_follower/CMakeFiles/find_ball_lib.dir
 /home/charris/introrobotics/turtlebot-gt-2018/build/harris_ball_follower/CMakeFiles/std_msgs_generate_messages_nodejs.dir
 /home/charris/introrobotics/turtlebot-gt-2018/build/harris_ball_follower/CMakeFiles/drive_wheels.dir
 /home/charris/introrobotics/turtlebot-gt-2018/build/harris_ball_follower/CMakeFiles/roscpp_generate_messages_lisp.dir

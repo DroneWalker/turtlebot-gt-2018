@@ -244,17 +244,17 @@ ball_follower_debug/fast:
 .PHONY : ball_follower_debug/fast
 
 #=============================================================================
-# Target rules for targets named ball_follower
+# Target rules for targets named find_ball
 
 # Build rule for target.
-ball_follower: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 ball_follower
-.PHONY : ball_follower
+find_ball: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 find_ball
+.PHONY : find_ball
 
 # fast build rule for target.
-ball_follower/fast:
-	$(MAKE) -f harris_ball_follower/CMakeFiles/ball_follower.dir/build.make harris_ball_follower/CMakeFiles/ball_follower.dir/build
-.PHONY : ball_follower/fast
+find_ball/fast:
+	$(MAKE) -f harris_ball_follower/CMakeFiles/find_ball.dir/build.make harris_ball_follower/CMakeFiles/find_ball.dir/build
+.PHONY : find_ball/fast
 
 #=============================================================================
 # Target rules for targets named geometry_msgs_generate_messages_py
@@ -489,6 +489,19 @@ roscpp_generate_messages_nodejs: cmake_check_build_system
 roscpp_generate_messages_nodejs/fast:
 	$(MAKE) -f harris_ball_follower/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make harris_ball_follower/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
 .PHONY : roscpp_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named find_ball_lib
+
+# Build rule for target.
+find_ball_lib: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 find_ball_lib
+.PHONY : find_ball_lib
+
+# fast build rule for target.
+find_ball_lib/fast:
+	$(MAKE) -f harris_ball_follower/CMakeFiles/find_ball_lib.dir/build.make harris_ball_follower/CMakeFiles/find_ball_lib.dir/build
+.PHONY : find_ball_lib/fast
 
 #=============================================================================
 # Target rules for targets named std_msgs_generate_messages_nodejs
@@ -821,7 +834,7 @@ help:
 	@echo "... install/local"
 	@echo "... test"
 	@echo "... ball_follower_debug"
-	@echo "... ball_follower"
+	@echo "... find_ball"
 	@echo "... geometry_msgs_generate_messages_py"
 	@echo "... geometry_msgs_generate_messages_nodejs"
 	@echo "... std_msgs_generate_messages_py"
@@ -840,6 +853,7 @@ help:
 	@echo "... rosgraph_msgs_generate_messages_py"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... roscpp_generate_messages_nodejs"
+	@echo "... find_ball_lib"
 	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... drive_wheels"
 	@echo "... roscpp_generate_messages_lisp"

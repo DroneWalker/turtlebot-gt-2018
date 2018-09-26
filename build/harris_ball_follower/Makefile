@@ -56,18 +56,6 @@ CMAKE_BINARY_DIR = /home/charris/introrobotics/turtlebot-gt-2018/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -122,6 +110,18 @@ install/strip: preinstall
 install/strip/fast: install/strip
 
 .PHONY : install/strip/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
 
 # Special rule for the target list_install_components
 list_install_components:
@@ -181,19 +181,19 @@ ball_follower_debug/fast:
 .PHONY : ball_follower_debug/fast
 
 # Convenience name for target.
-harris_ball_follower/CMakeFiles/ball_follower.dir/rule:
-	cd /home/charris/introrobotics/turtlebot-gt-2018/build && $(MAKE) -f CMakeFiles/Makefile2 harris_ball_follower/CMakeFiles/ball_follower.dir/rule
-.PHONY : harris_ball_follower/CMakeFiles/ball_follower.dir/rule
+harris_ball_follower/CMakeFiles/find_ball.dir/rule:
+	cd /home/charris/introrobotics/turtlebot-gt-2018/build && $(MAKE) -f CMakeFiles/Makefile2 harris_ball_follower/CMakeFiles/find_ball.dir/rule
+.PHONY : harris_ball_follower/CMakeFiles/find_ball.dir/rule
 
 # Convenience name for target.
-ball_follower: harris_ball_follower/CMakeFiles/ball_follower.dir/rule
+find_ball: harris_ball_follower/CMakeFiles/find_ball.dir/rule
 
-.PHONY : ball_follower
+.PHONY : find_ball
 
 # fast build rule for target.
-ball_follower/fast:
-	cd /home/charris/introrobotics/turtlebot-gt-2018/build && $(MAKE) -f harris_ball_follower/CMakeFiles/ball_follower.dir/build.make harris_ball_follower/CMakeFiles/ball_follower.dir/build
-.PHONY : ball_follower/fast
+find_ball/fast:
+	cd /home/charris/introrobotics/turtlebot-gt-2018/build && $(MAKE) -f harris_ball_follower/CMakeFiles/find_ball.dir/build.make harris_ball_follower/CMakeFiles/find_ball.dir/build
+.PHONY : find_ball/fast
 
 # Convenience name for target.
 harris_ball_follower/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule:
@@ -466,6 +466,21 @@ roscpp_generate_messages_nodejs/fast:
 .PHONY : roscpp_generate_messages_nodejs/fast
 
 # Convenience name for target.
+harris_ball_follower/CMakeFiles/find_ball_lib.dir/rule:
+	cd /home/charris/introrobotics/turtlebot-gt-2018/build && $(MAKE) -f CMakeFiles/Makefile2 harris_ball_follower/CMakeFiles/find_ball_lib.dir/rule
+.PHONY : harris_ball_follower/CMakeFiles/find_ball_lib.dir/rule
+
+# Convenience name for target.
+find_ball_lib: harris_ball_follower/CMakeFiles/find_ball_lib.dir/rule
+
+.PHONY : find_ball_lib
+
+# fast build rule for target.
+find_ball_lib/fast:
+	cd /home/charris/introrobotics/turtlebot-gt-2018/build && $(MAKE) -f harris_ball_follower/CMakeFiles/find_ball_lib.dir/build.make harris_ball_follower/CMakeFiles/find_ball_lib.dir/build
+.PHONY : find_ball_lib/fast
+
+# Convenience name for target.
 harris_ball_follower/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule:
 	cd /home/charris/introrobotics/turtlebot-gt-2018/build && $(MAKE) -f CMakeFiles/Makefile2 harris_ball_follower/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
 .PHONY : harris_ball_follower/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
@@ -600,33 +615,6 @@ sensor_msgs_generate_messages_lisp/fast:
 	cd /home/charris/introrobotics/turtlebot-gt-2018/build && $(MAKE) -f harris_ball_follower/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make harris_ball_follower/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
 .PHONY : sensor_msgs_generate_messages_lisp/fast
 
-src/ball_follower.o: src/ball_follower.cpp.o
-
-.PHONY : src/ball_follower.o
-
-# target to build an object file
-src/ball_follower.cpp.o:
-	cd /home/charris/introrobotics/turtlebot-gt-2018/build && $(MAKE) -f harris_ball_follower/CMakeFiles/ball_follower.dir/build.make harris_ball_follower/CMakeFiles/ball_follower.dir/src/ball_follower.cpp.o
-.PHONY : src/ball_follower.cpp.o
-
-src/ball_follower.i: src/ball_follower.cpp.i
-
-.PHONY : src/ball_follower.i
-
-# target to preprocess a source file
-src/ball_follower.cpp.i:
-	cd /home/charris/introrobotics/turtlebot-gt-2018/build && $(MAKE) -f harris_ball_follower/CMakeFiles/ball_follower.dir/build.make harris_ball_follower/CMakeFiles/ball_follower.dir/src/ball_follower.cpp.i
-.PHONY : src/ball_follower.cpp.i
-
-src/ball_follower.s: src/ball_follower.cpp.s
-
-.PHONY : src/ball_follower.s
-
-# target to generate assembly for a file
-src/ball_follower.cpp.s:
-	cd /home/charris/introrobotics/turtlebot-gt-2018/build && $(MAKE) -f harris_ball_follower/CMakeFiles/ball_follower.dir/build.make harris_ball_follower/CMakeFiles/ball_follower.dir/src/ball_follower.cpp.s
-.PHONY : src/ball_follower.cpp.s
-
 src/ball_follower_debug.o: src/ball_follower_debug.cpp.o
 
 .PHONY : src/ball_follower_debug.o
@@ -681,6 +669,60 @@ src/drive_wheels.cpp.s:
 	cd /home/charris/introrobotics/turtlebot-gt-2018/build && $(MAKE) -f harris_ball_follower/CMakeFiles/drive_wheels.dir/build.make harris_ball_follower/CMakeFiles/drive_wheels.dir/src/drive_wheels.cpp.s
 .PHONY : src/drive_wheels.cpp.s
 
+src/find_ball.o: src/find_ball.cpp.o
+
+.PHONY : src/find_ball.o
+
+# target to build an object file
+src/find_ball.cpp.o:
+	cd /home/charris/introrobotics/turtlebot-gt-2018/build && $(MAKE) -f harris_ball_follower/CMakeFiles/find_ball_lib.dir/build.make harris_ball_follower/CMakeFiles/find_ball_lib.dir/src/find_ball.cpp.o
+.PHONY : src/find_ball.cpp.o
+
+src/find_ball.i: src/find_ball.cpp.i
+
+.PHONY : src/find_ball.i
+
+# target to preprocess a source file
+src/find_ball.cpp.i:
+	cd /home/charris/introrobotics/turtlebot-gt-2018/build && $(MAKE) -f harris_ball_follower/CMakeFiles/find_ball_lib.dir/build.make harris_ball_follower/CMakeFiles/find_ball_lib.dir/src/find_ball.cpp.i
+.PHONY : src/find_ball.cpp.i
+
+src/find_ball.s: src/find_ball.cpp.s
+
+.PHONY : src/find_ball.s
+
+# target to generate assembly for a file
+src/find_ball.cpp.s:
+	cd /home/charris/introrobotics/turtlebot-gt-2018/build && $(MAKE) -f harris_ball_follower/CMakeFiles/find_ball_lib.dir/build.make harris_ball_follower/CMakeFiles/find_ball_lib.dir/src/find_ball.cpp.s
+.PHONY : src/find_ball.cpp.s
+
+src/find_orange_ball.o: src/find_orange_ball.cpp.o
+
+.PHONY : src/find_orange_ball.o
+
+# target to build an object file
+src/find_orange_ball.cpp.o:
+	cd /home/charris/introrobotics/turtlebot-gt-2018/build && $(MAKE) -f harris_ball_follower/CMakeFiles/find_ball.dir/build.make harris_ball_follower/CMakeFiles/find_ball.dir/src/find_orange_ball.cpp.o
+.PHONY : src/find_orange_ball.cpp.o
+
+src/find_orange_ball.i: src/find_orange_ball.cpp.i
+
+.PHONY : src/find_orange_ball.i
+
+# target to preprocess a source file
+src/find_orange_ball.cpp.i:
+	cd /home/charris/introrobotics/turtlebot-gt-2018/build && $(MAKE) -f harris_ball_follower/CMakeFiles/find_ball.dir/build.make harris_ball_follower/CMakeFiles/find_ball.dir/src/find_orange_ball.cpp.i
+.PHONY : src/find_orange_ball.cpp.i
+
+src/find_orange_ball.s: src/find_orange_ball.cpp.s
+
+.PHONY : src/find_orange_ball.s
+
+# target to generate assembly for a file
+src/find_orange_ball.cpp.s:
+	cd /home/charris/introrobotics/turtlebot-gt-2018/build && $(MAKE) -f harris_ball_follower/CMakeFiles/find_ball.dir/build.make harris_ball_follower/CMakeFiles/find_ball.dir/src/find_orange_ball.cpp.s
+.PHONY : src/find_orange_ball.cpp.s
+
 src/pid_turtlebot.o: src/pid_turtlebot.cpp.o
 
 .PHONY : src/pid_turtlebot.o
@@ -714,14 +756,14 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... install"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... test"
 	@echo "... install/local"
 	@echo "... install/strip"
 	@echo "... ball_follower_debug"
-	@echo "... ball_follower"
+	@echo "... install"
+	@echo "... find_ball"
 	@echo "... geometry_msgs_generate_messages_py"
 	@echo "... geometry_msgs_generate_messages_nodejs"
 	@echo "... std_msgs_generate_messages_py"
@@ -740,6 +782,7 @@ help:
 	@echo "... rosgraph_msgs_generate_messages_py"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... roscpp_generate_messages_nodejs"
+	@echo "... find_ball_lib"
 	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... drive_wheels"
 	@echo "... roscpp_generate_messages_lisp"
@@ -750,15 +793,18 @@ help:
 	@echo "... list_install_components"
 	@echo "... sensor_msgs_generate_messages_eus"
 	@echo "... sensor_msgs_generate_messages_lisp"
-	@echo "... src/ball_follower.o"
-	@echo "... src/ball_follower.i"
-	@echo "... src/ball_follower.s"
 	@echo "... src/ball_follower_debug.o"
 	@echo "... src/ball_follower_debug.i"
 	@echo "... src/ball_follower_debug.s"
 	@echo "... src/drive_wheels.o"
 	@echo "... src/drive_wheels.i"
 	@echo "... src/drive_wheels.s"
+	@echo "... src/find_ball.o"
+	@echo "... src/find_ball.i"
+	@echo "... src/find_ball.s"
+	@echo "... src/find_orange_ball.o"
+	@echo "... src/find_orange_ball.i"
+	@echo "... src/find_orange_ball.s"
 	@echo "... src/pid_turtlebot.o"
 	@echo "... src/pid_turtlebot.i"
 	@echo "... src/pid_turtlebot.s"

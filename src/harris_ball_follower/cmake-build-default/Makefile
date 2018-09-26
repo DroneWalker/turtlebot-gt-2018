@@ -192,19 +192,6 @@ find_ball/fast:
 .PHONY : find_ball/fast
 
 #=============================================================================
-# Target rules for targets named ball_follower
-
-# Build rule for target.
-ball_follower: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 ball_follower
-.PHONY : ball_follower
-
-# fast build rule for target.
-ball_follower/fast:
-	$(MAKE) -f CMakeFiles/ball_follower.dir/build.make CMakeFiles/ball_follower.dir/build
-.PHONY : ball_follower/fast
-
-#=============================================================================
 # Target rules for targets named geometry_msgs_generate_messages_py
 
 # Build rule for target.
@@ -633,33 +620,6 @@ sensor_msgs_generate_messages_eus/fast:
 	$(MAKE) -f CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make CMakeFiles/sensor_msgs_generate_messages_eus.dir/build
 .PHONY : sensor_msgs_generate_messages_eus/fast
 
-src/ball_follower.o: src/ball_follower.cpp.o
-
-.PHONY : src/ball_follower.o
-
-# target to build an object file
-src/ball_follower.cpp.o:
-	$(MAKE) -f CMakeFiles/ball_follower.dir/build.make CMakeFiles/ball_follower.dir/src/ball_follower.cpp.o
-.PHONY : src/ball_follower.cpp.o
-
-src/ball_follower.i: src/ball_follower.cpp.i
-
-.PHONY : src/ball_follower.i
-
-# target to preprocess a source file
-src/ball_follower.cpp.i:
-	$(MAKE) -f CMakeFiles/ball_follower.dir/build.make CMakeFiles/ball_follower.dir/src/ball_follower.cpp.i
-.PHONY : src/ball_follower.cpp.i
-
-src/ball_follower.s: src/ball_follower.cpp.s
-
-.PHONY : src/ball_follower.s
-
-# target to generate assembly for a file
-src/ball_follower.cpp.s:
-	$(MAKE) -f CMakeFiles/ball_follower.dir/build.make CMakeFiles/ball_follower.dir/src/ball_follower.cpp.s
-.PHONY : src/ball_follower.cpp.s
-
 src/ball_follower_debug.o: src/ball_follower_debug.cpp.o
 
 .PHONY : src/ball_follower_debug.o
@@ -809,7 +769,6 @@ help:
 	@echo "... ball_follower_debug"
 	@echo "... install"
 	@echo "... find_ball"
-	@echo "... ball_follower"
 	@echo "... geometry_msgs_generate_messages_py"
 	@echo "... sensor_msgs_generate_messages_py"
 	@echo "... pid_turtlebot"
@@ -844,9 +803,6 @@ help:
 	@echo "... sensor_msgs_generate_messages_cpp"
 	@echo "... list_install_components"
 	@echo "... sensor_msgs_generate_messages_eus"
-	@echo "... src/ball_follower.o"
-	@echo "... src/ball_follower.i"
-	@echo "... src/ball_follower.s"
 	@echo "... src/ball_follower_debug.o"
 	@echo "... src/ball_follower_debug.i"
 	@echo "... src/ball_follower_debug.s"

@@ -144,6 +144,10 @@ geometry_msgs::Point FindBallImpl::getCenterPoint(std::vector<cv::Vec3f> circles
 
 }
 
+FindBallImpl::~FindBallImpl()
+{
+}
+
 
 
 

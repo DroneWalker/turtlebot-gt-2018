@@ -92,23 +92,12 @@ int main(int argc, char **argv)
     }
 #endif
 
-    // Get frame from subscription
-    if (!img == NULL)
-    {
-        frame = img->image;
-    }
-    else
-    {
-        cout << "Image pointer is currently NULL!" << endl;
-
-    }
-
     Rect2d bbox;
     bool init = false;
 
 
     // SEPARATE ROS OK AND IMG NULL???
-    while(!img == NULL && ros::ok()) {
+    while(ros::ok()) {
         // Get Image (Check if it is new???)
         frame = img->image;
         // FindBall Object
