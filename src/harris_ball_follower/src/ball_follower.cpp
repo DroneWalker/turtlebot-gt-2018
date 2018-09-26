@@ -31,15 +31,13 @@ void imageCallback(const sensor_msgs::ImageConstPtr& msg)
     //mat_received.convertTo(frame, 5);
     //cv::imshow("subscribed to image", frame);
     try {
-        //img = cv_bridge::toCvShare(msg, "bgr8")->image)
-        cv::imshow("view", cv_bridge::toCvShare(msg, "bgr8")->image);
-        cv::waitKey(10);
+        img = cv_bridge::toCvCopy(msg, sensor_msgs::image_encodings::BGR8);
     }
     catch (cv_bridge::Exception& e)
     {
         ROS_ERROR("Could not convert from '%s' to 'bgr8'.", msg->encoding.c_str());
     }
-   // cv::imshow("subscribing", img->image);
+    cv::imshow("subscribing", img->image);
 }
 
 
