@@ -47,8 +47,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1c7b909d-811d-4332-b951-a4244ffb43ac" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../../image_common" beforeDir="false" afterPath="$PROJECT_DIR$/../../image_common" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/find_ball.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/find_ball.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/find_ball.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/find_ball.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/find_orange_ball.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/find_orange_ball.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -93,7 +91,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cpp" value="13591" />
+          <entry key="cpp" value="13649" />
           <entry key="h" value="1295" />
           <entry key="txt" value="1796" />
           <entry key="xml" value="25" />
@@ -103,7 +101,7 @@
         <counts>
           <entry key="CMakeLists.txt" value="1796" />
           <entry key="Doxygen file" value="3" />
-          <entry key="ObjectiveC" value="14883" />
+          <entry key="ObjectiveC" value="14941" />
           <entry key="XML" value="25" />
         </counts>
       </usages-collector>
@@ -128,7 +126,7 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/find_ball.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="270">
+                <state relative-caret-position="45">
                   <caret line="30" column="44" lean-forward="true" selection-start-line="30" selection-start-column="44" selection-end-line="30" selection-end-column="44" />
                   <folding>
                     <element signature="e#95#115#0" expanded="true" />
@@ -198,8 +196,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/find_orange_ball.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="333">
-                  <caret line="158" column="33" selection-start-line="158" selection-start-column="33" selection-end-line="158" selection-end-column="33" />
+                <state relative-caret-position="407">
+                  <caret line="202" column="34" selection-start-line="202" selection-start-column="34" selection-end-line="202" selection-end-column="34" />
                   <folding>
                     <element signature="e#42#62#0" expanded="true" />
                   </folding>
@@ -594,12 +592,12 @@
       <workItem from="1537364894879" duration="1952000" />
       <workItem from="1537367027381" duration="3363000" />
       <workItem from="1537968899081" duration="9565000" />
-      <workItem from="1538005859885" duration="12702000" />
+      <workItem from="1538005859885" duration="13160000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66527000" />
+    <option name="totallyTimeSpent" value="66985000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="294" y="38" width="1594" height="1000" extended-state="0" />
@@ -751,7 +749,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/find_ball.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
+        <state relative-caret-position="45">
           <caret line="30" column="44" lean-forward="true" selection-start-line="30" selection-start-column="44" selection-end-line="30" selection-end-column="44" />
           <folding>
             <element signature="e#95#115#0" expanded="true" />
@@ -761,8 +759,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/find_orange_ball.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="158" column="33" selection-start-line="158" selection-start-column="33" selection-end-line="158" selection-end-column="33" />
+        <state relative-caret-position="407">
+          <caret line="202" column="34" selection-start-line="202" selection-start-column="34" selection-end-line="202" selection-end-column="34" />
           <folding>
             <element signature="e#42#62#0" expanded="true" />
           </folding>
