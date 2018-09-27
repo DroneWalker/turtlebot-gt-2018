@@ -19,6 +19,9 @@
 using namespace cv;
 using namespace std;
 using namespace ros;
+geometry_msgs::Point circle_cp;
+Rect2d bbox;
+Ptr<Tracker> tracker;
 
 //cv_bridge::CvImagePtr img;
 cv::Mat frame;
@@ -52,53 +55,8 @@ FindBall ballTrack = FindBall(frame);
 
 void imageTracking()
 {
-    // open CV
-    Mat track;
-    Mat detect;
-    geometry_msgs::Point circle_cp;
-
-    // List of tracker types in OpenCV 3.4.1
-    string trackerTypes[8] = {"BOOSTING", "MIL", "KCF", "TLD","MEDIANFLOW", "GOTURN", "MOSSE", "CSRT"};
-    // vector <string> trackerTypes(types, std::end(types));
-
-    // Create a tracker
-    string trackerType = trackerTypes[2];
-
-    Ptr<Tracker> tracker;
-
-#if (CV_MINOR_VERSION < 3)
-    {
-        tracker = Tracker::create(trackerType);
-    }
-#else
-    {
-        if (trackerType == "BOOSTING")
-            tracker = TrackerBoosting::create();
-        if (trackerType == "MIL")
-            tracker = TrackerMIL::create();
-        if (trackerType == "KCF")
-            tracker = TrackerKCF::create();
-        if (trackerType == "TLD")
-            tracker = TrackerTLD::create();
-        if (trackerType == "MEDIANFLOW")
-            tracker = TrackerMedianFlow::create();
-        if (trackerType == "GOTURN")
-            tracker = TrackerGOTURN::create();
-        //if (trackerType == "MOSSE")
-        //tracker = TrackerMOSSE::create();
-        //if (trackerType == "CSRT")
-        //tracker = TrackerCSRT::create();
-    }
-#endif
-
-    Rect2d bbox;
+    bool ok;
     bool init = false;
-    bool ok = false;
-
-
-    // Ros loop
-    //while(ros::ok() && run == true) {
-
     ROS_INFO("In Ros loop");
 
     // Mask, detect, centerpoint
@@ -126,25 +84,22 @@ void imageTracking()
         int yp;
         int radius;
 
-
-        if (!circles.empty())
+        // Draw the circles detected
+        for (size_t i = 0; i < circles.size(); i++)
         {
-            // Draw the circles detected
-            for (size_t i = 0; i < circles.size(); i++)
+            radius = cvRound(circles[i][2]);
+            if (radius > largest_radius)
             {
-                radius = cvRound(circles[i][2]);
-                if (radius > largest_radius)
-                {
-                    largest_radius = radius;
-                    largest_circle_index = i;
-                    xp = circles[i][0];
-                    yp = circles[i][1];
-                    circle_cp.x = xp;
-                    circle_cp.y = yp;
-                    circle_cp.z = 0;
-                }
+                largest_radius = radius;
+                largest_circle_index = i;
+                xp = circles[i][0];
+                yp = circles[i][1];
+                circle_cp.x = xp;
+                circle_cp.y = yp;
+                circle_cp.z = 0;
             }
         }
+
         cv::Point center(cvRound(xp), cvRound(xp));
 
         circle(frame, center, 3, Scalar(0, 255, 0), -1, 8, 0);// circle center
@@ -157,17 +112,16 @@ void imageTracking()
             cout << "center : " << center << "\nradius : " << radius << endl;
             cout << "bounding box :" << bbox << endl;
         }
+
+
         imshow("circles", frame);
     }
 
-
+    ok = tracker->update(frame, bbox);
 
 
     // Start timer
         double timer = (double) getTickCount();
-
-        // Update the tracking result
-        ok = tracker->update(frame, bbox);
 
         // Calculate Frames per second (FPS)
         float fps = getTickFrequency() / ((double) getTickCount() - timer);
@@ -180,14 +134,16 @@ void imageTracking()
             circle_cp.x = bbox.x+bbox.height/2;
             circle_cp.y = bbox.y+bbox.width/2;
             circle_cp.z = 0;
+            init == true;
         } else {
             // Tracking failure detected.
             putText(frame, "Tracking failure detected", Point(100, 80), FONT_HERSHEY_SIMPLEX, 0.75,
                     Scalar(0, 0, 255), 2);
+            init = false;
         }
 
         // Display tracker type on frame
-        putText(frame, trackerType + " Tracker", Point(100, 20), FONT_HERSHEY_SIMPLEX, 0.75, Scalar(50, 170, 50),
+        putText(frame, "KCF Tracker", Point(100, 20), FONT_HERSHEY_SIMPLEX, 0.75, Scalar(50, 170, 50),
                 2);
 
         // Display FPS on frame
@@ -236,7 +192,7 @@ int main(int argc, char **argv)
     // Class setup
 
     // ROS Setup
-    init(argc, argv, "find_ball");
+    ros::init(argc, argv, "find_ball");
     NodeHandle n;
     image_transport::ImageTransport it(n);
     //namedWindow("Tracking", CV_WINDOW_AUTOSIZE);
@@ -244,15 +200,59 @@ int main(int argc, char **argv)
     startWindowThread();
     // "/raspicam_node/image"
 
+    // open CV
+    Mat track;
+    Mat detect;
+
+    // List of tracker types in OpenCV 3.4.1
+    string trackerTypes[8] = {"BOOSTING", "MIL", "KCF", "TLD","MEDIANFLOW", "GOTURN", "MOSSE", "CSRT"};
+    // vector <string> trackerTypes(types, std::end(types));
+
+    // Create a tracker
+    string trackerType = trackerTypes[2];
+
+    //Ptr<Tracker> tracker;
+
+#if (CV_MINOR_VERSION < 3)
+    {
+        tracker = Tracker::create(trackerType);
+    }
+#else
+    {
+        if (trackerType == "BOOSTING")
+            tracker = TrackerBoosting::create();
+        if (trackerType == "MIL")
+            tracker = TrackerMIL::create();
+        if (trackerType == "KCF")
+            tracker = TrackerKCF::create();
+        if (trackerType == "TLD")
+            tracker = TrackerTLD::create();
+        if (trackerType == "MEDIANFLOW")
+            tracker = TrackerMedianFlow::create();
+        if (trackerType == "GOTURN")
+            tracker = TrackerGOTURN::create();
+        //if (trackerType == "MOSSE")
+        //tracker = TrackerMOSSE::create();
+        //if (trackerType == "CSRT")
+        //tracker = TrackerCSRT::create();
+    }
+#endif
+
+    Rect2d bbox;
+    bool init = false;
+    bool ok = false;
+
+    image_transport::Subscriber image_sub = it.subscribe("/raspicam_node/image",
+                                                         10, imageCallback);
+    Publisher trackpoint_pub = n.advertise<geometry_msgs::Point>("trackpoint", 1000);
+    Rate loop_rate(10);
+
     while(ros::ok()) {
-        image_transport::Subscriber image_sub = it.subscribe("/raspicam_node/image",
-                                                             1, imageCallback);
-        ros::spin();
-        Publisher trackpoint_pub = n.advertise<geometry_msgs::Point>("trackpoint", 1000);
-        Rate loop_rate(10);
-        //trackpoint_pub.publish(circle_cp);
-        //ros::spinOnce();
-        //loop_rate.sleep();
+        trackpoint_pub.publish(circle_cp);
+        ros::spinOnce();
+        loop_rate.sleep();
+
+
 
         // Exit if ESC pressed.
         int k = waitKey(1);
@@ -260,6 +260,7 @@ int main(int argc, char **argv)
             break;
         }
     }
+    ros::spin();
 
     return 0;
 }
