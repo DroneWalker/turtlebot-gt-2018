@@ -22,6 +22,7 @@ using namespace ros;
 
 //cv_bridge::CvImagePtr img;
 cv::Mat frame;
+FindBall ballTrack = FindBall(frame);
 
 
 /*void compressedimageCallback(const sensor_msgs::CompressedImageConstPtr& msg)
@@ -47,44 +48,10 @@ cv::Mat frame;
     //cv::imshow("subscribing", cv_ptr->image);
 }*/
 
-void imageCallback(const sensor_msgs::ImageConstPtr msg)
+
+
+void imageTracking()
 {
-    cv_bridge::CvImagePtr cv_ptr;
-    try
-    {
-        //cv::imshow("subscribing", cv_bridge::toCvShare(msg, "bgr8")->image);
-        //cv::waitKey(10);
-        cv_ptr = cv_bridge::toCvCopy(msg, "bgr8");
-        ROS_INFO("Converting Image Loop");
-    }
-    catch (cv_bridge::Exception& e)
-    {
-        ROS_ERROR("cv_bridge exception: %s", e.what());
-        return;
-    }
-    //Update GUI
-    cv::imshow("subscribing", cv_ptr->image);
-    cv::waitKey(10);
-    
-
-}
-
-int main(int argc, char **argv)
-{
-    // ROS Setup
-    init(argc, argv, "find_ball");
-    NodeHandle n;
-    image_transport::ImageTransport it(n);
-    //namedWindow("Tracking", CV_WINDOW_AUTOSIZE);
-    namedWindow("subscribing", CV_WINDOW_AUTOSIZE);
-    startWindowThread();
-    // "/raspicam_node/image"
-    image_transport::Subscriber image_sub = it.subscribe("/raspicam_node/image",
-                                                         1,imageCallback);
-    ros::spin();
-    Publisher trackpoint_pub = n.advertise<geometry_msgs::Point>("trackpoint",1000);
-    Rate loop_rate(10);
-
     // open CV
     Mat track;
     Mat detect;
@@ -127,78 +94,131 @@ int main(int argc, char **argv)
     Rect2d bbox;
     bool init = false;
     bool ok = false;
-    bool run = false;
+    bool run = true;
+
 
     // Ros loop
-    while(ros::ok() && run == true) {
-        // Get Image (Check if it is new???)
-        // Check image available
-        //frame = img->image;
-        // FindBall Object
-        FindBall ballTrack = FindBall(frame);
+    //while(ros::ok() && run == true) {
 
-        // Mask, detect, centerpoint
-        Mat mask = ballTrack.orangeMask(frame);
-        vector<Vec3f> circles = ballTrack.detectCircles(mask);
-        geometry_msgs::Point centerpoint = ballTrack.getCenterPoint(circles);
+    ROS_INFO("In Ros loop");
 
-        //cv::Point center(cvRound(xp), cvRound(yp));
-        //circle(frame, center, 3, Scalar(0, 255, 0), -1, 8, 0);// circle center
-        //circle(detect, center, radius, Scalar(0, 0, 255), 3, 8, 0);// circle outline
-        //bbox = Rect2d(xp - radius, yp - radius, radius * 2, radius * 2);
-        //if (init == false) {
-        //    tracker->init(frame, bbox);
-        //    init == true;
-        //cout << "center : " << center << "\nradius : " << radius << endl;
-        //cout << "bounding box :" << bbox << endl;
+    // Mask, detect, centerpoint
+    Mat mask = ballTrack.orangeMask();
+    Mat frame = ballTrack.getFrame();
 
-        // Start timer
-        double timer = (double) getTickCount();
-
-        // Update the tracking result
-        ok = tracker->update(frame, bbox);
-
-        // Calculate Frames per second (FPS)
-        float fps = getTickFrequency() / ((double) getTickCount() - timer);
-
-        if (ok) {
-            // Tracking success : Draw the tracked object
-            cv::rectangle(frame, bbox, Scalar(255, 0, 0), 2, 1);
-            Point center = Point(bbox.x+bbox.height/2, bbox.y+bbox.width/2);
-            cv::circle(frame, center, 3, Scalar(0, 255, 0), -1, 8, 0);// circle center
-            circle_cp.x = bbox.x+bbox.height/2;
-            circle_cp.y = bbox.y+bbox.width/2;
-            circle_cp.z = 0;
-        } else {
-            // Tracking failure detected.
-            putText(frame, "Tracking failure detected", Point(100, 80), FONT_HERSHEY_SIMPLEX, 0.75,
-                    Scalar(0, 0, 255), 2);
-        }
-
-        // Display tracker type on frame
-        putText(frame, trackerType + " Tracker", Point(100, 20), FONT_HERSHEY_SIMPLEX, 0.75, Scalar(50, 170, 50),
-                2);
-
-        // Display FPS on frame
-        putText(frame, "FPS : " + SSTR(int(fps)), Point(100, 50), FONT_HERSHEY_SIMPLEX, 0.75, Scalar(50, 170, 50),
-                2);
-
-        // Display center pixel point on frame
-        putText(frame, "Pixel Coordinates:  x = " + SSTR(int(circle_cp.x)) + " y = " + SSTR(int(circle_cp.y)),
-                Point(20, 100), FONT_HERSHEY_SIMPLEX, 0.50, Scalar(50, 170, 50), 2);
+    imshow("main loop", frame);
+    imshow("mask", mask);
 
 
-        // Display frame.
-        imshow("Tracking", frame);
-        //imshow("Detecting", detect);
-        imshow("Masking", mask);
 
-        // Ros publisher output
-        trackpoint_pub.publish(circle_cp);
-        ros::spinOnce();
-        loop_rate.sleep();
+    //vector<Vec3f> circles = ballTrack.detectCircles();
+    //geometry_msgs::Point centerpoint = ballTrack.getCenterPoint(circles);
 
 
+    ///cv::Point center(cvRound(xp), cvRound(yp));
+    //circle(frame, center, 3, Scalar(0, 255, 0), -1, 8, 0);// circle center
+    //circle(detect, center, radius, Scalar(0, 0, 255), 3, 8, 0);// circle outline
+    //bbox = Rect2d(xp - radius, yp - radius, radius * 2, radius * 2);
+    //if (init == false) {
+    //    tracker->init(frame, bbox);
+    //    init == true;
+    //cout << "center : " << center << "\nradius : " << radius << endl;
+    //cout << "bounding box :" << bbox << endl;
+
+    // Start timer
+//        double timer = (double) getTickCount();
+//
+//        // Update the tracking result
+//        ok = tracker->update(frame, bbox);
+//
+//        // Calculate Frames per second (FPS)
+//        float fps = getTickFrequency() / ((double) getTickCount() - timer);
+//
+//        if (ok) {
+//            // Tracking success : Draw the tracked object
+//            cv::rectangle(frame, bbox, Scalar(255, 0, 0), 2, 1);
+//            Point center = Point(bbox.x+bbox.height/2, bbox.y+bbox.width/2);
+//            cv::circle(frame, center, 3, Scalar(0, 255, 0), -1, 8, 0);// circle center
+//            circle_cp.x = bbox.x+bbox.height/2;
+//            circle_cp.y = bbox.y+bbox.width/2;
+//            circle_cp.z = 0;
+//        } else {
+//            // Tracking failure detected.
+//            putText(frame, "Tracking failure detected", Point(100, 80), FONT_HERSHEY_SIMPLEX, 0.75,
+//                    Scalar(0, 0, 255), 2);
+//        }
+//
+//        // Display tracker type on frame
+//        putText(frame, trackerType + " Tracker", Point(100, 20), FONT_HERSHEY_SIMPLEX, 0.75, Scalar(50, 170, 50),
+//                2);
+//
+//        // Display FPS on frame
+//        putText(frame, "FPS : " + SSTR(int(fps)), Point(100, 50), FONT_HERSHEY_SIMPLEX, 0.75, Scalar(50, 170, 50),
+//                2);
+//
+//        // Display center pixel point on frame
+//        putText(frame, "Pixel Coordinates:  x = " + SSTR(int(circle_cp.x)) + " y = " + SSTR(int(circle_cp.y)),
+//                Point(20, 100), FONT_HERSHEY_SIMPLEX, 0.50, Scalar(50, 170, 50), 2);
+//
+//
+//        // Display frame.
+//        imshow("Tracking", frame);
+//        //imshow("Detecting", detect);
+//        imshow("Masking", mask);
+//
+//        // Ros publisher output
+//        trackpoint_pub.publish(circle_cp);
+//        ros::spinOnce();
+//        loop_rate.sleep();
+
+
+
+
+   // }
+}
+
+void imageCallback(const sensor_msgs::ImageConstPtr msg)
+{
+    cv_bridge::CvImagePtr cv_ptr;
+    try
+    {
+        //cv::imshow("subscribing", cv_bridge::toCvShare(msg, "bgr8")->image);
+        //cv::waitKey(10);
+        cv_ptr = cv_bridge::toCvCopy(msg, "bgr8");
+        ROS_INFO("Converting Image Loop");
+        ballTrack.setFrame(cv_ptr->image);
+    }
+    catch (cv_bridge::Exception& e)
+    {
+        ROS_ERROR("cv_bridge exception: %s", e.what());
+        return;
+    }
+    //Update GUI
+    cv::imshow("subscribing", cv_ptr->image);
+    cv::waitKey(10);
+    imageTracking();
+
+}
+
+int main(int argc, char **argv)
+{
+    // Class setup
+
+    // ROS Setup
+    init(argc, argv, "find_ball");
+    NodeHandle n;
+    image_transport::ImageTransport it(n);
+    //namedWindow("Tracking", CV_WINDOW_AUTOSIZE);
+    namedWindow("subscribing", CV_WINDOW_AUTOSIZE);
+    startWindowThread();
+    // "/raspicam_node/image"
+
+    while(ros::ok()) {
+        image_transport::Subscriber image_sub = it.subscribe("/raspicam_node/image",
+                                                             1, imageCallback);
+        ros::spin();
+        Publisher trackpoint_pub = n.advertise<geometry_msgs::Point>("trackpoint", 1000);
+        Rate loop_rate(10);
 
         // Exit if ESC pressed.
         int k = waitKey(1);
@@ -206,6 +226,6 @@ int main(int argc, char **argv)
             break;
         }
     }
-    //ros::spin();
+
     return 0;
 }

@@ -43,8 +43,10 @@ public:
     FindBallImpl(cv::Mat frame);
     ~FindBallImpl();
     geometry_msgs::Point getCenterPoint(std::vector<cv::Vec3f> circles);
-    Mat orangeMask(Mat frame);
-    vector<Vec3f> detectCircles(Mat frame);
+    Mat orangeMask();
+    vector<Vec3f> detectCircles();
+    void setFrame(Mat frame);
+    Mat getFrame();
 
 private:
     cv_bridge::CvImagePtr _img;
@@ -61,14 +63,24 @@ geometry_msgs::Point FindBall::getCenterPoint(std::vector<cv::Vec3f> circles)
     return pimpl->getCenterPoint(circles);
 }
 
-Mat FindBall::orangeMask(cv::Mat frame)
+Mat FindBall::orangeMask()
 {
-    return pimpl->orangeMask(frame);
+    return pimpl->orangeMask();
 }
 
-vector<Vec3f> FindBall::detectCircles(Mat frame)
+vector<Vec3f> FindBall::detectCircles()
 {
-    return pimpl->detectCircles(frame);
+    return pimpl->detectCircles();
+}
+
+void FindBall::setFrame(Mat frame)
+{
+    return pimpl->setFrame(frame);
+}
+
+Mat FindBall::getFrame()
+{
+    return pimpl->getFrame();
 }
 FindBall::~FindBall()
 {
@@ -84,8 +96,9 @@ FindBallImpl::FindBallImpl(Mat frame) :
 {
 }
 
-Mat FindBallImpl::orangeMask(Mat frame)
+Mat FindBallImpl::orangeMask()
 {
+    Mat frame = _frame;
     Mat mask;
     cv::cvtColor(frame, mask, COLOR_BGR2HSV);
 
@@ -102,8 +115,9 @@ Mat FindBallImpl::orangeMask(Mat frame)
     return mask;
 }
 
-vector<Vec3f> FindBallImpl::detectCircles(Mat frame)
+vector<Vec3f> FindBallImpl::detectCircles()
 {
+    Mat frame = _frame;
     cv::GaussianBlur(frame, frame, Size(7,7), 2, 2);
 
     vector<Vec3f> circles;
@@ -142,6 +156,16 @@ geometry_msgs::Point FindBallImpl::getCenterPoint(std::vector<cv::Vec3f> circles
 
     return circle_cp;
 
+}
+
+void FindBallImpl::setFrame(Mat frame)
+{
+    _frame = frame;
+}
+
+Mat FindBallImpl::getFrame()
+{
+    return _frame;
 }
 
 FindBallImpl::~FindBallImpl()

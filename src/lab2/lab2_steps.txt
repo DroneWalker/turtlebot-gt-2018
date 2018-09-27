@@ -34,6 +34,10 @@ $ rosrun harris_ball_follower ball_follower __image_transport:=compressed
 OR
 $ rosrun image_transport republish compressed in:=/webcam/image_raw raw out:=/raspicam_node/image _image_transport:=compressed
 
+## If on laptop:
+source ~/introrobotics/extras_ws/devel/setup.bash
+roslaunch video_stream_opencv webcam.launch 
+
 
 ## Run ball_follower node
 $ rosrun harris_ball_follower find_orange_ball

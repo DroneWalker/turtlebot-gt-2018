@@ -25,10 +25,11 @@ public:
     FindBall(cv::Mat frame);
 
     //Define Functions
-    cv::Mat orangeMask(cv::Mat frame);
-    std::vector<cv::Vec3f> detectCircles(cv::Mat frame);
+    cv::Mat orangeMask();
+    std::vector<cv::Vec3f> detectCircles();
     geometry_msgs::Point getCenterPoint(std::vector<cv::Vec3f> circles);
-    void displayFrame(cv::Mat viewFrame);
+    void setFrame(cv::Mat frame);
+    cv::Mat getFrame();
     ~FindBall();
 
 private:
