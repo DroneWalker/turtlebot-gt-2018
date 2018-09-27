@@ -4,6 +4,7 @@
 harris_ball_follower/CMakeFiles/find_ball.dir/src/find_orange_ball.cpp.o: /home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/src/find_ball.cpp
 harris_ball_follower/CMakeFiles/find_ball.dir/src/find_orange_ball.cpp.o: /home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/src/find_ball.h
 harris_ball_follower/CMakeFiles/find_ball.dir/src/find_orange_ball.cpp.o: /home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/src/find_orange_ball.cpp
+harris_ball_follower/CMakeFiles/find_ball.dir/src/find_orange_ball.cpp.o: /opt/ros/kinetic/include/compressed_image_transport/compression_common.h
 harris_ball_follower/CMakeFiles/find_ball.dir/src/find_orange_ball.cpp.o: /opt/ros/kinetic/include/cv_bridge/cv_bridge.h
 harris_ball_follower/CMakeFiles/find_ball.dir/src/find_orange_ball.cpp.o: /opt/ros/kinetic/include/geometry_msgs/Point.h
 harris_ball_follower/CMakeFiles/find_ball.dir/src/find_orange_ball.cpp.o: /opt/ros/kinetic/include/image_transport/camera_publisher.h

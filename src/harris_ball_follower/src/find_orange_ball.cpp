@@ -9,6 +9,8 @@
 #include <opencv2/tracking.hpp>
 #include <opencv2/core/ocl.hpp>
 #include <image_transport/image_transport.h>
+#include <compressed_image_transport/compression_common.h>
+#include <sensor_msgs/image_encodings.h>
 #include <cv_bridge/cv_bridge.h>
 #include <sstream>
 
@@ -18,26 +20,52 @@ using namespace cv;
 using namespace std;
 using namespace ros;
 
-cv_bridge::CvImagePtr img;
+//cv_bridge::CvImagePtr img;
 cv::Mat frame;
 
 
-void imageCallback(const sensor_msgs::ImageConstPtr& msg)
+/*void compressedimageCallback(const sensor_msgs::CompressedImageConstPtr& msg)
 {
-    // img = cv_bridge::toCvCopy(msg);
-    //cv::Mat mat_received = img->image;
-    //mat_received.convertTo(frame, 5);
-    //cv::imshow("subscribed to image", frame);
-    try {
-        img = cv_bridge::toCvCopy(msg, sensor_msgs::image_encodings::BGR8);
+    cv_bridge::CvImagePtr cv_ptr(new cv_bridge::CvImagePtr);
+    //cv_bridge::CvImagePtr cv_ptr;
+    // Copy message header
+    //cv_ptr->header = msg->header;
+
+    //Decode image
+    try
+    {
+        //img = cv_bridge::toCvCopy(msg, sensor_msgs::image_encodings::BGR8);
+        cv_ptr->image = cv::imdecode(cv::Mat(msg->data), CV_LOAD_IMAGE_UNCHANGED);
+        //cv_ptr->encoding = sensor_msgs::image_encodings::BGR8;
     }
     catch (cv_bridge::Exception& e)
     {
-        ROS_ERROR("Could not convert from '%s' to 'bgr8'.", msg->encoding.c_str());
+        ROS_ERROR("Could not convert compressed image");
     }
-    cv::imshow("subscribing", img->image);
-}
+    // Publish message to user callback
 
+    //cv::imshow("subscribing", cv_ptr->image);
+}*/
+
+void imageCallback(const sensor_msgs::ImageConstPtr msg)
+{
+    cv_bridge::CvImagePtr cv_ptr;
+    try
+    {
+        //cv::imshow("subscribing", cv_bridge::toCvShare(msg, "bgr8")->image);
+        //cv::waitKey(10);
+        cv_ptr = cv_bridge::toCvCopy(msg, "bgr8");
+        cv::imshow("subscribing", cv_ptr->image);
+        cv::waitKey(10);
+        ROS_INFO("Converting Image Loop");
+    }
+    catch (cv_bridge::Exception& e)
+    {
+        ROS_ERROR("cv_bridge exception: %s", e.what());
+        return;
+    }
+
+}
 
 int main(int argc, char **argv)
 {
@@ -45,11 +73,13 @@ int main(int argc, char **argv)
     init(argc, argv, "find_ball");
     NodeHandle n;
     image_transport::ImageTransport it(n);
-    namedWindow("Tracking", CV_WINDOW_AUTOSIZE);
+    //namedWindow("Tracking", CV_WINDOW_AUTOSIZE);
     namedWindow("subscribing", CV_WINDOW_AUTOSIZE);
     startWindowThread();
+    // "/raspicam_node/image"
     image_transport::Subscriber image_sub = it.subscribe("/raspicam_node/image",
-                                                         5,imageCallback);
+                                                         1,imageCallback);
+    ros::spin();
     Publisher trackpoint_pub = n.advertise<geometry_msgs::Point>("trackpoint",1000);
     Rate loop_rate(10);
 
@@ -94,12 +124,14 @@ int main(int argc, char **argv)
 
     Rect2d bbox;
     bool init = false;
+    bool ok = false;
+    bool run = false;
 
-
-    // SEPARATE ROS OK AND IMG NULL???
-    while(ros::ok()) {
+    // Ros loop
+    while(ros::ok() && run == true) {
         // Get Image (Check if it is new???)
-        frame = img->image;
+        // Check image available
+        //frame = img->image;
         // FindBall Object
         FindBall ballTrack = FindBall(frame);
 
@@ -122,7 +154,7 @@ int main(int argc, char **argv)
         double timer = (double) getTickCount();
 
         // Update the tracking result
-        bool ok = tracker->update(frame, bbox);
+        ok = tracker->update(frame, bbox);
 
         // Calculate Frames per second (FPS)
         float fps = getTickFrequency() / ((double) getTickCount() - timer);
@@ -172,6 +204,6 @@ int main(int argc, char **argv)
             break;
         }
     }
-    ros::spin();
+    //ros::spin();
     return 0;
 }

@@ -7,8 +7,6 @@
 #IncludeRegexTransform: 
 
 /home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/src/ball_follower_debug.cpp
-ros/ros.h
-/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/src/ros/ros.h
 opencv2/opencv.hpp
 -
 opencv2/tracking.hpp

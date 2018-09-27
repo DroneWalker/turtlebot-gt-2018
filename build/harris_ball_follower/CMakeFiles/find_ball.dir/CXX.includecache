@@ -53,12 +53,18 @@ opencv2/core/ocl.hpp
 -
 image_transport/image_transport.h
 -
+compressed_image_transport/compression_common.h
+-
+sensor_msgs/image_encodings.h
+-
 cv_bridge/cv_bridge.h
 -
 sstream
 -
 find_ball.cpp
 /home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/src/find_ball.cpp
+
+/opt/ros/kinetic/include/compressed_image_transport/compression_common.h
 
 /opt/ros/kinetic/include/cv_bridge/cv_bridge.h
 sensor_msgs/Image.h
