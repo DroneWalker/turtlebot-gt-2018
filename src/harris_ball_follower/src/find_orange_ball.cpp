@@ -93,8 +93,6 @@ void imageTracking()
 
     Rect2d bbox;
     bool init = false;
-    bool ok = false;
-    bool run = true;
 
 
     // Ros loop
@@ -109,21 +107,60 @@ void imageTracking()
     imshow("main loop", frame);
     imshow("mask", mask);
 
+    vector<Vec3f> circles = ballTrack.detectCircles(mask);
+
+    if (circles.empty())
+    {
+        // Nothing to do
+        ROS_INFO("No circles detected!");
+    } else
+    {
+        //geometry_msgs::Point centerpoint = ballTrack.getCenterPoint(circles);
+        cv::Point centerpoint;
+        cv::Rect2d box;
+        geometry_msgs::Point circle_cp;
+        int largest_radius = 0;
+        int largest_circle_index = 0;
+        int xp;
+        int yp;
+        int radius;
 
 
-    //vector<Vec3f> circles = ballTrack.detectCircles();
-    //geometry_msgs::Point centerpoint = ballTrack.getCenterPoint(circles);
+        if (!circles.empty())
+        {
+            // Draw the circles detected
+            for (size_t i = 0; i < circles.size(); i++)
+            {
+                radius = cvRound(circles[i][2]);
+                if (radius > largest_radius)
+                {
+                    largest_radius = radius;
+                    largest_circle_index = i;
+                    xp = circles[i][0];
+                    yp = circles[i][1];
+                    circle_cp.x = xp;
+                    circle_cp.y = yp;
+                    circle_cp.z = 0;
+                }
+            }
+        }
+        cv::Point center(cvRound(xp), cvRound(xp));
+
+        circle(frame, center, 3, Scalar(0, 255, 0), -1, 8, 0);// circle center
+        circle(frame, center, radius, Scalar(0, 0, 255), 3, 8, 0);// circle outline
+        bbox = Rect2d(xp - radius, yp - radius, radius * 2, radius * 2);
+        if (init == false)
+        {
+            tracker->init(frame, bbox);
+            init == true;
+            cout << "center : " << center << "\nradius : " << radius << endl;
+            cout << "bounding box :" << bbox << endl;
+        }
+        imshow("circles", frame);
+    }
 
 
-    ///cv::Point center(cvRound(xp), cvRound(yp));
-    //circle(frame, center, 3, Scalar(0, 255, 0), -1, 8, 0);// circle center
-    //circle(detect, center, radius, Scalar(0, 0, 255), 3, 8, 0);// circle outline
-    //bbox = Rect2d(xp - radius, yp - radius, radius * 2, radius * 2);
-    //if (init == false) {
-    //    tracker->init(frame, bbox);
-    //    init == true;
-    //cout << "center : " << center << "\nradius : " << radius << endl;
-    //cout << "bounding box :" << bbox << endl;
+
 
     // Start timer
 //        double timer = (double) getTickCount();

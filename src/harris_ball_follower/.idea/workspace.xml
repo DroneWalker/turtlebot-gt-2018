@@ -46,13 +46,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1c7b909d-811d-4332-b951-a4244ffb43ac" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../devel/lib/harris_ball_follower/find_ball" beforeDir="false" afterPath="$PROJECT_DIR$/../../devel/lib/harris_ball_follower/find_ball" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../image_common" beforeDir="false" afterPath="$PROJECT_DIR$/../../image_common" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/find_ball.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/find_ball.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/find_ball.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/find_ball.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/find_orange_ball.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/find_orange_ball.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab2/lab2_steps.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../lab2/lab2_steps.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/cmake-build-default/" />
@@ -82,6 +79,7 @@
         <counts>
           <entry key="cpp" value="23" />
           <entry key="h" value="10" />
+          <entry key="hpp" value="1" />
           <entry key="txt" value="2" />
           <entry key="xml" value="1" />
         </counts>
@@ -89,14 +87,14 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CMakeLists.txt" value="2" />
-          <entry key="ObjectiveC" value="33" />
+          <entry key="ObjectiveC" value="34" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cpp" value="13121" />
-          <entry key="h" value="1283" />
+          <entry key="cpp" value="13591" />
+          <entry key="h" value="1295" />
           <entry key="txt" value="1796" />
           <entry key="xml" value="25" />
         </counts>
@@ -105,7 +103,7 @@
         <counts>
           <entry key="CMakeLists.txt" value="1796" />
           <entry key="Doxygen file" value="3" />
-          <entry key="ObjectiveC" value="14401" />
+          <entry key="ObjectiveC" value="14883" />
           <entry key="XML" value="25" />
         </counts>
       </usages-collector>
@@ -118,8 +116,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/find_ball.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="465">
-                  <caret line="31" column="23" lean-forward="true" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
+                <state relative-caret-position="255">
+                  <caret line="23" column="43" lean-forward="true" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
                   <folding>
                     <element signature="e#126#146#0" expanded="true" />
                   </folding>
@@ -130,8 +128,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/find_ball.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="555">
-                  <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+                <state relative-caret-position="270">
+                  <caret line="30" column="44" lean-forward="true" selection-start-line="30" selection-start-column="44" selection-end-line="30" selection-end-column="44" />
                   <folding>
                     <element signature="e#95#115#0" expanded="true" />
                   </folding>
@@ -176,8 +174,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/ball_follower.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="15">
-                  <caret line="79" column="33" selection-start-line="79" selection-start-column="33" selection-end-line="79" selection-end-column="33" />
+                <state relative-caret-position="285">
+                  <caret line="141" column="42" lean-forward="true" selection-start-line="141" selection-start-column="42" selection-end-line="141" selection-end-column="42" />
                   <folding>
                     <element signature="e#41#61#0" expanded="true" />
                   </folding>
@@ -200,8 +198,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/find_orange_ball.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="412">
-                  <caret line="117" column="34" lean-forward="true" selection-start-line="117" selection-start-column="34" selection-end-line="117" selection-end-column="34" />
+                <state relative-caret-position="333">
+                  <caret line="158" column="33" selection-start-line="158" selection-start-column="33" selection-end-line="158" selection-end-column="33" />
                   <folding>
                     <element signature="e#42#62#0" expanded="true" />
                   </folding>
@@ -260,6 +258,7 @@
       <find>cout</find>
       <find>loop_rate</find>
       <find>impl</find>
+      <find>cvround</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -595,39 +594,17 @@
       <workItem from="1537364894879" duration="1952000" />
       <workItem from="1537367027381" duration="3363000" />
       <workItem from="1537968899081" duration="9565000" />
-      <workItem from="1538005859885" duration="10939000" />
+      <workItem from="1538005859885" duration="12702000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64764000" />
+    <option name="totallyTimeSpent" value="66527000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="294" y="38" width="1594" height="1000" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.15245478" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32912844" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39908257" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="8" weight="0.32912844" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32912844" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="CMake" order="12" weight="0.32683486" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" />
-    </layout>
-    <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15245478" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -648,7 +625,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" />
-    </layout-to-restore>
+    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -718,16 +695,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ball_follower.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="79" column="33" selection-start-line="79" selection-start-column="33" selection-end-line="79" selection-end-column="33" />
-          <folding>
-            <element signature="e#41#61#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pid_turtlebot.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -755,10 +722,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file:///opt/ros/kinetic/include/opencv-3.3.1-dev/opencv2/core/fast_math.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="188" column="14" selection-start-line="188" selection-start-column="14" selection-end-line="188" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ball_follower.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="141" column="42" lean-forward="true" selection-start-line="141" selection-start-column="42" selection-end-line="141" selection-end-column="42" />
+          <folding>
+            <element signature="e#41#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/find_ball.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="23" lean-forward="true" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
+        <state relative-caret-position="255">
+          <caret line="23" column="43" lean-forward="true" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
           <folding>
             <element signature="e#126#146#0" expanded="true" />
           </folding>
@@ -767,8 +751,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/find_ball.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+        <state relative-caret-position="270">
+          <caret line="30" column="44" lean-forward="true" selection-start-line="30" selection-start-column="44" selection-end-line="30" selection-end-column="44" />
           <folding>
             <element signature="e#95#115#0" expanded="true" />
           </folding>
@@ -777,8 +761,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/find_orange_ball.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="117" column="34" lean-forward="true" selection-start-line="117" selection-start-column="34" selection-end-line="117" selection-end-column="34" />
+        <state relative-caret-position="333">
+          <caret line="158" column="33" selection-start-line="158" selection-start-column="33" selection-end-line="158" selection-end-column="33" />
           <folding>
             <element signature="e#42#62#0" expanded="true" />
           </folding>

@@ -26,7 +26,7 @@ public:
 
     //Define Functions
     cv::Mat orangeMask();
-    std::vector<cv::Vec3f> detectCircles();
+    std::vector<cv::Vec3f> detectCircles(cv::Mat mask);
     geometry_msgs::Point getCenterPoint(std::vector<cv::Vec3f> circles);
     void setFrame(cv::Mat frame);
     cv::Mat getFrame();

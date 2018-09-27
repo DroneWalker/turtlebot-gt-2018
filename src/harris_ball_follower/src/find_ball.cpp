@@ -25,8 +25,11 @@ const int KERNEL_LENGTH = 7;
 // HSV Ranges
 //const int low_H = 0, low_S = 220, low_V = 120;
 //const int high_H = 20, high_S = 255, high_V = 255;
-const int low_H = 0, low_S = 140, low_V = 100;
-const int high_H = 20, high_S = 255, high_V = 255;
+// Working with orange ball
+//const int low_H = 0, low_S = 140, low_V = 100;
+//const int high_H = 20, high_S = 255, high_V = 255;
+const int low_H = 170, low_S = 100, low_V = 80;
+const int high_H = 180, high_S = 255, high_V = 255;
 const int morph_operator = 2;
 const int morph_elem = 0;
 const int morph_size = 1;
@@ -44,7 +47,7 @@ public:
     ~FindBallImpl();
     geometry_msgs::Point getCenterPoint(std::vector<cv::Vec3f> circles);
     Mat orangeMask();
-    vector<Vec3f> detectCircles();
+    vector<Vec3f> detectCircles(Mat mask);
     void setFrame(Mat frame);
     Mat getFrame();
 
@@ -68,9 +71,9 @@ Mat FindBall::orangeMask()
     return pimpl->orangeMask();
 }
 
-vector<Vec3f> FindBall::detectCircles()
+vector<Vec3f> FindBall::detectCircles(Mat mask)
 {
-    return pimpl->detectCircles();
+    return pimpl->detectCircles(mask);
 }
 
 void FindBall::setFrame(Mat frame)
@@ -115,13 +118,12 @@ Mat FindBallImpl::orangeMask()
     return mask;
 }
 
-vector<Vec3f> FindBallImpl::detectCircles()
+vector<Vec3f> FindBallImpl::detectCircles(Mat mask)
 {
-    Mat frame = _frame;
-    cv::GaussianBlur(frame, frame, Size(7,7), 2, 2);
+    cv::GaussianBlur(mask, mask, Size(7,7), 2, 2);
 
     vector<Vec3f> circles;
-    cv::HoughCircles(frame, circles, CV_HOUGH_GRADIENT,1, 100, 20, 30, 10, 0);
+    cv::HoughCircles(mask, circles, CV_HOUGH_GRADIENT,1, 100, 20, 30, 10, 0);
 
     return circles;
 }
