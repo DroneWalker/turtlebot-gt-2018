@@ -60,10 +60,29 @@ int main(int argc, char **argv)
 
     PID pid = PID(0.1, 1.5, -1.5, 1.0, 0.1,0);
 
+    int cnt = 0;
+    x_pixel = 640/2;
+
 
     while(ros::ok()) {
         // Calculate pixel error
+       // double pasterror = error;
+        //double stallerror;
         error = radian_error(x_pixel);
+        // Check if repeated 30 times
+        //if (pasterror == error || pasterror == stallerror)
+        //{
+         //   cnt = cnt+1;
+          //  if (cnt >= 30)
+           // {
+           //     stallerror = error;
+            //    error = 0;
+           // }
+        //} else
+       // {
+        //    cnt = 0;
+        //}
+
         twist_vel.angular.z = pid.calculate(error);
 
         twist_pub.publish(twist_vel);
