@@ -32,7 +32,6 @@ $ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 $ rosparam set /find_ball/image_transport compressed
 $ rosrun harris_ball_follower ball_follower __image_transport:=compressed
 OR
-$ rosrun image_transport republish compressed in:=/raspicam_node/image raw out:=/raspicam_node/image
 $ rosrun image_transport republish compressed in:=/webcam/image_raw raw out:=/raspicam_node/image _image_transport:=compressed
 
 

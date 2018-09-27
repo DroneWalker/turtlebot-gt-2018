@@ -1,0 +1,4 @@
+<launch>
+	<node pkg="harris_ball_follower" type="find_ball" name="find_ball" />
+	<node pkg="harris_ball_follower" type="drive_wheels" name="drive_wheels" />
+</launch>

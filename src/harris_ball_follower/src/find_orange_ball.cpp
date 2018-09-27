@@ -55,8 +55,6 @@ void imageCallback(const sensor_msgs::ImageConstPtr msg)
         //cv::imshow("subscribing", cv_bridge::toCvShare(msg, "bgr8")->image);
         //cv::waitKey(10);
         cv_ptr = cv_bridge::toCvCopy(msg, "bgr8");
-        cv::imshow("subscribing", cv_ptr->image);
-        cv::waitKey(10);
         ROS_INFO("Converting Image Loop");
     }
     catch (cv_bridge::Exception& e)
@@ -64,6 +62,10 @@ void imageCallback(const sensor_msgs::ImageConstPtr msg)
         ROS_ERROR("cv_bridge exception: %s", e.what());
         return;
     }
+    //Update GUI
+    cv::imshow("subscribing", cv_ptr->image);
+    cv::waitKey(10);
+    
 
 }
 
