@@ -24,7 +24,7 @@ install(TARGETS find_ball_lib DESTINATION include)
 add_library(pid_turtlebot STATIC src/pid_turtlebot.cpp)
 install(TARGETS pid_turtlebot DESTINATION include)
 
-add_library(bot_lib STATIC include/bot.h)
+add_library(bot_lib STATIC include/bot.h src/bot.cpp)
 install(TARGETS bot_lib DESTINATION include)
 
 ## Build nodes
@@ -42,6 +42,9 @@ target_link_libraries(drive_wheels ${catkin_LIBRARIES} pid_turtlebot)
 
 add_executable(ball_follower_debug src/ball_follower_debug.cpp)
 target_link_libraries(ball_follower_debug ${OpenCV_LIBS} ${catkin_LIBRARIES})
+
+add_executable(commander src/commander_node.cpp)
+target_link_libraries(commander bot_lib ${catkin_LIBRARIES})
 
 
 

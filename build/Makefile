@@ -231,6 +231,19 @@ doxygen/fast:
 .PHONY : doxygen/fast
 
 #=============================================================================
+# Target rules for targets named commander
+
+# Build rule for target.
+commander: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 commander
+.PHONY : commander
+
+# fast build rule for target.
+commander/fast:
+	$(MAKE) -f harris_ball_follower/CMakeFiles/commander.dir/build.make harris_ball_follower/CMakeFiles/commander.dir/build
+.PHONY : commander/fast
+
+#=============================================================================
 # Target rules for targets named ball_follower_debug
 
 # Build rule for target.
@@ -255,6 +268,19 @@ find_ball: cmake_check_build_system
 find_ball/fast:
 	$(MAKE) -f harris_ball_follower/CMakeFiles/find_ball.dir/build.make harris_ball_follower/CMakeFiles/find_ball.dir/build
 .PHONY : find_ball/fast
+
+#=============================================================================
+# Target rules for targets named bot_lib
+
+# Build rule for target.
+bot_lib: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 bot_lib
+.PHONY : bot_lib
+
+# fast build rule for target.
+bot_lib/fast:
+	$(MAKE) -f harris_ball_follower/CMakeFiles/bot_lib.dir/build.make harris_ball_follower/CMakeFiles/bot_lib.dir/build
+.PHONY : bot_lib/fast
 
 #=============================================================================
 # Target rules for targets named geometry_msgs_generate_messages_py
@@ -833,8 +859,10 @@ help:
 	@echo "... install/strip"
 	@echo "... install/local"
 	@echo "... test"
+	@echo "... commander"
 	@echo "... ball_follower_debug"
 	@echo "... find_ball"
+	@echo "... bot_lib"
 	@echo "... geometry_msgs_generate_messages_py"
 	@echo "... geometry_msgs_generate_messages_nodejs"
 	@echo "... std_msgs_generate_messages_py"

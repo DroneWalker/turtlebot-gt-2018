@@ -129,7 +129,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/charris/introrobotics/turtlebot-gt-2018/devel/lib;/home/charris/introrobotics/turtlebot-gt-2018/devel/lib;/home/charris/mav_ws/devel/lib;/home/charris/examples/devel/lib;/home/charris/catkin_ws/devel/lib;/opt/ros/kinetic/lib)
+    foreach(path /home/charris/introrobotics/turtlebot-gt-2018/devel/lib;/home/charris/rotors_ws/devel/lib;/home/charris/introrobotics/turtlebot-gt-2018/devel/lib;/home/charris/mav_ws/devel/lib;/home/charris/examples/devel/lib;/home/charris/catkin_ws/devel/lib;/opt/ros/kinetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

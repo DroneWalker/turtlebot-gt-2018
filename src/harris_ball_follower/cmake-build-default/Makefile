@@ -166,6 +166,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named commander
+
+# Build rule for target.
+commander: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 commander
+.PHONY : commander
+
+# fast build rule for target.
+commander/fast:
+	$(MAKE) -f CMakeFiles/commander.dir/build.make CMakeFiles/commander.dir/build
+.PHONY : commander/fast
+
+#=============================================================================
 # Target rules for targets named ball_follower_debug
 
 # Build rule for target.
@@ -660,6 +673,60 @@ src/ball_follower_debug.cpp.s:
 	$(MAKE) -f CMakeFiles/ball_follower_debug.dir/build.make CMakeFiles/ball_follower_debug.dir/src/ball_follower_debug.cpp.s
 .PHONY : src/ball_follower_debug.cpp.s
 
+src/bot.o: src/bot.cpp.o
+
+.PHONY : src/bot.o
+
+# target to build an object file
+src/bot.cpp.o:
+	$(MAKE) -f CMakeFiles/bot_lib.dir/build.make CMakeFiles/bot_lib.dir/src/bot.cpp.o
+.PHONY : src/bot.cpp.o
+
+src/bot.i: src/bot.cpp.i
+
+.PHONY : src/bot.i
+
+# target to preprocess a source file
+src/bot.cpp.i:
+	$(MAKE) -f CMakeFiles/bot_lib.dir/build.make CMakeFiles/bot_lib.dir/src/bot.cpp.i
+.PHONY : src/bot.cpp.i
+
+src/bot.s: src/bot.cpp.s
+
+.PHONY : src/bot.s
+
+# target to generate assembly for a file
+src/bot.cpp.s:
+	$(MAKE) -f CMakeFiles/bot_lib.dir/build.make CMakeFiles/bot_lib.dir/src/bot.cpp.s
+.PHONY : src/bot.cpp.s
+
+src/commander_node.o: src/commander_node.cpp.o
+
+.PHONY : src/commander_node.o
+
+# target to build an object file
+src/commander_node.cpp.o:
+	$(MAKE) -f CMakeFiles/commander.dir/build.make CMakeFiles/commander.dir/src/commander_node.cpp.o
+.PHONY : src/commander_node.cpp.o
+
+src/commander_node.i: src/commander_node.cpp.i
+
+.PHONY : src/commander_node.i
+
+# target to preprocess a source file
+src/commander_node.cpp.i:
+	$(MAKE) -f CMakeFiles/commander.dir/build.make CMakeFiles/commander.dir/src/commander_node.cpp.i
+.PHONY : src/commander_node.cpp.i
+
+src/commander_node.s: src/commander_node.cpp.s
+
+.PHONY : src/commander_node.s
+
+# target to generate assembly for a file
+src/commander_node.cpp.s:
+	$(MAKE) -f CMakeFiles/commander.dir/build.make CMakeFiles/commander.dir/src/commander_node.cpp.s
+.PHONY : src/commander_node.cpp.s
+
 src/drive_wheels.o: src/drive_wheels.cpp.o
 
 .PHONY : src/drive_wheels.o
@@ -779,6 +846,7 @@ help:
 	@echo "... test"
 	@echo "... install/local"
 	@echo "... install/strip"
+	@echo "... commander"
 	@echo "... ball_follower_debug"
 	@echo "... install"
 	@echo "... find_ball"
@@ -820,6 +888,12 @@ help:
 	@echo "... src/ball_follower_debug.o"
 	@echo "... src/ball_follower_debug.i"
 	@echo "... src/ball_follower_debug.s"
+	@echo "... src/bot.o"
+	@echo "... src/bot.i"
+	@echo "... src/bot.s"
+	@echo "... src/commander_node.o"
+	@echo "... src/commander_node.i"
+	@echo "... src/commander_node.s"
 	@echo "... src/drive_wheels.o"
 	@echo "... src/drive_wheels.i"
 	@echo "... src/drive_wheels.s"

@@ -2,4 +2,4 @@
 source_root_dir = "/home/charris/introrobotics/turtlebot-gt-2018/src"
 whitelisted_packages = "".split(';') if "" != "" else []
 blacklisted_packages = "".split(';') if "" != "" else []
-underlay_workspaces = "/home/charris/introrobotics/turtlebot-gt-2018/devel;/home/charris/mav_ws/devel;/home/charris/examples/devel;/home/charris/catkin_ws/devel;/opt/ros/kinetic".split(';') if "/home/charris/introrobotics/turtlebot-gt-2018/devel;/home/charris/mav_ws/devel;/home/charris/examples/devel;/home/charris/catkin_ws/devel;/opt/ros/kinetic" != "" else []
+underlay_workspaces = "/home/charris/rotors_ws/devel;/home/charris/introrobotics/turtlebot-gt-2018/devel;/home/charris/mav_ws/devel;/home/charris/examples/devel;/home/charris/catkin_ws/devel;/opt/ros/kinetic".split(';') if "/home/charris/rotors_ws/devel;/home/charris/introrobotics/turtlebot-gt-2018/devel;/home/charris/mav_ws/devel;/home/charris/examples/devel;/home/charris/catkin_ws/devel;/opt/ros/kinetic" != "" else []

@@ -185,6 +185,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/commander.dir/DependInfo.cmake"
   "CMakeFiles/ball_follower_debug.dir/DependInfo.cmake"
   "CMakeFiles/find_ball.dir/DependInfo.cmake"
   "CMakeFiles/bot_lib.dir/DependInfo.cmake"

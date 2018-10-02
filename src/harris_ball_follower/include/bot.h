@@ -20,7 +20,7 @@ class Bot
 public:
     // public parameters
     // State Information, current state
-    Bot(double xp, double yp, , double theta, double xdot, double ydot, double thetadot, int state);
+    Bot(double xp, double yp, double theta, double xdot, double ydot, double thetadot, int state);
 
     // Functions
     void setState(int newstate);
