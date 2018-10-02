@@ -24,6 +24,9 @@ install(TARGETS find_ball_lib DESTINATION include)
 add_library(pid_turtlebot STATIC src/pid_turtlebot.cpp)
 install(TARGETS pid_turtlebot DESTINATION include)
 
+add_library(bot_lib STATIC include/bot.h)
+install(TARGETS bot_lib DESTINATION include)
+
 ## Build nodes
 include_directories(include)
 include_directories(include ${catkin_INCLUDE_DIRS})

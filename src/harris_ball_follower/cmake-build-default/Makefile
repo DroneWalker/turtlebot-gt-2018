@@ -192,6 +192,19 @@ find_ball/fast:
 .PHONY : find_ball/fast
 
 #=============================================================================
+# Target rules for targets named bot_lib
+
+# Build rule for target.
+bot_lib: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 bot_lib
+.PHONY : bot_lib
+
+# fast build rule for target.
+bot_lib/fast:
+	$(MAKE) -f CMakeFiles/bot_lib.dir/build.make CMakeFiles/bot_lib.dir/build
+.PHONY : bot_lib/fast
+
+#=============================================================================
 # Target rules for targets named geometry_msgs_generate_messages_py
 
 # Build rule for target.
@@ -769,6 +782,7 @@ help:
 	@echo "... ball_follower_debug"
 	@echo "... install"
 	@echo "... find_ball"
+	@echo "... bot_lib"
 	@echo "... geometry_msgs_generate_messages_py"
 	@echo "... sensor_msgs_generate_messages_py"
 	@echo "... pid_turtlebot"

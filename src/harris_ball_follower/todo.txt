@@ -1,0 +1,4 @@
+1) Move *.h files into the /include folder
+2) Change names of Node files to _node.cpp
+3) Clean up .cpp and .h files to reduce libraries included and such
+...
