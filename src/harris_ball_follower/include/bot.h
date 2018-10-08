@@ -14,19 +14,43 @@
  * Current bot - Turtlebot3 Burger
  */
 
+#include <sstream>
+
+using namespace std;
+
+struct state
+{
+
+//    enum States
+//    {
+//        IDLE,
+//        GOTOGOAL,
+//        FOLLOWWALLC,
+//        FOLLOWWALLCC,
+//        AVOID,
+//        FOLLOW // For lab #3
+//    };
+
+    int id;
+    string name;
+};
+
 class BotImpl;
 class Bot
 {
+
 public:
     // public parameters
     // State Information, current state
-    Bot(double xp, double yp, double theta, double xdot, double ydot, double thetadot, int state);
+    Bot(double xp, double yp, double theta, double xdot, double ydot, double thetadot, state currentstate);
 
     // Functions
-    void setState(int newstate);
+    void setState(state newstate);
     void goToGoal(double xd, double yd);
     // ...
     ~Bot();
+
+
 
 private:
     BotImpl *pimpl;

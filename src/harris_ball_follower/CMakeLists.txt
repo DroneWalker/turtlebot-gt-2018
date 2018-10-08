@@ -46,6 +46,9 @@ target_link_libraries(ball_follower_debug ${OpenCV_LIBS} ${catkin_LIBRARIES})
 add_executable(commander src/commander_node.cpp)
 target_link_libraries(commander bot_lib ${catkin_LIBRARIES})
 
+add_executable(circle_test bin/contour_circle_test.cpp)
+target_link_libraries(circle_test ${OpenCV_LIBS} find_ball_lib)
+
 
 
 

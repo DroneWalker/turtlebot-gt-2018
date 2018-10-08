@@ -166,6 +166,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named circle_test
+
+# Build rule for target.
+circle_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 circle_test
+.PHONY : circle_test
+
+# fast build rule for target.
+circle_test/fast:
+	$(MAKE) -f CMakeFiles/circle_test.dir/build.make CMakeFiles/circle_test.dir/build
+.PHONY : circle_test/fast
+
+#=============================================================================
 # Target rules for targets named commander
 
 # Build rule for target.
@@ -646,6 +659,33 @@ sensor_msgs_generate_messages_eus/fast:
 	$(MAKE) -f CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make CMakeFiles/sensor_msgs_generate_messages_eus.dir/build
 .PHONY : sensor_msgs_generate_messages_eus/fast
 
+bin/contour_circle_test.o: bin/contour_circle_test.cpp.o
+
+.PHONY : bin/contour_circle_test.o
+
+# target to build an object file
+bin/contour_circle_test.cpp.o:
+	$(MAKE) -f CMakeFiles/circle_test.dir/build.make CMakeFiles/circle_test.dir/bin/contour_circle_test.cpp.o
+.PHONY : bin/contour_circle_test.cpp.o
+
+bin/contour_circle_test.i: bin/contour_circle_test.cpp.i
+
+.PHONY : bin/contour_circle_test.i
+
+# target to preprocess a source file
+bin/contour_circle_test.cpp.i:
+	$(MAKE) -f CMakeFiles/circle_test.dir/build.make CMakeFiles/circle_test.dir/bin/contour_circle_test.cpp.i
+.PHONY : bin/contour_circle_test.cpp.i
+
+bin/contour_circle_test.s: bin/contour_circle_test.cpp.s
+
+.PHONY : bin/contour_circle_test.s
+
+# target to generate assembly for a file
+bin/contour_circle_test.cpp.s:
+	$(MAKE) -f CMakeFiles/circle_test.dir/build.make CMakeFiles/circle_test.dir/bin/contour_circle_test.cpp.s
+.PHONY : bin/contour_circle_test.cpp.s
+
 src/ball_follower_debug.o: src/ball_follower_debug.cpp.o
 
 .PHONY : src/ball_follower_debug.o
@@ -845,6 +885,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... test"
 	@echo "... install/local"
+	@echo "... circle_test"
 	@echo "... install/strip"
 	@echo "... commander"
 	@echo "... ball_follower_debug"
@@ -885,6 +926,9 @@ help:
 	@echo "... sensor_msgs_generate_messages_cpp"
 	@echo "... list_install_components"
 	@echo "... sensor_msgs_generate_messages_eus"
+	@echo "... bin/contour_circle_test.o"
+	@echo "... bin/contour_circle_test.i"
+	@echo "... bin/contour_circle_test.s"
 	@echo "... src/ball_follower_debug.o"
 	@echo "... src/ball_follower_debug.i"
 	@echo "... src/ball_follower_debug.s"
