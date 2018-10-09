@@ -15,7 +15,12 @@ find_package(catkin REQUIRED COMPONENTS
 ## declare and generate any messages or services
 
 ## Declare catkin package
-catkin_package()
+catkin_package(
+    INCLUDE_DIRS include
+    LIBRARIES harris_chase_object
+    CATKIN_DEPENDS geometry_msgs roscpp rospy sensor_msgs std_msgs
+)
+
 
 ## Header files to include
 add_library(find_ball_lib STATIC src/find_ball.h src/find_ball.cpp)

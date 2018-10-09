@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
+    <generated>
+      <config projectName="harris_chase_object" targetName="std_msgs_generate_messages_py" />
+      <config projectName="harris_chase_object" targetName="roscpp_generate_messages_nodejs" />
+      <config projectName="harris_chase_object" targetName="geometry_msgs_generate_messages_lisp" />
+      <config projectName="harris_chase_object" targetName="rosgraph_msgs_generate_messages_cpp" />
+      <config projectName="harris_chase_object" targetName="detect_ball" />
+      <config projectName="harris_chase_object" targetName="sensor_msgs_generate_messages_py" />
+      <config projectName="harris_chase_object" targetName="pid_turtlebot" />
+      <config projectName="harris_chase_object" targetName="geometry_msgs_generate_messages_cpp" />
+      <config projectName="harris_chase_object" targetName="rosgraph_msgs_generate_messages_py" />
+      <config projectName="harris_chase_object" targetName="doxygen" />
+      <config projectName="harris_chase_object" targetName="roscpp_generate_messages_eus" />
+      <config projectName="harris_chase_object" targetName="clean_test_results" />
+      <config projectName="harris_chase_object" targetName="geometry_msgs_generate_messages_nodejs" />
+      <config projectName="harris_chase_object" targetName="bot_lib" />
+      <config projectName="harris_chase_object" targetName="sensor_msgs_generate_messages_eus" />
+      <config projectName="harris_chase_object" targetName="download_extra_data" />
+      <config projectName="harris_chase_object" targetName="run_tests" />
+      <config projectName="harris_chase_object" targetName="std_msgs_generate_messages_cpp" />
+      <config projectName="harris_chase_object" targetName="tests" />
+      <config projectName="harris_chase_object" targetName="std_msgs_generate_messages_lisp" />
+      <config projectName="harris_chase_object" targetName="geometry_msgs_generate_messages_py" />
+      <config projectName="harris_chase_object" targetName="drive_wheels" />
+      <config projectName="harris_chase_object" targetName="std_msgs_generate_messages_nodejs" />
+      <config projectName="harris_chase_object" targetName="sensor_msgs_generate_messages_nodejs" />
+      <config projectName="harris_chase_object" targetName="rosgraph_msgs_generate_messages_eus" />
+      <config projectName="harris_chase_object" targetName="rosgraph_msgs_generate_messages_lisp" />
+      <config projectName="harris_chase_object" targetName="rosgraph_msgs_generate_messages_nodejs" />
+      <config projectName="harris_chase_object" targetName="sensor_msgs_generate_messages_lisp" />
+      <config projectName="harris_chase_object" targetName="geometry_msgs_generate_messages_eus" />
+      <config projectName="harris_chase_object" targetName="roscpp_generate_messages_py" />
+      <config projectName="harris_chase_object" targetName="roscpp_generate_messages_cpp" />
+      <config projectName="harris_chase_object" targetName="sensor_msgs_generate_messages_cpp" />
+      <config projectName="harris_chase_object" targetName="std_msgs_generate_messages_eus" />
+      <config projectName="harris_chase_object" targetName="roscpp_generate_messages_lisp" />
+      <config projectName="harris_chase_object" targetName="find_ball_lib" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="94338022-93be-4a13-8ca6-a19b220f3b1e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../harris_ball_follower/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../harris_ball_follower/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../harris_ball_follower/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../harris_ball_follower/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../harris_ball_follower/cmake-build-default/catkin_generated/installspace/harris_ball_follower.pc" beforeDir="false" afterPath="$PROJECT_DIR$/../harris_ball_follower/cmake-build-default/catkin_generated/installspace/harris_ball_follower.pc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../harris_ball_follower/cmake-build-default/catkin_generated/installspace/harris_ball_followerConfig-version.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../harris_ball_follower/cmake-build-default/catkin_generated/installspace/harris_ball_followerConfig-version.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../harris_ball_follower/cmake-build-default/catkin_generated/installspace/harris_ball_followerConfig.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../harris_ball_follower/cmake-build-default/catkin_generated/installspace/harris_ball_followerConfig.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../harris_ball_follower/cmake-build-default/catkin_generated/package.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../harris_ball_follower/cmake-build-default/catkin_generated/package.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../harris_ball_follower/cmake-build-default/catkin_generated/pkg.develspace.context.pc.py" beforeDir="false" afterPath="$PROJECT_DIR$/../harris_ball_follower/cmake-build-default/catkin_generated/pkg.develspace.context.pc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../harris_ball_follower/cmake-build-default/catkin_generated/pkg.installspace.context.pc.py" beforeDir="false" afterPath="$PROJECT_DIR$/../harris_ball_follower/cmake-build-default/catkin_generated/pkg.installspace.context.pc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../harris_ball_follower/cmake-build-default/catkin_generated/stamps/harris_ball_follower/package.xml.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/../harris_ball_follower/cmake-build-default/catkin_generated/stamps/harris_ball_follower/package.xml.stamp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../harris_ball_follower/cmake-build-default/devel/lib/pkgconfig/harris_ball_follower.pc" beforeDir="false" afterPath="$PROJECT_DIR$/../harris_ball_follower/cmake-build-default/devel/lib/pkgconfig/harris_ball_follower.pc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../harris_ball_follower/cmake-build-default/devel/share/harris_ball_follower/cmake/harris_ball_followerConfig-version.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../harris_ball_follower/cmake-build-default/devel/share/harris_ball_follower/cmake/harris_ball_followerConfig-version.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../harris_ball_follower/cmake-build-default/devel/share/harris_ball_follower/cmake/harris_ball_followerConfig.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../harris_ball_follower/cmake-build-default/devel/share/harris_ball_follower/cmake/harris_ball_followerConfig.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../harris_ball_follower/package.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../harris_ball_follower/package.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../turtlebot/lab1_steps.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../turtlebot/old/ball_follower.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../turtlebot/old/ball_follower.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../turtlebot/old/ball_follower_debug.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../turtlebot/old/compress_test.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../turtlebot/old/drive_wheels.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../turtlebot/old/find_ball.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../turtlebot/old/find_ball.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../turtlebot/old/find_orange_ball.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../turtlebot/old/pid_turtlebot.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../turtlebot/old/pid_turtlebot.h" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="FUSProjectUsageTrigger">
+    <session id="-1570402285">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="cpp" value="10" />
+          <entry key="h" value="3" />
+          <entry key="txt" value="1" />
+          <entry key="xml" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CMakeLists.txt" value="1" />
+          <entry key="ObjectiveC" value="13" />
+          <entry key="XML" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="cpp" value="292" />
+          <entry key="txt" value="251" />
+          <entry key="xml" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="CMakeLists.txt" value="251" />
+          <entry key="ObjectiveC" value="292" />
+          <entry key="XML" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="457">
+              <caret line="75" column="35" selection-start-line="75" selection-start-column="35" selection-end-line="75" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/objects/bot.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/objects/pid_turtlebot.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+              <folding>
+                <element signature="e#84#103#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/objects/find_ball.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/nodes/drive_wheels_node.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/nodes/commander_node.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/nodes/detect_ball_node.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/package.xml" />
+        <option value="$PROJECT_DIR$/src/objects/find_ball.cpp" />
+        <option value="$PROJECT_DIR$/src/nodes/detect_ball_node.cpp" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/src/objects/bot.cpp" />
+        <option value="$PROJECT_DIR$/src/objects/pid_turtlebot.cpp" />
+        <option value="$PROJECT_DIR$/src/nodes/drive_wheels_node.cpp" />
+        <option value="$PROJECT_DIR$/src/nodes/commander_node.cpp" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="4">
+    <option name="x" value="992" />
+    <option name="y" value="24" />
+    <option name="width" value="928" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="harris_chase_object" type="b2602c69:ProjectViewProjectNode" />
+              <item name="harris_chase_object" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="harris_chase_object" type="b2602c69:ProjectViewProjectNode" />
+              <item name="harris_chase_object" type="462c0819:PsiDirectoryNode" />
+              <item name="include" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="harris_chase_object" type="b2602c69:ProjectViewProjectNode" />
+              <item name="harris_chase_object" type="462c0819:PsiDirectoryNode" />
+              <item name="include" type="462c0819:PsiDirectoryNode" />
+              <item name="harris_chase_object" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="harris_chase_object" type="b2602c69:ProjectViewProjectNode" />
+              <item name="harris_chase_object" type="462c0819:PsiDirectoryNode" />
+              <item name="include" type="462c0819:PsiDirectoryNode" />
+              <item name="pid" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="harris_chase_object" type="b2602c69:ProjectViewProjectNode" />
+              <item name="harris_chase_object" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="harris_chase_object" type="b2602c69:ProjectViewProjectNode" />
+              <item name="harris_chase_object" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="nodes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="harris_chase_object" type="b2602c69:ProjectViewProjectNode" />
+              <item name="harris_chase_object" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="objects" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/objects" />
+      <recent name="$PROJECT_DIR$/include/harris_chase_object" />
+      <recent name="$PROJECT_DIR$/include/pid" />
+      <recent name="$PROJECT_DIR$/src/nodes" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.Build All">
+    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" EXPLICIT_BUILD_TARGET_NAME="all">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="bot_lib" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="harris_chase_object" TARGET_NAME="bot_lib" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="clean_test_results" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="harris_chase_object" TARGET_NAME="clean_test_results" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="commander" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="harris_chase_object" TARGET_NAME="clean_test_results" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="detect_ball" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="harris_chase_object" TARGET_NAME="detect_ball" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="harris_chase_object" RUN_TARGET_NAME="detect_ball">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="download_extra_data" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="harris_chase_object" TARGET_NAME="download_extra_data" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="doxygen" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="harris_chase_object" TARGET_NAME="doxygen" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="drive_wheels" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="harris_chase_object" TARGET_NAME="drive_wheels" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="harris_chase_object" RUN_TARGET_NAME="drive_wheels">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="find_ball_lib" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="harris_chase_object" TARGET_NAME="find_ball_lib" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="pid_turtlebot" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="harris_chase_object" TARGET_NAME="pid_turtlebot" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.commander" />
+      <item itemvalue="Application.Build All" />
+      <item itemvalue="Application.bot_lib" />
+      <item itemvalue="Application.clean_test_results" />
+      <item itemvalue="Application.detect_ball" />
+      <item itemvalue="Application.download_extra_data" />
+      <item itemvalue="Application.doxygen" />
+      <item itemvalue="Application.drive_wheels" />
+      <item itemvalue="Application.find_ball_lib" />
+      <item itemvalue="Application.pid_turtlebot" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="94338022-93be-4a13-8ca6-a19b220f3b1e" name="Default Changelist" comment="" />
+      <created>1539104124138</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1539104124138</updated>
+      <workItem from="1539104125571" duration="3559000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="3559000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="992" y="24" width="928" height="1056" extended-state="4" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3537415" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Messages" visible="true" weight="0.3297414" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="CMake" weight="0.3297414" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3297414" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/package.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/harris_chase_object/find_ball.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/pid/pid_turtlebot.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/harris_chase_object/bot.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/objects/find_ball.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nodes/detect_ball_node.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/objects/bot.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/objects/pid_turtlebot.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+          <folding>
+            <element signature="e#84#103#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="457">
+          <caret line="75" column="35" selection-start-line="75" selection-start-column="35" selection-end-line="75" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nodes/drive_wheels_node.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nodes/commander_node.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

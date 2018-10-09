@@ -1,0 +1,2 @@
+/usr/bin/ar qc devel/lib/libbot_lib.a  CMakeFiles/bot_lib.dir/src/objects/bot.cpp.o
+/usr/bin/ranlib devel/lib/libbot_lib.a

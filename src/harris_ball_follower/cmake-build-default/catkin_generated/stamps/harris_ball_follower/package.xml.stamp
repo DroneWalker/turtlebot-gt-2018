@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package format="2">
   <name>harris_ball_follower</name>
-  <version>0.1.0</version>
+  <version>0.2.0</version>
   <description>The harris_ball_follower package</description>
 
   <maintainer email="charris92@gatech.edu">Caleb Harris</maintainer>

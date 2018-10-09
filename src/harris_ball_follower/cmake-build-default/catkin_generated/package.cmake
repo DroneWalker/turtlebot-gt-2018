@@ -1,5 +1,5 @@
 set(_CATKIN_CURRENT_PACKAGE "harris_ball_follower")
-set(harris_ball_follower_VERSION "0.1.0")
+set(harris_ball_follower_VERSION "0.2.0")
 set(harris_ball_follower_MAINTAINER "Caleb Harris <charris92@gatech.edu>")
 set(harris_ball_follower_PACKAGE_FORMAT "2")
 set(harris_ball_follower_BUILD_DEPENDS "geometry_msgs" "roscpp" "rospy" "sensor_msgs" "std_msgs")
