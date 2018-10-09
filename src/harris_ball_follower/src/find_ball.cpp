@@ -5,15 +5,8 @@
 #ifndef _FindBall_SOURCE_
 #define _FindBall_SOURCE_
 
-
-#include "ros/ros.h"
-#include "geometry_msgs/Point.h"
-#include <opencv2/opencv.hpp>
-#include <opencv2/tracking.hpp>
-#include <opencv2/core/ocl.hpp>
 #include <image_transport/image_transport.h>
 #include <cv_bridge/cv_bridge.h>
-#include <sstream>
 
 #include "find_ball.h"
 
@@ -23,11 +16,11 @@ using namespace ros;
 
 const int KERNEL_LENGTH = 7;
 // HSV Ranges
-const int low_H = 0, low_S = 220, low_V = 120;
-const int high_H = 20, high_S = 255, high_V = 255;
-// Working with orange ball
-//const int low_H = 0, low_S = 140, low_V = 100;
+//const int low_H = 0, low_S = 220, low_V = 120;
 //const int high_H = 20, high_S = 255, high_V = 255;
+// Working with orange ball
+const int low_H = 0, low_S = 140, low_V = 100;
+const int high_H = 20, high_S = 255, high_V = 255;
 //const int low_H = 170, low_S = 100, low_V = 80;
 //const int high_H = 180, high_S = 255, high_V = 255;
 const int morph_operator = 2;

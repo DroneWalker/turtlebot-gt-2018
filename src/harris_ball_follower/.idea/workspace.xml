@@ -7,7 +7,6 @@
       <config projectName="harris_ball_follower" targetName="geometry_msgs_generate_messages_lisp" />
       <config projectName="harris_ball_follower" targetName="rosgraph_msgs_generate_messages_py" />
       <config projectName="harris_ball_follower" targetName="std_msgs_generate_messages_py" />
-      <config projectName="harris_ball_follower" targetName="circle_test" />
       <config projectName="harris_ball_follower" targetName="clean_test_results" />
       <config projectName="harris_ball_follower" targetName="geometry_msgs_generate_messages_cpp" />
       <config projectName="harris_ball_follower" targetName="pid_turtlebot" />
@@ -25,7 +24,6 @@
       <config projectName="harris_ball_follower" targetName="download_extra_data" />
       <config projectName="harris_ball_follower" targetName="bot_lib" />
       <config projectName="harris_ball_follower" targetName="run_tests" />
-      <config projectName="harris_ball_follower" targetName="ball_follower_debug" />
       <config projectName="harris_ball_follower" targetName="roscpp_generate_messages_py" />
       <config projectName="harris_ball_follower" targetName="geometry_msgs_generate_messages_eus" />
       <config projectName="harris_ball_follower" targetName="rosgraph_msgs_generate_messages_nodejs" />
@@ -55,7 +53,7 @@
       <change beforePath="$PROJECT_DIR$/../../build/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/../../build/CMakeFiles/progress.marks" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../build/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../../build/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../build/harris_ball_follower/CMakeFiles/drive_wheels.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../build/harris_ball_follower/CMakeFiles/drive_wheels.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../build/harris_ball_follower/CMakeFiles/find_ball.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../build/harris_ball_follower/CMakeFiles/find_ball.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../build/harris_ball_follower/CMakeFiles/drive_wheels.dir/src/drive_wheels.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../../build/harris_ball_follower/CMakeFiles/drive_wheels.dir/src/drive_wheels.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../build/harris_ball_follower/CMakeFiles/pid_turtlebot.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../build/harris_ball_follower/CMakeFiles/pid_turtlebot.dir/progress.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../build/harris_ball_follower/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/../../build/harris_ball_follower/CMakeFiles/progress.marks" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../build/harris_ball_follower/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../../build/harris_ball_follower/Makefile" afterDir="false" />
@@ -67,34 +65,23 @@
       <change beforePath="$PROJECT_DIR$/../../build/image_transport_tutorial/CMakeFiles/my_publisher.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../build/image_transport_tutorial/CMakeFiles/my_publisher.dir/progress.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../build/image_transport_tutorial/CMakeFiles/my_subscriber.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../build/image_transport_tutorial/CMakeFiles/my_subscriber.dir/progress.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../build/image_transport_tutorial/CMakeFiles/resized_publisher.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../build/image_transport_tutorial/CMakeFiles/resized_publisher.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../devel/lib/harris_ball_follower/circle_test" beforeDir="false" afterPath="$PROJECT_DIR$/../../devel/lib/harris_ball_follower/circle_test" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../devel/lib/harris_ball_follower/find_ball" beforeDir="false" afterPath="$PROJECT_DIR$/../../devel/lib/harris_ball_follower/find_ball" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../devel/lib/harris_ball_follower/drive_wheels" beforeDir="false" afterPath="$PROJECT_DIR$/../../devel/lib/harris_ball_follower/drive_wheels" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../devel/lib/harris_ball_follower/find_ball_node" beforeDir="false" afterPath="$PROJECT_DIR$/../../devel/lib/harris_ball_follower/find_ball_node" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../image_common" beforeDir="false" afterPath="$PROJECT_DIR$/../../image_common" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/contour_circle_test.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/bin/contour_circle_test.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-default/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-default/CMakeFiles/Makefile.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-default/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-default/CMakeFiles/Makefile2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-default/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-default/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-default/CMakeFiles/drive_wheels.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-default/CMakeFiles/drive_wheels.dir/progress.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-default/CMakeFiles/find_ball_lib.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-default/CMakeFiles/find_ball_lib.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-default/CMakeFiles/pid_turtlebot.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-default/CMakeFiles/pid_turtlebot.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-default/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-default/CMakeFiles/progress.marks" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-default/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-default/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-default/harris_ball_follower.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-default/harris_ball_follower.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/drive_wheels.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/drive_wheels.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/find_ball.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/find_ball.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/find_ball.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/find_ball.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/find_orange_ball.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/find_orange_ball.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab2/lab2_steps.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../lab2/lab2_steps.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab3/ball_follower.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab3/ball_follower.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab3/ball_follower_debug.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab3/compress_test.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab3/drive_wheels.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab3/find_ball.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab3/find_ball.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab3/find_orange_ball.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab3/pid_turtlebot.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab3/pid_turtlebot.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/find_orange_ball_node.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/find_orange_ball_node.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/cmake-build-default/" />
@@ -130,9 +117,9 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="Build All (disassembly)" value="5" />
-          <entry key="cpp" value="39" />
+          <entry key="cpp" value="42" />
           <entry key="find_orange_ball_node (disassembly)" value="8" />
-          <entry key="h" value="16" />
+          <entry key="h" value="17" />
           <entry key="hpp" value="1" />
           <entry key="txt" value="3" />
           <entry key="xml" value="1" />
@@ -142,15 +129,15 @@
         <counts>
           <entry key="CMakeLists.txt" value="2" />
           <entry key="Disassembly" value="13" />
-          <entry key="ObjectiveC" value="56" />
+          <entry key="ObjectiveC" value="60" />
           <entry key="Scratch" value="1" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cpp" value="20326" />
-          <entry key="h" value="2139" />
+          <entry key="cpp" value="21568" />
+          <entry key="h" value="2141" />
           <entry key="txt" value="2366" />
           <entry key="xml" value="25" />
         </counts>
@@ -158,8 +145,8 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CMakeLists.txt" value="2188" />
-          <entry key="Doxygen file" value="4" />
-          <entry key="ObjectiveC" value="22461" />
+          <entry key="Doxygen file" value="5" />
+          <entry key="ObjectiveC" value="23704" />
           <entry key="PLAIN_TEXT" value="177" />
           <entry key="Scratch" value="1" />
           <entry key="XML" value="25" />
@@ -171,11 +158,11 @@
     <splitter split-orientation="horizontal" split-proportion="0.39793947">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/pid_turtlebot.h">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="255">
-                  <caret line="17" column="31" lean-forward="true" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+                  <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
                 </state>
               </provider>
             </entry>
@@ -196,16 +183,16 @@
             <entry file="file://$PROJECT_DIR$/src/compress_test.cpp">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="120">
-                  <caret line="10" column="20" lean-forward="true" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+                  <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/include/bot.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="375">
-                  <caret line="25" column="14" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
+                <state relative-caret-position="285">
+                  <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
                 </state>
               </provider>
             </entry>
@@ -213,20 +200,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/bot.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="660">
+                <state relative-caret-position="557">
                   <caret line="44" column="2" selection-start-line="44" selection-start-column="2" selection-end-line="44" selection-end-column="2" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/bin/contour_circle_test.cpp">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="287">
-                  <caret line="135" column="7" selection-start-line="135" selection-start-column="7" selection-end-line="135" selection-end-column="7" />
-                  <folding>
-                    <element signature="e#41#70#0" expanded="true" />
-                  </folding>
                 </state>
               </provider>
             </entry>
@@ -234,10 +209,22 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/commander_node.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="405">
+                <state relative-caret-position="345">
                   <caret line="27" column="2" selection-start-line="27" selection-start-column="2" selection-end-line="27" selection-end-column="2" />
                   <folding>
                     <element signature="e#41#61#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/pid_turtlebot.cpp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="300">
+                  <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
+                  <folding>
+                    <element signature="e#84#103#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -247,35 +234,32 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/todo.txt">
-              <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/find_orange_ball.cpp">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="319">
-                  <caret line="66" column="25" selection-start-line="66" selection-start-column="25" selection-end-line="66" selection-end-column="25" />
-                  <folding>
-                    <element signature="e#42#62#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/find_orange_ball_node.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="256">
-                  <caret line="145" lean-forward="true" selection-start-line="145" selection-end-line="145" />
+                <state relative-caret-position="122">
+                  <caret line="121" lean-forward="true" selection-start-line="121" selection-end-line="121" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/find_ball.cpp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="165">
+                  <caret line="11" selection-start-line="11" selection-end-line="11" />
                   <folding>
-                    <element signature="e#83#103#0" expanded="true" />
+                    <element signature="e#94#138#0" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/find_ball.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="240">
+                  <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
                 </state>
               </provider>
             </entry>
@@ -283,8 +267,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="716">
-                  <caret line="52" column="6" selection-start-line="50" selection-end-line="52" selection-end-column="6" />
+                <state relative-caret-position="281">
+                  <caret line="41" selection-start-line="41" selection-end-line="41" />
                 </state>
               </provider>
             </entry>
@@ -292,8 +276,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/drive_wheels.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="109">
-                  <caret line="36" column="44" selection-start-line="36" selection-start-column="44" selection-end-line="36" selection-end-column="44" />
+                <state relative-caret-position="347">
+                  <caret line="29" column="32" lean-forward="true" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
                   <folding>
                     <element signature="e#41#61#0" expanded="true" />
                   </folding>
@@ -337,8 +321,8 @@
         <option value="$PROJECT_DIR$/include/bot.h" />
         <option value="$PROJECT_DIR$/src/bot.cpp" />
         <option value="$PROJECT_DIR$/src/find_orange_ball.cpp" />
-        <option value="$PROJECT_DIR$/src/find_ball.h" />
         <option value="$PROJECT_DIR$/bin/contour_circle_test.cpp" />
+        <option value="$PROJECT_DIR$/src/find_ball.h" />
         <option value="$PROJECT_DIR$/src/find_ball.cpp" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/src/drive_wheels.cpp" />
@@ -353,8 +337,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="278" />
-    <option name="y" value="4" />
+    <option name="x" value="552" />
+    <option name="y" value="65" />
     <option name="width" value="924" />
     <option name="height" value="1040" />
   </component>
@@ -417,17 +401,7 @@
     </option>
   </component>
   <component name="RunManager" selected="Application.find_orange_ball_node">
-    <configuration name="ball_follower_debug" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="harris_ball_follower" TARGET_NAME="ball_follower_debug" CONFIG_NAME="Default" RUN_TARGET_PROJECT_NAME="harris_ball_follower" RUN_TARGET_NAME="ball_follower_debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="bot_lib" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="harris_ball_follower" TARGET_NAME="bot_lib" CONFIG_NAME="Default">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="circle_test" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="harris_ball_follower" TARGET_NAME="circle_test" CONFIG_NAME="Default" RUN_TARGET_PROJECT_NAME="harris_ball_follower" RUN_TARGET_NAME="circle_test">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -643,9 +617,7 @@
       <item itemvalue="Application.drive_wheels" />
       <item itemvalue="Application.find_ball_lib" />
       <item itemvalue="Application.pid_turtlebot" />
-      <item itemvalue="Application.ball_follower_debug" />
       <item itemvalue="Application.bot_lib" />
-      <item itemvalue="Application.circle_test" />
     </list>
   </component>
   <component name="SvnConfiguration">
@@ -690,12 +662,12 @@
       <workItem from="1539020134582" duration="17000" />
       <workItem from="1539035098928" duration="1587000" />
       <workItem from="1539052502788" duration="4873000" />
-      <workItem from="1539091977255" duration="2929000" />
+      <workItem from="1539091977255" duration="7659000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="108526000" />
+    <option name="totallyTimeSpent" value="113256000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
@@ -703,16 +675,16 @@
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.14151464" />
+      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.14096186" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3294979" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3294979" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.28242677" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="8" weight="0.32845187" />
+      <window_info active="true" anchor="bottom" id="Messages" order="8" visible="true" weight="0.32845187" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32845187" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
@@ -722,28 +694,6 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.24242425" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32847533" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.2825112" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="8" weight="0.32847533" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32912844" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="CMake" order="12" weight="0.31950673" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -815,33 +765,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/bot.h">
+    <entry file="file://$PROJECT_DIR$/src/compress_test.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="14" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
+        <state relative-caret-position="120">
+          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/bot.cpp">
+    <entry file="file://$PROJECT_DIR$/src/ball_follower.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="44" column="2" selection-start-line="44" selection-start-column="2" selection-end-line="44" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/commander_node.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="2" selection-start-line="27" selection-start-column="2" selection-end-line="27" selection-end-column="2" />
+        <state relative-caret-position="450">
+          <caret line="37" selection-start-line="33" selection-end-line="37" />
           <folding>
-            <element signature="e#41#61#0" expanded="true" />
+            <element signature="e#134#154#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/todo.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="45">
           <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
         </state>
       </provider>
@@ -856,30 +802,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bin/contour_circle_test.cpp">
+    <entry file="file://$PROJECT_DIR$/src/find_ball.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="135" column="7" selection-start-line="135" selection-start-column="7" selection-end-line="135" selection-end-column="7" />
+        <state relative-caret-position="240">
+          <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/find_ball.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
           <folding>
-            <element signature="e#41#70#0" expanded="true" />
+            <element signature="e#94#138#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/compress_test.cpp">
+    <entry file="file://$PROJECT_DIR$/src/pid_turtlebot.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="10" column="20" lean-forward="true" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ball_follower.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="37" selection-start-line="33" selection-end-line="37" />
-          <folding>
-            <element signature="e#134#154#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="255">
+          <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -893,57 +836,61 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/find_ball.h">
+    <entry file="file://$PROJECT_DIR$/src/commander_node.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/find_ball.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="205" column="26" selection-start-line="205" selection-start-column="26" selection-end-line="205" selection-end-column="26" />
-          <folding>
-            <element signature="e#95#115#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="716">
-          <caret line="52" column="6" selection-start-line="50" selection-end-line="52" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/drive_wheels.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="36" column="44" selection-start-line="36" selection-start-column="44" selection-end-line="36" selection-end-column="44" />
+        <state relative-caret-position="345">
+          <caret line="27" column="2" selection-start-line="27" selection-start-column="2" selection-end-line="27" selection-end-column="2" />
           <folding>
             <element signature="e#41#61#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pid_turtlebot.h">
+    <entry file="file://$PROJECT_DIR$/bin/contour_circle_test.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="31" lean-forward="true" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+        <state relative-caret-position="287">
+          <caret line="135" column="7" selection-start-line="135" selection-start-column="7" selection-end-line="135" selection-end-column="7" />
+          <folding>
+            <element signature="e#41#70#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bot.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="557">
+          <caret line="44" column="2" selection-start-line="44" selection-start-column="2" selection-end-line="44" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/bot.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/drive_wheels.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="29" column="32" lean-forward="true" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
+          <folding>
+            <element signature="e#41#61#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/find_orange_ball_node.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="145" lean-forward="true" selection-start-line="145" selection-end-line="145" />
-          <folding>
-            <element signature="e#83#103#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="122">
+          <caret line="121" lean-forward="true" selection-start-line="121" selection-end-line="121" />
         </state>
       </provider>
     </entry>

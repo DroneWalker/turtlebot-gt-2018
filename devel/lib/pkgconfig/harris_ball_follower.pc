@@ -1,8 +1,0 @@
-prefix=/home/charris/introrobotics/turtlebot-gt-2018/devel
-
-Name: harris_ball_follower
-Description: Description of harris_ball_follower
-Version: 0.1.0
-Cflags: 
-Libs: -L/home/charris/introrobotics/turtlebot-gt-2018/devel/lib 
-Requires: 

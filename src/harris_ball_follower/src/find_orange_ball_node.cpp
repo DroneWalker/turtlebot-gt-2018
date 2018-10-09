@@ -6,31 +6,32 @@
 // Created by charris on 9/26/18.
 //
 
-
-#include "ros/ros.h"
-#include "geometry_msgs/Point.h"
-#include <opencv2/opencv.hpp>
-#include <opencv2/tracking.hpp>
-#include <opencv2/core/ocl.hpp>
-#include <image_transport/image_transport.h>
-#include <compressed_image_transport/compression_common.h>
-#include <sensor_msgs/image_encodings.h>
-#include <cv_bridge/cv_bridge.h>
-#include <sstream>
-
 #include "find_ball.cpp"
 
 using namespace cv;
 using namespace std;
 using namespace ros;
 geometry_msgs::Point circle_cp;
+geometry_msgs::Point last_cp;
 cv::Mat frame;
 FindBall ballTrack = FindBall(frame);
 vector<vector<Point> > circles;
 
 // DEBUG?
-bool debug = true;
+bool debug = false;
 
+
+geometry_msgs::Point lowPassPoint(geometry_msgs::Point this_cp)
+{
+    float beta = 0.5;
+    this_cp.x = this_cp.x * (beta) + last_cp.x * (1-beta);
+    this_cp.y = this_cp.y * (beta) + last_cp.y * (1-beta);
+    //update y
+    last_cp.x = circle_cp.x;
+    last_cp.y = circle_cp.y;
+
+    return this_cp;
+}
 
 void imageTracking()
 {
@@ -40,43 +41,8 @@ void imageTracking()
     Mat frame = ballTrack.getFrame();
     Mat mask = ballTrack.orangeMask(frame);
 
-    SimpleBlobDetector::Params params;
-
-// Change thresholds
-    //params.minThreshold = 10;
-    //params.maxThreshold = 256;
-
-// Filter by Area.
-    params.filterByArea = true;
-    params.minArea =4000;
-    params.maxArea=10000;
-
-// filter my min distance
-//params.minDistBetweenBlobs=100;
-
-// Filter by Circularity
-    params.filterByCircularity = true;
-    params.minCircularity = 0.7;
-
-// Filter by Convexity
-    params.filterByConvexity = true;
-    params.minConvexity = 0.6;
-
-// Filter by Inertia
-    params.filterByInertia = false;
-    params.minInertiaRatio = 0.01;
-
-//filter by colour
-    params.filterByColor=true;
-    params.blobColor=255;
-
-// Storage for blobs
-    vector<KeyPoint> keypoints;
-
-
-
-// Set up detector with params
-    Ptr<SimpleBlobDetector> detector = SimpleBlobDetector::create(params);
+    Mat lowpass;
+    frame.copyTo(lowpass);
 
 
 // Draw detected blobs as red circles.
@@ -100,7 +66,7 @@ void imageTracking()
     Canny(mask, detected_edges, 0, 100, 3);
     dst = Scalar::all(0);
     frame.copyTo(dst, detected_edges);
-    findContours(detected_edges, contours, hierarchy, CV_RETR_TREE, CV_CHAIN_APPROX_SIMPLE, Point(0, 0) );
+    findContours(detected_edges, contours, hierarchy, CV_RETR_EXTERNAL, CV_CHAIN_APPROX_SIMPLE, Point(0, 0) );
 
     if (!contours.empty()) {
 
@@ -119,28 +85,45 @@ void imageTracking()
             }
         }
 
+
+        if (debug == true)
+        {
         /// Drawing polygonal contours + boxes + circles
-        Mat drawing_contours = Mat::zeros(detected_edges.size(), CV_8UC3);
-        Mat drawing_shapes = Mat::zeros(detected_edges.size(), CV_8UC3);
+            Mat drawing_contours = Mat::zeros(detected_edges.size(), CV_8UC3);
+            Mat drawing_shapes = Mat::zeros(detected_edges.size(), CV_8UC3);
 
 
-        Scalar color = Scalar(rng.uniform(0, 255), rng.uniform(0, 255), rng.uniform(0, 255));
-        drawContours(drawing_contours, contours, circle_index, color, 2, 8, hierarchy, 0, Point());
-        drawContours(drawing_shapes, contours_poly, circle_index, color, 1, 8, vector<Vec4i>(), 0, Point());
+            Scalar color = Scalar(rng.uniform(0, 255), rng.uniform(0, 255), rng.uniform(0, 255));
+            drawContours(drawing_contours, contours, circle_index, color, 2, 8, hierarchy, 0, Point());
+            drawContours(drawing_shapes, contours_poly, circle_index, color, 1, 8, vector<Vec4i>(), 0, Point());
 //            rectangle(frame, boundRect[circle_index].tl(), boundRect[circle_index].br(), color, 2, 8, 0);
-        circle(frame, center[circle_index], (int) radius[circle_index], 255, 2, 8, 0);
-        circle(frame, center[circle_index], 5, 255, 2, 8, 0);
+            circle(frame, center[circle_index], (int) radius[circle_index], 255, 2, 8, 0);
+            circle(frame, center[circle_index], 5, 255, 2, 8, 0);
+
+
+            imshow("contours", drawing_contours);
+            imshow("polygons", drawing_shapes);
+
+        }
+
 
         // center of Image
         circle_cp.x = center[circle_index].x;
         circle_cp.y = center[circle_index].y;
 
-        if (debug == true)
-        {
-            imshow("contours", drawing_contours);
-            imshow("polygons", drawing_shapes);
-        }
+        // Low Pass filter
+        circle_cp = lowPassPoint(circle_cp);
+        center[circle_index].x = circle_cp.x;
+        center[circle_index].y = circle_cp.y;
+        circle(frame, center[circle_index], (int) radius[circle_index], 255, 2, 8, 0);
+        circle(frame, center[circle_index], 5, 255, 2, 8, 0);
 
+    }
+
+    else
+    {
+        circle_cp.x = 320;
+        circle_cp.y= 240;
     }
 
 
@@ -151,7 +134,7 @@ void imageTracking()
     // Display frame.
     if (debug == true)
     {
-        imshow("main loop", frame);
+        imshow("lowpass", lowpass);
         imshow("mask", mask);
     }
     imshow("Tracking", frame);
@@ -196,13 +179,17 @@ int main(int argc, char **argv)
     // open CV
     Mat track;
     Mat detect;
+    // Default position in center
+    circle_cp.x = 320;
+    circle_cp.y = 240;
 
     image_transport::Subscriber image_sub = it.subscribe("/find_orange_ball/image",
                                                          1, imageCallback);
     Publisher trackpoint_pub = n.advertise<geometry_msgs::Point>("trackpoint", 10);
     Rate loop_rate(10);
 
-    while(ros::ok()) {
+    while(ros::ok())
+    {
         trackpoint_pub.publish(circle_cp);
         ros::spinOnce();
         loop_rate.sleep();

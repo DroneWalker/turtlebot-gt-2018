@@ -60,50 +60,13 @@ CMAKE_SOURCE_DIR = /home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball
 CMAKE_BINARY_DIR = /home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default
 
 #=============================================================================
-# Target rules for target CMakeFiles/circle_test.dir
-
-# All Build rule for target.
-CMakeFiles/circle_test.dir/all: CMakeFiles/find_ball_lib.dir/all
-	$(MAKE) -f CMakeFiles/circle_test.dir/build.make CMakeFiles/circle_test.dir/depend
-	$(MAKE) -f CMakeFiles/circle_test.dir/build.make CMakeFiles/circle_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default/CMakeFiles --progress-num=5,6 "Built target circle_test"
-.PHONY : CMakeFiles/circle_test.dir/all
-
-# Include target in all.
-all: CMakeFiles/circle_test.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/circle_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default/CMakeFiles 4
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/circle_test.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default/CMakeFiles 0
-.PHONY : CMakeFiles/circle_test.dir/rule
-
-# Convenience name for target.
-circle_test: CMakeFiles/circle_test.dir/rule
-
-.PHONY : circle_test
-
-# clean rule for target.
-CMakeFiles/circle_test.dir/clean:
-	$(MAKE) -f CMakeFiles/circle_test.dir/build.make CMakeFiles/circle_test.dir/clean
-.PHONY : CMakeFiles/circle_test.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/circle_test.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
 # Target rules for target CMakeFiles/commander.dir
 
 # All Build rule for target.
 CMakeFiles/commander.dir/all: CMakeFiles/bot_lib.dir/all
 	$(MAKE) -f CMakeFiles/commander.dir/build.make CMakeFiles/commander.dir/depend
 	$(MAKE) -f CMakeFiles/commander.dir/build.make CMakeFiles/commander.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default/CMakeFiles --progress-num=7,8 "Built target commander"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default/CMakeFiles --progress-num=3,4 "Built target commander"
 .PHONY : CMakeFiles/commander.dir/all
 
 # Include target in all.
@@ -134,50 +97,13 @@ clean: CMakeFiles/commander.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/ball_follower_debug.dir
-
-# All Build rule for target.
-CMakeFiles/ball_follower_debug.dir/all:
-	$(MAKE) -f CMakeFiles/ball_follower_debug.dir/build.make CMakeFiles/ball_follower_debug.dir/depend
-	$(MAKE) -f CMakeFiles/ball_follower_debug.dir/build.make CMakeFiles/ball_follower_debug.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default/CMakeFiles --progress-num=1,2 "Built target ball_follower_debug"
-.PHONY : CMakeFiles/ball_follower_debug.dir/all
-
-# Include target in all.
-all: CMakeFiles/ball_follower_debug.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/ball_follower_debug.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ball_follower_debug.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default/CMakeFiles 0
-.PHONY : CMakeFiles/ball_follower_debug.dir/rule
-
-# Convenience name for target.
-ball_follower_debug: CMakeFiles/ball_follower_debug.dir/rule
-
-.PHONY : ball_follower_debug
-
-# clean rule for target.
-CMakeFiles/ball_follower_debug.dir/clean:
-	$(MAKE) -f CMakeFiles/ball_follower_debug.dir/build.make CMakeFiles/ball_follower_debug.dir/clean
-.PHONY : CMakeFiles/ball_follower_debug.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/ball_follower_debug.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
 # Target rules for target CMakeFiles/find_ball_node.dir
 
 # All Build rule for target.
 CMakeFiles/find_ball_node.dir/all: CMakeFiles/find_ball_lib.dir/all
 	$(MAKE) -f CMakeFiles/find_ball_node.dir/build.make CMakeFiles/find_ball_node.dir/depend
 	$(MAKE) -f CMakeFiles/find_ball_node.dir/build.make CMakeFiles/find_ball_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default/CMakeFiles --progress-num=13,14 "Built target find_ball_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default/CMakeFiles --progress-num=9,10 "Built target find_ball_node"
 .PHONY : CMakeFiles/find_ball_node.dir/all
 
 # Include target in all.
@@ -214,7 +140,7 @@ clean: CMakeFiles/find_ball_node.dir/clean
 CMakeFiles/bot_lib.dir/all:
 	$(MAKE) -f CMakeFiles/bot_lib.dir/build.make CMakeFiles/bot_lib.dir/depend
 	$(MAKE) -f CMakeFiles/bot_lib.dir/build.make CMakeFiles/bot_lib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default/CMakeFiles --progress-num=3,4 "Built target bot_lib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default/CMakeFiles --progress-num=1,2 "Built target bot_lib"
 .PHONY : CMakeFiles/bot_lib.dir/all
 
 # Include target in all.
@@ -315,7 +241,7 @@ clean: CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
 CMakeFiles/pid_turtlebot.dir/all:
 	$(MAKE) -f CMakeFiles/pid_turtlebot.dir/build.make CMakeFiles/pid_turtlebot.dir/depend
 	$(MAKE) -f CMakeFiles/pid_turtlebot.dir/build.make CMakeFiles/pid_turtlebot.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default/CMakeFiles --progress-num=15,16 "Built target pid_turtlebot"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default/CMakeFiles --progress-num=11,12 "Built target pid_turtlebot"
 .PHONY : CMakeFiles/pid_turtlebot.dir/all
 
 # Include target in all.
@@ -576,7 +502,7 @@ clean: CMakeFiles/clean_test_results.dir/clean
 CMakeFiles/find_ball_lib.dir/all:
 	$(MAKE) -f CMakeFiles/find_ball_lib.dir/build.make CMakeFiles/find_ball_lib.dir/depend
 	$(MAKE) -f CMakeFiles/find_ball_lib.dir/build.make CMakeFiles/find_ball_lib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default/CMakeFiles --progress-num=11,12 "Built target find_ball_lib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default/CMakeFiles --progress-num=7,8 "Built target find_ball_lib"
 .PHONY : CMakeFiles/find_ball_lib.dir/all
 
 # Include target in all.
@@ -1157,7 +1083,7 @@ clean: CMakeFiles/std_msgs_generate_messages_py.dir/clean
 CMakeFiles/drive_wheels.dir/all: CMakeFiles/pid_turtlebot.dir/all
 	$(MAKE) -f CMakeFiles/drive_wheels.dir/build.make CMakeFiles/drive_wheels.dir/depend
 	$(MAKE) -f CMakeFiles/drive_wheels.dir/build.make CMakeFiles/drive_wheels.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default/CMakeFiles --progress-num=9,10 "Built target drive_wheels"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default/CMakeFiles --progress-num=5,6 "Built target drive_wheels"
 .PHONY : CMakeFiles/drive_wheels.dir/all
 
 # Include target in all.

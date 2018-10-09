@@ -166,19 +166,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named circle_test
-
-# Build rule for target.
-circle_test: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 circle_test
-.PHONY : circle_test
-
-# fast build rule for target.
-circle_test/fast:
-	$(MAKE) -f CMakeFiles/circle_test.dir/build.make CMakeFiles/circle_test.dir/build
-.PHONY : circle_test/fast
-
-#=============================================================================
 # Target rules for targets named commander
 
 # Build rule for target.
@@ -190,19 +177,6 @@ commander: cmake_check_build_system
 commander/fast:
 	$(MAKE) -f CMakeFiles/commander.dir/build.make CMakeFiles/commander.dir/build
 .PHONY : commander/fast
-
-#=============================================================================
-# Target rules for targets named ball_follower_debug
-
-# Build rule for target.
-ball_follower_debug: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 ball_follower_debug
-.PHONY : ball_follower_debug
-
-# fast build rule for target.
-ball_follower_debug/fast:
-	$(MAKE) -f CMakeFiles/ball_follower_debug.dir/build.make CMakeFiles/ball_follower_debug.dir/build
-.PHONY : ball_follower_debug/fast
 
 #=============================================================================
 # Target rules for targets named find_ball_node
@@ -659,60 +633,6 @@ sensor_msgs_generate_messages_eus/fast:
 	$(MAKE) -f CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make CMakeFiles/sensor_msgs_generate_messages_eus.dir/build
 .PHONY : sensor_msgs_generate_messages_eus/fast
 
-bin/contour_circle_test.o: bin/contour_circle_test.cpp.o
-
-.PHONY : bin/contour_circle_test.o
-
-# target to build an object file
-bin/contour_circle_test.cpp.o:
-	$(MAKE) -f CMakeFiles/circle_test.dir/build.make CMakeFiles/circle_test.dir/bin/contour_circle_test.cpp.o
-.PHONY : bin/contour_circle_test.cpp.o
-
-bin/contour_circle_test.i: bin/contour_circle_test.cpp.i
-
-.PHONY : bin/contour_circle_test.i
-
-# target to preprocess a source file
-bin/contour_circle_test.cpp.i:
-	$(MAKE) -f CMakeFiles/circle_test.dir/build.make CMakeFiles/circle_test.dir/bin/contour_circle_test.cpp.i
-.PHONY : bin/contour_circle_test.cpp.i
-
-bin/contour_circle_test.s: bin/contour_circle_test.cpp.s
-
-.PHONY : bin/contour_circle_test.s
-
-# target to generate assembly for a file
-bin/contour_circle_test.cpp.s:
-	$(MAKE) -f CMakeFiles/circle_test.dir/build.make CMakeFiles/circle_test.dir/bin/contour_circle_test.cpp.s
-.PHONY : bin/contour_circle_test.cpp.s
-
-src/ball_follower_debug.o: src/ball_follower_debug.cpp.o
-
-.PHONY : src/ball_follower_debug.o
-
-# target to build an object file
-src/ball_follower_debug.cpp.o:
-	$(MAKE) -f CMakeFiles/ball_follower_debug.dir/build.make CMakeFiles/ball_follower_debug.dir/src/ball_follower_debug.cpp.o
-.PHONY : src/ball_follower_debug.cpp.o
-
-src/ball_follower_debug.i: src/ball_follower_debug.cpp.i
-
-.PHONY : src/ball_follower_debug.i
-
-# target to preprocess a source file
-src/ball_follower_debug.cpp.i:
-	$(MAKE) -f CMakeFiles/ball_follower_debug.dir/build.make CMakeFiles/ball_follower_debug.dir/src/ball_follower_debug.cpp.i
-.PHONY : src/ball_follower_debug.cpp.i
-
-src/ball_follower_debug.s: src/ball_follower_debug.cpp.s
-
-.PHONY : src/ball_follower_debug.s
-
-# target to generate assembly for a file
-src/ball_follower_debug.cpp.s:
-	$(MAKE) -f CMakeFiles/ball_follower_debug.dir/build.make CMakeFiles/ball_follower_debug.dir/src/ball_follower_debug.cpp.s
-.PHONY : src/ball_follower_debug.cpp.s
-
 src/bot.o: src/bot.cpp.o
 
 .PHONY : src/bot.o
@@ -886,10 +806,8 @@ help:
 	@echo "... edit_cache"
 	@echo "... test"
 	@echo "... install/local"
-	@echo "... circle_test"
 	@echo "... install/strip"
 	@echo "... commander"
-	@echo "... ball_follower_debug"
 	@echo "... find_ball_node"
 	@echo "... bot_lib"
 	@echo "... geometry_msgs_generate_messages_py"
@@ -926,12 +844,6 @@ help:
 	@echo "... sensor_msgs_generate_messages_cpp"
 	@echo "... list_install_components"
 	@echo "... sensor_msgs_generate_messages_eus"
-	@echo "... bin/contour_circle_test.o"
-	@echo "... bin/contour_circle_test.i"
-	@echo "... bin/contour_circle_test.s"
-	@echo "... src/ball_follower_debug.o"
-	@echo "... src/ball_follower_debug.i"
-	@echo "... src/ball_follower_debug.s"
 	@echo "... src/bot.o"
 	@echo "... src/bot.i"
 	@echo "... src/bot.s"

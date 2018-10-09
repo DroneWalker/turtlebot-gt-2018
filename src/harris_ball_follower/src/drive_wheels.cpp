@@ -15,8 +15,13 @@ const double linear_vels = 0;
 double angular_vel;
 double x_pixel;
 double pi = M_PI;
-double error;
+double error = 0;
 
+double degtorads(double deg)
+{
+    double rads = (deg/180) * pi;
+    return rads;
+}
 
 double radian_error(double current)
 {
@@ -26,9 +31,9 @@ double radian_error(double current)
     double pixel_deg = 66.2/640; // degrees per pixel
     double x_pixel_error = desired_pixel_X - current;
     double deg_error = x_pixel_error * pixel_deg;
-    double radian_error = deg_error * 2 * pi / 360;
-
-    return radian_error;
+    double rad_error = degtorads(deg_error);
+    double clean_error = atan2(sin(rad_error), cos(rad_error));
+    return clean_error;
 }
 
 /**
@@ -66,23 +71,7 @@ int main(int argc, char **argv)
 
     while(ros::ok()) {
         // Calculate pixel error
-       // double pasterror = error;
-        //double stallerror;
         error = radian_error(x_pixel);
-        // Check if repeated 30 times
-        //if (pasterror == error || pasterror == stallerror)
-        //{
-         //   cnt = cnt+1;
-          //  if (cnt >= 30)
-           // {
-           //     stallerror = error;
-            //    error = 0;
-           // }
-        //} else
-       // {
-        //    cnt = 0;
-        //}
-
         twist_vel.angular.z = pid.calculate(error);
 
         twist_pub.publish(twist_vel);
