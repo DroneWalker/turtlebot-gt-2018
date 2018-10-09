@@ -188,7 +188,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/circle_test.dir/DependInfo.cmake"
   "CMakeFiles/commander.dir/DependInfo.cmake"
   "CMakeFiles/ball_follower_debug.dir/DependInfo.cmake"
-  "CMakeFiles/find_ball.dir/DependInfo.cmake"
+  "CMakeFiles/find_ball_node.dir/DependInfo.cmake"
   "CMakeFiles/bot_lib.dir/DependInfo.cmake"
   "CMakeFiles/geometry_msgs_generate_messages_py.dir/DependInfo.cmake"
   "CMakeFiles/sensor_msgs_generate_messages_py.dir/DependInfo.cmake"

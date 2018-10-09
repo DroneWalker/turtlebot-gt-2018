@@ -1,4 +1,4 @@
-Lab #2 Steps
+Lab #3 Steps
 =============
 
 ## Get turtlebot IP address

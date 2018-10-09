@@ -56,6 +56,18 @@ CMAKE_BINARY_DIR = /home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -110,18 +122,6 @@ install/strip: preinstall
 install/strip/fast: install/strip
 
 .PHONY : install/strip/fast
-
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
 
 # Special rule for the target list_install_components
 list_install_components:
@@ -205,17 +205,17 @@ ball_follower_debug/fast:
 .PHONY : ball_follower_debug/fast
 
 #=============================================================================
-# Target rules for targets named find_ball
+# Target rules for targets named find_ball_node
 
 # Build rule for target.
-find_ball: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 find_ball
-.PHONY : find_ball
+find_ball_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 find_ball_node
+.PHONY : find_ball_node
 
 # fast build rule for target.
-find_ball/fast:
-	$(MAKE) -f CMakeFiles/find_ball.dir/build.make CMakeFiles/find_ball.dir/build
-.PHONY : find_ball/fast
+find_ball_node/fast:
+	$(MAKE) -f CMakeFiles/find_ball_node.dir/build.make CMakeFiles/find_ball_node.dir/build
+.PHONY : find_ball_node/fast
 
 #=============================================================================
 # Target rules for targets named bot_lib
@@ -821,32 +821,32 @@ src/find_ball.cpp.s:
 	$(MAKE) -f CMakeFiles/find_ball_lib.dir/build.make CMakeFiles/find_ball_lib.dir/src/find_ball.cpp.s
 .PHONY : src/find_ball.cpp.s
 
-src/find_orange_ball.o: src/find_orange_ball.cpp.o
+src/find_orange_ball_node.o: src/find_orange_ball_node.cpp.o
 
-.PHONY : src/find_orange_ball.o
+.PHONY : src/find_orange_ball_node.o
 
 # target to build an object file
-src/find_orange_ball.cpp.o:
-	$(MAKE) -f CMakeFiles/find_ball.dir/build.make CMakeFiles/find_ball.dir/src/find_orange_ball.cpp.o
-.PHONY : src/find_orange_ball.cpp.o
+src/find_orange_ball_node.cpp.o:
+	$(MAKE) -f CMakeFiles/find_ball_node.dir/build.make CMakeFiles/find_ball_node.dir/src/find_orange_ball_node.cpp.o
+.PHONY : src/find_orange_ball_node.cpp.o
 
-src/find_orange_ball.i: src/find_orange_ball.cpp.i
+src/find_orange_ball_node.i: src/find_orange_ball_node.cpp.i
 
-.PHONY : src/find_orange_ball.i
+.PHONY : src/find_orange_ball_node.i
 
 # target to preprocess a source file
-src/find_orange_ball.cpp.i:
-	$(MAKE) -f CMakeFiles/find_ball.dir/build.make CMakeFiles/find_ball.dir/src/find_orange_ball.cpp.i
-.PHONY : src/find_orange_ball.cpp.i
+src/find_orange_ball_node.cpp.i:
+	$(MAKE) -f CMakeFiles/find_ball_node.dir/build.make CMakeFiles/find_ball_node.dir/src/find_orange_ball_node.cpp.i
+.PHONY : src/find_orange_ball_node.cpp.i
 
-src/find_orange_ball.s: src/find_orange_ball.cpp.s
+src/find_orange_ball_node.s: src/find_orange_ball_node.cpp.s
 
-.PHONY : src/find_orange_ball.s
+.PHONY : src/find_orange_ball_node.s
 
 # target to generate assembly for a file
-src/find_orange_ball.cpp.s:
-	$(MAKE) -f CMakeFiles/find_ball.dir/build.make CMakeFiles/find_ball.dir/src/find_orange_ball.cpp.s
-.PHONY : src/find_orange_ball.cpp.s
+src/find_orange_ball_node.cpp.s:
+	$(MAKE) -f CMakeFiles/find_ball_node.dir/build.make CMakeFiles/find_ball_node.dir/src/find_orange_ball_node.cpp.s
+.PHONY : src/find_orange_ball_node.cpp.s
 
 src/pid_turtlebot.o: src/pid_turtlebot.cpp.o
 
@@ -881,6 +881,7 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... install"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... test"
@@ -889,8 +890,7 @@ help:
 	@echo "... install/strip"
 	@echo "... commander"
 	@echo "... ball_follower_debug"
-	@echo "... install"
-	@echo "... find_ball"
+	@echo "... find_ball_node"
 	@echo "... bot_lib"
 	@echo "... geometry_msgs_generate_messages_py"
 	@echo "... sensor_msgs_generate_messages_py"
@@ -944,9 +944,9 @@ help:
 	@echo "... src/find_ball.o"
 	@echo "... src/find_ball.i"
 	@echo "... src/find_ball.s"
-	@echo "... src/find_orange_ball.o"
-	@echo "... src/find_orange_ball.i"
-	@echo "... src/find_orange_ball.s"
+	@echo "... src/find_orange_ball_node.o"
+	@echo "... src/find_orange_ball_node.i"
+	@echo "... src/find_orange_ball_node.s"
 	@echo "... src/pid_turtlebot.o"
 	@echo "... src/pid_turtlebot.i"
 	@echo "... src/pid_turtlebot.s"

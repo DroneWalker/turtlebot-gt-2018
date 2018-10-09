@@ -45,8 +45,8 @@ int main(int argc, char **argv)
 {
     ros::init(argc, argv, "drive_wheels");
     ros::NodeHandle n;
-    ros::Subscriber trackpoint_sub = n.subscribe("trackpoint", 1000, targetpointCallback);
-    ros::Publisher twist_pub = n.advertise<geometry_msgs::Twist>("cmd_vel", 5);
+    ros::Subscriber trackpoint_sub = n.subscribe("trackpoint", 1, targetpointCallback);
+    ros::Publisher twist_pub = n.advertise<geometry_msgs::Twist>("cmd_vel", 10);
     ros::Rate loop_rate(10);
 
 

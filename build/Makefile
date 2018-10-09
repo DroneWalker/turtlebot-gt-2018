@@ -231,6 +231,19 @@ doxygen/fast:
 .PHONY : doxygen/fast
 
 #=============================================================================
+# Target rules for targets named circle_test
+
+# Build rule for target.
+circle_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 circle_test
+.PHONY : circle_test
+
+# fast build rule for target.
+circle_test/fast:
+	$(MAKE) -f harris_ball_follower/CMakeFiles/circle_test.dir/build.make harris_ball_follower/CMakeFiles/circle_test.dir/build
+.PHONY : circle_test/fast
+
+#=============================================================================
 # Target rules for targets named commander
 
 # Build rule for target.
@@ -257,17 +270,17 @@ ball_follower_debug/fast:
 .PHONY : ball_follower_debug/fast
 
 #=============================================================================
-# Target rules for targets named find_ball
+# Target rules for targets named find_ball_node
 
 # Build rule for target.
-find_ball: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 find_ball
-.PHONY : find_ball
+find_ball_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 find_ball_node
+.PHONY : find_ball_node
 
 # fast build rule for target.
-find_ball/fast:
-	$(MAKE) -f harris_ball_follower/CMakeFiles/find_ball.dir/build.make harris_ball_follower/CMakeFiles/find_ball.dir/build
-.PHONY : find_ball/fast
+find_ball_node/fast:
+	$(MAKE) -f harris_ball_follower/CMakeFiles/find_ball_node.dir/build.make harris_ball_follower/CMakeFiles/find_ball_node.dir/build
+.PHONY : find_ball_node/fast
 
 #=============================================================================
 # Target rules for targets named bot_lib
@@ -859,9 +872,10 @@ help:
 	@echo "... install/strip"
 	@echo "... install/local"
 	@echo "... test"
+	@echo "... circle_test"
 	@echo "... commander"
 	@echo "... ball_follower_debug"
-	@echo "... find_ball"
+	@echo "... find_ball_node"
 	@echo "... bot_lib"
 	@echo "... geometry_msgs_generate_messages_py"
 	@echo "... geometry_msgs_generate_messages_nodejs"

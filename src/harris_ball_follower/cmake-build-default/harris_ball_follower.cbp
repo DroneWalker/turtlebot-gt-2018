@@ -17,6 +17,16 @@
             <DistClean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default/Makefile&quot;  VERBOSE=1 clean" />
          </MakeCommands>
       </Target>
+      <Target title="install">
+         <Option working_dir="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default/Makefile&quot;  VERBOSE=1 install" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
       <Target title="rebuild_cache">
          <Option working_dir="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default" />
          <Option type="4" />
@@ -251,18 +261,8 @@
             <DistClean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default/Makefile&quot;  VERBOSE=1 clean" />
          </MakeCommands>
       </Target>
-      <Target title="install">
-         <Option working_dir="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default" />
-         <Option type="4" />
-         <MakeCommands>
-            <Build command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default/Makefile&quot;  VERBOSE=1 install" />
-            <CompileFile command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
-            <Clean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default/Makefile&quot;  VERBOSE=1 clean" />
-            <DistClean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default/Makefile&quot;  VERBOSE=1 clean" />
-         </MakeCommands>
-      </Target>
-      <Target title="find_ball">
-         <Option output="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default/devel/lib/harris_ball_follower/find_ball" prefix_auto="0" extension_auto="0" />
+      <Target title="find_ball_node">
+         <Option output="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default/devel/lib/harris_ball_follower/find_ball_node" prefix_auto="0" extension_auto="0" />
          <Option working_dir="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default/devel/lib/harris_ball_follower" />
          <Option object_output="./" />
          <Option type="1" />
@@ -286,14 +286,14 @@
             <Add directory="/usr/local/include/opencv" />
          </Compiler>
          <MakeCommands>
-            <Build command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default/Makefile&quot;  VERBOSE=1 find_ball" />
+            <Build command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default/Makefile&quot;  VERBOSE=1 find_ball_node" />
             <CompileFile command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
             <Clean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default/Makefile&quot;  VERBOSE=1 clean" />
             <DistClean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default/Makefile&quot;  VERBOSE=1 clean" />
          </MakeCommands>
       </Target>
-      <Target title="find_ball/fast">
-         <Option output="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default/devel/lib/harris_ball_follower/find_ball" prefix_auto="0" extension_auto="0" />
+      <Target title="find_ball_node/fast">
+         <Option output="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default/devel/lib/harris_ball_follower/find_ball_node" prefix_auto="0" extension_auto="0" />
          <Option working_dir="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default/devel/lib/harris_ball_follower" />
          <Option object_output="./" />
          <Option type="1" />
@@ -317,7 +317,7 @@
             <Add directory="/usr/local/include/opencv" />
          </Compiler>
          <MakeCommands>
-            <Build command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default/Makefile&quot;  VERBOSE=1 find_ball/fast" />
+            <Build command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default/Makefile&quot;  VERBOSE=1 find_ball_node/fast" />
             <CompileFile command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
             <Clean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default/Makefile&quot;  VERBOSE=1 clean" />
             <DistClean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/cmake-build-default/Makefile&quot;  VERBOSE=1 clean" />
@@ -898,8 +898,8 @@
       <Unit filename="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/src/find_ball.h">
          <Option target="find_ball_lib"/>
       </Unit>
-      <Unit filename="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/src/find_orange_ball.cpp">
-         <Option target="find_ball"/>
+      <Unit filename="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/src/find_orange_ball_node.cpp">
+         <Option target="find_ball_node"/>
       </Unit>
       <Unit filename="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_ball_follower/src/pid_turtlebot.cpp">
          <Option target="pid_turtlebot"/>

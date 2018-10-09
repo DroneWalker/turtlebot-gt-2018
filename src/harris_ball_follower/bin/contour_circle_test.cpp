@@ -42,7 +42,7 @@ int main(int argc, char **argv) {
 
 // Filter by Area.
     params.filterByArea = true;
-    params.minArea =2000;
+    params.minArea =4000;
     params.maxArea=10000;
 
 // filter my min distance
@@ -50,11 +50,11 @@ int main(int argc, char **argv) {
 
 // Filter by Circularity
     params.filterByCircularity = true;
-    params.minCircularity = 0.4;
+    params.minCircularity = 0.7;
 
 // Filter by Convexity
     params.filterByConvexity = true;
-    params.minConvexity = 0.2;
+    params.minConvexity = 0.6;
 
 // Filter by Inertia
     params.filterByInertia = false;
@@ -93,7 +93,7 @@ int main(int argc, char **argv) {
 while(video.read(frame)) {
     //detector.detect( frame, keypoints);
     FindBall ballTrack = FindBall(frame);
-    Mat mask = ballTrack.orangeMask();
+    Mat mask = ballTrack.orangeMask(frame);
 //    cvtColor(mask_bgr, mask, CV_HSV2BGR);
 //    cvtColor(mask_gray, mask, CV_BGR2GRAY);
     Canny(mask, detected_edges, 0, 100, 3);
@@ -135,17 +135,25 @@ while(video.read(frame)) {
 //        imshow("polygons", drawing_shapes);
 //    }
 
-            Scalar color = Scalar(rng.uniform(0, 255), rng.uniform(0, 255), rng.uniform(0, 255));
+        putText(frame, "Pixel Coordinates:  x = " + SSTR(int(center[circle_index].x))
+        + " y = " + SSTR(int(center[circle_index].y)),
+                Point(20, 20), FONT_HERSHEY_SIMPLEX, 0.50, Scalar(50, 170, 50), 2);
+
+
+        Scalar color = Scalar(rng.uniform(0, 255), rng.uniform(0, 255), rng.uniform(0, 255));
             drawContours(drawing_contours, contours, circle_index, color, 2, 8, hierarchy, 0, Point());
             drawContours(drawing_shapes, contours_poly, circle_index, color, 1, 8, vector<Vec4i>(), 0, Point());
-            rectangle(frame, boundRect[circle_index].tl(), boundRect[circle_index].br(), color, 2, 8, 0);
-            circle(frame, center[circle_index], (int) radius[circle_index], color, 2, 8, 0);
+//            rectangle(frame, boundRect[circle_index].tl(), boundRect[circle_index].br(), color, 2, 8, 0);
+            circle(frame, center[circle_index], (int) radius[circle_index], 255, 2, 8, 0);
+            circle(frame, center[circle_index], 10, 255, 2, 8, 0);
             imshow("contours", drawing_contours);
             imshow("polygons", drawing_shapes);
     }
 
 //    imshow("mask",mask);
 //    imshow("canny", dst);
+
+
     imshow("mask",mask);
     imshow("detection", frame);
 

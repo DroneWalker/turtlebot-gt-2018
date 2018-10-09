@@ -34,8 +34,8 @@ include_directories(include ${catkin_INCLUDE_DIRS})
 #add_executable(ball_follower src/ball_follower.cpp)
 #target_link_libraries(ball_follower ${OpenCV_LIBS} ${catkin_LIBRARIES})
 
-add_executable(find_ball src/find_orange_ball.cpp)
-target_link_libraries(find_ball ${OpenCV_LIBS} ${catkin_LIBRARIES} find_ball_lib)
+#add_executable(find_ball src/find_orange_ball.cpp)
+#target_link_libraries(find_ball ${OpenCV_LIBS} ${catkin_LIBRARIES} find_ball_lib)
 
 add_executable(drive_wheels src/drive_wheels.cpp)
 target_link_libraries(drive_wheels ${catkin_LIBRARIES} pid_turtlebot)
@@ -48,6 +48,9 @@ target_link_libraries(commander bot_lib ${catkin_LIBRARIES})
 
 add_executable(circle_test bin/contour_circle_test.cpp)
 target_link_libraries(circle_test ${OpenCV_LIBS} find_ball_lib)
+
+add_executable(find_ball_node src/find_orange_ball_node.cpp)
+target_link_libraries(find_ball_node ${OpenCV_LIBS} ${catkin_LIBRARIES} find_ball_lib)
 
 
 
