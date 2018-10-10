@@ -18,7 +18,6 @@ scp -r <Directory on your cpu to copy> burger@<ip-of-burger>:<Directory to copy 
 ## Starting up ROS
 $ roscore
 
-
 ## Start Turtlebot nodes
 If testing: $ roslaunch turtlebot3_fake turtlebot3_fake.launch
 If onboard:  $ roslaunch turtlebot3_bringup turtlebot3_robot.launch
@@ -44,11 +43,8 @@ rosrun image_transport republish raw in:=/webcam/image_raw out:=/find_orange_bal
 
 
 
-## Run ball_follower node
-$ rosrun harris_ball_follower find_orange_ball
-
-## Run drive wheels
-$ rosrun harris_ball_follower drive_wheels
+## Run launch file
+...
 
 ## Check rqtgraph
 $ rosrun rqt_graph rqt_graph

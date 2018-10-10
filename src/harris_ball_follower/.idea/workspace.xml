@@ -46,32 +46,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1c7b909d-811d-4332-b951-a4244ffb43ac" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-default/catkin_generated/installspace/harris_ball_follower.pc" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-default/catkin_generated/installspace/harris_ball_follower.pc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-default/catkin_generated/installspace/harris_ball_followerConfig-version.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-default/catkin_generated/installspace/harris_ball_followerConfig-version.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-default/catkin_generated/installspace/harris_ball_followerConfig.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-default/catkin_generated/installspace/harris_ball_followerConfig.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-default/catkin_generated/package.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-default/catkin_generated/package.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-default/catkin_generated/pkg.develspace.context.pc.py" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-default/catkin_generated/pkg.develspace.context.pc.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-default/catkin_generated/pkg.installspace.context.pc.py" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-default/catkin_generated/pkg.installspace.context.pc.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-default/catkin_generated/stamps/harris_ball_follower/package.xml.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-default/catkin_generated/stamps/harris_ball_follower/package.xml.stamp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-default/devel/lib/pkgconfig/harris_ball_follower.pc" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-default/devel/lib/pkgconfig/harris_ball_follower.pc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-default/devel/share/harris_ball_follower/cmake/harris_ball_followerConfig-version.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-default/devel/share/harris_ball_follower/cmake/harris_ball_followerConfig-version.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-default/devel/share/harris_ball_follower/cmake/harris_ball_followerConfig.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-default/devel/share/harris_ball_follower/cmake/harris_ball_followerConfig.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.xml" beforeDir="false" afterPath="$PROJECT_DIR$/package.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../turtlebot/lab1_steps.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../turtlebot/old/ball_follower.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../turtlebot/old/ball_follower.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../turtlebot/old/ball_follower_debug.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../turtlebot/old/compress_test.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../turtlebot/old/drive_wheels.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../turtlebot/old/find_ball.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../turtlebot/old/find_ball.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../turtlebot/old/find_orange_ball.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../turtlebot/old/pid_turtlebot.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../turtlebot/old/pid_turtlebot.h" beforeDir="false" />
-    </list>
+    <list default="true" id="1c7b909d-811d-4332-b951-a4244ffb43ac" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/cmake-build-default/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -85,7 +60,7 @@
     <session id="-1357942152">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="27" />
+          <entry key="project.closed" value="28" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="3" />
           <entry key="project.open.time.10" value="1" />
@@ -669,12 +644,12 @@
       <workItem from="1539020134582" duration="17000" />
       <workItem from="1539035098928" duration="1587000" />
       <workItem from="1539052502788" duration="4873000" />
-      <workItem from="1539091977255" duration="11796000" />
+      <workItem from="1539091977255" duration="11917000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="117393000" />
+    <option name="totallyTimeSpent" value="117514000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="928" height="1056" extended-state="4" />

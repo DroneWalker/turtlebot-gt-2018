@@ -90,7 +90,7 @@ commander_EXTERNAL_OBJECTS =
 
 devel/lib/harris_chase_object/commander: CMakeFiles/commander.dir/src/nodes/commander_node.cpp.o
 devel/lib/harris_chase_object/commander: CMakeFiles/commander.dir/build.make
-devel/lib/harris_chase_object/commander: devel/lib/libbot_lib.a
+devel/lib/harris_chase_object/commander: devel/lib/libthisbot_lib.a
 devel/lib/harris_chase_object/commander: /opt/ros/kinetic/lib/libcv_bridge.so
 devel/lib/harris_chase_object/commander: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_core3.so.3.3.1
 devel/lib/harris_chase_object/commander: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_imgproc3.so.3.3.1

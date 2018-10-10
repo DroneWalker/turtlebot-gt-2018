@@ -11,50 +11,70 @@
 class BotImpl
 {
 public:
-    BotImpl(double xp, double yp, double theta, double xdot, double ydot, double thetadot, state currentstate);
+    BotImpl(double xp, double yp, double theta, double xdot, double ydot, double thetadot);
     ~BotImpl();
+    void setGoal(double x_goal, double y_goal, double theta_goal);
+    void updateSystem(double x, double y, double theta, double xdot, double ydot, double thetadot);
+    void updateError(double x_err, double y_err, double theta_err, double xdot_err, double ydot_err, double thetadot_err);
 
-
-    void setState(state newstate);
-    void goToGoal(double xd, double yd);
-
-    enum States
-    {
-        IDLE = 0,
-        GOTOGOAL = 1,
-        FOLLOWWALLC = 2,
-        FOLLOWWALLCC = 3,
-        AVOID = 4,
-        FOLLOW = 5 // For lab #3
-    };
-
-
-private:
     double _xp;
     double _yp;
     double _theta;
     double _thetadot;
     double _xdot;
     double _ydot;
-    state _state;
     double _time;
-    double _xd;
-    double _yd;
+    double _xgoal;
+    double _ygoal;
+    double _thetagoal;
+    double _xerr;
+    double _yerr;
+    double _thetaerr;
+    double _xdoterr;
+    double _ydoterr;
+    double _thetadoterr;
+
+
+
+private:
+//    double _xp;
+//    double _yp;
+//    double _theta;
+//    double _thetadot;
+//    double _xdot;
+//    double _ydot;
+//    double _time;
+//    double _xgoal;
+//    double _ygoal;
+//    double _thetagoal;
+//    double _xerr;
+//    double _yerr;
+//    double _thetaerr;
+//    double _xdoterr;
+//    double _ydoterr;
+//    double _thetadoterr;
+
 
 
 };
 
-Bot::Bot(double xp, double yp, double theta, double xdot, double ydot, double thetadot, state currentstate)
+Bot::Bot(double xp, double yp, double theta, double xdot, double ydot, double thetadot)
 {
-    pimpl = new BotImpl(xp, yp, theta, xdot, ydot, thetadot, currentstate);
+    pimpl = new BotImpl(xp, yp, theta, xdot, ydot, thetadot);
 }
-void Bot::setState(state newstate)
+
+void Bot::setGoal(double x_goal, double y_goal, double theta_goal)
 {
-    return pimpl->setState(newstate);
+    return pimpl->setGoal(x_goal, y_goal, theta_goal);
 }
-void Bot::goToGoal(double xd, double yd)
+void Bot::updateSystem(double x, double y, double theta, double xdot, double ydot, double thetadot)
 {
-    return pimpl->goToGoal(xd, yd);
+    return pimpl->updateSystem(x,y,theta,xdot,ydot,thetadot);
+}
+void Bot::updateError(double x_err, double y_err, double theta_err, double xdot_err, double ydot_err,
+                      double thetadot_err)
+{
+    return pimpl->updateError(x_err, y_err,theta_err,xdot_err,ydot_err,thetadot_err);
 }
 Bot::~Bot()
 {
@@ -65,29 +85,45 @@ Bot::~Bot()
  * Implementation
  */
 
-BotImpl::BotImpl(double xp, double yp, double theta, double xdot, double ydot, double thetadot, state currentstate) :
+BotImpl::BotImpl(double xp, double yp, double theta, double xdot, double ydot, double thetadot) :
 _xp(xp),
 _yp(yp),
 _theta(theta),
 _xdot(xdot),
 _ydot(ydot),
-_thetadot(thetadot),
-_state(currentstate)
+_thetadot(thetadot)
 {
 }
 
-void BotImpl::setState(state newstate)
+
+void BotImpl::setGoal(double x_goal, double y_goal, double theta_goal)
 {
-    // Set state as newstate
-    _state = newstate;
+    _xgoal = x_goal;
+    _ygoal = y_goal;
+    _thetagoal = theta_goal;
 }
 
-void BotImpl::goToGoal(double xd, double yd)
+void BotImpl::updateSystem(double x, double y, double theta, double xdot, double ydot, double thetadot)
 {
-    _xd = xd;
-    _yd = yd;
-    // _state = goToGoalStateRepresentation
-};
+    _xp = x;
+    _yp = y;
+    _theta = theta;
+    _xdot = xdot;
+    _ydot = ydot;
+    _thetadot = thetadot;
+}
+
+void BotImpl::updateError(double x_err, double y_err, double theta_err, double xdot_err, double ydot_err,
+                          double thetadot_err)
+{
+    _xerr = x_err;
+    _yerr = y_err;
+    _thetaerr = theta_err;
+    _xdoterr = xdot_err;
+    _ydoterr = ydot_err;
+    _thetadoterr = thetadot_err;
+}
+
 
 BotImpl::~BotImpl()
 {

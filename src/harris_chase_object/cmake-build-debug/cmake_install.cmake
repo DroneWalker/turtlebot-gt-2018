@@ -130,15 +130,19 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE STATIC_LIBRARY FILES "/home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/devel/lib/libfind_ball_lib.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE STATIC_LIBRARY FILES "/home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/devel/lib/libfind_object_lib.a")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE STATIC_LIBRARY FILES "/home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/devel/lib/libpid_turtlebot.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE STATIC_LIBRARY FILES "/home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/devel/lib/libpid_lib.a")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE STATIC_LIBRARY FILES "/home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/devel/lib/libbot_lib.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE STATIC_LIBRARY FILES "/home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/devel/lib/libthisbot_lib.a")
+endif()
+
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE STATIC_LIBRARY FILES "/home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/devel/lib/libobject_lib.a")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)

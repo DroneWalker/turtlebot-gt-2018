@@ -166,43 +166,43 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named commander
+# Target rules for targets named command
 
 # Build rule for target.
-commander: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 commander
-.PHONY : commander
+command: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 command
+.PHONY : command
 
 # fast build rule for target.
-commander/fast:
-	$(MAKE) -f CMakeFiles/commander.dir/build.make CMakeFiles/commander.dir/build
-.PHONY : commander/fast
+command/fast:
+	$(MAKE) -f CMakeFiles/command.dir/build.make CMakeFiles/command.dir/build
+.PHONY : command/fast
 
 #=============================================================================
-# Target rules for targets named detect_ball
+# Target rules for targets named detect_object
 
 # Build rule for target.
-detect_ball: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 detect_ball
-.PHONY : detect_ball
+detect_object: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 detect_object
+.PHONY : detect_object
 
 # fast build rule for target.
-detect_ball/fast:
-	$(MAKE) -f CMakeFiles/detect_ball.dir/build.make CMakeFiles/detect_ball.dir/build
-.PHONY : detect_ball/fast
+detect_object/fast:
+	$(MAKE) -f CMakeFiles/detect_object.dir/build.make CMakeFiles/detect_object.dir/build
+.PHONY : detect_object/fast
 
 #=============================================================================
-# Target rules for targets named bot_lib
+# Target rules for targets named find_object_lib
 
 # Build rule for target.
-bot_lib: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 bot_lib
-.PHONY : bot_lib
+find_object_lib: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 find_object_lib
+.PHONY : find_object_lib
 
 # fast build rule for target.
-bot_lib/fast:
-	$(MAKE) -f CMakeFiles/bot_lib.dir/build.make CMakeFiles/bot_lib.dir/build
-.PHONY : bot_lib/fast
+find_object_lib/fast:
+	$(MAKE) -f CMakeFiles/find_object_lib.dir/build.make CMakeFiles/find_object_lib.dir/build
+.PHONY : find_object_lib/fast
 
 #=============================================================================
 # Target rules for targets named geometry_msgs_generate_messages_py
@@ -229,19 +229,6 @@ sensor_msgs_generate_messages_py: cmake_check_build_system
 sensor_msgs_generate_messages_py/fast:
 	$(MAKE) -f CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make CMakeFiles/sensor_msgs_generate_messages_py.dir/build
 .PHONY : sensor_msgs_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named pid_turtlebot
-
-# Build rule for target.
-pid_turtlebot: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 pid_turtlebot
-.PHONY : pid_turtlebot
-
-# fast build rule for target.
-pid_turtlebot/fast:
-	$(MAKE) -f CMakeFiles/pid_turtlebot.dir/build.make CMakeFiles/pid_turtlebot.dir/build
-.PHONY : pid_turtlebot/fast
 
 #=============================================================================
 # Target rules for targets named geometry_msgs_generate_messages_cpp
@@ -283,6 +270,19 @@ sensor_msgs_generate_messages_lisp/fast:
 .PHONY : sensor_msgs_generate_messages_lisp/fast
 
 #=============================================================================
+# Target rules for targets named object_lib
+
+# Build rule for target.
+object_lib: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 object_lib
+.PHONY : object_lib
+
+# fast build rule for target.
+object_lib/fast:
+	$(MAKE) -f CMakeFiles/object_lib.dir/build.make CMakeFiles/object_lib.dir/build
+.PHONY : object_lib/fast
+
+#=============================================================================
 # Target rules for targets named roscpp_generate_messages_py
 
 # Build rule for target.
@@ -309,6 +309,19 @@ rosgraph_msgs_generate_messages_eus/fast:
 .PHONY : rosgraph_msgs_generate_messages_eus/fast
 
 #=============================================================================
+# Target rules for targets named pid_lib
+
+# Build rule for target.
+pid_lib: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pid_lib
+.PHONY : pid_lib
+
+# fast build rule for target.
+pid_lib/fast:
+	$(MAKE) -f CMakeFiles/pid_lib.dir/build.make CMakeFiles/pid_lib.dir/build
+.PHONY : pid_lib/fast
+
+#=============================================================================
 # Target rules for targets named geometry_msgs_generate_messages_nodejs
 
 # Build rule for target.
@@ -333,19 +346,6 @@ clean_test_results: cmake_check_build_system
 clean_test_results/fast:
 	$(MAKE) -f CMakeFiles/clean_test_results.dir/build.make CMakeFiles/clean_test_results.dir/build
 .PHONY : clean_test_results/fast
-
-#=============================================================================
-# Target rules for targets named find_ball_lib
-
-# Build rule for target.
-find_ball_lib: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 find_ball_lib
-.PHONY : find_ball_lib
-
-# fast build rule for target.
-find_ball_lib/fast:
-	$(MAKE) -f CMakeFiles/find_ball_lib.dir/build.make CMakeFiles/find_ball_lib.dir/build
-.PHONY : find_ball_lib/fast
 
 #=============================================================================
 # Target rules for targets named std_msgs_generate_messages_nodejs
@@ -398,6 +398,19 @@ roscpp_generate_messages_eus: cmake_check_build_system
 roscpp_generate_messages_eus/fast:
 	$(MAKE) -f CMakeFiles/roscpp_generate_messages_eus.dir/build.make CMakeFiles/roscpp_generate_messages_eus.dir/build
 .PHONY : roscpp_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named drive_bot
+
+# Build rule for target.
+drive_bot: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 drive_bot
+.PHONY : drive_bot
+
+# fast build rule for target.
+drive_bot/fast:
+	$(MAKE) -f CMakeFiles/drive_bot.dir/build.make CMakeFiles/drive_bot.dir/build
+.PHONY : drive_bot/fast
 
 #=============================================================================
 # Target rules for targets named download_extra_data
@@ -569,19 +582,6 @@ std_msgs_generate_messages_py/fast:
 .PHONY : std_msgs_generate_messages_py/fast
 
 #=============================================================================
-# Target rules for targets named drive_wheels
-
-# Build rule for target.
-drive_wheels: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 drive_wheels
-.PHONY : drive_wheels
-
-# fast build rule for target.
-drive_wheels/fast:
-	$(MAKE) -f CMakeFiles/drive_wheels.dir/build.make CMakeFiles/drive_wheels.dir/build
-.PHONY : drive_wheels/fast
-
-#=============================================================================
 # Target rules for targets named roscpp_generate_messages_lisp
 
 # Build rule for target.
@@ -621,6 +621,19 @@ sensor_msgs_generate_messages_cpp/fast:
 .PHONY : sensor_msgs_generate_messages_cpp/fast
 
 #=============================================================================
+# Target rules for targets named thisbot_lib
+
+# Build rule for target.
+thisbot_lib: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 thisbot_lib
+.PHONY : thisbot_lib
+
+# fast build rule for target.
+thisbot_lib/fast:
+	$(MAKE) -f CMakeFiles/thisbot_lib.dir/build.make CMakeFiles/thisbot_lib.dir/build
+.PHONY : thisbot_lib/fast
+
+#=============================================================================
 # Target rules for targets named sensor_msgs_generate_messages_eus
 
 # Build rule for target.
@@ -639,7 +652,7 @@ src/nodes/commander_node.o: src/nodes/commander_node.cpp.o
 
 # target to build an object file
 src/nodes/commander_node.cpp.o:
-	$(MAKE) -f CMakeFiles/commander.dir/build.make CMakeFiles/commander.dir/src/nodes/commander_node.cpp.o
+	$(MAKE) -f CMakeFiles/command.dir/build.make CMakeFiles/command.dir/src/nodes/commander_node.cpp.o
 .PHONY : src/nodes/commander_node.cpp.o
 
 src/nodes/commander_node.i: src/nodes/commander_node.cpp.i
@@ -648,7 +661,7 @@ src/nodes/commander_node.i: src/nodes/commander_node.cpp.i
 
 # target to preprocess a source file
 src/nodes/commander_node.cpp.i:
-	$(MAKE) -f CMakeFiles/commander.dir/build.make CMakeFiles/commander.dir/src/nodes/commander_node.cpp.i
+	$(MAKE) -f CMakeFiles/command.dir/build.make CMakeFiles/command.dir/src/nodes/commander_node.cpp.i
 .PHONY : src/nodes/commander_node.cpp.i
 
 src/nodes/commander_node.s: src/nodes/commander_node.cpp.s
@@ -657,7 +670,7 @@ src/nodes/commander_node.s: src/nodes/commander_node.cpp.s
 
 # target to generate assembly for a file
 src/nodes/commander_node.cpp.s:
-	$(MAKE) -f CMakeFiles/commander.dir/build.make CMakeFiles/commander.dir/src/nodes/commander_node.cpp.s
+	$(MAKE) -f CMakeFiles/command.dir/build.make CMakeFiles/command.dir/src/nodes/commander_node.cpp.s
 .PHONY : src/nodes/commander_node.cpp.s
 
 src/nodes/detect_ball_node.o: src/nodes/detect_ball_node.cpp.o
@@ -666,7 +679,7 @@ src/nodes/detect_ball_node.o: src/nodes/detect_ball_node.cpp.o
 
 # target to build an object file
 src/nodes/detect_ball_node.cpp.o:
-	$(MAKE) -f CMakeFiles/detect_ball.dir/build.make CMakeFiles/detect_ball.dir/src/nodes/detect_ball_node.cpp.o
+	$(MAKE) -f CMakeFiles/detect_object.dir/build.make CMakeFiles/detect_object.dir/src/nodes/detect_ball_node.cpp.o
 .PHONY : src/nodes/detect_ball_node.cpp.o
 
 src/nodes/detect_ball_node.i: src/nodes/detect_ball_node.cpp.i
@@ -675,7 +688,7 @@ src/nodes/detect_ball_node.i: src/nodes/detect_ball_node.cpp.i
 
 # target to preprocess a source file
 src/nodes/detect_ball_node.cpp.i:
-	$(MAKE) -f CMakeFiles/detect_ball.dir/build.make CMakeFiles/detect_ball.dir/src/nodes/detect_ball_node.cpp.i
+	$(MAKE) -f CMakeFiles/detect_object.dir/build.make CMakeFiles/detect_object.dir/src/nodes/detect_ball_node.cpp.i
 .PHONY : src/nodes/detect_ball_node.cpp.i
 
 src/nodes/detect_ball_node.s: src/nodes/detect_ball_node.cpp.s
@@ -684,7 +697,7 @@ src/nodes/detect_ball_node.s: src/nodes/detect_ball_node.cpp.s
 
 # target to generate assembly for a file
 src/nodes/detect_ball_node.cpp.s:
-	$(MAKE) -f CMakeFiles/detect_ball.dir/build.make CMakeFiles/detect_ball.dir/src/nodes/detect_ball_node.cpp.s
+	$(MAKE) -f CMakeFiles/detect_object.dir/build.make CMakeFiles/detect_object.dir/src/nodes/detect_ball_node.cpp.s
 .PHONY : src/nodes/detect_ball_node.cpp.s
 
 src/nodes/drive_wheels_node.o: src/nodes/drive_wheels_node.cpp.o
@@ -693,7 +706,7 @@ src/nodes/drive_wheels_node.o: src/nodes/drive_wheels_node.cpp.o
 
 # target to build an object file
 src/nodes/drive_wheels_node.cpp.o:
-	$(MAKE) -f CMakeFiles/drive_wheels.dir/build.make CMakeFiles/drive_wheels.dir/src/nodes/drive_wheels_node.cpp.o
+	$(MAKE) -f CMakeFiles/drive_bot.dir/build.make CMakeFiles/drive_bot.dir/src/nodes/drive_wheels_node.cpp.o
 .PHONY : src/nodes/drive_wheels_node.cpp.o
 
 src/nodes/drive_wheels_node.i: src/nodes/drive_wheels_node.cpp.i
@@ -702,7 +715,7 @@ src/nodes/drive_wheels_node.i: src/nodes/drive_wheels_node.cpp.i
 
 # target to preprocess a source file
 src/nodes/drive_wheels_node.cpp.i:
-	$(MAKE) -f CMakeFiles/drive_wheels.dir/build.make CMakeFiles/drive_wheels.dir/src/nodes/drive_wheels_node.cpp.i
+	$(MAKE) -f CMakeFiles/drive_bot.dir/build.make CMakeFiles/drive_bot.dir/src/nodes/drive_wheels_node.cpp.i
 .PHONY : src/nodes/drive_wheels_node.cpp.i
 
 src/nodes/drive_wheels_node.s: src/nodes/drive_wheels_node.cpp.s
@@ -711,7 +724,7 @@ src/nodes/drive_wheels_node.s: src/nodes/drive_wheels_node.cpp.s
 
 # target to generate assembly for a file
 src/nodes/drive_wheels_node.cpp.s:
-	$(MAKE) -f CMakeFiles/drive_wheels.dir/build.make CMakeFiles/drive_wheels.dir/src/nodes/drive_wheels_node.cpp.s
+	$(MAKE) -f CMakeFiles/drive_bot.dir/build.make CMakeFiles/drive_bot.dir/src/nodes/drive_wheels_node.cpp.s
 .PHONY : src/nodes/drive_wheels_node.cpp.s
 
 src/objects/bot.o: src/objects/bot.cpp.o
@@ -720,7 +733,7 @@ src/objects/bot.o: src/objects/bot.cpp.o
 
 # target to build an object file
 src/objects/bot.cpp.o:
-	$(MAKE) -f CMakeFiles/bot_lib.dir/build.make CMakeFiles/bot_lib.dir/src/objects/bot.cpp.o
+	$(MAKE) -f CMakeFiles/thisbot_lib.dir/build.make CMakeFiles/thisbot_lib.dir/src/objects/bot.cpp.o
 .PHONY : src/objects/bot.cpp.o
 
 src/objects/bot.i: src/objects/bot.cpp.i
@@ -729,7 +742,7 @@ src/objects/bot.i: src/objects/bot.cpp.i
 
 # target to preprocess a source file
 src/objects/bot.cpp.i:
-	$(MAKE) -f CMakeFiles/bot_lib.dir/build.make CMakeFiles/bot_lib.dir/src/objects/bot.cpp.i
+	$(MAKE) -f CMakeFiles/thisbot_lib.dir/build.make CMakeFiles/thisbot_lib.dir/src/objects/bot.cpp.i
 .PHONY : src/objects/bot.cpp.i
 
 src/objects/bot.s: src/objects/bot.cpp.s
@@ -738,7 +751,7 @@ src/objects/bot.s: src/objects/bot.cpp.s
 
 # target to generate assembly for a file
 src/objects/bot.cpp.s:
-	$(MAKE) -f CMakeFiles/bot_lib.dir/build.make CMakeFiles/bot_lib.dir/src/objects/bot.cpp.s
+	$(MAKE) -f CMakeFiles/thisbot_lib.dir/build.make CMakeFiles/thisbot_lib.dir/src/objects/bot.cpp.s
 .PHONY : src/objects/bot.cpp.s
 
 src/objects/find_ball.o: src/objects/find_ball.cpp.o
@@ -747,7 +760,7 @@ src/objects/find_ball.o: src/objects/find_ball.cpp.o
 
 # target to build an object file
 src/objects/find_ball.cpp.o:
-	$(MAKE) -f CMakeFiles/find_ball_lib.dir/build.make CMakeFiles/find_ball_lib.dir/src/objects/find_ball.cpp.o
+	$(MAKE) -f CMakeFiles/find_object_lib.dir/build.make CMakeFiles/find_object_lib.dir/src/objects/find_ball.cpp.o
 .PHONY : src/objects/find_ball.cpp.o
 
 src/objects/find_ball.i: src/objects/find_ball.cpp.i
@@ -756,7 +769,7 @@ src/objects/find_ball.i: src/objects/find_ball.cpp.i
 
 # target to preprocess a source file
 src/objects/find_ball.cpp.i:
-	$(MAKE) -f CMakeFiles/find_ball_lib.dir/build.make CMakeFiles/find_ball_lib.dir/src/objects/find_ball.cpp.i
+	$(MAKE) -f CMakeFiles/find_object_lib.dir/build.make CMakeFiles/find_object_lib.dir/src/objects/find_ball.cpp.i
 .PHONY : src/objects/find_ball.cpp.i
 
 src/objects/find_ball.s: src/objects/find_ball.cpp.s
@@ -765,8 +778,35 @@ src/objects/find_ball.s: src/objects/find_ball.cpp.s
 
 # target to generate assembly for a file
 src/objects/find_ball.cpp.s:
-	$(MAKE) -f CMakeFiles/find_ball_lib.dir/build.make CMakeFiles/find_ball_lib.dir/src/objects/find_ball.cpp.s
+	$(MAKE) -f CMakeFiles/find_object_lib.dir/build.make CMakeFiles/find_object_lib.dir/src/objects/find_ball.cpp.s
 .PHONY : src/objects/find_ball.cpp.s
+
+src/objects/object.o: src/objects/object.cpp.o
+
+.PHONY : src/objects/object.o
+
+# target to build an object file
+src/objects/object.cpp.o:
+	$(MAKE) -f CMakeFiles/object_lib.dir/build.make CMakeFiles/object_lib.dir/src/objects/object.cpp.o
+.PHONY : src/objects/object.cpp.o
+
+src/objects/object.i: src/objects/object.cpp.i
+
+.PHONY : src/objects/object.i
+
+# target to preprocess a source file
+src/objects/object.cpp.i:
+	$(MAKE) -f CMakeFiles/object_lib.dir/build.make CMakeFiles/object_lib.dir/src/objects/object.cpp.i
+.PHONY : src/objects/object.cpp.i
+
+src/objects/object.s: src/objects/object.cpp.s
+
+.PHONY : src/objects/object.s
+
+# target to generate assembly for a file
+src/objects/object.cpp.s:
+	$(MAKE) -f CMakeFiles/object_lib.dir/build.make CMakeFiles/object_lib.dir/src/objects/object.cpp.s
+.PHONY : src/objects/object.cpp.s
 
 src/objects/pid_turtlebot.o: src/objects/pid_turtlebot.cpp.o
 
@@ -774,7 +814,7 @@ src/objects/pid_turtlebot.o: src/objects/pid_turtlebot.cpp.o
 
 # target to build an object file
 src/objects/pid_turtlebot.cpp.o:
-	$(MAKE) -f CMakeFiles/pid_turtlebot.dir/build.make CMakeFiles/pid_turtlebot.dir/src/objects/pid_turtlebot.cpp.o
+	$(MAKE) -f CMakeFiles/pid_lib.dir/build.make CMakeFiles/pid_lib.dir/src/objects/pid_turtlebot.cpp.o
 .PHONY : src/objects/pid_turtlebot.cpp.o
 
 src/objects/pid_turtlebot.i: src/objects/pid_turtlebot.cpp.i
@@ -783,7 +823,7 @@ src/objects/pid_turtlebot.i: src/objects/pid_turtlebot.cpp.i
 
 # target to preprocess a source file
 src/objects/pid_turtlebot.cpp.i:
-	$(MAKE) -f CMakeFiles/pid_turtlebot.dir/build.make CMakeFiles/pid_turtlebot.dir/src/objects/pid_turtlebot.cpp.i
+	$(MAKE) -f CMakeFiles/pid_lib.dir/build.make CMakeFiles/pid_lib.dir/src/objects/pid_turtlebot.cpp.i
 .PHONY : src/objects/pid_turtlebot.cpp.i
 
 src/objects/pid_turtlebot.s: src/objects/pid_turtlebot.cpp.s
@@ -792,7 +832,7 @@ src/objects/pid_turtlebot.s: src/objects/pid_turtlebot.cpp.s
 
 # target to generate assembly for a file
 src/objects/pid_turtlebot.cpp.s:
-	$(MAKE) -f CMakeFiles/pid_turtlebot.dir/build.make CMakeFiles/pid_turtlebot.dir/src/objects/pid_turtlebot.cpp.s
+	$(MAKE) -f CMakeFiles/pid_lib.dir/build.make CMakeFiles/pid_lib.dir/src/objects/pid_turtlebot.cpp.s
 .PHONY : src/objects/pid_turtlebot.cpp.s
 
 # Help Target
@@ -807,24 +847,25 @@ help:
 	@echo "... test"
 	@echo "... install/local"
 	@echo "... install/strip"
-	@echo "... commander"
-	@echo "... detect_ball"
-	@echo "... bot_lib"
+	@echo "... command"
+	@echo "... detect_object"
+	@echo "... find_object_lib"
 	@echo "... geometry_msgs_generate_messages_py"
 	@echo "... sensor_msgs_generate_messages_py"
-	@echo "... pid_turtlebot"
 	@echo "... geometry_msgs_generate_messages_cpp"
 	@echo "... sensor_msgs_generate_messages_nodejs"
 	@echo "... sensor_msgs_generate_messages_lisp"
+	@echo "... object_lib"
 	@echo "... roscpp_generate_messages_py"
 	@echo "... rosgraph_msgs_generate_messages_eus"
+	@echo "... pid_lib"
 	@echo "... geometry_msgs_generate_messages_nodejs"
 	@echo "... clean_test_results"
-	@echo "... find_ball_lib"
 	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... geometry_msgs_generate_messages_eus"
 	@echo "... roscpp_generate_messages_cpp"
 	@echo "... roscpp_generate_messages_eus"
+	@echo "... drive_bot"
 	@echo "... download_extra_data"
 	@echo "... geometry_msgs_generate_messages_lisp"
 	@echo "... std_msgs_generate_messages_lisp"
@@ -838,11 +879,11 @@ help:
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... rosgraph_msgs_generate_messages_py"
 	@echo "... std_msgs_generate_messages_py"
-	@echo "... drive_wheels"
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... std_msgs_generate_messages_eus"
 	@echo "... sensor_msgs_generate_messages_cpp"
 	@echo "... list_install_components"
+	@echo "... thisbot_lib"
 	@echo "... sensor_msgs_generate_messages_eus"
 	@echo "... src/nodes/commander_node.o"
 	@echo "... src/nodes/commander_node.i"
@@ -859,6 +900,9 @@ help:
 	@echo "... src/objects/find_ball.o"
 	@echo "... src/objects/find_ball.i"
 	@echo "... src/objects/find_ball.s"
+	@echo "... src/objects/object.o"
+	@echo "... src/objects/object.i"
+	@echo "... src/objects/object.s"
 	@echo "... src/objects/pid_turtlebot.o"
 	@echo "... src/objects/pid_turtlebot.i"
 	@echo "... src/objects/pid_turtlebot.s"

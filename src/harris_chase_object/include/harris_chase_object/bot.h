@@ -18,22 +18,11 @@
 
 using namespace std;
 
-struct state
-{
-
-//    enum States
-//    {
-//        IDLE,
-//        GOTOGOAL,
-//        FOLLOWWALLC,
-//        FOLLOWWALLCC,
-//        AVOID,
-//        FOLLOW // For lab #3
-//    };
-
-    int id;
-    string name;
-};
+//struct state
+//{
+//    int id;
+//    string name;
+//};
 
 class BotImpl;
 class Bot
@@ -42,11 +31,14 @@ class Bot
 public:
     // public parameters
     // State Information, current state
-    Bot(double xp, double yp, double theta, double xdot, double ydot, double thetadot, state currentstate);
+    Bot(double xp, double yp, double theta, double xdot, double ydot, double thetadot);
 
     // Functions
-    void setState(state newstate);
-    void goToGoal(double xd, double yd);
+    void setGoal(double x_goal, double y_goal, double theta_goal);
+    void updateSystem(double x, double y, double theta, double xdot, double ydot, double thetadot);
+    void updateError(double x_err, double y_err, double theta_err, double xdot_err, double ydot_err, double thetadot_err);
+
+
     // ...
     ~Bot();
 

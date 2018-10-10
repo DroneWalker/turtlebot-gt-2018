@@ -150,7 +150,7 @@ devel/lib/harris_chase_object/detect_ball: /usr/lib/x86_64-linux-gnu/libboost_da
 devel/lib/harris_chase_object/detect_ball: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
 devel/lib/harris_chase_object/detect_ball: /usr/lib/x86_64-linux-gnu/libpthread.so
 devel/lib/harris_chase_object/detect_ball: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so
-devel/lib/harris_chase_object/detect_ball: devel/lib/libfind_ball_lib.a
+devel/lib/harris_chase_object/detect_ball: devel/lib/libfind_object_lib.a
 devel/lib/harris_chase_object/detect_ball: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_shape3.so.3.3.1
 devel/lib/harris_chase_object/detect_ball: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_photo3.so.3.3.1
 devel/lib/harris_chase_object/detect_ball: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_datasets3.so.3.3.1

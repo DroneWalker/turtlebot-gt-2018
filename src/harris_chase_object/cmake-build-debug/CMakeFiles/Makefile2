@@ -60,113 +60,114 @@ CMAKE_SOURCE_DIR = /home/charris/introrobotics/turtlebot-gt-2018/src/harris_chas
 CMAKE_BINARY_DIR = /home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug
 
 #=============================================================================
-# Target rules for target CMakeFiles/commander.dir
+# Target rules for target CMakeFiles/command.dir
 
 # All Build rule for target.
-CMakeFiles/commander.dir/all: CMakeFiles/bot_lib.dir/all
-	$(MAKE) -f CMakeFiles/commander.dir/build.make CMakeFiles/commander.dir/depend
-	$(MAKE) -f CMakeFiles/commander.dir/build.make CMakeFiles/commander.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target commander"
-.PHONY : CMakeFiles/commander.dir/all
+CMakeFiles/command.dir/all: CMakeFiles/object_lib.dir/all
+CMakeFiles/command.dir/all: CMakeFiles/thisbot_lib.dir/all
+	$(MAKE) -f CMakeFiles/command.dir/build.make CMakeFiles/command.dir/depend
+	$(MAKE) -f CMakeFiles/command.dir/build.make CMakeFiles/command.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target command"
+.PHONY : CMakeFiles/command.dir/all
 
 # Include target in all.
-all: CMakeFiles/commander.dir/all
+all: CMakeFiles/command.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/commander.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/CMakeFiles 4
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/commander.dir/all
+CMakeFiles/command.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/CMakeFiles 6
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/command.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/commander.dir/rule
+.PHONY : CMakeFiles/command.dir/rule
 
 # Convenience name for target.
-commander: CMakeFiles/commander.dir/rule
+command: CMakeFiles/command.dir/rule
 
-.PHONY : commander
-
-# clean rule for target.
-CMakeFiles/commander.dir/clean:
-	$(MAKE) -f CMakeFiles/commander.dir/build.make CMakeFiles/commander.dir/clean
-.PHONY : CMakeFiles/commander.dir/clean
+.PHONY : command
 
 # clean rule for target.
-clean: CMakeFiles/commander.dir/clean
+CMakeFiles/command.dir/clean:
+	$(MAKE) -f CMakeFiles/command.dir/build.make CMakeFiles/command.dir/clean
+.PHONY : CMakeFiles/command.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/command.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/detect_ball.dir
+# Target rules for target CMakeFiles/detect_object.dir
 
 # All Build rule for target.
-CMakeFiles/detect_ball.dir/all: CMakeFiles/find_ball_lib.dir/all
-	$(MAKE) -f CMakeFiles/detect_ball.dir/build.make CMakeFiles/detect_ball.dir/depend
-	$(MAKE) -f CMakeFiles/detect_ball.dir/build.make CMakeFiles/detect_ball.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target detect_ball"
-.PHONY : CMakeFiles/detect_ball.dir/all
+CMakeFiles/detect_object.dir/all: CMakeFiles/find_object_lib.dir/all
+	$(MAKE) -f CMakeFiles/detect_object.dir/build.make CMakeFiles/detect_object.dir/depend
+	$(MAKE) -f CMakeFiles/detect_object.dir/build.make CMakeFiles/detect_object.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target detect_object"
+.PHONY : CMakeFiles/detect_object.dir/all
 
 # Include target in all.
-all: CMakeFiles/detect_ball.dir/all
+all: CMakeFiles/detect_object.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/detect_ball.dir/rule: cmake_check_build_system
+CMakeFiles/detect_object.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/CMakeFiles 4
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/detect_ball.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/detect_object.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/detect_ball.dir/rule
+.PHONY : CMakeFiles/detect_object.dir/rule
 
 # Convenience name for target.
-detect_ball: CMakeFiles/detect_ball.dir/rule
+detect_object: CMakeFiles/detect_object.dir/rule
 
-.PHONY : detect_ball
-
-# clean rule for target.
-CMakeFiles/detect_ball.dir/clean:
-	$(MAKE) -f CMakeFiles/detect_ball.dir/build.make CMakeFiles/detect_ball.dir/clean
-.PHONY : CMakeFiles/detect_ball.dir/clean
+.PHONY : detect_object
 
 # clean rule for target.
-clean: CMakeFiles/detect_ball.dir/clean
+CMakeFiles/detect_object.dir/clean:
+	$(MAKE) -f CMakeFiles/detect_object.dir/build.make CMakeFiles/detect_object.dir/clean
+.PHONY : CMakeFiles/detect_object.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/detect_object.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/bot_lib.dir
+# Target rules for target CMakeFiles/find_object_lib.dir
 
 # All Build rule for target.
-CMakeFiles/bot_lib.dir/all:
-	$(MAKE) -f CMakeFiles/bot_lib.dir/build.make CMakeFiles/bot_lib.dir/depend
-	$(MAKE) -f CMakeFiles/bot_lib.dir/build.make CMakeFiles/bot_lib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target bot_lib"
-.PHONY : CMakeFiles/bot_lib.dir/all
+CMakeFiles/find_object_lib.dir/all:
+	$(MAKE) -f CMakeFiles/find_object_lib.dir/build.make CMakeFiles/find_object_lib.dir/depend
+	$(MAKE) -f CMakeFiles/find_object_lib.dir/build.make CMakeFiles/find_object_lib.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/CMakeFiles --progress-num=7,8 "Built target find_object_lib"
+.PHONY : CMakeFiles/find_object_lib.dir/all
 
 # Include target in all.
-all: CMakeFiles/bot_lib.dir/all
+all: CMakeFiles/find_object_lib.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/bot_lib.dir/rule: cmake_check_build_system
+CMakeFiles/find_object_lib.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/bot_lib.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/find_object_lib.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/bot_lib.dir/rule
+.PHONY : CMakeFiles/find_object_lib.dir/rule
 
 # Convenience name for target.
-bot_lib: CMakeFiles/bot_lib.dir/rule
+find_object_lib: CMakeFiles/find_object_lib.dir/rule
 
-.PHONY : bot_lib
-
-# clean rule for target.
-CMakeFiles/bot_lib.dir/clean:
-	$(MAKE) -f CMakeFiles/bot_lib.dir/build.make CMakeFiles/bot_lib.dir/clean
-.PHONY : CMakeFiles/bot_lib.dir/clean
+.PHONY : find_object_lib
 
 # clean rule for target.
-clean: CMakeFiles/bot_lib.dir/clean
+CMakeFiles/find_object_lib.dir/clean:
+	$(MAKE) -f CMakeFiles/find_object_lib.dir/build.make CMakeFiles/find_object_lib.dir/clean
+.PHONY : CMakeFiles/find_object_lib.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/find_object_lib.dir/clean
 
 .PHONY : clean
 
@@ -231,43 +232,6 @@ CMakeFiles/sensor_msgs_generate_messages_py.dir/clean:
 
 # clean rule for target.
 clean: CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/pid_turtlebot.dir
-
-# All Build rule for target.
-CMakeFiles/pid_turtlebot.dir/all:
-	$(MAKE) -f CMakeFiles/pid_turtlebot.dir/build.make CMakeFiles/pid_turtlebot.dir/depend
-	$(MAKE) -f CMakeFiles/pid_turtlebot.dir/build.make CMakeFiles/pid_turtlebot.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/CMakeFiles --progress-num=11,12 "Built target pid_turtlebot"
-.PHONY : CMakeFiles/pid_turtlebot.dir/all
-
-# Include target in all.
-all: CMakeFiles/pid_turtlebot.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/pid_turtlebot.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/pid_turtlebot.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/pid_turtlebot.dir/rule
-
-# Convenience name for target.
-pid_turtlebot: CMakeFiles/pid_turtlebot.dir/rule
-
-.PHONY : pid_turtlebot
-
-# clean rule for target.
-CMakeFiles/pid_turtlebot.dir/clean:
-	$(MAKE) -f CMakeFiles/pid_turtlebot.dir/build.make CMakeFiles/pid_turtlebot.dir/clean
-.PHONY : CMakeFiles/pid_turtlebot.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/pid_turtlebot.dir/clean
 
 .PHONY : clean
 
@@ -368,6 +332,43 @@ clean: CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/object_lib.dir
+
+# All Build rule for target.
+CMakeFiles/object_lib.dir/all:
+	$(MAKE) -f CMakeFiles/object_lib.dir/build.make CMakeFiles/object_lib.dir/depend
+	$(MAKE) -f CMakeFiles/object_lib.dir/build.make CMakeFiles/object_lib.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/CMakeFiles --progress-num=9,10 "Built target object_lib"
+.PHONY : CMakeFiles/object_lib.dir/all
+
+# Include target in all.
+all: CMakeFiles/object_lib.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/object_lib.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/object_lib.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/object_lib.dir/rule
+
+# Convenience name for target.
+object_lib: CMakeFiles/object_lib.dir/rule
+
+.PHONY : object_lib
+
+# clean rule for target.
+CMakeFiles/object_lib.dir/clean:
+	$(MAKE) -f CMakeFiles/object_lib.dir/build.make CMakeFiles/object_lib.dir/clean
+.PHONY : CMakeFiles/object_lib.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/object_lib.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/roscpp_generate_messages_py.dir
 
 # All Build rule for target.
@@ -432,6 +433,43 @@ clean: CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/pid_lib.dir
+
+# All Build rule for target.
+CMakeFiles/pid_lib.dir/all:
+	$(MAKE) -f CMakeFiles/pid_lib.dir/build.make CMakeFiles/pid_lib.dir/depend
+	$(MAKE) -f CMakeFiles/pid_lib.dir/build.make CMakeFiles/pid_lib.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/CMakeFiles --progress-num=11,12 "Built target pid_lib"
+.PHONY : CMakeFiles/pid_lib.dir/all
+
+# Include target in all.
+all: CMakeFiles/pid_lib.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/pid_lib.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/pid_lib.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/pid_lib.dir/rule
+
+# Convenience name for target.
+pid_lib: CMakeFiles/pid_lib.dir/rule
+
+.PHONY : pid_lib
+
+# clean rule for target.
+CMakeFiles/pid_lib.dir/clean:
+	$(MAKE) -f CMakeFiles/pid_lib.dir/build.make CMakeFiles/pid_lib.dir/clean
+.PHONY : CMakeFiles/pid_lib.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/pid_lib.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/geometry_msgs_generate_messages_nodejs.dir
 
 # All Build rule for target.
@@ -492,43 +530,6 @@ CMakeFiles/clean_test_results.dir/clean:
 
 # clean rule for target.
 clean: CMakeFiles/clean_test_results.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/find_ball_lib.dir
-
-# All Build rule for target.
-CMakeFiles/find_ball_lib.dir/all:
-	$(MAKE) -f CMakeFiles/find_ball_lib.dir/build.make CMakeFiles/find_ball_lib.dir/depend
-	$(MAKE) -f CMakeFiles/find_ball_lib.dir/build.make CMakeFiles/find_ball_lib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/CMakeFiles --progress-num=9,10 "Built target find_ball_lib"
-.PHONY : CMakeFiles/find_ball_lib.dir/all
-
-# Include target in all.
-all: CMakeFiles/find_ball_lib.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/find_ball_lib.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/find_ball_lib.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/find_ball_lib.dir/rule
-
-# Convenience name for target.
-find_ball_lib: CMakeFiles/find_ball_lib.dir/rule
-
-.PHONY : find_ball_lib
-
-# clean rule for target.
-CMakeFiles/find_ball_lib.dir/clean:
-	$(MAKE) -f CMakeFiles/find_ball_lib.dir/build.make CMakeFiles/find_ball_lib.dir/clean
-.PHONY : CMakeFiles/find_ball_lib.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/find_ball_lib.dir/clean
 
 .PHONY : clean
 
@@ -657,6 +658,43 @@ CMakeFiles/roscpp_generate_messages_eus.dir/clean:
 
 # clean rule for target.
 clean: CMakeFiles/roscpp_generate_messages_eus.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/drive_bot.dir
+
+# All Build rule for target.
+CMakeFiles/drive_bot.dir/all: CMakeFiles/pid_lib.dir/all
+	$(MAKE) -f CMakeFiles/drive_bot.dir/build.make CMakeFiles/drive_bot.dir/depend
+	$(MAKE) -f CMakeFiles/drive_bot.dir/build.make CMakeFiles/drive_bot.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target drive_bot"
+.PHONY : CMakeFiles/drive_bot.dir/all
+
+# Include target in all.
+all: CMakeFiles/drive_bot.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/drive_bot.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/CMakeFiles 4
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/drive_bot.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/drive_bot.dir/rule
+
+# Convenience name for target.
+drive_bot: CMakeFiles/drive_bot.dir/rule
+
+.PHONY : drive_bot
+
+# clean rule for target.
+CMakeFiles/drive_bot.dir/clean:
+	$(MAKE) -f CMakeFiles/drive_bot.dir/build.make CMakeFiles/drive_bot.dir/clean
+.PHONY : CMakeFiles/drive_bot.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/drive_bot.dir/clean
 
 .PHONY : clean
 
@@ -1077,43 +1115,6 @@ clean: CMakeFiles/std_msgs_generate_messages_py.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/drive_wheels.dir
-
-# All Build rule for target.
-CMakeFiles/drive_wheels.dir/all: CMakeFiles/pid_turtlebot.dir/all
-	$(MAKE) -f CMakeFiles/drive_wheels.dir/build.make CMakeFiles/drive_wheels.dir/depend
-	$(MAKE) -f CMakeFiles/drive_wheels.dir/build.make CMakeFiles/drive_wheels.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/CMakeFiles --progress-num=7,8 "Built target drive_wheels"
-.PHONY : CMakeFiles/drive_wheels.dir/all
-
-# Include target in all.
-all: CMakeFiles/drive_wheels.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/drive_wheels.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/CMakeFiles 4
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/drive_wheels.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/drive_wheels.dir/rule
-
-# Convenience name for target.
-drive_wheels: CMakeFiles/drive_wheels.dir/rule
-
-.PHONY : drive_wheels
-
-# clean rule for target.
-CMakeFiles/drive_wheels.dir/clean:
-	$(MAKE) -f CMakeFiles/drive_wheels.dir/build.make CMakeFiles/drive_wheels.dir/clean
-.PHONY : CMakeFiles/drive_wheels.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/drive_wheels.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
 # Target rules for target CMakeFiles/roscpp_generate_messages_lisp.dir
 
 # All Build rule for target.
@@ -1206,6 +1207,43 @@ CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean:
 
 # clean rule for target.
 clean: CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/thisbot_lib.dir
+
+# All Build rule for target.
+CMakeFiles/thisbot_lib.dir/all:
+	$(MAKE) -f CMakeFiles/thisbot_lib.dir/build.make CMakeFiles/thisbot_lib.dir/depend
+	$(MAKE) -f CMakeFiles/thisbot_lib.dir/build.make CMakeFiles/thisbot_lib.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/CMakeFiles --progress-num=13,14 "Built target thisbot_lib"
+.PHONY : CMakeFiles/thisbot_lib.dir/all
+
+# Include target in all.
+all: CMakeFiles/thisbot_lib.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/thisbot_lib.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/thisbot_lib.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/thisbot_lib.dir/rule
+
+# Convenience name for target.
+thisbot_lib: CMakeFiles/thisbot_lib.dir/rule
+
+.PHONY : thisbot_lib
+
+# clean rule for target.
+CMakeFiles/thisbot_lib.dir/clean:
+	$(MAKE) -f CMakeFiles/thisbot_lib.dir/build.make CMakeFiles/thisbot_lib.dir/clean
+.PHONY : CMakeFiles/thisbot_lib.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/thisbot_lib.dir/clean
 
 .PHONY : clean
 

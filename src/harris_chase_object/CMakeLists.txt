@@ -54,25 +54,28 @@ catkin_package(
 ###########
 
 ## Header files to include
-add_library(find_ball_lib STATIC src/objects/find_ball.cpp)
-install(TARGETS find_ball_lib DESTINATION include)
+add_library(find_object_lib STATIC src/objects/find_ball.cpp)
+install(TARGETS find_object_lib DESTINATION include)
 
-add_library(pid_turtlebot STATIC src/objects/pid_turtlebot.cpp)
-install(TARGETS pid_turtlebot DESTINATION include)
+add_library(pid_lib STATIC src/objects/pid_turtlebot.cpp)
+install(TARGETS pid_lib DESTINATION include)
 
-add_library(bot_lib STATIC src/objects/bot.cpp)
-install(TARGETS bot_lib DESTINATION include)
+add_library(thisbot_lib STATIC src/objects/bot.cpp)
+install(TARGETS thisbot_lib DESTINATION include)
+
+add_library(object_lib STATIC src/objects/object.cpp)
+install (TARGETS object_lib DESTINATION include)
 
 ## Build nodes
 include_directories(include)
 include_directories(include ${catkin_INCLUDE_DIRS})
 
-add_executable(detect_ball src/nodes/detect_ball_node.cpp)
-target_link_libraries(detect_ball ${OpenCV_LIBS} ${catkin_LIBRARIES} find_ball_lib)
+add_executable(detect_object src/nodes/detect_ball_node.cpp)
+target_link_libraries(detect_object ${OpenCV_LIBS} ${catkin_LIBRARIES} find_object_lib)
 
-add_executable(drive_wheels src/nodes/drive_wheels_node.cpp)
-target_link_libraries(drive_wheels ${catkin_LIBRARIES} pid_turtlebot)
+add_executable(drive_bot src/nodes/drive_wheels_node.cpp)
+target_link_libraries(drive_bot ${catkin_LIBRARIES} pid_lib)
 
-add_executable(commander src/nodes/commander_node.cpp)
-target_link_libraries(commander bot_lib ${catkin_LIBRARIES})
+add_executable(command src/nodes/commander_node.cpp)
+target_link_libraries(command ${catkin_LIBRARIES} thisbot_lib object_lib)
 
