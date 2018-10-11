@@ -72,3 +72,4 @@ CMakeFiles/command.dir/src/nodes/commander_node.cpp.o
  /opt/ros/kinetic/include/std_msgs/String.h
  /opt/ros/kinetic/include/xmlrpcpp/XmlRpcDecl.h
  /opt/ros/kinetic/include/xmlrpcpp/XmlRpcValue.h
+ devel/include/harris_chase_object/DistanceAngle.h

@@ -31,6 +31,8 @@ math.h
 /home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/src/objects/bot.cpp
 ../objects/object.cpp
 /home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/src/objects/object.cpp
+harris_chase_object/DistanceAngle.h
+-
 
 /home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/src/objects/bot.cpp
 harris_chase_object/bot.h
@@ -822,5 +824,21 @@ string
 vector
 -
 time.h
+-
+
+devel/include/harris_chase_object/DistanceAngle.h
+string
+-
+vector
+-
+map
+-
+ros/types.h
+-
+ros/serialization.h
+-
+ros/builtin_message_traits.h
+-
+ros/message_operations.h
 -
 

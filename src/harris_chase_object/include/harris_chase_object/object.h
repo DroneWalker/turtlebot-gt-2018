@@ -15,10 +15,16 @@ class Object
 {
 
 public:
-    Object(int id, double xp, double yp, double radius);
+    Object(int id, float distance, double angle_min, double angle_max);
 
     void updatePosition(double xp, double yp);
     void updateSize(double radius);
+    void setDistance(float distance);
+    float getDistance();
+    void setAngle(double angle);
+    double getAngleMin();
+    double getAngleMax();
+
 
     ~Object();
 

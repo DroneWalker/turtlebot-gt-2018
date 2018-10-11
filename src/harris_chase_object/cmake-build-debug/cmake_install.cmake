@@ -115,7 +115,43 @@ file(INSTALL DESTINATION "/usr/local" TYPE FILE FILES "/home/charris/introroboti
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/harris_chase_object/msg" TYPE FILE FILES "/home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/msg/DistanceAngle.msg")
+endif()
+
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/harris_chase_object/cmake" TYPE FILE FILES "/home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/catkin_generated/installspace/harris_chase_object-msg-paths.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/devel/include/harris_chase_object")
+endif()
+
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/devel/share/roseus/ros/harris_chase_object")
+endif()
+
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/devel/share/common-lisp/ros/harris_chase_object")
+endif()
+
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/devel/share/gennodejs/ros/harris_chase_object")
+endif()
+
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  execute_process(COMMAND "/usr/bin/python" -m compileall "/home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/devel/lib/python2.7/dist-packages/harris_chase_object")
+endif()
+
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages" TYPE DIRECTORY FILES "/home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/devel/lib/python2.7/dist-packages/harris_chase_object")
+endif()
+
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/catkin_generated/installspace/harris_chase_object.pc")
+endif()
+
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/harris_chase_object/cmake" TYPE FILE FILES "/home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/catkin_generated/installspace/harris_chase_object-msg-extras.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")

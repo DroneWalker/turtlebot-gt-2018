@@ -1,8 +1,4 @@
 <launch>
-	<include file="$(find turtlebot3_fake)/launch/turtlebot3_fake.launch"/>
-	<include file = "$(find video_stream_opencv)/launch/webcam.launch"/>
-
 	<node pkg="harris_chase_object" type="detect_object" name="detect_object" />
-	<node pkg="harris_chase_object" type="drive_bot" name="drive_bot" />
-	<node pkg="harris_chase_object" type="commander" name="command" />
+	<node pkg="harris_chase_object" type="command" name="command" />
 </launch>

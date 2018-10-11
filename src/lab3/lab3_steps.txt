@@ -44,7 +44,12 @@ rosrun image_transport republish raw in:=/webcam/image_raw out:=/find_orange_bal
 
 
 ## Run launch file
-...
+1) For simulation of lidar data
+simulation.launch
+2) for simulation of driving wheels
+find_ball_simulation.launch
+3) for actual run on turtlebot (NOT READY)
+find_ball.launch
 
 ## Check rqtgraph
 $ rosrun rqt_graph rqt_graph

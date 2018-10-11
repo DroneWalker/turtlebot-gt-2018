@@ -17,6 +17,7 @@ find_package(catkin REQUIRED COMPONENTS
         geometry_msgs
         cv_bridge
         image_transport
+        message_generation
         )
 
 ## System dependencies are found with CMake's conventions
@@ -31,7 +32,15 @@ find_package(catkin REQUIRED COMPONENTS
 ################################################
 ## Declare ROS messages, services and actions ##
 ################################################
-## NONE
+add_message_files(
+        FILES
+        DistanceAngle.msg
+)
+
+generate_messages(
+        DEPENDENCIES
+        std_msgs
+)
 
 
 ###################################
@@ -46,12 +55,13 @@ find_package(catkin REQUIRED COMPONENTS
 catkin_package(
   INCLUDE_DIRS include
   LIBRARIES harris_chase_object
-  CATKIN_DEPENDS geometry_msgs roscpp rospy sensor_msgs std_msgs
+  CATKIN_DEPENDS geometry_msgs roscpp rospy sensor_msgs std_msgs message_runtime
 )
 
 ###########
 ## Build ##
 ###########
+
 
 ## Header files to include
 add_library(find_object_lib STATIC src/objects/find_ball.cpp)
@@ -78,4 +88,5 @@ target_link_libraries(drive_bot ${catkin_LIBRARIES} pid_lib)
 
 add_executable(command src/nodes/commander_node.cpp)
 target_link_libraries(command ${catkin_LIBRARIES} thisbot_lib object_lib)
+add_dependencies(command ${${PROJECT_NAME}_EXPORTED_TARGETS})
 
