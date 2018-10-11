@@ -229,6 +229,10 @@ int main(int argc, char **argv)
         // Check measurements
         ROS_INFO("Running sensor fusion and filtering");
         sensorfusion();
+        turtlebotState = stateUpdate(turtlebotState);
+        state_pub.publish(myState);
+
+        foundball = true;
 
         if (foundball)
         {
@@ -241,8 +245,7 @@ int main(int argc, char **argv)
 //            des_pos_pub.publish()
         }
 
-        turtlebotState = stateUpdate(turtlebotState);
-        state_pub.publish(myState);
+
 
         ros::spinOnce();
         loop_rate.sleep();

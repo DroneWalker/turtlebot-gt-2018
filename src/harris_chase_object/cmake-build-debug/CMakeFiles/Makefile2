@@ -82,7 +82,7 @@ all: CMakeFiles/command.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/command.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/CMakeFiles 13
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/CMakeFiles 12
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/command.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/command.dir/rule
@@ -103,39 +103,39 @@ clean: CMakeFiles/command.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/drive_bot.dir
+# Target rules for target CMakeFiles/follow_drive.dir
 
 # All Build rule for target.
-CMakeFiles/drive_bot.dir/all: CMakeFiles/pid_lib.dir/all
-	$(MAKE) -f CMakeFiles/drive_bot.dir/build.make CMakeFiles/drive_bot.dir/depend
-	$(MAKE) -f CMakeFiles/drive_bot.dir/build.make CMakeFiles/drive_bot.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target drive_bot"
-.PHONY : CMakeFiles/drive_bot.dir/all
+CMakeFiles/follow_drive.dir/all: CMakeFiles/pid_lib.dir/all
+	$(MAKE) -f CMakeFiles/follow_drive.dir/build.make CMakeFiles/follow_drive.dir/depend
+	$(MAKE) -f CMakeFiles/follow_drive.dir/build.make CMakeFiles/follow_drive.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/CMakeFiles --progress-num=7,8 "Built target follow_drive"
+.PHONY : CMakeFiles/follow_drive.dir/all
 
 # Include target in all.
-all: CMakeFiles/drive_bot.dir/all
+all: CMakeFiles/follow_drive.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/drive_bot.dir/rule: cmake_check_build_system
+CMakeFiles/follow_drive.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/CMakeFiles 4
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/drive_bot.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/follow_drive.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/drive_bot.dir/rule
+.PHONY : CMakeFiles/follow_drive.dir/rule
 
 # Convenience name for target.
-drive_bot: CMakeFiles/drive_bot.dir/rule
+follow_drive: CMakeFiles/follow_drive.dir/rule
 
-.PHONY : drive_bot
-
-# clean rule for target.
-CMakeFiles/drive_bot.dir/clean:
-	$(MAKE) -f CMakeFiles/drive_bot.dir/build.make CMakeFiles/drive_bot.dir/clean
-.PHONY : CMakeFiles/drive_bot.dir/clean
+.PHONY : follow_drive
 
 # clean rule for target.
-clean: CMakeFiles/drive_bot.dir/clean
+CMakeFiles/follow_drive.dir/clean:
+	$(MAKE) -f CMakeFiles/follow_drive.dir/build.make CMakeFiles/follow_drive.dir/clean
+.PHONY : CMakeFiles/follow_drive.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/follow_drive.dir/clean
 
 .PHONY : clean
 
@@ -536,7 +536,7 @@ CMakeFiles/harris_chase_object_generate_messages_nodejs.dir/all: CMakeFiles/_har
 CMakeFiles/harris_chase_object_generate_messages_nodejs.dir/all: CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
 	$(MAKE) -f CMakeFiles/harris_chase_object_generate_messages_nodejs.dir/build.make CMakeFiles/harris_chase_object_generate_messages_nodejs.dir/depend
 	$(MAKE) -f CMakeFiles/harris_chase_object_generate_messages_nodejs.dir/build.make CMakeFiles/harris_chase_object_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/CMakeFiles --progress-num=13 "Built target harris_chase_object_generate_messages_nodejs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/CMakeFiles --progress-num=12 "Built target harris_chase_object_generate_messages_nodejs"
 .PHONY : CMakeFiles/harris_chase_object_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
@@ -792,7 +792,7 @@ clean: CMakeFiles/_harris_chase_object_generate_messages_check_deps_DistanceAngl
 CMakeFiles/pid_lib.dir/all:
 	$(MAKE) -f CMakeFiles/pid_lib.dir/build.make CMakeFiles/pid_lib.dir/depend
 	$(MAKE) -f CMakeFiles/pid_lib.dir/build.make CMakeFiles/pid_lib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/CMakeFiles --progress-num=18,19 "Built target pid_lib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/CMakeFiles --progress-num=17,18 "Built target pid_lib"
 .PHONY : CMakeFiles/pid_lib.dir/all
 
 # Include target in all.
@@ -862,7 +862,7 @@ CMakeFiles/harris_chase_object_generate_messages_eus.dir/all: CMakeFiles/std_msg
 CMakeFiles/harris_chase_object_generate_messages_eus.dir/all: CMakeFiles/_harris_chase_object_generate_messages_check_deps_DistanceAngle.dir/all
 	$(MAKE) -f CMakeFiles/harris_chase_object_generate_messages_eus.dir/build.make CMakeFiles/harris_chase_object_generate_messages_eus.dir/depend
 	$(MAKE) -f CMakeFiles/harris_chase_object_generate_messages_eus.dir/build.make CMakeFiles/harris_chase_object_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/CMakeFiles --progress-num=10,11 "Built target harris_chase_object_generate_messages_eus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/CMakeFiles --progress-num=9,10 "Built target harris_chase_object_generate_messages_eus"
 .PHONY : CMakeFiles/harris_chase_object_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
@@ -926,7 +926,7 @@ clean: CMakeFiles/roscpp_generate_messages_py.dir/clean
 CMakeFiles/object_lib.dir/all:
 	$(MAKE) -f CMakeFiles/object_lib.dir/build.make CMakeFiles/object_lib.dir/depend
 	$(MAKE) -f CMakeFiles/object_lib.dir/build.make CMakeFiles/object_lib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/CMakeFiles --progress-num=16,17 "Built target object_lib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/CMakeFiles --progress-num=15,16 "Built target object_lib"
 .PHONY : CMakeFiles/object_lib.dir/all
 
 # Include target in all.
@@ -1297,7 +1297,7 @@ all: CMakeFiles/harris_chase_object_generate_messages.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/harris_chase_object_generate_messages.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/CMakeFiles 6
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/harris_chase_object_generate_messages.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/harris_chase_object_generate_messages.dir/rule
@@ -1356,7 +1356,7 @@ clean: CMakeFiles/roscpp_generate_messages_eus.dir/clean
 CMakeFiles/find_object_lib.dir/all:
 	$(MAKE) -f CMakeFiles/find_object_lib.dir/build.make CMakeFiles/find_object_lib.dir/depend
 	$(MAKE) -f CMakeFiles/find_object_lib.dir/build.make CMakeFiles/find_object_lib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/CMakeFiles --progress-num=7,8 "Built target find_object_lib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target find_object_lib"
 .PHONY : CMakeFiles/find_object_lib.dir/all
 
 # Include target in all.
@@ -1393,7 +1393,7 @@ clean: CMakeFiles/find_object_lib.dir/clean
 CMakeFiles/thisbot_lib.dir/all:
 	$(MAKE) -f CMakeFiles/thisbot_lib.dir/build.make CMakeFiles/thisbot_lib.dir/depend
 	$(MAKE) -f CMakeFiles/thisbot_lib.dir/build.make CMakeFiles/thisbot_lib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/CMakeFiles --progress-num=20,21 "Built target thisbot_lib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/CMakeFiles --progress-num=19,20 "Built target thisbot_lib"
 .PHONY : CMakeFiles/thisbot_lib.dir/all
 
 # Include target in all.
@@ -1463,12 +1463,12 @@ CMakeFiles/harris_chase_object_generate_messages_cpp.dir/all: CMakeFiles/std_msg
 CMakeFiles/harris_chase_object_generate_messages_cpp.dir/all: CMakeFiles/_harris_chase_object_generate_messages_check_deps_DistanceAngle.dir/all
 	$(MAKE) -f CMakeFiles/harris_chase_object_generate_messages_cpp.dir/build.make CMakeFiles/harris_chase_object_generate_messages_cpp.dir/depend
 	$(MAKE) -f CMakeFiles/harris_chase_object_generate_messages_cpp.dir/build.make CMakeFiles/harris_chase_object_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/CMakeFiles --progress-num=9 "Built target harris_chase_object_generate_messages_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/CMakeFiles --progress-num= "Built target harris_chase_object_generate_messages_cpp"
 .PHONY : CMakeFiles/harris_chase_object_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/harris_chase_object_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/harris_chase_object_generate_messages_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/harris_chase_object_generate_messages_cpp.dir/rule
@@ -1500,7 +1500,7 @@ CMakeFiles/harris_chase_object_gencpp.dir/all: CMakeFiles/harris_chase_object_ge
 
 # Build rule for subdir invocation for target.
 CMakeFiles/harris_chase_object_gencpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/harris_chase_object_gencpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/harris_chase_object_gencpp.dir/rule
@@ -1560,7 +1560,7 @@ CMakeFiles/harris_chase_object_generate_messages_lisp.dir/all: CMakeFiles/std_ms
 CMakeFiles/harris_chase_object_generate_messages_lisp.dir/all: CMakeFiles/_harris_chase_object_generate_messages_check_deps_DistanceAngle.dir/all
 	$(MAKE) -f CMakeFiles/harris_chase_object_generate_messages_lisp.dir/build.make CMakeFiles/harris_chase_object_generate_messages_lisp.dir/depend
 	$(MAKE) -f CMakeFiles/harris_chase_object_generate_messages_lisp.dir/build.make CMakeFiles/harris_chase_object_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/CMakeFiles --progress-num=12 "Built target harris_chase_object_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/CMakeFiles --progress-num=11 "Built target harris_chase_object_generate_messages_lisp"
 .PHONY : CMakeFiles/harris_chase_object_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1657,7 +1657,7 @@ CMakeFiles/harris_chase_object_generate_messages_py.dir/all: CMakeFiles/_harris_
 CMakeFiles/harris_chase_object_generate_messages_py.dir/all: CMakeFiles/std_msgs_generate_messages_py.dir/all
 	$(MAKE) -f CMakeFiles/harris_chase_object_generate_messages_py.dir/build.make CMakeFiles/harris_chase_object_generate_messages_py.dir/depend
 	$(MAKE) -f CMakeFiles/harris_chase_object_generate_messages_py.dir/build.make CMakeFiles/harris_chase_object_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/CMakeFiles --progress-num=14,15 "Built target harris_chase_object_generate_messages_py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/CMakeFiles --progress-num=13,14 "Built target harris_chase_object_generate_messages_py"
 .PHONY : CMakeFiles/harris_chase_object_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.

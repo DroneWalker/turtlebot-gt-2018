@@ -119,8 +119,8 @@
             <DistClean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
          </MakeCommands>
       </Target>
-      <Target title="drive_bot">
-         <Option output="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/devel/lib/harris_chase_object/drive_bot" prefix_auto="0" extension_auto="0" />
+      <Target title="follow_drive">
+         <Option output="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/devel/lib/harris_chase_object/follow_drive" prefix_auto="0" extension_auto="0" />
          <Option working_dir="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/devel/lib/harris_chase_object" />
          <Option object_output="./" />
          <Option type="1" />
@@ -144,14 +144,14 @@
             <Add directory="/usr/local/include" />
          </Compiler>
          <MakeCommands>
-            <Build command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/Makefile&quot;  VERBOSE=1 drive_bot" />
+            <Build command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/Makefile&quot;  VERBOSE=1 follow_drive" />
             <CompileFile command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
             <Clean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
             <DistClean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
          </MakeCommands>
       </Target>
-      <Target title="drive_bot/fast">
-         <Option output="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/devel/lib/harris_chase_object/drive_bot" prefix_auto="0" extension_auto="0" />
+      <Target title="follow_drive/fast">
+         <Option output="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/devel/lib/harris_chase_object/follow_drive" prefix_auto="0" extension_auto="0" />
          <Option working_dir="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/devel/lib/harris_chase_object" />
          <Option object_output="./" />
          <Option type="1" />
@@ -175,7 +175,7 @@
             <Add directory="/usr/local/include" />
          </Compiler>
          <MakeCommands>
-            <Build command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/Makefile&quot;  VERBOSE=1 drive_bot/fast" />
+            <Build command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/Makefile&quot;  VERBOSE=1 follow_drive/fast" />
             <CompileFile command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
             <Clean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
             <DistClean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
@@ -948,8 +948,8 @@
       <Unit filename="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/src/nodes/detect_ball_node.cpp">
          <Option target="detect_object"/>
       </Unit>
-      <Unit filename="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/src/nodes/drive_wheels_node.cpp">
-         <Option target="drive_bot"/>
+      <Unit filename="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/src/nodes/follow_drive_node.cpp">
+         <Option target="follow_drive"/>
       </Unit>
       <Unit filename="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/src/objects/bot.cpp">
          <Option target="thisbot_lib"/>

@@ -83,8 +83,11 @@ include_directories(include ${catkin_INCLUDE_DIRS})
 add_executable(detect_object src/nodes/detect_ball_node.cpp)
 target_link_libraries(detect_object ${OpenCV_LIBS} ${catkin_LIBRARIES} find_object_lib)
 
-add_executable(drive_bot src/nodes/drive_wheels_node.cpp)
-target_link_libraries(drive_bot ${catkin_LIBRARIES} pid_lib)
+#add_executable(drive_bot src/nodes/drive_wheels_node.cpp)
+#target_link_libraries(drive_bot ${catkin_LIBRARIES} pid_lib)
+
+add_executable(follow_drive src/nodes/follow_drive_node.cpp)
+target_link_libraries(follow_drive ${catkin_LIBRARIES} pid_lib)
 
 add_executable(command src/nodes/commander_node.cpp)
 target_link_libraries(command ${catkin_LIBRARIES} thisbot_lib object_lib)

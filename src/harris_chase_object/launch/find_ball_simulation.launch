@@ -1,4 +1,5 @@
 <launch>
 	<node pkg="harris_chase_object" type="detect_object" name="detect_object" />
 	<node pkg="harris_chase_object" type="command" name="command" />
+	<node pkg="harris_chase_object" type="follow_drive" name="follow_drive" />
 </launch>
