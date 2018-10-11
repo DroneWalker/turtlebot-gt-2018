@@ -33,7 +33,8 @@ $ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 $ rosparam set /find_ball/image_transport compressed
 $ rosrun harris_ball_follower ball_follower __image_transport:=compressed
 OR
-$ rosrun image_transport republish compressed in:=/raspicam_node_image raw out:=/image _image_transport:=compressed
+$ rosrun image_transport republish compressed in:=/raspicam_node_image raw out:=/find_orange_ball/image _image_transport:=compressed
+launch/camerav2_AAAxBBB.launch"/>
 ***MUST RUN ON THE RASPBERRY PI!!!
 
 ## If on laptop:

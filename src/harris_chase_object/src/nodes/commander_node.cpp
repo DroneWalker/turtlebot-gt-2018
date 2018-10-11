@@ -7,6 +7,7 @@
 #include "std_msgs/String.h"
 #include "geometry_msgs/Point.h"
 #include "geometry_msgs/PoseStamped.h"
+#include "geometry_msgs/Twist.h"
 #include "sensor_msgs/LaserScan.h"
 
 #include "math.h"
@@ -29,7 +30,7 @@ bool goal = false;
 bool tracker = false;
 bool havegoal = false;
 bool foundball = false;
-
+bool objectexists = false;
 double camera_fov_x = 66.2;
 double camera_resolution_x = 640;
 
@@ -64,7 +65,7 @@ double calculateAngle(double x_pixel)
 
 void sensorfusion()
 {
-    if (tracker)
+    if (tracker && objectexists)
     {
         int i;
         for (i=0; i < objectMap.size(); i++)
@@ -113,39 +114,44 @@ void scanCallback(const sensor_msgs::LaserScanPtr& scan_msg)
     bool lever = true;
     for (i= 0; i < length; i++)
     {
-        float dist = scan_msg->ranges[i];
-        if (lever)
-        {
-            // Looking for Start
-            if (dist > 0.05 && dist < 10000)
+//        if (i > 30 || i < 330)
+//        {
+            float dist = scan_msg->ranges[i];
+            if (lever)
             {
-                start = i;
-                lever = false;
-                inLoop = true;
-            }
-        }
-        else
-        {
-            if (dist > 10000 && inLoop)
-            {
-                end = i-1;
-                lever = true;
-                inLoop = false;
-                float obj_dist;
-                float obj_sum = 0;
-                int k;
-                for (k=start;k < end+1; k++)
+                // Looking for Start
+                if (dist > 0.05 && dist < 10000)
                 {
-                    obj_sum += scan_msg->ranges[k];
+                    start = i;
+                    lever = false;
+                    inLoop = true;
                 }
-                obj_dist = obj_sum / (end - start);
-                object_count += 1;
-//                objectMap[object_count-1]->o Object(object_count, obj_dist, degtorads((double) start), degtorads((double) end));
-                Object *obj = new Object(object_count, obj_dist, degtorads((double) start), degtorads((double) end));
-                objectMap.push_back(obj);
-
             }
-        }
+            else
+            {
+                if (dist > 10000 && inLoop)
+                {
+                    end = i-1;
+                    lever = true;
+                    inLoop = false;
+                    float obj_dist;
+                    float obj_sum = 0;
+                    int k;
+                    for (k=start;k < end+1; k++)
+                    {
+                        obj_sum += scan_msg->ranges[k];
+                    }
+                    obj_dist = obj_sum / (end - start);
+                    object_count += 1;
+//                objectMap[object_count-1]->o Object(object_count, obj_dist, degtorads((double) start), degtorads((double) end));
+                    Object *obj = new Object(object_count, obj_dist, degtorads((double) start), degtorads((double) end));
+                    objectMap.push_back(obj);
+                    objectexists = true;
+                    ROS_INFO("Object Found!");
+                }
+            }
+//        }
+
     }
 }
 
@@ -211,11 +217,12 @@ int main(int argc, char **argv)
     Publisher state_pub = n.advertise<std_msgs::String>("/commander/state", 1);
     Publisher des_pos_pub = n.advertise<geometry_msgs::PoseStamped>("/commander/desired_position",100);
     Publisher object_pub = n.advertise<harris_chase_object::DistanceAngle>("/commander/ball_location",100);
-    Subscriber trackpoint_sub = n.subscribe("trackpoint", 100, pointCallback);
+    Publisher stop_pub = n.advertise<geometry_msgs::Twist>("cmd_vel",10);
+    Subscriber trackpoint_sub = n.subscribe("trackpoint", 10, pointCallback);
     Subscriber scanner_sub = n.subscribe("/scan", 10, scanCallback);
 
     // Running Hz Rate
-    Rate loop_rate(5);
+    Rate loop_rate(10);
 
     State turtlebotState = IDLE;
     harris_chase_object::DistanceAngle ball_distance_angle;
@@ -234,15 +241,23 @@ int main(int argc, char **argv)
 
         foundball = true;
 
-        if (foundball)
+        if (turtlebotState == FOLLOW && foundball)
         {
             ball_distance_angle.distance = ballDist;
+//            ball_distance_angle.distance = 1.5;
+//            ball_distance_angle.distance = 1.1;
             ball_distance_angle.angle = ballAngle;
             object_pub.publish(ball_distance_angle);
         }
         else if (turtlebotState == GOTOGOAL && havegoal)
         {
 //            des_pos_pub.publish()
+        } else
+        {
+            geometry_msgs::Twist stop_vel;
+            stop_vel.angular.z = 0;
+            stop_vel.linear.x = 0;
+            stop_pub.publish(stop_vel);
         }
 
 

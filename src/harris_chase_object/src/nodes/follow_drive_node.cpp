@@ -40,7 +40,14 @@ void ballCallback(const harris_chase_object::DistanceAngle& ball_msg)
 
 double linear_error()
 {
-    double error = currentDistance - desiredDistance;
+    double error;
+    if (error < 0)
+    {
+        error = 0;
+    } else
+    {
+        error = currentDistance - desiredDistance;
+    }
     return error;
 }
 
@@ -68,8 +75,8 @@ int main(int argc, char **argv)
     twist_vel.angular.y = 0;
     twist_vel.angular.z = 0;
 
-    PID pid_linear = PID(0.1, 1.5, -1.5, 1.0, 0.1,0);
-    PID pid_angular = PID(0.1, 1.5, -1.5, 1.0, 0.1,0);
+    PID pid_linear = PID(0.1, 1.0, 0, 0.1, 0,0);
+    PID pid_angular = PID(0.1, 1.0, -1.0, 0.1, 0,0);
 
     while(ros::ok()) {
         // Calculate pixel error
@@ -84,8 +91,13 @@ int main(int argc, char **argv)
         }
         else
         {
-            twist_vel.linear.x = 0;
-            twist_vel.angular.z = 0;
+//            twist_vel.linear.x = 0;
+//            twist_vel.angular.z = 0;
+            double lin_error = linear_error();
+            double ang_error = angular_error();
+
+            twist_vel.linear.x = pid_linear.calculate(lin_error);
+            twist_vel.angular.z = pid_angular.calculate(ang_error);
         }
 
 //        findball = false;

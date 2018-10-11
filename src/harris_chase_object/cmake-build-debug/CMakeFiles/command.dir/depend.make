@@ -10,6 +10,8 @@ CMakeFiles/command.dir/src/nodes/commander_node.cpp.o: /opt/ros/kinetic/include/
 CMakeFiles/command.dir/src/nodes/commander_node.cpp.o: /opt/ros/kinetic/include/geometry_msgs/Pose.h
 CMakeFiles/command.dir/src/nodes/commander_node.cpp.o: /opt/ros/kinetic/include/geometry_msgs/PoseStamped.h
 CMakeFiles/command.dir/src/nodes/commander_node.cpp.o: /opt/ros/kinetic/include/geometry_msgs/Quaternion.h
+CMakeFiles/command.dir/src/nodes/commander_node.cpp.o: /opt/ros/kinetic/include/geometry_msgs/Twist.h
+CMakeFiles/command.dir/src/nodes/commander_node.cpp.o: /opt/ros/kinetic/include/geometry_msgs/Vector3.h
 CMakeFiles/command.dir/src/nodes/commander_node.cpp.o: /opt/ros/kinetic/include/ros/advertise_options.h
 CMakeFiles/command.dir/src/nodes/commander_node.cpp.o: /opt/ros/kinetic/include/ros/advertise_service_options.h
 CMakeFiles/command.dir/src/nodes/commander_node.cpp.o: /opt/ros/kinetic/include/ros/assert.h
