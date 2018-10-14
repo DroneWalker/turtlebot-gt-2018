@@ -32,7 +32,7 @@ bool havegoal = false;
 bool foundball = false;
 bool objectexists = false;
 double camera_fov_x = 66.2;
-double camera_resolution_x = 640;
+double camera_resolution_x = 320;
 
 double ballAngle;
 float ballDist;
@@ -112,47 +112,76 @@ void scanCallback(const sensor_msgs::LaserScanPtr& scan_msg)
     int end = length;
     bool inLoop = false;
     bool lever = true;
+
+    float obj_dist;
+    float obj_sum = 0;
+    double cnt=0;
     for (i= 0; i < length; i++)
     {
-//        if (i > 30 || i < 330)
-//        {
+        if (i > 330 || i < 30)
+        {
             float dist = scan_msg->ranges[i];
-            if (lever)
+            if (dist > 0.05 && dist < 3.0)
             {
-                // Looking for Start
-                if (dist > 0.05 && dist < 10000)
-                {
-                    start = i;
-                    lever = false;
-                    inLoop = true;
-                }
+                obj_sum += dist;
+                cnt += 1;
             }
-            else
-            {
-                if (dist > 10000 && inLoop)
-                {
-                    end = i-1;
-                    lever = true;
-                    inLoop = false;
-                    float obj_dist;
-                    float obj_sum = 0;
-                    int k;
-                    for (k=start;k < end+1; k++)
-                    {
-                        obj_sum += scan_msg->ranges[k];
-                    }
-                    obj_dist = obj_sum / (end - start);
-                    object_count += 1;
-//                objectMap[object_count-1]->o Object(object_count, obj_dist, degtorads((double) start), degtorads((double) end));
-                    Object *obj = new Object(object_count, obj_dist, degtorads((double) start), degtorads((double) end));
-                    objectMap.push_back(obj);
-                    objectexists = true;
-                    ROS_INFO("Object Found!");
-                }
-            }
+        }
+    }
+
+    if (cnt == 0)
+    {
+        obj_dist = 0;
+    } else
+    {
+        obj_dist = obj_sum / (cnt);
+    }
+    object_count += 1;
+    Object *obj = new Object(object_count, obj_dist, degtorads((double) start), degtorads((double) end));
+    objectMap.push_back(obj);
+    objectexists = true;
+    ROS_INFO("Object Found!");
+
+
+
+//            for (i= 0; i < length; i++)
+//            {
+//            if (lever)
+//            {
+//                // Looking for Start
+//                if (dist > 0.2 && dist < 3.0)
+//                {
+//                    start = i;
+//                    lever = false;
+//                    inLoop = true;
+//                }
+//            }
+//            else
+//            {
+//                if (dist > 3.0 && inLoop)
+//                {
+//                    end = i-1;
+//                    lever = true;
+//                    inLoop = false;
+//                    float obj_dist;
+//                    float obj_sum = 0;
+//                    int k;
+//                    for (k=start;k < end+1; k++)
+//                    {
+//                        obj_sum += scan_msg->ranges[k];
+//                    }
+//                    obj_dist = obj_sum / (end - start);
+//                    object_count += 1;
+////                objectMap[object_count-1]->o Object(object_count, obj_dist, degtorads((double) start), degtorads((double) end));
+//                    Object *obj = new Object(object_count, obj_dist, degtorads((double) start), degtorads((double) end));
+//                    objectMap.push_back(obj);
+//                    objectexists = true;
+//                    ROS_INFO("Object Found!");
+//                }
+//            }
 //        }
 
-    }
+//    }
 }
 
 
@@ -241,7 +270,7 @@ int main(int argc, char **argv)
 
         foundball = true;
 
-        if (turtlebotState == FOLLOW && foundball)
+        if (turtlebotState == FOLLOW)
         {
             ball_distance_angle.distance = ballDist;
 //            ball_distance_angle.distance = 1.5;
@@ -252,12 +281,12 @@ int main(int argc, char **argv)
         else if (turtlebotState == GOTOGOAL && havegoal)
         {
 //            des_pos_pub.publish()
-        } else
+        }
+        else
         {
-            geometry_msgs::Twist stop_vel;
-            stop_vel.angular.z = 0;
-            stop_vel.linear.x = 0;
-            stop_pub.publish(stop_vel);
+            ball_distance_angle.distance = 0.0;
+            ball_distance_angle.distance = 0.0;
+            object_pub.publish(ball_distance_angle);
         }
 
 

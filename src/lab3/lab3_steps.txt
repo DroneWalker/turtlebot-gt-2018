@@ -4,6 +4,8 @@ Lab #3 Steps
 ## Get turtlebot IP address
 startx
 
+authenticate on auth.lawn.gatech.edu
+enter MAC address on OLED of robot
 
 ## Port into robot
 $ ssh burger@<IP or Hostname>
@@ -33,9 +35,15 @@ $ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 $ rosparam set /find_ball/image_transport compressed
 $ rosrun harris_ball_follower ball_follower __image_transport:=compressed
 OR
-$ rosrun image_transport republish compressed in:=/raspicam_node_image raw out:=/find_orange_ball/image _image_transport:=compressed
+$ rosrun image_transport republish compressed in:=/raspicam_node/image raw out:=/find_orange_ball/image _image_transport:=compressed
 launch/camerav2_AAAxBBB.launch"/>
 ***MUST RUN ON THE RASPBERRY PI!!!
+
+# TO VIEW ON PC
+rosrun image_transport republish raw in:=/raspicam_node/image out:=/pc/image _image_transport:=compressed
+
+rosrun image_view image_view image:=/pc/image
+
 
 ## If on laptop:
 source ~/introrobotics/extras_ws/devel/setup.bash

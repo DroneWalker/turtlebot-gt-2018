@@ -93,3 +93,6 @@ add_executable(command src/nodes/commander_node.cpp)
 target_link_libraries(command ${catkin_LIBRARIES} thisbot_lib object_lib)
 add_dependencies(command ${${PROJECT_NAME}_EXPORTED_TARGETS})
 
+#add_executable(fake_scan src/fakes/fake_laser_Scan.cpp)
+#target_link_libraries(fake_scan ${catkin_LIBRARIES})
+

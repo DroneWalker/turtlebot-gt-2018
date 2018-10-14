@@ -101,8 +101,8 @@ void imageTracking()
             circle(frame, center[circle_index], 5, 255, 2, 8, 0);
 
 
-            imshow("contours", drawing_contours);
-            imshow("polygons", drawing_shapes);
+//            imshow("contours", drawing_contours);
+//            imshow("polygons", drawing_shapes);
 
         }
 
@@ -134,10 +134,10 @@ void imageTracking()
     // Display frame.
     if (debug == true)
     {
-        imshow("lowpass", lowpass);
-        imshow("mask", mask);
+//        imshow("lowpass", lowpass);
+//        imshow("mask", mask);
     }
-    imshow("Tracking", frame);
+//    imshow("Tracking", frame);
 }
 
 void imageCallback(const sensor_msgs::ImageConstPtr msg)
@@ -157,7 +157,7 @@ void imageCallback(const sensor_msgs::ImageConstPtr msg)
         return;
     }
     //Update GUI
-    cv::imshow("subscribing", cv_ptr->image);
+//    cv::imshow("subscribing", cv_ptr->image);
     cv::waitKey(10);
     imageTracking();
 
@@ -172,8 +172,8 @@ int main(int argc, char **argv)
     NodeHandle n;
     image_transport::ImageTransport it(n);
     //namedWindow("Tracking", CV_WINDOW_AUTOSIZE);
-    namedWindow("subscribing", CV_WINDOW_AUTOSIZE);
-    startWindowThread();
+//    namedWindow("subscribing", CV_WINDOW_AUTOSIZE);
+//    startWindowThread();
     // "/raspicam_node/image"
 
     // open CV
