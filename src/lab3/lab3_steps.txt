@@ -42,6 +42,8 @@ launch/camerav2_AAAxBBB.launch"/>
 # TO VIEW ON PC
 rosrun image_transport republish raw in:=/raspicam_node/image out:=/pc/image _image_transport:=compressed
 
+roslaunch raspicam_node camerav2_320x240.launch 
+
 rosrun image_view image_view image:=/pc/image
 
 

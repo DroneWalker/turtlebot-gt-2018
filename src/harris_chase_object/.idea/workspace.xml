@@ -2,55 +2,55 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
     <generated>
-      <config projectName="harris_chase_object" targetName="std_msgs_generate_messages_py" />
-      <config projectName="harris_chase_object" targetName="roscpp_generate_messages_nodejs" />
-      <config projectName="harris_chase_object" targetName="rosgraph_msgs_generate_messages_cpp" />
-      <config projectName="harris_chase_object" targetName="rosgraph_msgs_generate_messages_py" />
-      <config projectName="harris_chase_object" targetName="doxygen" />
-      <config projectName="harris_chase_object" targetName="pid_lib" />
-      <config projectName="harris_chase_object" targetName="thisbot_lib" />
-      <config projectName="harris_chase_object" targetName="harris_chase_object_genpy" />
-      <config projectName="harris_chase_object" targetName="sensor_msgs_generate_messages_nodejs" />
-      <config projectName="harris_chase_object" targetName="rosgraph_msgs_generate_messages_lisp" />
-      <config projectName="harris_chase_object" targetName="geometry_msgs_generate_messages_eus" />
-      <config projectName="harris_chase_object" targetName="object_lib" />
-      <config projectName="harris_chase_object" targetName="roscpp_generate_messages_cpp" />
-      <config projectName="harris_chase_object" targetName="sensor_msgs_generate_messages_cpp" />
-      <config projectName="harris_chase_object" targetName="harris_chase_object_gennodejs" />
-      <config projectName="harris_chase_object" targetName="harris_chase_object_genlisp" />
-      <config projectName="harris_chase_object" targetName="roscpp_generate_messages_lisp" />
-      <config projectName="harris_chase_object" targetName="harris_chase_object_generate_messages_cpp" />
-      <config projectName="harris_chase_object" targetName="detect_object" />
-      <config projectName="harris_chase_object" targetName="geometry_msgs_generate_messages_lisp" />
-      <config projectName="harris_chase_object" targetName="sensor_msgs_generate_messages_py" />
-      <config projectName="harris_chase_object" targetName="geometry_msgs_generate_messages_cpp" />
-      <config projectName="harris_chase_object" targetName="harris_chase_object_gencpp" />
-      <config projectName="harris_chase_object" targetName="roscpp_generate_messages_eus" />
-      <config projectName="harris_chase_object" targetName="clean_test_results" />
-      <config projectName="harris_chase_object" targetName="geometry_msgs_generate_messages_nodejs" />
-      <config projectName="harris_chase_object" targetName="_harris_chase_object_generate_messages_check_deps_DistanceAngle" />
-      <config projectName="harris_chase_object" targetName="sensor_msgs_generate_messages_eus" />
-      <config projectName="harris_chase_object" targetName="download_extra_data" />
-      <config projectName="harris_chase_object" targetName="harris_chase_object_generate_messages_lisp" />
-      <config projectName="harris_chase_object" targetName="std_msgs_generate_messages_cpp" />
-      <config projectName="harris_chase_object" targetName="tests" />
-      <config projectName="harris_chase_object" targetName="run_tests" />
-      <config projectName="harris_chase_object" targetName="harris_chase_object_generate_messages_py" />
-      <config projectName="harris_chase_object" targetName="command" />
-      <config projectName="harris_chase_object" targetName="std_msgs_generate_messages_lisp" />
-      <config projectName="harris_chase_object" targetName="harris_chase_object_generate_messages_eus" />
-      <config projectName="harris_chase_object" targetName="geometry_msgs_generate_messages_py" />
-      <config projectName="harris_chase_object" targetName="std_msgs_generate_messages_nodejs" />
       <config projectName="harris_chase_object" targetName="harris_chase_object_generate_messages" />
-      <config projectName="harris_chase_object" targetName="rosgraph_msgs_generate_messages_eus" />
-      <config projectName="harris_chase_object" targetName="rosgraph_msgs_generate_messages_nodejs" />
-      <config projectName="harris_chase_object" targetName="sensor_msgs_generate_messages_lisp" />
-      <config projectName="harris_chase_object" targetName="harris_chase_object_geneus" />
-      <config projectName="harris_chase_object" targetName="roscpp_generate_messages_py" />
-      <config projectName="harris_chase_object" targetName="follow_drive" />
-      <config projectName="harris_chase_object" targetName="find_object_lib" />
+      <config projectName="harris_chase_object" targetName="harris_chase_object_genlisp" />
+      <config projectName="harris_chase_object" targetName="harris_chase_object_gennodejs" />
+      <config projectName="harris_chase_object" targetName="geometry_msgs_generate_messages_py" />
+      <config projectName="harris_chase_object" targetName="geometry_msgs_generate_messages_eus" />
+      <config projectName="harris_chase_object" targetName="_harris_chase_object_generate_messages_check_deps_DistanceAngle" />
+      <config projectName="harris_chase_object" targetName="geometry_msgs_generate_messages_lisp" />
+      <config projectName="harris_chase_object" targetName="sensor_msgs_generate_messages_cpp" />
+      <config projectName="harris_chase_object" targetName="rosgraph_msgs_generate_messages_py" />
       <config projectName="harris_chase_object" targetName="harris_chase_object_generate_messages_nodejs" />
+      <config projectName="harris_chase_object" targetName="rosgraph_msgs_generate_messages_nodejs" />
+      <config projectName="harris_chase_object" targetName="rosgraph_msgs_generate_messages_cpp" />
+      <config projectName="harris_chase_object" targetName="sensor_msgs_generate_messages_py" />
+      <config projectName="harris_chase_object" targetName="sensor_msgs_generate_messages_lisp" />
+      <config projectName="harris_chase_object" targetName="download_extra_data" />
+      <config projectName="harris_chase_object" targetName="harris_chase_object_generate_messages_cpp" />
+      <config projectName="harris_chase_object" targetName="roscpp_generate_messages_cpp" />
       <config projectName="harris_chase_object" targetName="std_msgs_generate_messages_eus" />
+      <config projectName="harris_chase_object" targetName="command" />
+      <config projectName="harris_chase_object" targetName="harris_chase_object_geneus" />
+      <config projectName="harris_chase_object" targetName="std_msgs_generate_messages_cpp" />
+      <config projectName="harris_chase_object" targetName="roscpp_generate_messages_eus" />
+      <config projectName="harris_chase_object" targetName="geometry_msgs_generate_messages_cpp" />
+      <config projectName="harris_chase_object" targetName="std_msgs_generate_messages_lisp" />
+      <config projectName="harris_chase_object" targetName="harris_chase_object_genpy" />
+      <config projectName="harris_chase_object" targetName="harris_chase_object_generate_messages_lisp" />
+      <config projectName="harris_chase_object" targetName="tests" />
+      <config projectName="harris_chase_object" targetName="find_object_lib" />
+      <config projectName="harris_chase_object" targetName="clean_test_results" />
+      <config projectName="harris_chase_object" targetName="sensor_msgs_generate_messages_nodejs" />
+      <config projectName="harris_chase_object" targetName="pid_lib" />
+      <config projectName="harris_chase_object" targetName="roscpp_generate_messages_py" />
+      <config projectName="harris_chase_object" targetName="thisbot_lib" />
+      <config projectName="harris_chase_object" targetName="doxygen" />
+      <config projectName="harris_chase_object" targetName="geometry_msgs_generate_messages_nodejs" />
+      <config projectName="harris_chase_object" targetName="rosgraph_msgs_generate_messages_eus" />
+      <config projectName="harris_chase_object" targetName="follow_drive" />
+      <config projectName="harris_chase_object" targetName="std_msgs_generate_messages_py" />
+      <config projectName="harris_chase_object" targetName="object_lib" />
+      <config projectName="harris_chase_object" targetName="harris_chase_object_gencpp" />
+      <config projectName="harris_chase_object" targetName="harris_chase_object_generate_messages_py" />
+      <config projectName="harris_chase_object" targetName="run_tests" />
+      <config projectName="harris_chase_object" targetName="roscpp_generate_messages_lisp" />
+      <config projectName="harris_chase_object" targetName="sensor_msgs_generate_messages_eus" />
+      <config projectName="harris_chase_object" targetName="roscpp_generate_messages_nodejs" />
+      <config projectName="harris_chase_object" targetName="detect_object" />
+      <config projectName="harris_chase_object" targetName="std_msgs_generate_messages_nodejs" />
+      <config projectName="harris_chase_object" targetName="rosgraph_msgs_generate_messages_lisp" />
+      <config projectName="harris_chase_object" targetName="harris_chase_object_generate_messages_eus" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -59,17 +59,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="94338022-93be-4a13-8ca6-a19b220f3b1e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/fakes/fake_laser_Scan.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/command.dir/src/nodes/commander_node.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/command.dir/src/nodes/commander_node.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/nodes/commander_node.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/nodes/commander_node.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/nodes/detect_ball_node.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/nodes/detect_ball_node.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/nodes/follow_drive_node.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/nodes/follow_drive_node.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/objects/find_ball.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/objects/find_ball.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab3/lab3_steps.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../lab3/lab3_steps.txt" afterDir="false" />
-    </list>
+    <list default="true" id="94338022-93be-4a13-8ca6-a19b220f3b1e" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -82,15 +72,15 @@
     <session id="-1570402285">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="10" />
+          <entry key="project.closed" value="11" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.12" value="1" />
-          <entry key="project.open.time.14" value="1" />
+          <entry key="project.open.time.14" value="2" />
           <entry key="project.open.time.15" value="3" />
           <entry key="project.open.time.18" value="2" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="10" />
+          <entry key="project.opened" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -146,7 +136,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/nodes/commander_node.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-990">
+            <state relative-caret-position="1845">
               <caret line="123" column="26" lean-forward="true" selection-start-line="123" selection-start-column="26" selection-end-line="123" selection-end-column="26" />
               <folding>
                 <element signature="e#41#61#0" expanded="true" />
@@ -158,7 +148,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/nodes/follow_drive_node.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1455">
+            <state relative-caret-position="873">
               <caret line="108" column="9" lean-forward="true" selection-start-line="108" selection-start-column="9" selection-end-line="108" selection-end-column="9" />
               <folding>
                 <element signature="e#41#61#0" expanded="true" />
@@ -170,7 +160,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/nodes/detect_ball_node.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-375">
+            <state relative-caret-position="2130">
               <caret line="142" column="42" selection-start-line="142" selection-start-column="42" selection-end-line="142" selection-end-column="42" />
             </state>
           </provider>
@@ -179,7 +169,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/objects/find_ball.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
+            <state relative-caret-position="315">
               <caret line="21" column="44" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
             </state>
           </provider>
@@ -240,7 +230,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -305,6 +294,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -504,11 +494,12 @@
       <workItem from="1539272945271" duration="1427000" />
       <workItem from="1539291891155" duration="1063000" />
       <workItem from="1539539894406" duration="11199000" />
+      <workItem from="1539605816306" duration="9000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71779000" />
+    <option name="totallyTimeSpent" value="71788000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -520,9 +511,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
+    <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13709232" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13875069" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -797,9 +789,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
           <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
-          <folding>
-            <element signature="e#42#62#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -817,23 +806,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/objects/find_ball.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="21" column="44" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/nodes/detect_ball_node.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-375">
-          <caret line="142" column="42" selection-start-line="142" selection-start-column="42" selection-end-line="142" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/nodes/commander_node.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-990">
+        <state relative-caret-position="1845">
           <caret line="123" column="26" lean-forward="true" selection-start-line="123" selection-start-column="26" selection-end-line="123" selection-end-column="26" />
           <folding>
             <element signature="e#41#61#0" expanded="true" />
@@ -841,9 +816,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/nodes/detect_ball_node.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2130">
+          <caret line="142" column="42" selection-start-line="142" selection-start-column="42" selection-end-line="142" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/objects/find_ball.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="44" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/nodes/follow_drive_node.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1455">
+        <state relative-caret-position="873">
           <caret line="108" column="9" lean-forward="true" selection-start-line="108" selection-start-column="9" selection-end-line="108" selection-end-column="9" />
           <folding>
             <element signature="e#41#61#0" expanded="true" />
