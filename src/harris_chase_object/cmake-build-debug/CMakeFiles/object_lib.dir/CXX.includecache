@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/harris_chase_object/object.h
+
+/home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/src/objects/object.cpp
+harris_chase_object/object.h
+-
+

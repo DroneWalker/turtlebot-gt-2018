@@ -1,0 +1,7 @@
+<launch>
+	<include file="$(find turtlebot3_fake)/launch/turtlebot3_fake.launch"/>
+	<include file = "$(find video_stream_opencv)/launch/webcam.launch"/>
+
+	<node pkg="harris_ball_follower" type="find_ball" name="find_ball" />
+	<node pkg="harris_ball_follower" type="drive_wheels" name="drive_wheels" />
+</launch>

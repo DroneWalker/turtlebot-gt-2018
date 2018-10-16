@@ -1,0 +1,2 @@
+/usr/bin/ar qc devel/lib/libobject_lib.a  CMakeFiles/object_lib.dir/src/objects/object.cpp.o
+/usr/bin/ranlib devel/lib/libobject_lib.a

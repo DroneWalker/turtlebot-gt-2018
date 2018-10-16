@@ -1,0 +1,2 @@
+/usr/bin/ar qc devel/lib/libfind_ball_lib.a  CMakeFiles/find_ball_lib.dir/src/find_ball.cpp.o
+/usr/bin/ranlib devel/lib/libfind_ball_lib.a

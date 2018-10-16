@@ -1,0 +1,8 @@
+<launch>
+	<include file="$(find turtlebot3_bringup)/launch/turtlebot3_robot.launch"/>
+	<include file = "$(find raspicam_node)/launch/camerav2_AAAxBBB.launch"/>
+
+	<node pkg="harris_chase_object" type="detect_object" name="detect_object" />
+	<node pkg="harris_chase_object" type="drive_bot" name="drive_bot" />
+	<node pkg="harris_chase_object" type="commander" name="command" />
+</launch>

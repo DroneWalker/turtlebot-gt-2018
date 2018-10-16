@@ -1,0 +1,21 @@
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Ignore any build folder
+build/
+devel/
+image_common/
+cmake-build-debub/
+cmake-build-default/

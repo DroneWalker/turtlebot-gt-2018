@@ -1,0 +1,74 @@
+Lab #3 Steps
+=============
+
+## Get turtlebot IP address
+startx
+
+authenticate on auth.lawn.gatech.edu
+enter MAC address on OLED of robot
+
+## Port into robot
+$ ssh burger@<IP or Hostname>
+
+## Transfer files
+scp -r <Directory on your cpu to copy> burger@<ip-of-burger>:<Directory to copy to on robot>
+
+## Change ROS_HOSTNAME and IP (in .bashrc) on both home PC and Raspberry Pi
+#export ROS_MASTER_URI=http://143.215.48.175:11311 (PC for both)
+#export ROS_HOSTNAME=143.215.48.175 (pc for pc, rpi for rpi)
+
+## Starting up ROS
+$ roscore
+
+## Start Turtlebot nodes
+If testing: $ roslaunch turtlebot3_fake turtlebot3_fake.launch
+If onboard:  $ roslaunch turtlebot3_bringup turtlebot3_robot.launch
+
+## Load bot into Rviz
+$ roslaunch turtlebot3_bringup turtlebot3_remote.launch
+$ rosrun rviz rviz -d `rospack find turtlebot3_description`/rviz/model.rviz 
+
+## Teleoperation for safety?
+$ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
+
+## Convert image from compressed to image
+$ rosparam set /find_ball/image_transport compressed
+$ rosrun harris_ball_follower ball_follower __image_transport:=compressed
+OR
+$ rosrun image_transport republish compressed in:=/raspicam_node/image raw out:=/find_orange_ball/image _image_transport:=compressed
+launch/camerav2_AAAxBBB.launch"/>
+***MUST RUN ON THE RASPBERRY PI!!!
+
+# TO VIEW ON PC
+rosrun image_transport republish raw in:=/raspicam_node/image out:=/pc/image _image_transport:=compressed
+
+roslaunch raspicam_node camerav2_320x240.launch 
+
+rosrun image_view image_view image:=/pc/image
+
+
+## If on laptop:
+source ~/introrobotics/extras_ws/devel/setup.bash
+roslaunch video_stream_opencv webcam.launch 
+rosrun image_transport republish raw in:=/webcam/image_raw out:=/find_orange_ball/image _image_transport:=raw
+
+
+
+## Run launch file
+1) For simulation of lidar data
+simulation.launch
+2) for simulation of driving wheels
+find_ball_simulation.launch
+3) for actual run on turtlebot (NOT READY)
+find_ball.launch
+
+## Check rqtgraph
+$ rosrun rqt_graph rqt_graph
+
+## Check topics
+$ rostopic list
+
+
+
+
+
