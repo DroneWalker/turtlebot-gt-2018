@@ -1,0 +1,2 @@
+set(harris_navigate_to_goal_MESSAGE_FILES "/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/msg/DistanceAngle.msg")
+set(harris_navigate_to_goal_SERVICE_FILES "")

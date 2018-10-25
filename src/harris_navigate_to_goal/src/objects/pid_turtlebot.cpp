@@ -7,7 +7,7 @@
 
 #include <iostream>
 #include <cmath>
-#include <pid/pid_turtlebot.h>
+#include "../../../harris_navigate_to_goal/include/pid/pid_turtlebot.h"
 
 using namespace std;
 
