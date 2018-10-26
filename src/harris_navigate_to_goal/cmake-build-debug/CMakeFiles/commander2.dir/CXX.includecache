@@ -22,6 +22,22 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
+../include/harris_navigate_to_goal/objectLocation.h
+string
+-
+vector
+-
+map
+-
+ros/types.h
+-
+ros/serialization.h
+-
+ros/builtin_message_traits.h
+-
+ros/message_operations.h
+-
+
 /home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/include/harris_navigate_to_goal/bot.h
 sstream
 -
@@ -50,6 +66,8 @@ math.h
 ../objects/object.cpp
 /home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/src/objects/object.cpp
 harris_navigate_to_goal/DistanceAngle.h
+-
+harris_navigate_to_goal/objectLocation.h
 -
 
 /home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/src/objects/bot.cpp

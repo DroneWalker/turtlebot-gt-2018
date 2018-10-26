@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.context.in
 
-messages_str = "/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/msg/DistanceAngle.msg"
+messages_str = "/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/msg/DistanceAngle.msg;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/msg/objectLocation.msg"
 services_str = ""
 pkg_name = "harris_navigate_to_goal"
 dependencies_str = "std_msgs"

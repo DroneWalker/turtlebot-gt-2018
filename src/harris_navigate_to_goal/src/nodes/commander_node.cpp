@@ -15,6 +15,10 @@
 #include "../objects/bot.cpp"
 #include "../objects/object.cpp"
 #include <harris_navigate_to_goal/DistanceAngle.h>
+#include <harris_navigate_to_goal/objectLocation.h>
+
+
+
 
 
 using namespace std;
@@ -30,15 +34,35 @@ vector <geometry_msgs::Pose> waypoints;
 int i = 0;  // waypoint counter
 geometry_msgs::Vector3 bot_state;
 
+
 bool tracker = false;
 bool havegoal = false;
 bool foundball = false;
 bool objectexists = false;
+bool isAvoid = false;
+bool isBypass = false;
 double camera_fov_x = 66.2;
 double camera_resolution_x = 320;
 
 double ballAngle;
 float ballDist;
+
+double safezone = 0.35;
+double avoid_region = 0.5;
+double bypass_region = 1.0;
+
+
+// Defining states
+enum State
+{
+    IDLE = 1,
+    GOTOGOAL = 2,
+    FOLLOWWALLC = 3,
+    FOLLOWWALLCC = 4,
+    AVOID = 5,
+    FOLLOW = 6,
+    BYPASS = 7
+};
 
 
 
@@ -115,18 +139,67 @@ void publishGoal(ros::Publisher wp_pub)
 
     if (distance_error < 0.05)
     {
+        if (waypoints.size() == 1)
+        {
+            havegoal == false;
+        }
+        else
+        {
+            waypoints.erase(waypoints.begin());
+        }
         ROS_INFO("Waypoint completed!");
         ros::Duration(2).sleep();
         ROS_INFO("Next waypoint loaded");
-        i++;
-        if (i == waypoints.size())
-        {
-            havegoal = false;
-        }
     }
 //    }
 
 }
+
+geometry_msgs::Pose findWaypoint(float dis, double angmin, double angmax)
+{
+    geometry_msgs::Pose wp;
+    double obj_ang;
+
+    if (angmin == 0.0)
+    {
+        obj_ang = angmax;
+    }
+    else if (angmax == 0.0)
+    {
+        obj_ang = angmin;
+    }
+    else
+    {
+        obj_ang = min(angmin, angmax);
+    }
+
+    double obj_ang_global = bot_state.z - obj_ang;
+    double xp = dis*cos(obj_ang_global) + safezone/2 * sin(obj_ang_global);
+    double yp = dis*sin(obj_ang_global) + safezone/2 * cos(obj_ang_global);
+
+    wp.position.x = xp;
+    wp.position.y = yp;
+}
+
+//void obstacleCallback(const harris_navigate_to_goal::objectLocation& obstacle_msg)
+//{
+//    if (obstacle_msg.distance < avoid_region & isAvoid)
+//    {
+//        isAvoid = true;
+//        isBypass = false;
+//        geometry_msgs::Pose new_wp;
+//        new_wp = findWaypoint(obstacle_msg.distance, obstacle_msg.angle_min, obstacle_msg.angle_max);
+//        waypoints.push_back(new_wp);
+//    }
+//    else if (obstacle_msg.distance < bypass_region & !isBypass)
+//    {
+//        isAvoid = false;
+//        isBypass = true;
+//        geometry_msgs::Pose new_wp;
+//        new_wp = findWaypoint(obstacle_msg.distance, obstacle_msg.angle_min, obstacle_msg.angle_max);
+//        waypoints.push_back(new_wp);
+//    }
+//}
 
 void botposeCallback(const geometry_msgs::Vector3& pose_msg)
 {
@@ -148,20 +221,9 @@ void pointCallback(const geometry_msgs::Point& point_msg)
         ballAngle = calculateAngle(point_msg.x);
         tracker = true;
     }
-
 }
 
 
-// Defining states
-enum State
-{
-    IDLE = 1,
-    GOTOGOAL = 2,
-    FOLLOWWALLC = 3,
-    FOLLOWWALLCC = 4,
-    AVOID = 5,
-    FOLLOW = 6 // For lab #3
-};
 
 State stateUpdate(State botState)
 {
@@ -172,7 +234,7 @@ State stateUpdate(State botState)
             myState.data= "idle";
             // At Start
             // If no detection
-            if (!waypoints.empty())
+            if (waypoints.size() > 1)
             {
                 havegoal = true;
                 botState = GOTOGOAL;
@@ -185,7 +247,15 @@ State stateUpdate(State botState)
         }
         case  GOTOGOAL:
         {
-            myState.data="gotogoal";
+            if (!havegoal)
+            {
+                botState = IDLE;
+                myState.data = "idle";
+            } else
+            {
+                myState.data="gotogoal";
+
+            }
             return botState;
         }
         case FOLLOW:
@@ -217,6 +287,7 @@ int main(int argc, char **argv)
     Subscriber trackpoint_sub = n.subscribe("trackpoint", 10, pointCallback);
     Publisher goal_pub = n.advertise<geometry_msgs::Pose>("/waypoint/goal", 100);
     Subscriber odom_pub = n.subscribe("/bot_state/pose2d", 10, botposeCallback);
+//    Subscriber obstacle_pub = n.subscribe("/obstacle", 10, obstacleCallback);
 
     getMission();
 
@@ -254,9 +325,9 @@ int main(int argc, char **argv)
         }
         else
         {
-            ball_distance_angle.distance = 0.0;
-            ball_distance_angle.distance = 0.0;
-            object_pub.publish(ball_distance_angle);
+//            ball_distance_angle.distance = 0.0;
+//            ball_distance_angle.distance = 0.0;
+//            object_pub.publish(ball_distance_angle);
         }
 
 

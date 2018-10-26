@@ -115,7 +115,10 @@ file(INSTALL DESTINATION "/usr/local" TYPE FILE FILES "/home/charris/introroboti
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/harris_navigate_to_goal/msg" TYPE FILE FILES "/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/msg/DistanceAngle.msg")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/harris_navigate_to_goal/msg" TYPE FILE FILES
+    "/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/msg/DistanceAngle.msg"
+    "/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/msg/objectLocation.msg"
+    )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")

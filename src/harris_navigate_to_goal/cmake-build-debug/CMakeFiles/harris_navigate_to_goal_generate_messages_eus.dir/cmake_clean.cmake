@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/harris_navigate_to_goal_generate_messages_eus"
   "devel/share/roseus/ros/harris_navigate_to_goal/msg/DistanceAngle.l"
+  "devel/share/roseus/ros/harris_navigate_to_goal/msg/objectLocation.l"
   "devel/share/roseus/ros/harris_navigate_to_goal/manifest.l"
 )
 

@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/harris_navigate_to_goal_generate_messages_lisp"
   "devel/share/common-lisp/ros/harris_navigate_to_goal/msg/DistanceAngle.lisp"
+  "devel/share/common-lisp/ros/harris_navigate_to_goal/msg/objectLocation.lisp"
 )
 
 # Per-language clean rules from dependency scanning.

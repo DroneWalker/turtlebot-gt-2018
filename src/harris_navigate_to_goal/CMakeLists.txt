@@ -14,6 +14,8 @@ find_package(catkin REQUIRED COMPONENTS
   rospy
   sensor_msgs
   std_msgs
+        tf
+        laser_geometry
 )
 
 ## System dependencies are found with CMake's conventions
@@ -52,6 +54,7 @@ find_package(catkin REQUIRED COMPONENTS
 add_message_files(
         FILES
         DistanceAngle.msg
+        objectLocation.msg
 )
 
 generate_messages(
@@ -90,7 +93,7 @@ generate_messages(
 catkin_package(
   INCLUDE_DIRS include
   LIBRARIES harris_navigate_to_goal
-        CATKIN_DEPENDS geometry_msgs roscpp rospy sensor_msgs std_msgs message_runtime
+        CATKIN_DEPENDS geometry_msgs roscpp rospy sensor_msgs std_msgs message_runtime tf laser_geometry
 #  DEPENDS system_lib
 )
 
@@ -143,4 +146,11 @@ target_link_libraries(navigation ${catkin_LIBRARIES})
 
 add_executable(commander2 src/nodes/commander_node.cpp)
 target_link_libraries(commander2 ${catkin_LIBRARIES})
+
+add_executable(tf_listener src/nodes/tf_listener_node.cpp)
+target_link_libraries(tf_listener ${catkin_LIBRARIES})
+
+add_executable(scan_cloud src/nodes/scan_cloud_node.cpp)
+target_link_libraries(scan_cloud ${catkin_LIBRARIES})
+
 

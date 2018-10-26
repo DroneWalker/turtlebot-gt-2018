@@ -160,7 +160,7 @@ foreach(t ${harris_navigate_to_goal_EXPORTED_TARGETS})
   endif()
 endforeach()
 
-set(depends "geometry_msgs;roscpp;rospy;sensor_msgs;std_msgs;message_runtime")
+set(depends "geometry_msgs;roscpp;rospy;sensor_msgs;std_msgs;message_runtime;tf;laser_geometry")
 foreach(depend ${depends})
   string(REPLACE " " ";" depend_list ${depend})
   # the package name of the dependency must be kept in a unique variable so that it is not overwritten in recursive calls

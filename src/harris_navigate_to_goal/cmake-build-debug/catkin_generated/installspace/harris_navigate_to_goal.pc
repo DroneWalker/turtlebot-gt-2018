@@ -5,4 +5,4 @@ Description: Description of harris_navigate_to_goal
 Version: 0.1.0
 Cflags: -I/usr/local/include
 Libs: -L/usr/local/lib -lharris_navigate_to_goal
-Requires: geometry_msgs roscpp rospy sensor_msgs std_msgs message_runtime
+Requires: geometry_msgs roscpp rospy sensor_msgs std_msgs message_runtime tf laser_geometry

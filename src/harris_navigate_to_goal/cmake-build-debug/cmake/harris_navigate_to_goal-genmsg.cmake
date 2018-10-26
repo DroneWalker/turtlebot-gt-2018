@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.cmake.em
 
-message(STATUS "harris_navigate_to_goal: 1 messages, 0 services")
+message(STATUS "harris_navigate_to_goal: 2 messages, 0 services")
 
 set(MSG_I_FLAGS "-Iharris_navigate_to_goal:/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/msg;-Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg")
 
@@ -22,6 +22,11 @@ add_custom_target(_harris_navigate_to_goal_generate_messages_check_deps_${_filen
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "harris_navigate_to_goal" "/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/msg/DistanceAngle.msg" ""
 )
 
+get_filename_component(_filename "/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/msg/objectLocation.msg" NAME_WE)
+add_custom_target(_harris_navigate_to_goal_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "harris_navigate_to_goal" "/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/msg/objectLocation.msg" ""
+)
+
 #
 #  langs = gencpp;geneus;genlisp;gennodejs;genpy
 #
@@ -30,6 +35,12 @@ add_custom_target(_harris_navigate_to_goal_generate_messages_check_deps_${_filen
 ### Generating Messages
 _generate_msg_cpp(harris_navigate_to_goal
   "/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/msg/DistanceAngle.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/harris_navigate_to_goal
+)
+_generate_msg_cpp(harris_navigate_to_goal
+  "/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/msg/objectLocation.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/harris_navigate_to_goal
@@ -51,6 +62,8 @@ add_dependencies(harris_navigate_to_goal_generate_messages harris_navigate_to_go
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/msg/DistanceAngle.msg" NAME_WE)
 add_dependencies(harris_navigate_to_goal_generate_messages_cpp _harris_navigate_to_goal_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/msg/objectLocation.msg" NAME_WE)
+add_dependencies(harris_navigate_to_goal_generate_messages_cpp _harris_navigate_to_goal_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
 add_custom_target(harris_navigate_to_goal_gencpp)
@@ -63,6 +76,12 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS harris_navigate_to_goal_generate_me
 ### Generating Messages
 _generate_msg_eus(harris_navigate_to_goal
   "/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/msg/DistanceAngle.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/harris_navigate_to_goal
+)
+_generate_msg_eus(harris_navigate_to_goal
+  "/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/msg/objectLocation.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/harris_navigate_to_goal
@@ -84,6 +103,8 @@ add_dependencies(harris_navigate_to_goal_generate_messages harris_navigate_to_go
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/msg/DistanceAngle.msg" NAME_WE)
 add_dependencies(harris_navigate_to_goal_generate_messages_eus _harris_navigate_to_goal_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/msg/objectLocation.msg" NAME_WE)
+add_dependencies(harris_navigate_to_goal_generate_messages_eus _harris_navigate_to_goal_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
 add_custom_target(harris_navigate_to_goal_geneus)
@@ -96,6 +117,12 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS harris_navigate_to_goal_generate_me
 ### Generating Messages
 _generate_msg_lisp(harris_navigate_to_goal
   "/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/msg/DistanceAngle.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/harris_navigate_to_goal
+)
+_generate_msg_lisp(harris_navigate_to_goal
+  "/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/msg/objectLocation.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/harris_navigate_to_goal
@@ -117,6 +144,8 @@ add_dependencies(harris_navigate_to_goal_generate_messages harris_navigate_to_go
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/msg/DistanceAngle.msg" NAME_WE)
 add_dependencies(harris_navigate_to_goal_generate_messages_lisp _harris_navigate_to_goal_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/msg/objectLocation.msg" NAME_WE)
+add_dependencies(harris_navigate_to_goal_generate_messages_lisp _harris_navigate_to_goal_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
 add_custom_target(harris_navigate_to_goal_genlisp)
@@ -129,6 +158,12 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS harris_navigate_to_goal_generate_me
 ### Generating Messages
 _generate_msg_nodejs(harris_navigate_to_goal
   "/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/msg/DistanceAngle.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/harris_navigate_to_goal
+)
+_generate_msg_nodejs(harris_navigate_to_goal
+  "/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/msg/objectLocation.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/harris_navigate_to_goal
@@ -150,6 +185,8 @@ add_dependencies(harris_navigate_to_goal_generate_messages harris_navigate_to_go
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/msg/DistanceAngle.msg" NAME_WE)
 add_dependencies(harris_navigate_to_goal_generate_messages_nodejs _harris_navigate_to_goal_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/msg/objectLocation.msg" NAME_WE)
+add_dependencies(harris_navigate_to_goal_generate_messages_nodejs _harris_navigate_to_goal_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
 add_custom_target(harris_navigate_to_goal_gennodejs)
@@ -162,6 +199,12 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS harris_navigate_to_goal_generate_me
 ### Generating Messages
 _generate_msg_py(harris_navigate_to_goal
   "/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/msg/DistanceAngle.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/harris_navigate_to_goal
+)
+_generate_msg_py(harris_navigate_to_goal
+  "/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/msg/objectLocation.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/harris_navigate_to_goal
@@ -182,6 +225,8 @@ add_dependencies(harris_navigate_to_goal_generate_messages harris_navigate_to_go
 
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/msg/DistanceAngle.msg" NAME_WE)
+add_dependencies(harris_navigate_to_goal_generate_messages_py _harris_navigate_to_goal_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/msg/objectLocation.msg" NAME_WE)
 add_dependencies(harris_navigate_to_goal_generate_messages_py _harris_navigate_to_goal_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility

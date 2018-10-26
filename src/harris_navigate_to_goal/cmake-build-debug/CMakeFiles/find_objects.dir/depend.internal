@@ -3,6 +3,7 @@
 
 CMakeFiles/find_objects.dir/src/nodes/detect_objects_node.cpp.o
  ../include/harris_navigate_to_goal/DistanceAngle.h
+ ../include/harris_navigate_to_goal/objectLocation.h
  /home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/include/harris_navigate_to_goal/bot.h
  /home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/include/harris_navigate_to_goal/object.h
  /home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/src/nodes/detect_objects_node.cpp

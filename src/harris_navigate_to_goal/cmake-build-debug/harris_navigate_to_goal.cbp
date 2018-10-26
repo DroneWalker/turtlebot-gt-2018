@@ -5,7 +5,7 @@
       <Option title="harris_navigate_to_goal" />
       <Option makefile_is_custom="1" />
       <Option compiler="gcc" />
-      <Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\opt\;CMake Files\..\..\..\..\..\..\opt\ros\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\catkin\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\catkin\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\catkin\cmake\platform\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\catkin\cmake\test\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\catkin\cmake\tools\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\catkin\cmake\templates\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\catkin\cmake\em\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\geometry_msgs\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\geometry_msgs\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\message_runtime\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\message_runtime\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\cpp_common\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\cpp_common\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\roscpp_serialization\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\roscpp_serialization\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\roscpp_traits\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\roscpp_traits\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\rostime\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\rostime\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\std_msgs\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\std_msgs\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\nav_msgs\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\nav_msgs\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\actionlib_msgs\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\actionlib_msgs\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\genmsg\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\genmsg\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\gencpp\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\gencpp\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\geneus\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\geneus\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\genlisp\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\genlisp\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\gennodejs\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\gennodejs\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\genpy\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\genpy\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\roscpp\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\roscpp\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\rosconsole\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\rosconsole\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\rosgraph_msgs\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\rosgraph_msgs\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\xmlrpcpp\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\xmlrpcpp\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\rospy\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\rospy\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\sensor_msgs\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\sensor_msgs\cmake\;CMake Files\cmake-build-debug\;CMake Files\cmake-build-debug\catkin\;CMake Files\cmake-build-debug\catkin\catkin_generated\;CMake Files\cmake-build-debug\catkin\catkin_generated\version\;CMake Files\cmake-build-debug\catkin_generated\;CMake Files\cmake-build-debug\catkin_generated\installspace\;CMake Files\cmake-build-debug\devel\;CMake Files\cmake-build-debug\devel\share\;CMake Files\cmake-build-debug\devel\share\harris_navigate_to_goal\;CMake Files\cmake-build-debug\devel\share\harris_navigate_to_goal\cmake\;CMake Files\cmake-build-debug\cmake\;" />
+      <Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\opt\;CMake Files\..\..\..\..\..\..\opt\ros\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\catkin\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\catkin\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\catkin\cmake\platform\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\catkin\cmake\test\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\catkin\cmake\tools\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\catkin\cmake\templates\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\catkin\cmake\em\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\geometry_msgs\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\geometry_msgs\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\message_runtime\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\message_runtime\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\cpp_common\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\cpp_common\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\roscpp_serialization\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\roscpp_serialization\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\roscpp_traits\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\roscpp_traits\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\rostime\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\rostime\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\std_msgs\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\std_msgs\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\nav_msgs\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\nav_msgs\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\actionlib_msgs\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\actionlib_msgs\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\genmsg\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\genmsg\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\gencpp\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\gencpp\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\geneus\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\geneus\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\genlisp\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\genlisp\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\gennodejs\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\gennodejs\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\genpy\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\genpy\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\roscpp\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\roscpp\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\rosconsole\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\rosconsole\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\rosgraph_msgs\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\rosgraph_msgs\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\xmlrpcpp\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\xmlrpcpp\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\rospy\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\rospy\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\sensor_msgs\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\sensor_msgs\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\tf\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\tf\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\message_filters\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\message_filters\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\tf2_ros\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\tf2_ros\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\actionlib\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\actionlib\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\rosgraph\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\rosgraph\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\tf2\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\tf2\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\tf2_msgs\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\tf2_msgs\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\message_generation\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\message_generation\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\tf2_py\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\tf2_py\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\laser_geometry\;CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\laser_geometry\cmake\;CMake Files\cmake-build-debug\;CMake Files\cmake-build-debug\catkin\;CMake Files\cmake-build-debug\catkin\catkin_generated\;CMake Files\cmake-build-debug\catkin\catkin_generated\version\;CMake Files\cmake-build-debug\catkin_generated\;CMake Files\cmake-build-debug\catkin_generated\installspace\;CMake Files\cmake-build-debug\devel\;CMake Files\cmake-build-debug\devel\share\;CMake Files\cmake-build-debug\devel\share\harris_navigate_to_goal\;CMake Files\cmake-build-debug\devel\share\harris_navigate_to_goal\cmake\;CMake Files\cmake-build-debug\cmake\;" />
       <Build>
       <Target title="all">
          <Option working_dir="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug" />
@@ -17,11 +17,71 @@
             <DistClean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
          </MakeCommands>
       </Target>
-      <Target title="rebuild_cache">
+      <Target title="install/local">
          <Option working_dir="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug" />
          <Option type="4" />
          <MakeCommands>
-            <Build command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache" />
+            <Build command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/local" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="scan_cloud">
+         <Option output="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/devel/lib/harris_navigate_to_goal/scan_cloud" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/devel/lib/harris_navigate_to_goal" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DROS_PACKAGE_NAME=&quot;harris_navigate_to_goal&quot;" />
+            <Add option="-DROSCONSOLE_BACKEND_LOG4CXX" />
+            <Add directory="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/devel/include" />
+            <Add directory="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/include" />
+            <Add directory="/opt/ros/kinetic/include" />
+            <Add directory="/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/5" />
+            <Add directory="/usr/include/c++/5/backward" />
+            <Add directory="/usr/include/eigen3" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/5" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 scan_cloud" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="scan_cloud/fast">
+         <Option output="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/devel/lib/harris_navigate_to_goal/scan_cloud" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/devel/lib/harris_navigate_to_goal" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DROS_PACKAGE_NAME=&quot;harris_navigate_to_goal&quot;" />
+            <Add option="-DROSCONSOLE_BACKEND_LOG4CXX" />
+            <Add directory="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/devel/include" />
+            <Add directory="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/include" />
+            <Add directory="/opt/ros/kinetic/include" />
+            <Add directory="/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/5" />
+            <Add directory="/usr/include/c++/5/backward" />
+            <Add directory="/usr/include/eigen3" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/5" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 scan_cloud/fast" />
             <CompileFile command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
             <Clean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
             <DistClean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
@@ -37,11 +97,61 @@
             <DistClean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
          </MakeCommands>
       </Target>
-      <Target title="install/local">
-         <Option working_dir="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug" />
-         <Option type="4" />
+      <Target title="tf_listener">
+         <Option output="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/devel/lib/harris_navigate_to_goal/tf_listener" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/devel/lib/harris_navigate_to_goal" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DROS_PACKAGE_NAME=&quot;harris_navigate_to_goal&quot;" />
+            <Add option="-DROSCONSOLE_BACKEND_LOG4CXX" />
+            <Add directory="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/devel/include" />
+            <Add directory="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/include" />
+            <Add directory="/opt/ros/kinetic/include" />
+            <Add directory="/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/5" />
+            <Add directory="/usr/include/c++/5/backward" />
+            <Add directory="/usr/include/eigen3" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/5" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
          <MakeCommands>
-            <Build command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/local" />
+            <Build command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 tf_listener" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="tf_listener/fast">
+         <Option output="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/devel/lib/harris_navigate_to_goal/tf_listener" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/devel/lib/harris_navigate_to_goal" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DROS_PACKAGE_NAME=&quot;harris_navigate_to_goal&quot;" />
+            <Add option="-DROSCONSOLE_BACKEND_LOG4CXX" />
+            <Add directory="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/devel/include" />
+            <Add directory="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/include" />
+            <Add directory="/opt/ros/kinetic/include" />
+            <Add directory="/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/5" />
+            <Add directory="/usr/include/c++/5/backward" />
+            <Add directory="/usr/include/eigen3" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/5" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 tf_listener/fast" />
             <CompileFile command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
             <Clean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
             <DistClean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
@@ -63,6 +173,7 @@
             <Add directory="/usr/include" />
             <Add directory="/usr/include/c++/5" />
             <Add directory="/usr/include/c++/5/backward" />
+            <Add directory="/usr/include/eigen3" />
             <Add directory="/usr/include/x86_64-linux-gnu" />
             <Add directory="/usr/include/x86_64-linux-gnu/c++/5" />
             <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include" />
@@ -92,6 +203,7 @@
             <Add directory="/usr/include" />
             <Add directory="/usr/include/c++/5" />
             <Add directory="/usr/include/c++/5/backward" />
+            <Add directory="/usr/include/eigen3" />
             <Add directory="/usr/include/x86_64-linux-gnu" />
             <Add directory="/usr/include/x86_64-linux-gnu/c++/5" />
             <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include" />
@@ -121,6 +233,7 @@
             <Add directory="/usr/include" />
             <Add directory="/usr/include/c++/5" />
             <Add directory="/usr/include/c++/5/backward" />
+            <Add directory="/usr/include/eigen3" />
             <Add directory="/usr/include/x86_64-linux-gnu" />
             <Add directory="/usr/include/x86_64-linux-gnu/c++/5" />
             <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include" />
@@ -150,6 +263,7 @@
             <Add directory="/usr/include" />
             <Add directory="/usr/include/c++/5" />
             <Add directory="/usr/include/c++/5/backward" />
+            <Add directory="/usr/include/eigen3" />
             <Add directory="/usr/include/x86_64-linux-gnu" />
             <Add directory="/usr/include/x86_64-linux-gnu/c++/5" />
             <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include" />
@@ -183,21 +297,131 @@
             <DistClean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
          </MakeCommands>
       </Target>
-      <Target title="harris_navigate_to_goal_generate_messages_nodejs">
-         <Option working_dir="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug" />
-         <Option type="4" />
-         <MakeCommands>
-            <Build command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 harris_navigate_to_goal_generate_messages_nodejs" />
-            <CompileFile command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
-            <Clean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
-            <DistClean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
-         </MakeCommands>
-      </Target>
       <Target title="harris_navigate_to_goal_genlisp">
          <Option working_dir="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug" />
          <Option type="4" />
          <MakeCommands>
             <Build command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 harris_navigate_to_goal_genlisp" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="harris_navigate_to_goal_geneus">
+         <Option working_dir="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 harris_navigate_to_goal_geneus" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="harris_navigate_to_goal_generate_messages_eus">
+         <Option working_dir="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 harris_navigate_to_goal_generate_messages_eus" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="harris_navigate_to_goal_gencpp">
+         <Option working_dir="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 harris_navigate_to_goal_gencpp" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="_harris_navigate_to_goal_generate_messages_check_deps_objectLocation">
+         <Option working_dir="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 _harris_navigate_to_goal_generate_messages_check_deps_objectLocation" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="_harris_navigate_to_goal_generate_messages_check_deps_DistanceAngle">
+         <Option working_dir="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 _harris_navigate_to_goal_generate_messages_check_deps_DistanceAngle" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="harris_navigate_to_goal_generate_messages_cpp">
+         <Option working_dir="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 harris_navigate_to_goal_generate_messages_cpp" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="tf2_msgs_generate_messages_nodejs">
+         <Option working_dir="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 tf2_msgs_generate_messages_nodejs" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="tf2_msgs_generate_messages_lisp">
+         <Option working_dir="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 tf2_msgs_generate_messages_lisp" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="tf2_msgs_generate_messages_eus">
+         <Option working_dir="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 tf2_msgs_generate_messages_eus" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="tf2_msgs_generate_messages_cpp">
+         <Option working_dir="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 tf2_msgs_generate_messages_cpp" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="actionlib_generate_messages_py">
+         <Option working_dir="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 actionlib_generate_messages_py" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="actionlib_generate_messages_eus">
+         <Option working_dir="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 actionlib_generate_messages_eus" />
             <CompileFile command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
             <Clean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
             <DistClean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
@@ -243,6 +467,36 @@
             <DistClean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
          </MakeCommands>
       </Target>
+      <Target title="install/strip">
+         <Option working_dir="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/strip" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="harris_navigate_to_goal_generate_messages">
+         <Option working_dir="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 harris_navigate_to_goal_generate_messages" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="nav_msgs_generate_messages_eus">
+         <Option working_dir="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 nav_msgs_generate_messages_eus" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
       <Target title="nav_msgs_generate_messages_py">
          <Option working_dir="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug" />
          <Option type="4" />
@@ -263,16 +517,6 @@
             <DistClean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
          </MakeCommands>
       </Target>
-      <Target title="harris_navigate_to_goal_generate_messages_cpp">
-         <Option working_dir="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug" />
-         <Option type="4" />
-         <MakeCommands>
-            <Build command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 harris_navigate_to_goal_generate_messages_cpp" />
-            <CompileFile command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
-            <Clean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
-            <DistClean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
-         </MakeCommands>
-      </Target>
       <Target title="std_msgs_generate_messages_eus">
          <Option working_dir="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug" />
          <Option type="4" />
@@ -288,36 +532,6 @@
          <Option type="4" />
          <MakeCommands>
             <Build command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 roscpp_generate_messages_lisp" />
-            <CompileFile command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
-            <Clean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
-            <DistClean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
-         </MakeCommands>
-      </Target>
-      <Target title="install/strip">
-         <Option working_dir="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug" />
-         <Option type="4" />
-         <MakeCommands>
-            <Build command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/strip" />
-            <CompileFile command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
-            <Clean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
-            <DistClean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
-         </MakeCommands>
-      </Target>
-      <Target title="nav_msgs_generate_messages_eus">
-         <Option working_dir="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug" />
-         <Option type="4" />
-         <MakeCommands>
-            <Build command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 nav_msgs_generate_messages_eus" />
-            <CompileFile command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
-            <Clean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
-            <DistClean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
-         </MakeCommands>
-      </Target>
-      <Target title="harris_navigate_to_goal_generate_messages">
-         <Option working_dir="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug" />
-         <Option type="4" />
-         <MakeCommands>
-            <Build command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 harris_navigate_to_goal_generate_messages" />
             <CompileFile command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
             <Clean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
             <DistClean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
@@ -353,21 +567,21 @@
             <DistClean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
          </MakeCommands>
       </Target>
-      <Target title="actionlib_msgs_generate_messages_eus">
+      <Target title="actionlib_generate_messages_lisp">
          <Option working_dir="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug" />
          <Option type="4" />
          <MakeCommands>
-            <Build command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 actionlib_msgs_generate_messages_eus" />
+            <Build command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 actionlib_generate_messages_lisp" />
             <CompileFile command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
             <Clean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
             <DistClean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
          </MakeCommands>
       </Target>
-      <Target title="doxygen">
+      <Target title="actionlib_msgs_generate_messages_eus">
          <Option working_dir="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug" />
          <Option type="4" />
          <MakeCommands>
-            <Build command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 doxygen" />
+            <Build command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 actionlib_msgs_generate_messages_eus" />
             <CompileFile command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
             <Clean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
             <DistClean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
@@ -433,11 +647,21 @@
             <DistClean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
          </MakeCommands>
       </Target>
-      <Target title="rosgraph_msgs_generate_messages_py">
+      <Target title="rebuild_cache">
          <Option working_dir="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug" />
          <Option type="4" />
          <MakeCommands>
-            <Build command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 rosgraph_msgs_generate_messages_py" />
+            <Build command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="tf_generate_messages_eus">
+         <Option working_dir="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 tf_generate_messages_eus" />
             <CompileFile command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
             <Clean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
             <DistClean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
@@ -543,6 +767,16 @@
             <DistClean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
          </MakeCommands>
       </Target>
+      <Target title="tf2_msgs_generate_messages_py">
+         <Option working_dir="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 tf2_msgs_generate_messages_py" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
       <Target title="actionlib_msgs_generate_messages_nodejs">
          <Option working_dir="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug" />
          <Option type="4" />
@@ -583,21 +817,21 @@
             <DistClean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
          </MakeCommands>
       </Target>
-      <Target title="harris_navigate_to_goal_gennodejs">
+      <Target title="doxygen">
          <Option working_dir="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug" />
          <Option type="4" />
          <MakeCommands>
-            <Build command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 harris_navigate_to_goal_gennodejs" />
+            <Build command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 doxygen" />
             <CompileFile command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
             <Clean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
             <DistClean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
          </MakeCommands>
       </Target>
-      <Target title="roscpp_generate_messages_py">
+      <Target title="tf_generate_messages_cpp">
          <Option working_dir="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug" />
          <Option type="4" />
          <MakeCommands>
-            <Build command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 roscpp_generate_messages_py" />
+            <Build command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 tf_generate_messages_cpp" />
             <CompileFile command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
             <Clean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
             <DistClean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
@@ -619,6 +853,7 @@
             <Add directory="/usr/include" />
             <Add directory="/usr/include/c++/5" />
             <Add directory="/usr/include/c++/5/backward" />
+            <Add directory="/usr/include/eigen3" />
             <Add directory="/usr/include/x86_64-linux-gnu" />
             <Add directory="/usr/include/x86_64-linux-gnu/c++/5" />
             <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include" />
@@ -648,6 +883,7 @@
             <Add directory="/usr/include" />
             <Add directory="/usr/include/c++/5" />
             <Add directory="/usr/include/c++/5/backward" />
+            <Add directory="/usr/include/eigen3" />
             <Add directory="/usr/include/x86_64-linux-gnu" />
             <Add directory="/usr/include/x86_64-linux-gnu/c++/5" />
             <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include" />
@@ -671,21 +907,21 @@
             <DistClean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
          </MakeCommands>
       </Target>
-      <Target title="_harris_navigate_to_goal_generate_messages_check_deps_DistanceAngle">
-         <Option working_dir="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug" />
-         <Option type="4" />
-         <MakeCommands>
-            <Build command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 _harris_navigate_to_goal_generate_messages_check_deps_DistanceAngle" />
-            <CompileFile command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
-            <Clean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
-            <DistClean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
-         </MakeCommands>
-      </Target>
       <Target title="sensor_msgs_generate_messages_cpp">
          <Option working_dir="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug" />
          <Option type="4" />
          <MakeCommands>
             <Build command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 sensor_msgs_generate_messages_cpp" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="actionlib_generate_messages_nodejs">
+         <Option working_dir="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 actionlib_generate_messages_nodejs" />
             <CompileFile command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
             <Clean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
             <DistClean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
@@ -741,6 +977,16 @@
             <DistClean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
          </MakeCommands>
       </Target>
+      <Target title="actionlib_generate_messages_cpp">
+         <Option working_dir="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 actionlib_generate_messages_cpp" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
       <Target title="sensor_msgs_generate_messages_py">
          <Option working_dir="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug" />
          <Option type="4" />
@@ -751,31 +997,71 @@
             <DistClean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
          </MakeCommands>
       </Target>
-      <Target title="harris_navigate_to_goal_gencpp">
+      <Target title="rosgraph_msgs_generate_messages_py">
          <Option working_dir="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug" />
          <Option type="4" />
          <MakeCommands>
-            <Build command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 harris_navigate_to_goal_gencpp" />
+            <Build command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 rosgraph_msgs_generate_messages_py" />
             <CompileFile command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
             <Clean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
             <DistClean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
          </MakeCommands>
       </Target>
-      <Target title="harris_navigate_to_goal_generate_messages_eus">
+      <Target title="tf_generate_messages_lisp">
          <Option working_dir="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug" />
          <Option type="4" />
          <MakeCommands>
-            <Build command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 harris_navigate_to_goal_generate_messages_eus" />
+            <Build command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 tf_generate_messages_lisp" />
             <CompileFile command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
             <Clean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
             <DistClean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
          </MakeCommands>
       </Target>
-      <Target title="harris_navigate_to_goal_geneus">
+      <Target title="harris_navigate_to_goal_gennodejs">
          <Option working_dir="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug" />
          <Option type="4" />
          <MakeCommands>
-            <Build command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 harris_navigate_to_goal_geneus" />
+            <Build command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 harris_navigate_to_goal_gennodejs" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="roscpp_generate_messages_py">
+         <Option working_dir="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 roscpp_generate_messages_py" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="tf_generate_messages_nodejs">
+         <Option working_dir="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 tf_generate_messages_nodejs" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="harris_navigate_to_goal_generate_messages_nodejs">
+         <Option working_dir="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 harris_navigate_to_goal_generate_messages_nodejs" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="tf_generate_messages_py">
+         <Option working_dir="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 tf_generate_messages_py" />
             <CompileFile command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
             <Clean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
             <DistClean command="/usr/bin/make -f &quot;/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean" />
@@ -793,6 +1079,15 @@
       </Unit>
       <Unit filename="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/src/nodes/navigation_node.cpp">
          <Option target="navigation"/>
+      </Unit>
+      <Unit filename="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/src/nodes/scan_cloud_node.cpp">
+         <Option target="scan_cloud"/>
+      </Unit>
+      <Unit filename="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/src/nodes/tf_listener_node.cpp">
+         <Option target="tf_listener"/>
+      </Unit>
+      <Unit filename="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/src/nodes/tf_listener_node.h">
+         <Option target="tf_listener"/>
       </Unit>
       <Unit filename="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/CMakeLists.txt">
           <Option virtualFolder="CMake Files\" />
@@ -1234,6 +1529,75 @@
       </Unit>
       <Unit filename="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/../../../../../../opt/ros/kinetic/share/sensor_msgs/cmake/sensor_msgs-msg-extras.cmake">
           <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\sensor_msgs\cmake\" />
+      </Unit>
+      <Unit filename="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/../../../../../../opt/ros/kinetic/share/tf/cmake/tfConfig-version.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\tf\cmake\" />
+      </Unit>
+      <Unit filename="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/../../../../../../opt/ros/kinetic/share/tf/cmake/tfConfig.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\tf\cmake\" />
+      </Unit>
+      <Unit filename="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/../../../../../../opt/ros/kinetic/share/tf/cmake/tf-msg-extras.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\tf\cmake\" />
+      </Unit>
+      <Unit filename="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/../../../../../../opt/ros/kinetic/share/message_filters/cmake/message_filtersConfig-version.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\message_filters\cmake\" />
+      </Unit>
+      <Unit filename="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/../../../../../../opt/ros/kinetic/share/message_filters/cmake/message_filtersConfig.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\message_filters\cmake\" />
+      </Unit>
+      <Unit filename="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/../../../../../../opt/ros/kinetic/share/tf2_ros/cmake/tf2_rosConfig-version.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\tf2_ros\cmake\" />
+      </Unit>
+      <Unit filename="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/../../../../../../opt/ros/kinetic/share/tf2_ros/cmake/tf2_rosConfig.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\tf2_ros\cmake\" />
+      </Unit>
+      <Unit filename="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/../../../../../../opt/ros/kinetic/share/actionlib/cmake/actionlibConfig-version.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\actionlib\cmake\" />
+      </Unit>
+      <Unit filename="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/../../../../../../opt/ros/kinetic/share/actionlib/cmake/actionlibConfig.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\actionlib\cmake\" />
+      </Unit>
+      <Unit filename="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/../../../../../../opt/ros/kinetic/share/actionlib/cmake/actionlib-msg-extras.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\actionlib\cmake\" />
+      </Unit>
+      <Unit filename="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/../../../../../../opt/ros/kinetic/share/rosgraph/cmake/rosgraphConfig-version.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\rosgraph\cmake\" />
+      </Unit>
+      <Unit filename="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/../../../../../../opt/ros/kinetic/share/rosgraph/cmake/rosgraphConfig.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\rosgraph\cmake\" />
+      </Unit>
+      <Unit filename="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/../../../../../../opt/ros/kinetic/share/tf2/cmake/tf2Config-version.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\tf2\cmake\" />
+      </Unit>
+      <Unit filename="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/../../../../../../opt/ros/kinetic/share/tf2/cmake/tf2Config.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\tf2\cmake\" />
+      </Unit>
+      <Unit filename="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/../../../../../../opt/ros/kinetic/share/tf2_msgs/cmake/tf2_msgsConfig-version.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\tf2_msgs\cmake\" />
+      </Unit>
+      <Unit filename="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/../../../../../../opt/ros/kinetic/share/tf2_msgs/cmake/tf2_msgsConfig.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\tf2_msgs\cmake\" />
+      </Unit>
+      <Unit filename="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/../../../../../../opt/ros/kinetic/share/tf2_msgs/cmake/tf2_msgs-msg-extras.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\tf2_msgs\cmake\" />
+      </Unit>
+      <Unit filename="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/../../../../../../opt/ros/kinetic/share/message_generation/cmake/message_generationConfig-version.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\message_generation\cmake\" />
+      </Unit>
+      <Unit filename="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/../../../../../../opt/ros/kinetic/share/message_generation/cmake/message_generationConfig.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\message_generation\cmake\" />
+      </Unit>
+      <Unit filename="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/../../../../../../opt/ros/kinetic/share/tf2_py/cmake/tf2_pyConfig-version.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\tf2_py\cmake\" />
+      </Unit>
+      <Unit filename="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/../../../../../../opt/ros/kinetic/share/tf2_py/cmake/tf2_pyConfig.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\tf2_py\cmake\" />
+      </Unit>
+      <Unit filename="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/../../../../../../opt/ros/kinetic/share/laser_geometry/cmake/laser_geometryConfig-version.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\laser_geometry\cmake\" />
+      </Unit>
+      <Unit filename="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/../../../../../../opt/ros/kinetic/share/laser_geometry/cmake/laser_geometryConfig.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ros\kinetic\share\laser_geometry\cmake\" />
       </Unit>
       <Unit filename="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/cmake-build-debug/catkin/catkin_generated/version/package.cmake">
           <Option virtualFolder="CMake Files\cmake-build-debug\catkin\catkin_generated\version\" />
