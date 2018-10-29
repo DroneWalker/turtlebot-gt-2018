@@ -137,7 +137,7 @@ void publishGoal(ros::Publisher wp_pub)
     double yerror = waypoint.position.y - bot_state.y;
     double distance_error = sqrt(pow(xerror,2) + pow(yerror,2));
 
-    if (distance_error < 0.05)
+    if (distance_error < 0.15)
     {
         if (waypoints.size() == 1)
         {
