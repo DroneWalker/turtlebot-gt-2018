@@ -19,16 +19,19 @@ public:
     message_filters::Subscriber<sensor_msgs::LaserScan> laser_sub_;
     tf::MessageFilter<sensor_msgs::LaserScan> laser_notifier_;
     ros::Publisher scan_pub_;
+    ros::Publisher scan_pub2_;
 
     LaserScanToPointCloud(ros::NodeHandle n) :
             n_(n),
             laser_sub_(n_, "scan", 10),
-            laser_notifier_(laser_sub_,listener_, "base_link", 10)
+            laser_notifier_(laser_sub_,listener_, "odom", 10)
     {
         laser_notifier_.registerCallback(
                 boost::bind(&LaserScanToPointCloud::scanCallback, this, _1));
         laser_notifier_.setTolerance(ros::Duration(0.01));
-        scan_pub_ = n_.advertise<sensor_msgs::PointCloud>("/my_cloud",1);
+        scan_pub_ = n_.advertise<sensor_msgs::PointCloud>("/global_cloud",1);
+        scan_pub2_ = n_.advertise<sensor_msgs::PointCloud>("/local_cloud",1);
+
     }
 
     void scanCallback (const sensor_msgs::LaserScan::ConstPtr& scan_in)
@@ -37,7 +40,7 @@ public:
         try
         {
             projector_.transformLaserScanToPointCloud(
-                    "base_link",*scan_in, cloud,listener_);
+                    "/odom",*scan_in, cloud,listener_);
         }
         catch (tf::TransformException& e)
         {
@@ -45,10 +48,15 @@ public:
             return;
         }
 
+
+        sensor_msgs::PointCloud cloud_local;
+        projector_.projectLaser(*scan_in, cloud_local);
+
         // Do something with cloud.
 
-        scan_pub_.publish(cloud);
 
+        scan_pub_.publish(cloud);
+        scan_pub2_.publish(cloud_local);
     }
 };
 

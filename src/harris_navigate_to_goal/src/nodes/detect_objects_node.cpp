@@ -162,18 +162,18 @@ void scanCallback(const sensor_msgs::LaserScanPtr& scan_msg)
     if (!objectMap.empty())
     {
         int nearest = 0;
-        float min_dist = 100;
+        float min_dist = 2;
         for (int k = 0; i < objectMap.size(); k++)
         {
-            if (objectMap[k]->getAngleMin() < M_PI/6 || objectMap[k]->getAngleMax() > 5*M_PI/6)
+//            if (objectMap[k]->getAngleMin() < M_PI/6 || objectMap[k]->getAngleMax() > 5*M_PI/6)
+//        {
+            // Within obstacle bound
+            if (objectMap[k]->getDistance() < min_dist)
             {
-                // Within obstacle bound
-                if (objectMap[k]->getDistance() < min_dist)
-                {
-                    nearest = k;
-                    min_dist = objectMap[k]->getDistance();
-                }
+                nearest = k;
+                min_dist = objectMap[k]->getDistance();
             }
+//        }
         }
 //        if (objectMap[nearest]->getAngleMin() > M_PI)
 //        {
@@ -187,8 +187,11 @@ void scanCallback(const sensor_msgs::LaserScanPtr& scan_msg)
 //        } else{
 //            object_location.angle_max = objectMap[nearest]->getAngleMax();
 //        }
-        object_location.angle_min = objectMap[nearest]->getAngleMin();
-        object_location.angle_max = objectMap[nearest]->getAngleMax();
+
+        // Change orientation
+
+        object_location.angle_min = 2*M_PI - objectMap[nearest]->getAngleMin();
+        object_location.angle_max = 2*M_PI - objectMap[nearest]->getAngleMax();
         object_location.distance = objectMap[nearest]->getDistance();
     } else
     {

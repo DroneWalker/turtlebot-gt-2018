@@ -1,6 +1,5 @@
 <launch>
     <include file="$(find turtlebot3_gazebo)/launch/turtlebot3_empty_world.launch"/>
-    <include file="$(find turtlebot3_gazebo)/launch/turtlebot3_gazebo_rviz.launch"/>
 
     <node pkg="harris_navigate_to_goal" type="commander2" name="commander2" />
     <node pkg="harris_navigate_to_goal" type="navigation" name="navigation" />

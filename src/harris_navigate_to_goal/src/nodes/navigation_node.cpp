@@ -31,6 +31,9 @@
 geometry_msgs::Pose bot_pose;
 geometry_msgs::Twist bot_vels;
 geometry_msgs::Pose goal;
+geometry_msgs::Pose bypass_goal;
+geometry_msgs::Pose bypass_goal_local;
+
 
 geometry_msgs::Twist twist_vel;
 
@@ -47,8 +50,12 @@ double y_p;
 double theta_p;
 double object_dis;
 double object_ang;
+bool objectinway = false;
+
+bool gotpoint = false;
 
 bool init = false;
+bool odominit = false;
 bool isAvoid = false;
 bool isBypass = false;
 double bypass_dis;
@@ -56,39 +63,92 @@ double bypass_ang;
 double bypass_refx;
 double bypass_refy;
 double bypass_refang;
+double reset_x;
+double reset_y;
+double reset_ang;
 bool bypassing = false;
+bool wallgone = false;
+bool following = false;
+ros::Timer followTimer;
 
 double avoid_region = 0.2;
 double bypass_region = 0.75;
 
+double homeref_dis;
+
 double avoid_dis;
 
-void obstacleCallback(const harris_navigate_to_goal::objectLocation& obstacle_msg)
-{
-    if (obstacle_msg.angle_min < M_PI/6 || obstacle_msg.angle_max > 5*M_PI/6) {
+void obstacleCallback(const harris_navigate_to_goal::objectLocation& obstacle_msg) {
+    bypass_refx = bot_state.x;
+    bypass_refy = bot_state.y;
+    bypass_refang = bot_state.z;
 
-
-        if (obstacle_msg.distance < avoid_region) {
-            isAvoid = true;
-            isBypass = false;
-            avoid_dis = obstacle_msg.distance;
-        } else if (obstacle_msg.distance > avoid_region && obstacle_msg.distance < bypass_region) {
-            isAvoid = false;
-            isBypass = true;
-            bypass_dis = obstacle_msg.distance;
-            bypass_ang = max(abs(obstacle_msg.angle_min), abs(obstacle_msg.angle_max));
-            if (!bypassing)
-            {
-                bypass_refx = bot_state.x;
-                bypass_refy = bot_state.y;
-                bypass_refang = bot_state.z;
-            }
-
-        } else {
-            isAvoid = false;
-            isBypass = false;
+    if (obstacle_msg.distance < bypass_region)
+    {
+        if (obstacle_msg.angle_min < M_PI / 6)
+        {
+            objectinway = true;
+            homeref_dis = to_goal.distance;
         }
+        else if (obstacle_msg.angle_max > 5 * M_PI / 6)
+        {
+            objectinway = true;
+            homeref_dis = to_goal.distance;
+        }
+    } else{
+        objectinway = false;
     }
+
+    object_dis = obstacle_msg.distance;
+    object_ang =  (obstacle_msg.angle_min+obstacle_msg.angle_max)/2;
+
+//    if (obstacle_msg.angle_min < M_PI/6 || obstacle_msg.angle_max > 5*M_PI/6) {
+//        if (obstacle_msg.distance < avoid_region) {
+//            isAvoid = true;
+//            isBypass = false;
+//            avoid_dis = obstacle_msg.distance;
+//        } else if (obstacle_msg.distance > avoid_region && obstacle_msg.distance < bypass_region) {
+//            isAvoid = false;
+//            isBypass = true;
+//            bypass_dis = obstacle_msg.distance;
+//            bypass_ang = max(abs(obstacle_msg.angle_min), abs(obstacle_msg.angle_max));
+//            if (!bypassing)
+//            {
+//                bypass_refx = bot_state.x;
+//                bypass_refy = bot_state.y;
+//                bypass_refang = bot_state.z;
+//            }
+//
+//        } else {
+//            isAvoid = false;
+//            isBypass = false;
+//        }
+//    }
+}
+
+void update_goal()
+{
+    double xgoalerror;
+    double ygoalerror;
+    double thetagoalerror;
+    double goal_dis_error;
+
+
+    xgoalerror = goal.position.x - bot_state.x;
+    ygoalerror = goal.position.y - bot_state.y;
+    thetagoalerror = (atan2(ygoalerror, xgoalerror) - bot_state.z);
+    goal_dis_error = sqrt(pow(xgoalerror, 2) + pow(ygoalerror, 2));
+
+    if (thetagoalerror > M_PI) {
+        thetagoalerror = -M_PI + (thetagoalerror - M_PI);
+    } else if (thetagoalerror < -M_PI) {
+        thetagoalerror = M_PI + (thetagoalerror + M_PI);
+    } else {
+        thetagoalerror = thetagoalerror;
+    }
+
+    to_goal.distance = goal_dis_error;
+    to_goal.angle = thetagoalerror;
 }
 
 void odomCallback(const nav_msgs::Odometry& odom_msg)
@@ -96,7 +156,6 @@ void odomCallback(const nav_msgs::Odometry& odom_msg)
     // Get bot state
     bot_pose = odom_msg.pose.pose;
     bot_vels = odom_msg.twist.twist;
-
     // Transform quarternion yaw into euler yaw
     tf2::Quaternion q(bot_pose.orientation.x, bot_pose.orientation.y,bot_pose.orientation.z, bot_pose.orientation.w);
     double roll, pitch, yaw;
@@ -116,78 +175,238 @@ void odomCallback(const nav_msgs::Odometry& odom_msg)
     }
 
     // update_odometry
-//    if init == false
-//     do this
-//init = true
-// else not
+//    if (!odominit)
+//    {
+//        // do this
+//        reset_x = bot_state.x;
+//        reset_y = bot_state.y;
+//        reset_ang = bot_state.z;
+//        odominit = true;
+//    }
+//
+//    bot_state.x = bot_state.x - reset_x;
+//    bot_state.y = bot_state.x - reset_x;
+//    bot_state.z = bot_state.z - reset_ang;
+//    if (bot_state.z > 2*M_PI)
+//    {
+//        bot_state.z = 2*M_PI - bot_state.z;
+//    }
+//    else if (bot_state.z < 0)
+//    {
+//        bot_state.z = 2*M_PI + bot_state.z;
+//    }
+
+    update_goal();
 }
 
 void waypointCallback(const geometry_msgs::Pose& goal_msg)
 {
         goal.position.x = goal_msg.position.x;
         goal.position.y = goal_msg.position.y;
+        if (!gotpoint)
+        {
+            gotpoint = true;
+        }
 }
 
 
-void update_vels()
+//void update_vels()
+//{
+//
+//    if (isAvoid)
+//    {
+//        double atune = 0.1;
+//        double btune = 5.0;
+//
+//        double avoid_error = object_dis - avoid_region;
+//        double kp = (1/abs(avoid_error)*(atune/(pow(abs(avoid_error),2)+btune)));
+//
+//        PID pid_linear = PID(0.1, 1.5, -1.5, kp, 0.05, 0);
+//        twist_vel.linear.x = pid_linear.calculate(avoid_error);
+//    }
+//    else if (isBypass || bypassing)
+//    {
+//        if (!bypassing)
+//        {
+//            bypassing = true;
+//            bypass_start = ros::Time::now();
+//        }
+//        now = ros::Time::now();
+//        if ((now.toSec() - bypass_start.toSec() > 5.0))
+//        {
+//            bypassing = false;
+//        }
+//
+//
+//        double xerror;
+//        double yerror;
+//        double thetaerror;
+//        double distance_error;
+//
+//
+//        if (distance_error < 0.05)
+//        {
+//            bypassing = false;
+//        } else {
+//
+//            to_goal.distance = bypass_dis - sqrt(pow((bot_state.x - bypass_refx),2)+pow((bot_state.y-bypass_refy),2));
+//            if (object_ang > M_PI)
+//            {
+//                object_ang = 2*M_PI-object_ang;
+//            }
+//            else
+//            {
+//                object_ang = -object_ang;
+//            }
+//            to_goal.angle = (object_ang) - (bot_state.z - bypass_refang);
+//
+//            distance_error = to_goal.distance;
+//            thetaerror = to_goal.angle;
+//
+//            double atune = 0.2;
+//
+//            double kp = ((1 - exp(-atune * pow(abs(distance_error), 2))) / abs(distance_error));
+//
+//            PID pid_linear = PID(0.1, 1.5, -1.5, kp, 0.05, 0);
+//            PID pid_angular = PID(0.1, 2.0, -2.0, 0.35, 0.1, 0.4);
+//
+//            if (abs(to_goal.angle) > M_PI / 16) {
+//                twist_vel.linear.x = 0;
+//                twist_vel.angular.z = pid_angular.calculate(thetaerror);
+//            } else {
+//                twist_vel.angular.z = pid_angular.calculate(thetaerror);
+//                twist_vel.linear.x = pid_linear.calculate(distance_error);
+//            }
+//        }
+//
+//    } else {
+//
+//    }
+//}
+
+
+void cloudCallback(const sensor_msgs::PointCloud& cloud_msg)
 {
+    // find max y
+    // add 0.35 spacing to y
+    // set point to be transformed in tfCallback
 
-    if (isAvoid)
+    bypass_goal_local.position.x = cloud_msg.points[0].x;
+    bypass_goal_local.position.y = cloud_msg.points[0].y;
+}
+
+void cloudglobalCallback(const sensor_msgs::PointCloud& cloud_msg)
+{
+    // Check if points between goal and current position
+    int i;
+    bool obstacleinpath = false;
+}
+
+
+
+
+void tfCallback(const geometry_msgs::Pose& tf_msg)
+{
+//    tf::Transform tf
+//    bypass_goal.position.x = bypass_goal_local.position.x * tf_msg.
+}
+
+
+
+// Defining states
+enum State
+{
+    WAYPOINT = 1,
+    GOTOGOAL = 2,
+    AVOID = 3,
+    BYPASS = 4,
+    FOLLOWWALL = 5,
+    REST = 6
+};
+
+State status(State botstate)
+{
+    switch(botstate)
     {
-        double atune = 0.1;
-        double btune = 5.0;
-
-        double avoid_error = object_dis - avoid_region;
-        double kp = (1/abs(avoid_error)*(atune/(pow(abs(avoid_error),2)+btune)));
-
-        PID pid_linear = PID(0.1, 1.5, -1.5, kp, 0.05, 0);
-        twist_vel.linear.x = pid_linear.calculate(avoid_error);
+        case WAYPOINT:
+        {
+            if (objectinway)
+            {
+                if (object_dis < avoid_region)
+                {
+                    botstate = AVOID;
+                } else
+                {
+                    botstate = FOLLOWWALL;
+                }
+            }
+            return botstate;
+        }
+        case FOLLOWWALL:
+        {
+            if (!objectinway)
+            {
+                botstate = WAYPOINT;
+            }
+            else if (object_dis < avoid_region)
+            {
+                botstate = AVOID;
+            }
+            return botstate;
+        }
+        case AVOID:
+        {
+            if (!objectinway || object_dis > avoid_region)
+            {
+                botstate = WAYPOINT;
+            }
+            return botstate;
+        }
+        case REST:
+        {
+            if (gotpoint)
+            {
+                botstate = WAYPOINT;
+                return botstate;
+            }
+          return botstate;
+        }
     }
-    else if (isBypass || bypassing)
+}
+
+
+
+void move(State botstate)
+{
+    switch(botstate)
     {
-        if (!bypassing)
+        case WAYPOINT:
         {
-            bypassing = true;
-            bypass_start = ros::Time::now();
-        }
-        now = ros::Time::now();
-        if ((now.toSec() - bypass_start.toSec() > 5.0))
-        {
-            bypassing = false;
-        }
+            double xerror;
+            double yerror;
+            double thetaerror;
+            double distance_error;
 
 
-        double xerror;
-        double yerror;
-        double thetaerror;
-        double distance_error;
+            xerror = goal.position.x - bot_state.x;
+            yerror = goal.position.y - bot_state.y;
+            thetaerror = (atan2(yerror, xerror) - bot_state.z);
+            distance_error = sqrt(pow(xerror, 2) + pow(yerror, 2));
 
-
-        if (distance_error < 0.05)
-        {
-            bypassing = false;
-        } else {
-
-            to_goal.distance = bypass_dis - sqrt(pow((bot_state.x - bypass_refx),2)+pow((bot_state.y-bypass_refy),2));
-            if (object_ang > M_PI)
-            {
-                object_ang = 2*M_PI-object_ang;
+            if (thetaerror > M_PI) {
+                thetaerror = -M_PI + (thetaerror - M_PI);
+            } else if (thetaerror < -M_PI) {
+                thetaerror = M_PI + (thetaerror + M_PI);
+            } else {
+                thetaerror = thetaerror;
             }
-            else
-            {
-                object_ang = -object_ang;
-            }
-            to_goal.angle = (object_ang) - (bot_state.z - bypass_refang);
 
-            distance_error = to_goal.distance;
-            thetaerror = to_goal.angle;
-
-            double atune = 0.2;
+            double atune = 0.5;
 
             double kp = ((1 - exp(-atune * pow(abs(distance_error), 2))) / abs(distance_error));
 
-            PID pid_linear = PID(0.1, 1.5, -1.5, kp, 0.05, 0);
-            PID pid_angular = PID(0.1, 2.0, -2.0, 0.35, 0.1, 0.4);
+            PID pid_linear = PID(0.2, 1.5, -1.5, kp, 0.05, 0);
+            PID pid_angular = PID(0.2, 2.0, -2.0, 0.35, 0.1, 0.4);
 
             if (abs(to_goal.angle) > M_PI / 16) {
                 twist_vel.linear.x = 0;
@@ -196,49 +415,79 @@ void update_vels()
                 twist_vel.angular.z = pid_angular.calculate(thetaerror);
                 twist_vel.linear.x = pid_linear.calculate(distance_error);
             }
+            return;
         }
+        case FOLLOWWALL:
+        {
+//            if (!following)
+//            {
+//                followTimer.start();
+//            }
 
-    } else {
-        double xerror;
-        double yerror;
-        double thetaerror;
-        double distance_error;
+            double xerror;
+            double yerror;
+            double thetaerror;
+            double distance_error;
 
 
-        xerror = goal.position.x - bot_state.x;
-        yerror = goal.position.y - bot_state.y;
-        thetaerror = (atan2(yerror, xerror) - bot_state.z);
-        distance_error = sqrt(pow(xerror, 2) + pow(yerror, 2));
+            xerror = goal.position.x - bot_state.x;
+            yerror = goal.position.y - bot_state.y;
+            distance_error = sqrt(pow(xerror, 2) + pow(yerror, 2));
 
-        if (thetaerror > M_PI) {
-            thetaerror = -M_PI + (thetaerror - M_PI);
-        } else if (thetaerror < -M_PI) {
-            thetaerror = M_PI + (thetaerror + M_PI);
-        } else {
-            thetaerror = thetaerror;
+            if (object_ang > M_PI)
+            {
+                thetaerror = -(object_ang - 3*M_PI/2);
+            }
+            else
+            {
+                thetaerror = -(object_ang - M_PI/2);
+            }
+
+            double atune = 0.5;
+
+            double kp = ((1 - exp(-atune * pow(abs(distance_error), 2))) / abs(distance_error));
+
+            PID pid_linear = PID(0.2, 1.5, -1.5, kp, 0.05, 0);
+            PID pid_angular = PID(0.2, 2.0, -2.0, 0.15, 0.05, 0.1);
+
+            if (abs(thetaerror) > M_PI / 16) {
+                twist_vel.linear.x = 0;
+                twist_vel.angular.z = pid_angular.calculate(thetaerror);
+            } else {
+                twist_vel.angular.z = pid_angular.calculate(thetaerror);
+                twist_vel.linear.x = pid_linear.calculate(distance_error);
+            }
+
+            // check if done
+//            if (distance_error < homeref_dis-1)
+//            {
+//                objectinway = false;
+//            }
+            return;
         }
+        case AVOID:
+        {
+            double avoid_error = (object_dis - bypass_region);
 
-        to_goal.distance = distance_error;
-        to_goal.angle = thetaerror;
+            double atune = 0.1;
+            double btune = 5.0;
+            double kp = (1/abs(avoid_error)*(atune/(pow(abs(avoid_error),2)+btune)));
 
-        double atune = 0.5;
-
-        double kp = ((1 - exp(-atune * pow(abs(distance_error), 2))) / abs(distance_error));
-
-        PID pid_linear = PID(0.1, 1.5, -1.5, kp, 0.05, 0);
-        PID pid_angular = PID(0.1, 2.0, -2.0, 0.35, 0.1, 0.4);
-
-        if (abs(to_goal.angle) > M_PI / 16) {
+            PID pid_linear = PID(0.1, 1.5, -1.5, kp, 0.05, 0);
+            twist_vel.linear.x = pid_linear.calculate(avoid_error);
+            twist_vel.angular.z = 0;
+            return;
+            }
+        case REST:
+        {
             twist_vel.linear.x = 0;
-            twist_vel.angular.z = pid_angular.calculate(thetaerror);
-        } else {
-            twist_vel.angular.z = pid_angular.calculate(thetaerror);
-            twist_vel.linear.x = pid_linear.calculate(distance_error);
+            twist_vel.angular.z = 0;
+            to_goal.distance = 0;
+            to_goal.angle = 0;
+            return;
         }
     }
 }
-
-
 
 
 int main(int argc, char **argv) {
@@ -249,9 +498,11 @@ int main(int argc, char **argv) {
     ros::Publisher twist_pub = n.advertise<geometry_msgs::Twist>("/cmd_vel", 10);
     ros::Publisher state_pub = n.advertise<geometry_msgs::Vector3>("/bot_state/pose2d", 10);
     ros::Publisher error_pub = n.advertise<harris_chase_object::DistanceAngle>("/bot_state/to_goal", 10);
-    ros::Subscriber obstacle_pub = n.subscribe("/obstacle", 10, obstacleCallback);
+    ros::Subscriber obstacle_sub = n.subscribe("/obstacle", 10, obstacleCallback);
+//    ros::Subscriber cloud_sub = n.subscribe("/local_cloud",1,cloudCallback);
+//    ros::Subscriber cloudglobal_sub = n.subscribe("/global_cloud",1,cloudglobalCallback);
+//    ros::Subscriber tf_sub = n.subscribe("/transformation", 10, tfCallback);
     ros::Rate loop_rate(5);
-
 
     twist_vel.linear.x = 0;
     twist_vel.linear.y = 0;
@@ -261,26 +512,13 @@ int main(int argc, char **argv) {
     twist_vel.angular.y = 0;
     twist_vel.angular.z = 0;
 
-
-//    goal.position.x = 0;
-//    goal.position.y = 0;
-
-    tf::TransformListener listener;
-
+    State nav_mode = REST;
 
     while (ros::ok()) {
 
-        try{
-            listener.lookupTransform("/turtle2", "/turtle1",
-                                     ros::Time(0), transform);
-        }
-        catch (tf::TransformException &ex) {
-            ROS_ERROR("%s",ex.what());
-            ros::Duration(1.0).sleep();
-            continue;
-        }
-
-        update_vels();
+//        update_vels();
+        nav_mode = status(nav_mode);
+        move(nav_mode);
         twist_pub.publish(twist_vel);
         state_pub.publish(bot_state);
         error_pub.publish(to_goal);

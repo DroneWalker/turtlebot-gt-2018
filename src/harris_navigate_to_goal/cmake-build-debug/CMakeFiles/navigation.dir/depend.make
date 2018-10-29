@@ -15,6 +15,7 @@ CMakeFiles/navigation.dir/src/nodes/navigation_node.cpp.o: /opt/ros/kinetic/incl
 CMakeFiles/navigation.dir/src/nodes/navigation_node.cpp.o: /opt/ros/kinetic/include/geometry_msgs/Pose.h
 CMakeFiles/navigation.dir/src/nodes/navigation_node.cpp.o: /opt/ros/kinetic/include/geometry_msgs/PoseStamped.h
 CMakeFiles/navigation.dir/src/nodes/navigation_node.cpp.o: /opt/ros/kinetic/include/geometry_msgs/PoseWithCovariance.h
+CMakeFiles/navigation.dir/src/nodes/navigation_node.cpp.o: /opt/ros/kinetic/include/geometry_msgs/PoseWithCovarianceStamped.h
 CMakeFiles/navigation.dir/src/nodes/navigation_node.cpp.o: /opt/ros/kinetic/include/geometry_msgs/Quaternion.h
 CMakeFiles/navigation.dir/src/nodes/navigation_node.cpp.o: /opt/ros/kinetic/include/geometry_msgs/QuaternionStamped.h
 CMakeFiles/navigation.dir/src/nodes/navigation_node.cpp.o: /opt/ros/kinetic/include/geometry_msgs/Transform.h
@@ -24,6 +25,10 @@ CMakeFiles/navigation.dir/src/nodes/navigation_node.cpp.o: /opt/ros/kinetic/incl
 CMakeFiles/navigation.dir/src/nodes/navigation_node.cpp.o: /opt/ros/kinetic/include/geometry_msgs/TwistWithCovariance.h
 CMakeFiles/navigation.dir/src/nodes/navigation_node.cpp.o: /opt/ros/kinetic/include/geometry_msgs/Vector3.h
 CMakeFiles/navigation.dir/src/nodes/navigation_node.cpp.o: /opt/ros/kinetic/include/geometry_msgs/Vector3Stamped.h
+CMakeFiles/navigation.dir/src/nodes/navigation_node.cpp.o: /opt/ros/kinetic/include/kdl/frames.hpp
+CMakeFiles/navigation.dir/src/nodes/navigation_node.cpp.o: /opt/ros/kinetic/include/kdl/frames.inl
+CMakeFiles/navigation.dir/src/nodes/navigation_node.cpp.o: /opt/ros/kinetic/include/kdl/utilities/kdl-config.h
+CMakeFiles/navigation.dir/src/nodes/navigation_node.cpp.o: /opt/ros/kinetic/include/kdl/utilities/utility.h
 CMakeFiles/navigation.dir/src/nodes/navigation_node.cpp.o: /opt/ros/kinetic/include/nav_msgs/Odometry.h
 CMakeFiles/navigation.dir/src/nodes/navigation_node.cpp.o: /opt/ros/kinetic/include/ros/advertise_options.h
 CMakeFiles/navigation.dir/src/nodes/navigation_node.cpp.o: /opt/ros/kinetic/include/ros/advertise_service_options.h
@@ -104,6 +109,7 @@ CMakeFiles/navigation.dir/src/nodes/navigation_node.cpp.o: /opt/ros/kinetic/incl
 CMakeFiles/navigation.dir/src/nodes/navigation_node.cpp.o: /opt/ros/kinetic/include/tf2/LinearMath/QuadWord.h
 CMakeFiles/navigation.dir/src/nodes/navigation_node.cpp.o: /opt/ros/kinetic/include/tf2/LinearMath/Quaternion.h
 CMakeFiles/navigation.dir/src/nodes/navigation_node.cpp.o: /opt/ros/kinetic/include/tf2/LinearMath/Scalar.h
+CMakeFiles/navigation.dir/src/nodes/navigation_node.cpp.o: /opt/ros/kinetic/include/tf2/LinearMath/Transform.h
 CMakeFiles/navigation.dir/src/nodes/navigation_node.cpp.o: /opt/ros/kinetic/include/tf2/LinearMath/Vector3.h
 CMakeFiles/navigation.dir/src/nodes/navigation_node.cpp.o: /opt/ros/kinetic/include/tf2/buffer_core.h
 CMakeFiles/navigation.dir/src/nodes/navigation_node.cpp.o: /opt/ros/kinetic/include/tf2/convert.h
@@ -111,6 +117,7 @@ CMakeFiles/navigation.dir/src/nodes/navigation_node.cpp.o: /opt/ros/kinetic/incl
 CMakeFiles/navigation.dir/src/nodes/navigation_node.cpp.o: /opt/ros/kinetic/include/tf2/impl/convert.h
 CMakeFiles/navigation.dir/src/nodes/navigation_node.cpp.o: /opt/ros/kinetic/include/tf2/transform_datatypes.h
 CMakeFiles/navigation.dir/src/nodes/navigation_node.cpp.o: /opt/ros/kinetic/include/tf2/transform_storage.h
+CMakeFiles/navigation.dir/src/nodes/navigation_node.cpp.o: /opt/ros/kinetic/include/tf2_geometry_msgs/tf2_geometry_msgs.h
 CMakeFiles/navigation.dir/src/nodes/navigation_node.cpp.o: /opt/ros/kinetic/include/tf2_msgs/FrameGraph.h
 CMakeFiles/navigation.dir/src/nodes/navigation_node.cpp.o: /opt/ros/kinetic/include/tf2_msgs/FrameGraphRequest.h
 CMakeFiles/navigation.dir/src/nodes/navigation_node.cpp.o: /opt/ros/kinetic/include/tf2_msgs/FrameGraphResponse.h
