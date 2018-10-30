@@ -1,0 +1,14 @@
+//
+// Created by charris on 10/23/18.
+//
+
+#ifndef HARRIS_NAVIGATE_TO_GOAL_DETECT_OBJECTS_NODE_H
+#define HARRIS_NAVIGATE_TO_GOAL_DETECT_OBJECTS_NODE_H
+
+
+class detect_objects_node {
+
+};
+
+
+#endif //HARRIS_NAVIGATE_TO_GOAL_DETECT_OBJECTS_NODE_H

@@ -83,15 +83,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab6a52fe-fb0e-466c-9dbb-2b94b65eb365" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/navigation.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/navigation.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/navigation.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/navigation.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/navigation.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/navigation.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/navigation.dir/src/nodes/navigation_node.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/navigation.dir/src/nodes/navigation_node.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/nodes/detect_objects_node.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/nodes/detect_objects_node.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/nodes/navigation_node.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/nodes/navigation_node.cpp" afterDir="false" />
-    </list>
+    <list default="true" id="ab6a52fe-fb0e-466c-9dbb-2b94b65eb365" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -104,7 +96,7 @@
     <session id="-947363650">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="10" />
+          <entry key="project.closed" value="11" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.14" value="4" />
@@ -139,7 +131,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cpp" value="22938" />
+          <entry key="cpp" value="22939" />
           <entry key="launch" value="123" />
           <entry key="msg" value="49" />
           <entry key="txt" value="354" />
@@ -149,7 +141,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CMakeLists.txt" value="354" />
-          <entry key="ObjectiveC" value="22938" />
+          <entry key="ObjectiveC" value="22939" />
           <entry key="PLAIN_TEXT" value="49" />
           <entry key="roslaunch" value="123" />
           <entry key="rospackage" value="77" />
@@ -177,8 +169,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/nodes/detect_objects_node.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="481">
-              <caret line="115" column="61" selection-start-line="115" selection-start-column="61" selection-end-line="115" selection-end-column="61" />
+            <state relative-caret-position="285">
+              <caret line="113" column="28" selection-start-line="113" selection-start-column="28" selection-end-line="113" selection-end-column="28" />
               <folding>
                 <element signature="e#42#74#0" expanded="true" />
               </folding>
@@ -274,7 +266,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="992" />
     <option name="y" value="-4" />
     <option name="width" value="928" />
@@ -846,16 +838,15 @@
       <workItem from="1540820337872" duration="16717000" />
       <workItem from="1540857080377" duration="7545000" />
       <workItem from="1540865381813" duration="4116000" />
-      <workItem from="1540904946875" duration="2897000" />
+      <workItem from="1540904946875" duration="3203000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="117131000" />
+    <option name="totallyTimeSpent" value="117437000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" sideWeight="0.501046" side_tool="true" weight="0.17965727" />
       <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49895397" weight="0.18850194" />
@@ -1139,8 +1130,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/nodes/detect_objects_node.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="481">
-          <caret line="115" column="61" selection-start-line="115" selection-start-column="61" selection-end-line="115" selection-end-column="61" />
+        <state relative-caret-position="285">
+          <caret line="113" column="28" selection-start-line="113" selection-start-column="28" selection-end-line="113" selection-end-column="28" />
           <folding>
             <element signature="e#42#74#0" expanded="true" />
           </folding>
