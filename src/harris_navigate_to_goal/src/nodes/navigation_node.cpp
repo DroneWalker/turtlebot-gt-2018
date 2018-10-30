@@ -14,7 +14,6 @@
 #include <tf2/LinearMath/Quaternion.h>
 #include <tf2/LinearMath/Matrix3x3.h>
 #include <tf/transform_datatypes.h>
-#include <tf2_geometry_msgs/tf2_geometry_msgs.h>
 
 #include <harris_navigate_to_goal/objectLocation.h>
 
@@ -71,74 +70,70 @@ bool wallgone = false;
 bool following = false;
 ros::Timer followTimer;
 
-double avoid_region = 0.2;
+double avoid_region = 0.20;
 double bypass_region = 0.5;
 
 double objx;
 double objy;
-double objang;
+double objang_min;
+double objang_max;
 
 bool objectfollowing = false;
 bool obstacleexists = false;
+
+double obstacle_x;
+double obstacle_y;
 
 double homeref_dis;
 
 double avoid_dis;
 
 
-void update_object()
-{
-    double xgoalerror;
-    double ygoalerror;
-    double thetagoalerror;
-    double goal_dis_error;
-
-
-    xgoalerror = goal.position.x - objx;
-    ygoalerror = goal.position.y - objy;
-    thetagoalerror = (atan2(ygoalerror, xgoalerror) - bot_state.z);
-    goal_dis_error = sqrt(pow(xgoalerror, 2) + pow(ygoalerror, 2));
-
-    if (thetagoalerror > M_PI) {
-        thetagoalerror = -M_PI + (thetagoalerror - M_PI);
-    } else if (thetagoalerror < -M_PI) {
-        thetagoalerror = M_PI + (thetagoalerror + M_PI);
-    } else {
-        thetagoalerror = thetagoalerror;
-    }
-
-//    if (0.75 > to_goal.distance)
-//    {
-//        objectinway = false;
+//void update_object()
+//{
+//    double xgoalerror;
+//    double ygoalerror;
+//    double thetagoalerror;
+//    double goal_dis_error;
+//
+//
+//    xgoalerror = goal.position.x - objx;
+//    ygoalerror = goal.position.y - objy;
+//    thetagoalerror = (atan2(ygoalerror, xgoalerror) - bot_state.z);
+//    goal_dis_error = sqrt(pow(xgoalerror, 2) + pow(ygoalerror, 2));
+//
+//    if (thetagoalerror > M_PI) {
+//        thetagoalerror = -M_PI + (thetagoalerror - M_PI);
+//    } else if (thetagoalerror < -M_PI) {
+//        thetagoalerror = M_PI + (thetagoalerror + M_PI);
+//    } else {
+//        thetagoalerror = thetagoalerror;
 //    }
-}
+//
+////    if (0.75 > to_goal.distance)
+////    {
+////        objectinway = false;
+////    }
+//}
 
 
 void obstacleCallback(const harris_navigate_to_goal::objectLocation& obstacle_msg) {
-    bypass_refx = bot_state.x;
-    bypass_refy = bot_state.y;
-    bypass_refang = bot_state.z;
 
+
+    // Checking if object is in the way
     if (obstacle_msg.distance < bypass_region && obstacle_msg.distance > avoid_region)
     {
         obstacleexists = true;
         isAvoid = false;
-        if (obstacle_msg.angle_min < M_PI / 6)
+        if (min(abs(obstacle_msg.angle_min),abs(obstacle_msg.angle_max)) < M_PI / 6)
         {
             objectinway = true;
             if (!isBypass)
             {
                 homeref_dis = to_goal.distance;
                 isBypass = true;
-            }
-        }
-        else if (obstacle_msg.angle_max > 5 * M_PI / 6)
-        {
-            objectinway = true;
-            if (!isBypass)
-            {
-                homeref_dis = to_goal.distance;
-                isBypass = true;
+                obstacle_x = bot_state.x + obstacle_msg.distance * cos(obstacle_msg.angle_min + bot_state.z);
+                obstacle_y = bot_state.y + obstacle_msg.distance * sin(obstacle_msg.angle_min + bot_state.z);
             }
         }
 
@@ -152,16 +147,20 @@ void obstacleCallback(const harris_navigate_to_goal::objectLocation& obstacle_ms
         obstacleexists = false;
     }
 
-    object_dis = obstacle_msg.distance;
-    object_ang =  (obstacle_msg.angle_min+obstacle_msg.angle_max)/2;
+//    object_dis = obstacle_msg.distance;
+//    object_ang = obstacle_msg.angle_min;
 
-    if (bypass_refang + object_ang > 2*M_PI)
-    {
-        objang = bypass_refang + object_ang - 2*M_PI;
-    } else
-    {
-        objang = bypass_refang + object_ang;
-    }
+
+//    object_dis = obstacle_msg.distance;
+//    object_ang = (obstacle_msg.angle_max+obstacle_msg.angle_min)/2;
+//
+//    if (bypass_refang + object_ang > 2*M_PI)
+//    {
+//        objang = bypass_refang + object_ang - 2*M_PI;
+//    } else
+//    {
+//        objang = bypass_refang + object_ang;
+//    }
 
 //    objx = bypass_refx + obstacle_msg.distance * sin(objang);
 //    objy = bypass_refy + obstacle_msg.distance * cos(objang);
@@ -487,7 +486,7 @@ void move(State botstate)
                 thetaerror = thetaerror;
             }
 
-            double atune = 200;
+            double atune = 0.8;
 
             double kp = ((1 - exp(-atune * pow(abs(distance_error), 2))) / abs(distance_error));
 
@@ -509,29 +508,56 @@ void move(State botstate)
             double yerror;
             double thetaerror;
             double distance_error;
+            double distance_obj_to_goal;
 
+            distance_error = distance(goal.position.x, goal.position.y,bot_state.x, bot_state.y);
+            distance_obj_to_goal = distance(goal.position.x, goal.position.y,obstacle_x, obstacle_y);
+            thetaerror = heading(obstacle_x, obstacle_y, bot_state.x, bot_state.y) - bot_state.z + M_PI/2;
 
-            xerror = goal.position.x - bot_state.x;
-            yerror = goal.position.y - bot_state.y;
-            distance_error = sqrt(pow(xerror, 2) + pow(yerror, 2));
-
-            if (object_ang > M_PI)
-            {
-                thetaerror = -(object_ang - 3*M_PI/2);
+            if (thetaerror > M_PI) {
+                thetaerror = -M_PI + (thetaerror - M_PI);
+            } else if (thetaerror < -M_PI) {
+                thetaerror = M_PI + (thetaerror + M_PI);
+            } else {
+                thetaerror = thetaerror;
             }
-            else
-            {
-                thetaerror = -(object_ang - M_PI/2);
-            }
 
-            double atune = 10;
+
+//            xerror = goal.position.x - bot_state.x;
+//            yerror = goal.position.y - bot_state.y;
+//            distance_error = sqrt(pow(xerror, 2) + pow(yerror, 2));
+//
+//            if (object_ang > 0)
+//            {
+//                thetaerror = M_PI/2 - abs(object_ang);
+//            }
+//            else if (object_ang < 0)
+//            {
+//                thetaerror = -(M_PI/2 - abs(object_ang));
+//            } else
+//            {
+//                thetaerror =  M_PI;
+//            }
+
+//                thetaerror = abs(bot_state.z - bypass_refang);
+
+//            if (object_ang > M_PI)
+//            {
+//                thetaerror = (object_ang - 3*M_PI/2);
+//            }
+//            else
+//            {
+//                thetaerror = (object_ang - M_PI/2);
+//            }
+
+            double atune = 0.2;
 
             double kp = ((1 - exp(-atune * pow(abs(distance_error), 2))) / abs(distance_error));
 
-            PID pid_linear = PID(0.2, 1.5, -1.5, kp, 0.1, 0);
-            PID pid_angular = PID(0.2, 2.0, -2.0, 0.2, 0.05, 0.1);
+            PID pid_linear = PID(0.2, 1.5, -1.5, 0.15, 0.05, 0);
+            PID pid_angular = PID(0.2, 2.0, -2.0, 0.25, 0.05, 0.1);
 
-            if (abs(thetaerror) > M_PI / 64) {
+            if (abs(thetaerror) > M_PI / 8) {
                 twist_vel.linear.x = 0;
                 twist_vel.angular.z = pid_angular.calculate(thetaerror);
             } else {
@@ -539,16 +565,17 @@ void move(State botstate)
                 twist_vel.linear.x = pid_linear.calculate(distance_error);
             }
 
-            if (to_goal.distance < 0.75)
+            if (to_goal.distance < distance_obj_to_goal)
             {
                 objectfollowing = false;
+                objectinway = false;
             }
             else
             {
                 objectfollowing = true;
             }
 
-            if (!objectfollowing || !obstacleexists)
+            if (!objectinway || !obstacleexists)
             {
                 isBypass = false;
             }
@@ -559,15 +586,20 @@ void move(State botstate)
         }
         case AVOID:
         {
-            double avoid_error = (object_dis - avoid_region);
+            double avoid_error = (object_dis - bypass_region);
 
             double atune = 0.5;
             double btune = 5.0;
             double kp = (1/abs(avoid_error)*(atune/(pow(abs(avoid_error),2)+btune)));
 
-            PID pid_linear = PID(0.1, 1.5, -1.5, kp, 0.05, 0);
+            PID pid_linear = PID(0.1, 1.5, -1.5, 0.5, 0.15, 0);
             twist_vel.linear.x = pid_linear.calculate(avoid_error);
             twist_vel.angular.z = 0;
+
+            if (object_dis > avoid_region)
+            {
+                isAvoid = false;
+            }
 
 
             return;

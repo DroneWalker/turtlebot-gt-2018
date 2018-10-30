@@ -71,13 +71,12 @@ double radtodegs(double rad)
 
 
 
-void scanCallback(const sensor_msgs::LaserScanPtr& scan_msg)
-{
+void scanCallback(const sensor_msgs::LaserScanPtr& scan_msg) {
     objectMap.clear();
     ROS_INFO("Got Scan!");
     int length = (int) scan_msg->ranges.size();
     int object_count = 0;
-    int  i;
+    int i;
     int start = 0;
     int end = length;
     bool inLoop = false;
@@ -85,121 +84,188 @@ void scanCallback(const sensor_msgs::LaserScanPtr& scan_msg)
 
     float obj_dist;
     float obj_sum = 0;
-    double cnt=0;
+    double cnt = 0;
 
 
-    // SIMPLE DETECT*
-//    for (i= 0; i < length; i++)
-//    {
-//        if (i > 330 || i < 30)
-//        {
-//            float dist = scan_msg->ranges[i];
-//            if (dist > 0.05 && dist < 3.0)
-//            {
-//                obj_sum += dist;
-//                cnt += 1;
-//            }
-//        }
-//    }
-//
-//    if (cnt == 0)
-//    {
-//        obj_dist = 0;
-//    } else
-//    {
-//        obj_dist = obj_sum / (cnt);
-//    }
-//    object_count += 1;
-//    Object *obj = new Object(object_count, obj_dist, degtorads((double) start), degtorads((double) end));
-//    objectMap.push_back(obj);
-//    objectexists = true;
-//    ROS_INFO("Object Found!");
+    double min = M_PI/2;
+    double max = -M_PI/2;
 
-//
+    double mindist = 100;
+    int minpoint;
 
 
 
-    // ADVANCED DETECT
-
-    for (i= 0; i < length; i++)
-    {
-            float dist = scan_msg->ranges[i];
-            if (lever)
+    // Minamal distance point
+    for (i = 0; i < length; i++) {
+        float dist = scan_msg->ranges[i];
+        if (dist> 0.1 && dist <1.0)
         {
-            // Looking for Start
-            if (dist > 0.01 && dist < 3.0)
+            objectexists = true;
+            if (dist < mindist)
             {
-                start = i;
-                lever = false;
-                inLoop = true;
+                mindist = dist;
+                minpoint = i;
             }
+        }
+    }
+
+    if (objectexists)
+    {
+        if (minpoint > M_PI)
+        {
+            object_location.angle_min = -(2*M_PI - minpoint);
         }
         else
         {
-            if (dist > 3.0 && inLoop)
-            {
-                end = i-1;
-                lever = true;
-                inLoop = false;
-                float obj_dist;
-                float obj_sum = 0;
-                int k;
-                for (k=start;k < end+1; k++)
-                {
-                    obj_sum += scan_msg->ranges[k];
-                }
-                obj_dist = obj_sum / (end - start);
-                object_count += 1;
-//                objectMap[object_count-1]->o Object(object_count, obj_dist, degtorads((double) start), degtorads((double) end));
-                Object *obj = new Object(object_count, obj_dist, degtorads((double) start), degtorads((double) end));
-                objectMap.push_back(obj);
-                objectexists = true;
-                ROS_INFO("Object Found!");
-            }
+            object_location.angle_min = degtorads(minpoint);
         }
-    }
-
-    if (!objectMap.empty())
-    {
-        int nearest = 0;
-        float min_dist = 2;
-        for (int k = 0; i < objectMap.size(); k++)
-        {
-//            if (objectMap[k]->getAngleMin() < M_PI/6 || objectMap[k]->getAngleMax() > 5*M_PI/6)
-//        {
-            // Within obstacle bound
-            if (objectMap[k]->getDistance() < min_dist)
-            {
-                nearest = k;
-                min_dist = objectMap[k]->getDistance();
-            }
-//        }
-        }
-//        if (objectMap[nearest]->getAngleMin() > M_PI)
-//        {
-//            object_location.angle_min = objectMap[nearest]->getAngleMin() - 2*M_PI;
-//        } else{
-//            object_location.angle_min = objectMap[nearest]->getAngleMin();
-//        }
-//        if (objectMap[nearest]->getAngleMax() > M_PI)
-//        {
-//            object_location.angle_max = objectMap[nearest]->getAngleMax()- 2*M_PI;
-//        } else{
-//            object_location.angle_max = objectMap[nearest]->getAngleMax();
-//        }
-
-        // Change orientation
-
-        object_location.angle_min = 2*M_PI - objectMap[nearest]->getAngleMin();
-        object_location.angle_max = 2*M_PI - objectMap[nearest]->getAngleMax();
-        object_location.distance = objectMap[nearest]->getDistance();
+        object_location.distance = mindist;
     } else
     {
-        object_location.angle_min = 0;
-        object_location.angle_max = 0;
+        obj_dist = 0;
+        object_location.angle_min = 1000;
+        object_location.angle_max = 1000;
         object_location.distance = 1000;
     }
 
+//     SIMPLE DETECT*
+//    for (i = 0; i < length; i++) {
+//            float dist = scan_msg->ranges[i];
+//            if (dist > 0.1 && dist < 1.0) {
+//                obj_sum += dist;
+//                cnt += 1;
+//                double ang = degtorads(i);
+//                if (ang > M_PI)
+//                {
+//                    ang = -(2*M_PI - ang);
+//                }
+//                if (abs(ang) > max) {
+//                    max = ang;
+//                }
+//                if (abs(ang) < min) {
+//                    min = ang;
+//                }
+//            }
+//    }
+//
+//    if (cnt == 0) {
+//        obj_dist = 0;
+//        object_location.angle_min = 0;
+//        object_location.angle_max = 0;
+//        object_location.distance = 1000;
+//    } else {
+//        obj_dist = obj_sum / (cnt);
+//        ROS_INFO("Object Found!");
+//        object_location.angle_min = min;
+//        object_location.angle_max = max;
+//        object_location.distance = obj_dist;
+//    }
+//    object_count += 1;
+//    Object *obj = new Object(object_count, obj_dist, min, max);
+//    objectMap.push_back(obj);
+//    objectexists = true;
+
+
+
+
+
+//    // ADVANCED DETECT
+
+//    for (i= 0; i < length; i++)
+//    {
+//            float dist = scan_msg->ranges[i];
+//            if (lever)
+//        {
+//            // Looking for Start
+//            if (dist > 0.12 && dist < 3.0)
+//            {
+//                start = i;
+//                lever = false;
+//                inLoop = true;
+//            }
+//        }
+//        else
+//        {
+//            if (dist > 3.0 && inLoop)
+//            {
+//                end = i-1;
+//                lever = true;
+//                inLoop = false;
+//                float obj_dist;
+//                float obj_sum = 0;
+//                int k;
+//                for (k=start;k < end+1; k++)
+//                {
+//                    obj_sum += scan_msg->ranges[k];
+//                }
+//                obj_dist = obj_sum / (end - start);
+//                object_count += 1;
+////                objectMap[object_count-1]->o Object(object_count, obj_dist, degtorads((double) start), degtorads((double) end));
+//
+//                // Convert angles to local axis with ahead 0 and positive and negative values around it
+//                double min = degtorads((double) start) ;
+//                double max = degtorads((double) end);
+//                if (min > M_PI)
+//                {
+//                    min = -(2*M_PI - min);
+//                }
+//                if (max > M_PI)
+//                {
+//                    max = -(2*M_PI - max);
+//                }
+//
+//                Object *obj = new Object(object_count, obj_dist, min, max);
+//                objectMap.push_back(obj);
+//                objectexists = true;
+//                ROS_INFO("Object Found!");
+//            }
+//        }
+//    }
+
+//    if (!objectMap.empty())
+//    {
+//        int nearest = 0;
+//        float min_dist = 2;
+//        for (int k = 0; i < objectMap.size(); k++)
+//        {
+////            if (objectMap[k]->getAngleMin() < M_PI/6 || objectMap[k]->getAngleMax() > 5*M_PI/6)
+////        {
+//            // Within obstacle bound
+//            if (objectMap[k]->getDistance() < min_dist)
+//            {
+//                nearest = k;
+//                min_dist = objectMap[k]->getDistance();
+//            }
+////        }
+//        }
+////        if (objectMap[nearest]->getAngleMin() > M_PI)
+////        {
+////            object_location.angle_min = objectMap[nearest]->getAngleMin() - 2*M_PI;
+////        } else{
+////            object_location.angle_min = objectMap[nearest]->getAngleMin();
+////        }
+////        if (objectMap[nearest]->getAngleMax() > M_PI)
+////        {
+////            object_location.angle_max = objectMap[nearest]->getAngleMax()- 2*M_PI;
+////        } else{
+////            object_location.angle_max = objectMap[nearest]->getAngleMax();
+////        }
+//
+//        // Change orientation
+//
+////        object_location.angle_min = 2*M_PI - objectMap[nearest]->getAngleMin();
+////        object_location.angle_max = 2*M_PI - objectMap[nearest]->getAngleMax();
+//        object_location.angle_min = objectMap[nearest]->getAngleMin();
+//        object_location.angle_max = objectMap[nearest]->getAngleMax();
+//        object_location.distance = objectMap[nearest]->getDistance();
+//    } else
+//    {
+//        object_location.angle_min = 0;
+//        object_location.angle_max = 0;
+//        object_location.distance = 1000;
+//    }
+
+//}
 }
 
 
