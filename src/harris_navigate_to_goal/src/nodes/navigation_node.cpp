@@ -405,9 +405,7 @@ void tfCallback(const geometry_msgs::Pose& tf_msg)
 enum State
 {
     WAYPOINT = 1,
-    GOTOGOAL = 2,
     AVOID = 3,
-    BYPASS = 4,
     FOLLOWWALL = 5,
     REST = 6
 };

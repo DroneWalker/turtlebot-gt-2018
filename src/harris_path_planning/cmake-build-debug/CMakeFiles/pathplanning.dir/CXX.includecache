@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/charris/introrobotics/turtlebot-gt-2018/src/harris_path_planning/implementation.cpp
+iostream
+-
+iomanip
+-
+map
+-
+set
+-
+array
+-
+vector
+-
+utility
+-
+queue
+-
+tuple
+-
+algorithm
+-
+cstdlib
+-
+

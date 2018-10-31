@@ -1,7 +1,0 @@
-<launch>
-    <include file="$(find turtlebot3_bringup)/launch/turtlebot3_robot.launch"/>
-    <include file = "$(find raspicam_node)/launch/camerav2_AAAxBBB.launch"/>
-
-    <node pkg="harris_navigation_to_goal" type="commander2" name="commander" />
-    <node pkg="harris_navigation_to_goal" type="navigation" name="navigation" />
-</launch>
