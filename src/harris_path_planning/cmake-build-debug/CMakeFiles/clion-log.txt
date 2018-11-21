@@ -1,4 +1,1 @@
-/usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/charris/introrobotics/turtlebot-gt-2018/src/harris_path_planning
--- Configuring done
--- Generating done
--- Build files have been written to: /home/charris/introrobotics/turtlebot-gt-2018/src/harris_path_planning/cmake-build-debug
+CMakeLists.txt not found in /home/charris/introrobotics/turtlebot-gt-2018/src/harris_path_planning Select CMakeLists.txt file...

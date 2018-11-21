@@ -2,59 +2,58 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="51903067-ad9c-4867-9d12-64be44e85ed9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/turtlebot-gt-2018.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/turtlebot-gt-2018.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/image_common/image_transport/tutorial/src/my_subscriber.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/image_common/image_transport/tutorial/src/my_subscriber.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/harris_navigate_to_goal/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/harris_navigate_to_goal/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/harris_navigate_to_goal/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/harris_navigate_to_goal/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/harris_navigate_to_goal/cmake-build-debug/CMakeFiles/CMakeRuleHashes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/harris_navigate_to_goal/cmake-build-debug/CMakeFiles/CMakeRuleHashes.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/harris_navigate_to_goal/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/src/harris_navigate_to_goal/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/harris_navigate_to_goal/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/src/harris_navigate_to_goal/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/harris_navigate_to_goal/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/harris_navigate_to_goal/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/harris_navigate_to_goal/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/harris_navigate_to_goal/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/harris_navigate_to_goal/cmake-build-debug/CMakeFiles/commander2.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/src/harris_navigate_to_goal/cmake-build-debug/CMakeFiles/commander2.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/harris_navigate_to_goal/cmake-build-debug/CMakeFiles/commander2.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/src/harris_navigate_to_goal/cmake-build-debug/CMakeFiles/commander2.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/harris_navigate_to_goal/cmake-build-debug/CMakeFiles/commander2.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/src/harris_navigate_to_goal/cmake-build-debug/CMakeFiles/commander2.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/harris_navigate_to_goal/cmake-build-debug/CMakeFiles/commander2.dir/src/nodes/commander_node.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/harris_navigate_to_goal/cmake-build-debug/CMakeFiles/commander2.dir/src/nodes/commander_node.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/harris_navigate_to_goal/cmake-build-debug/CMakeFiles/find_objects.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/src/harris_navigate_to_goal/cmake-build-debug/CMakeFiles/find_objects.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/harris_navigate_to_goal/cmake-build-debug/CMakeFiles/find_objects.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/src/harris_navigate_to_goal/cmake-build-debug/CMakeFiles/find_objects.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/harris_navigate_to_goal/cmake-build-debug/CMakeFiles/find_objects.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/src/harris_navigate_to_goal/cmake-build-debug/CMakeFiles/find_objects.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/harris_navigate_to_goal/cmake-build-debug/CMakeFiles/find_objects.dir/src/nodes/detect_objects_node.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/harris_navigate_to_goal/cmake-build-debug/CMakeFiles/find_objects.dir/src/nodes/detect_objects_node.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/harris_navigate_to_goal/cmake-build-debug/CMakeFiles/harris_navigate_to_goal_generate_messages_cpp.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/src/harris_navigate_to_goal/cmake-build-debug/CMakeFiles/harris_navigate_to_goal_generate_messages_cpp.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/harris_navigate_to_goal/cmake-build-debug/CMakeFiles/harris_navigate_to_goal_generate_messages_cpp.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/src/harris_navigate_to_goal/cmake-build-debug/CMakeFiles/harris_navigate_to_goal_generate_messages_cpp.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/harris_navigate_to_goal/cmake-build-debug/CMakeFiles/harris_navigate_to_goal_generate_messages_cpp.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/src/harris_navigate_to_goal/cmake-build-debug/CMakeFiles/harris_navigate_to_goal_generate_messages_cpp.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/harris_navigate_to_goal/cmake-build-debug/CMakeFiles/harris_navigate_to_goal_generate_messages_eus.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/src/harris_navigate_to_goal/cmake-build-debug/CMakeFiles/harris_navigate_to_goal_generate_messages_eus.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/harris_navigate_to_goal/cmake-build-debug/CMakeFiles/harris_navigate_to_goal_generate_messages_eus.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/src/harris_navigate_to_goal/cmake-build-debug/CMakeFiles/harris_navigate_to_goal_generate_messages_eus.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/harris_navigate_to_goal/cmake-build-debug/CMakeFiles/harris_navigate_to_goal_generate_messages_eus.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/src/harris_navigate_to_goal/cmake-build-debug/CMakeFiles/harris_navigate_to_goal_generate_messages_eus.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/harris_navigate_to_goal/cmake-build-debug/CMakeFiles/harris_navigate_to_goal_generate_messages_lisp.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/src/harris_navigate_to_goal/cmake-build-debug/CMakeFiles/harris_navigate_to_goal_generate_messages_lisp.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/harris_navigate_to_goal/cmake-build-debug/CMakeFiles/harris_navigate_to_goal_generate_messages_lisp.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/src/harris_navigate_to_goal/cmake-build-debug/CMakeFiles/harris_navigate_to_goal_generate_messages_lisp.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/harris_navigate_to_goal/cmake-build-debug/CMakeFiles/harris_navigate_to_goal_generate_messages_lisp.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/src/harris_navigate_to_goal/cmake-build-debug/CMakeFiles/harris_navigate_to_goal_generate_messages_lisp.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/harris_navigate_to_goal/cmake-build-debug/CMakeFiles/harris_navigate_to_goal_generate_messages_nodejs.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/src/harris_navigate_to_goal/cmake-build-debug/CMakeFiles/harris_navigate_to_goal_generate_messages_nodejs.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/harris_navigate_to_goal/cmake-build-debug/CMakeFiles/harris_navigate_to_goal_generate_messages_nodejs.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/src/harris_navigate_to_goal/cmake-build-debug/CMakeFiles/harris_navigate_to_goal_generate_messages_nodejs.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/harris_navigate_to_goal/cmake-build-debug/CMakeFiles/harris_navigate_to_goal_generate_messages_nodejs.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/src/harris_navigate_to_goal/cmake-build-debug/CMakeFiles/harris_navigate_to_goal_generate_messages_nodejs.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/harris_navigate_to_goal/cmake-build-debug/CMakeFiles/harris_navigate_to_goal_generate_messages_py.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/src/harris_navigate_to_goal/cmake-build-debug/CMakeFiles/harris_navigate_to_goal_generate_messages_py.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/harris_navigate_to_goal/cmake-build-debug/CMakeFiles/harris_navigate_to_goal_generate_messages_py.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/src/harris_navigate_to_goal/cmake-build-debug/CMakeFiles/harris_navigate_to_goal_generate_messages_py.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/harris_navigate_to_goal/cmake-build-debug/CMakeFiles/harris_navigate_to_goal_generate_messages_py.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/src/harris_navigate_to_goal/cmake-build-debug/CMakeFiles/harris_navigate_to_goal_generate_messages_py.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/harris_navigate_to_goal/cmake-build-debug/CMakeFiles/navigation.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/src/harris_navigate_to_goal/cmake-build-debug/CMakeFiles/navigation.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/harris_navigate_to_goal/cmake-build-debug/CMakeFiles/navigation.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/src/harris_navigate_to_goal/cmake-build-debug/CMakeFiles/navigation.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/harris_navigate_to_goal/cmake-build-debug/CMakeFiles/navigation.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/src/harris_navigate_to_goal/cmake-build-debug/CMakeFiles/navigation.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/harris_navigate_to_goal/cmake-build-debug/CMakeFiles/navigation.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/src/harris_navigate_to_goal/cmake-build-debug/CMakeFiles/navigation.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/harris_navigate_to_goal/cmake-build-debug/CMakeFiles/navigation.dir/src/nodes/navigation_node.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/harris_navigate_to_goal/cmake-build-debug/CMakeFiles/navigation.dir/src/nodes/navigation_node.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/harris_navigate_to_goal/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/src/harris_navigate_to_goal/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/harris_navigate_to_goal/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/src/harris_navigate_to_goal/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/harris_navigate_to_goal/cmake-build-debug/catkin_generated/harris_navigate_to_goal-msg-extras.cmake.develspace.in" beforeDir="false" afterPath="$PROJECT_DIR$/src/harris_navigate_to_goal/cmake-build-debug/catkin_generated/harris_navigate_to_goal-msg-extras.cmake.develspace.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/harris_navigate_to_goal/cmake-build-debug/catkin_generated/harris_navigate_to_goal-msg-extras.cmake.installspace.in" beforeDir="false" afterPath="$PROJECT_DIR$/src/harris_navigate_to_goal/cmake-build-debug/catkin_generated/harris_navigate_to_goal-msg-extras.cmake.installspace.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/harris_navigate_to_goal/cmake-build-debug/catkin_generated/installspace/harris_navigate_to_goal-msg-extras.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/src/harris_navigate_to_goal/cmake-build-debug/catkin_generated/installspace/harris_navigate_to_goal-msg-extras.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/harris_navigate_to_goal/cmake-build-debug/cmake/harris_navigate_to_goal-genmsg-context.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/harris_navigate_to_goal/cmake-build-debug/cmake/harris_navigate_to_goal-genmsg-context.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/harris_navigate_to_goal/cmake-build-debug/cmake/harris_navigate_to_goal-genmsg.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/src/harris_navigate_to_goal/cmake-build-debug/cmake/harris_navigate_to_goal-genmsg.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/harris_navigate_to_goal/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/src/harris_navigate_to_goal/cmake-build-debug/cmake_install.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/harris_navigate_to_goal/cmake-build-debug/harris_navigate_to_goal.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/src/harris_navigate_to_goal/cmake-build-debug/harris_navigate_to_goal.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/harris_navigate_to_goal/launch/lab4_sim.launch" beforeDir="false" afterPath="$PROJECT_DIR$/src/harris_navigate_to_goal/launch/lab4_sim.launch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/harris_navigate_to_goal/src/nodes/commander_node.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/harris_navigate_to_goal/src/nodes/commander_node.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/harris_navigate_to_goal/src/nodes/detect_objects_node.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/harris_navigate_to_goal/src/nodes/detect_objects_node.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/harris_navigate_to_goal/src/nodes/navigation_node.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/harris_navigate_to_goal/src/nodes/navigation_node.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/harris_path_planning/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/harris_path_planning/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/harris_path_planning/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/harris_path_planning/cmake-build-debug/CMakeCache.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/harris_path_planning/cmake-build-debug/CMakeFiles/3.5.1/CMakeCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/harris_path_planning/cmake-build-debug/CMakeFiles/3.5.1/CMakeCXXCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/harris_path_planning/cmake-build-debug/CMakeFiles/3.5.1/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/harris_path_planning/cmake-build-debug/CMakeFiles/3.5.1/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/harris_path_planning/cmake-build-debug/CMakeFiles/3.5.1/CMakeSystem.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/harris_path_planning/cmake-build-debug/CMakeFiles/3.5.1/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/harris_path_planning/cmake-build-debug/CMakeFiles/3.5.1/CompilerIdC/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/harris_path_planning/cmake-build-debug/CMakeFiles/3.5.1/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/harris_path_planning/cmake-build-debug/CMakeFiles/3.5.1/CompilerIdCXX/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/harris_path_planning/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/harris_path_planning/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/harris_path_planning/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/harris_path_planning/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/harris_path_planning/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/harris_path_planning/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/harris_path_planning/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/harris_path_planning/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/harris_path_planning/cmake-build-debug/CMakeFiles/cmake.check_cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/harris_path_planning/cmake-build-debug/CMakeFiles/feature_tests.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/harris_path_planning/cmake-build-debug/CMakeFiles/feature_tests.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/harris_path_planning/cmake-build-debug/CMakeFiles/feature_tests.cxx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/harris_path_planning/cmake-build-debug/CMakeFiles/harris_path_planning.dir/CXX.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/harris_path_planning/cmake-build-debug/CMakeFiles/harris_path_planning.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/harris_path_planning/cmake-build-debug/CMakeFiles/harris_path_planning.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/harris_path_planning/cmake-build-debug/CMakeFiles/harris_path_planning.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/harris_path_planning/cmake-build-debug/CMakeFiles/harris_path_planning.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/harris_path_planning/cmake-build-debug/CMakeFiles/harris_path_planning.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/harris_path_planning/cmake-build-debug/CMakeFiles/harris_path_planning.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/harris_path_planning/cmake-build-debug/CMakeFiles/harris_path_planning.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/harris_path_planning/cmake-build-debug/CMakeFiles/harris_path_planning.dir/main.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/harris_path_planning/cmake-build-debug/CMakeFiles/harris_path_planning.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/harris_path_planning/cmake-build-debug/CMakeFiles/pathplanning.dir/CXX.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/harris_path_planning/cmake-build-debug/CMakeFiles/pathplanning.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/harris_path_planning/cmake-build-debug/CMakeFiles/pathplanning.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/harris_path_planning/cmake-build-debug/CMakeFiles/pathplanning.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/harris_path_planning/cmake-build-debug/CMakeFiles/pathplanning.dir/cmake_clean_target.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/harris_path_planning/cmake-build-debug/CMakeFiles/pathplanning.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/harris_path_planning/cmake-build-debug/CMakeFiles/pathplanning.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/harris_path_planning/cmake-build-debug/CMakeFiles/pathplanning.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/harris_path_planning/cmake-build-debug/CMakeFiles/pathplanning.dir/implementation.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/harris_path_planning/cmake-build-debug/CMakeFiles/pathplanning.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/harris_path_planning/cmake-build-debug/CMakeFiles/pathplanning.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/harris_path_planning/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/harris_path_planning/cmake-build-debug/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/harris_path_planning/cmake-build-debug/cmake_install.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/harris_path_planning/cmake-build-debug/harris_path_planning" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/harris_path_planning/cmake-build-debug/harris_path_planning.cbp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/harris_path_planning/implementation.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/harris_path_planning/main.cpp" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -66,7 +65,7 @@
     <session id="450632384">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="13" />
+          <entry key="project.closed" value="14" />
           <entry key="project.open.time.10" value="4" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.18" value="1" />
@@ -74,8 +73,8 @@
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.open.time.9" value="4" />
-          <entry key="project.opened" value="14" />
+          <entry key="project.open.time.9" value="5" />
+          <entry key="project.opened" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -108,29 +107,7 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/harris_navigate_to_goal/src/nodes/cloud_node.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
-              <folding>
-                <element signature="e#0#38#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/harris_navigate_to_goal/src/nodes/commander_node.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -172,11 +149,11 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="151" />
-    <option name="y" value="-16" />
-    <option name="width" value="1087" />
-    <option name="height" value="1028" />
+  <component name="ProjectFrameBounds" extendedState="4">
+    <option name="x" value="65" />
+    <option name="y" value="24" />
+    <option name="width" value="928" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -184,6 +161,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -235,7 +213,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -298,9 +275,9 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
+    <frame x="65" y="24" width="928" height="1056" extended-state="4" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12117904" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24530387" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -453,13 +430,6 @@
     <entry file="file://$PROJECT_DIR$/src/lab1/lab1_steps.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/harris_navigate_to_goal/src/nodes/commander_node.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bin/ball_follower_test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -471,9 +441,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="e#22#35#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -484,6 +451,13 @@
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/harris_navigate_to_goal/src/nodes/commander_node.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
         </state>
       </provider>
     </entry>
