@@ -8,7 +8,7 @@
 #include <image_transport/image_transport.h>
 #include <cv_bridge/cv_bridge.h>
 
-#include <harris_chase_object/find_ball.h>
+#include "../../../harris_navigate_to_goal/include/harris_navigate_to_goal/find_ball.h"
 
 using namespace cv;
 using namespace std;

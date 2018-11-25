@@ -5,7 +5,7 @@
 #ifndef _OBJECT_SOURCE_
 #define _OBJECT_SOURCE_
 
-#include <harris_chase_object/object.h>
+#include "../../../harris_navigate_to_goal/include/harris_navigate_to_goal/object.h"
 
 using namespace std;
 

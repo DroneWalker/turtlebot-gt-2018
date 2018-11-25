@@ -960,7 +960,7 @@
       <Unit filename="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/src/objects/object.cpp">
          <Option target="object_lib"/>
       </Unit>
-      <Unit filename="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/src/objects/pid_turtlebot.cpp">
+      <Unit filename="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/src/objects/pid_turtlebot.cpp">
          <Option target="pid_lib"/>
       </Unit>
       <Unit filename="/home/charris/introrobotics/turtlebot-gt-2018/src/harris_chase_object/CMakeLists.txt">

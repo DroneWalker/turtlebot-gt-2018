@@ -11,7 +11,7 @@
 
 #include "math.h"
 
-#include "../objects/pid_turtlebot.cpp"
+#include "../../../harris_navigate_to_goal/src/objects/pid_turtlebot.cpp"
 
 double desiredAngle = 0;
 double desiredDistance = 0.5; // meters

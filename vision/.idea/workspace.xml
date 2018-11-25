@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2893d813-281b-407f-b8e7-6d159e7ec3c0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/harris_path_planning/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../src/harris_path_planning/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/harris_path_planning/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/harris_path_planning/cmake-build-debug/CMakeCache.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/harris_path_planning/cmake-build-debug/CMakeFiles/3.5.1/CMakeCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/harris_path_planning/cmake-build-debug/CMakeFiles/3.5.1/CMakeCXXCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/harris_path_planning/cmake-build-debug/CMakeFiles/3.5.1/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/harris_path_planning/cmake-build-debug/CMakeFiles/3.5.1/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/harris_path_planning/cmake-build-debug/CMakeFiles/3.5.1/CMakeSystem.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/harris_path_planning/cmake-build-debug/CMakeFiles/3.5.1/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/harris_path_planning/cmake-build-debug/CMakeFiles/3.5.1/CompilerIdC/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/harris_path_planning/cmake-build-debug/CMakeFiles/3.5.1/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/harris_path_planning/cmake-build-debug/CMakeFiles/3.5.1/CompilerIdCXX/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/harris_path_planning/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/harris_path_planning/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/harris_path_planning/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/harris_path_planning/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/harris_path_planning/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/harris_path_planning/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/harris_path_planning/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../src/harris_path_planning/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/harris_path_planning/cmake-build-debug/CMakeFiles/cmake.check_cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/harris_path_planning/cmake-build-debug/CMakeFiles/feature_tests.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/harris_path_planning/cmake-build-debug/CMakeFiles/feature_tests.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/harris_path_planning/cmake-build-debug/CMakeFiles/feature_tests.cxx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/harris_path_planning/cmake-build-debug/CMakeFiles/harris_path_planning.dir/CXX.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/harris_path_planning/cmake-build-debug/CMakeFiles/harris_path_planning.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/harris_path_planning/cmake-build-debug/CMakeFiles/harris_path_planning.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/harris_path_planning/cmake-build-debug/CMakeFiles/harris_path_planning.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/harris_path_planning/cmake-build-debug/CMakeFiles/harris_path_planning.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/harris_path_planning/cmake-build-debug/CMakeFiles/harris_path_planning.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/harris_path_planning/cmake-build-debug/CMakeFiles/harris_path_planning.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/harris_path_planning/cmake-build-debug/CMakeFiles/harris_path_planning.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/harris_path_planning/cmake-build-debug/CMakeFiles/harris_path_planning.dir/main.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/harris_path_planning/cmake-build-debug/CMakeFiles/harris_path_planning.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/harris_path_planning/cmake-build-debug/CMakeFiles/pathplanning.dir/CXX.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/harris_path_planning/cmake-build-debug/CMakeFiles/pathplanning.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/harris_path_planning/cmake-build-debug/CMakeFiles/pathplanning.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/harris_path_planning/cmake-build-debug/CMakeFiles/pathplanning.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/harris_path_planning/cmake-build-debug/CMakeFiles/pathplanning.dir/cmake_clean_target.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/harris_path_planning/cmake-build-debug/CMakeFiles/pathplanning.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/harris_path_planning/cmake-build-debug/CMakeFiles/pathplanning.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/harris_path_planning/cmake-build-debug/CMakeFiles/pathplanning.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/harris_path_planning/cmake-build-debug/CMakeFiles/pathplanning.dir/implementation.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/harris_path_planning/cmake-build-debug/CMakeFiles/pathplanning.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/harris_path_planning/cmake-build-debug/CMakeFiles/pathplanning.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/harris_path_planning/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/harris_path_planning/cmake-build-debug/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/harris_path_planning/cmake-build-debug/cmake_install.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/harris_path_planning/cmake-build-debug/harris_path_planning" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/harris_path_planning/cmake-build-debug/harris_path_planning.cbp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/harris_path_planning/implementation.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/harris_path_planning/main.cpp" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-1820548026">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="py" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Python" value="2" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/circle_detect.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="45" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/__init__.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lab1_test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="46" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/converter.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/video_test.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="303" />
+    <option name="y" value="9" />
+    <option name="width" value="926" />
+    <option name="height" value="1040" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="vision" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vision" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2893d813-281b-407f-b8e7-6d159e7ec3c0" name="Default Changelist" comment="" />
+      <created>1542771641571</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1542771641571</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Python Console" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/lab1_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="46" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/converter.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/video_test.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/circle_detect.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="45" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+  </component>
+</project>

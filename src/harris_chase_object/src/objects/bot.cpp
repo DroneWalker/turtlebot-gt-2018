@@ -5,7 +5,7 @@
 #ifndef _BOT_SOURCE_
 #define _BOT_SOURCE_
 
-#include <harris_chase_object/bot.h>
+#include "../../../harris_navigate_to_goal/include/harris_navigate_to_goal/bot.h"
 
 
 class BotImpl

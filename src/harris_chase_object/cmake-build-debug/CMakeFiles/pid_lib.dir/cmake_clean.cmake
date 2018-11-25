@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/pid_lib.dir/src/objects/pid_turtlebot.cpp.o"
+  "CMakeFiles/pid_lib.dir/home/charris/introrobotics/turtlebot-gt-2018/src/harris_navigate_to_goal/src/objects/pid_turtlebot.cpp.o"
   "devel/lib/libpid_lib.pdb"
   "devel/lib/libpid_lib.a"
 )

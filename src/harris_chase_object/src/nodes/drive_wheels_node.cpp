@@ -8,7 +8,7 @@
 
 #include "math.h"
 
-#include "../objects/pid_turtlebot.cpp"
+#include "../../../harris_navigate_to_goal/src/objects/pid_turtlebot.cpp"
 
 // Declarations
 const double linear_vels = 0;

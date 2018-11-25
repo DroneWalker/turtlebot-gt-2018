@@ -67,7 +67,7 @@ catkin_package(
 add_library(find_object_lib STATIC src/objects/find_ball.cpp)
 install(TARGETS find_object_lib DESTINATION include)
 
-add_library(pid_lib STATIC src/objects/pid_turtlebot.cpp)
+add_library(pid_lib STATIC ../harris_navigate_to_goal/src/objects/pid_turtlebot.cpp)
 install(TARGETS pid_lib DESTINATION include)
 
 add_library(thisbot_lib STATIC src/objects/bot.cpp)

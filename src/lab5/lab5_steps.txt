@@ -1,0 +1,35 @@
+######### ROBOTICS LAB 5 STEPS ################
+
+Start up
+------------
+Robot:  $ roslaunch turtlebot3_bringup turtlebot3_robot.launch
+Sim:  $ roslaunch turtlebot3_gazebo turtlebot3_maze.launch
+
+SLAM Launch
+-----------
+$ roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=gmapping
+
+Save Map
+---------
+$ rosrun map_server map_saver -f [location]
+
+Start Navigation
+----------------
+$ roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=[location]
+
+Estimate Initial Pose
+--------------------
+Click on 2D Pose Estimate in RViz
+Click on location
+then move robot around using teleop
+now close teleop and 2D pose estimate button
+
+Send Navigation Goal
+--------------------
+Click 2D Nav Goal
+Click location on map
+
+
+Tuning
+---------
+THE ACTUAL WORK!
